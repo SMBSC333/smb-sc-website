@@ -12,6 +12,8 @@ import resources from './pages/resources'
 import contact from './pages/contact'
 import landingPages from './pages/landing-pages'
 
+import execSummaryHtml from '../public/executive-summary.html?raw'
+
 const app = new Hono()
 
 app.use(renderer)
@@ -59,6 +61,7 @@ app.get('/terms-conditions', (c) => c.render(
 ))
 
 // Legacy redirects — catch common old URLs
+app.get('/executive-summary', (c) => c.html(execSummaryHtml))
 app.get('/bookkeeping', (c) => c.redirect('/strategy-intensives#finance'))
 app.get('/team-development', (c) => c.redirect('/strategy-intensives#capacity'))
 app.get('/3-level-business-growth-strategy', (c) => c.redirect('/how-it-works'))

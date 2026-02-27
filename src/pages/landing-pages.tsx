@@ -392,7 +392,7 @@ landingPages.get('/partner-referral', (c) => {
         <div class="container">
           <div class="grid-2" style="align-items:start; gap:4rem;">
             <div>
-              <span class="eyebrow">The GAS Sprint</span>
+              <span class="eyebrow">The Growth Acceleration Sprint</span>
               <h2>90 days. Two constraints addressed. Measurable results.</h2>
               <div class="gold-line"></div>
               <p>The Growth Acceleration System Sprint is our most structured engagement for businesses that need to move fast. In 90 days, we address your top two growth constraints — whether that is financial clarity, pipeline systems, team capacity, or AI integration — and install the operating rhythm that holds the improvements in place after the sprint ends.</p>

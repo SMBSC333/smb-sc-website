@@ -206,9 +206,9 @@ home.get('/', (c) => {
             <div class="path-card featured">
               <span class="path-badge">Most Popular</span>
               <span class="intensive-tag">90 Days</span>
-              <h3 class="mb-2">GAS Sprint</h3>
+              <h3 class="mb-2">Growth Acceleration Sprint</h3>
               <p style="font-size:0.9rem; color:var(--color-text-muted);">The 90-Day Growth Acceleration Sprint. Stabilize and ignite. A full system build across your top two constraints — with implementation support and AI integration built in.</p>
-              <a href="/how-it-works#gas" class="btn btn-primary btn-sm mt-3">Learn About the GAS Sprint</a>
+              <a href="/how-it-works#growth-acceleration-sprint" class="btn btn-primary btn-sm mt-3">Learn About the Sprint</a>
             </div>
             <div class="path-card">
               <span class="intensive-tag">Ongoing</span>

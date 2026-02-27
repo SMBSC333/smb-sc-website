@@ -94,11 +94,11 @@ howItWorks.get('/', (c) => {
               <p style="font-size:0.85rem; color:var(--color-text-muted); margin-top:0.75rem;">Best for owners who have identified a specific ceiling and need to move through it quickly.</p>
               <a href="/strategy-intensives" class="btn btn-ghost btn-sm mt-3">View the Four Intensives</a>
             </div>
-            <div class="path-card featured" id="gas">
+            <div class="path-card featured" id="growth-acceleration-sprint">
               <span class="path-badge">Most Requested</span>
               <span class="intensive-tag">90 Days</span>
-              <h3 class="mb-2">GAS Sprint — 90-Day Growth Accelerator</h3>
-              <p style="font-size:0.9rem;">The Growth Acceleration System Sprint. We stabilize the core and ignite growth through a full system build across your top two constraints. AI integration is included. Implementation support is available through our partner network.</p>
+              <h3 class="mb-2">Growth Acceleration Sprint</h3>
+              <p style="font-size:0.9rem;">The 90-Day Growth Acceleration Sprint, powered by our Growth Acceleration System. We stabilize the core and ignite growth through a full system build across your top two constraints. AI integration is included. Implementation support is available through our team.</p>
               <p style="font-size:0.85rem; color:var(--color-text-muted); margin-top:0.75rem;">Best for $1M–$5M businesses ready to install real systems and see movement within a quarter.</p>
               <a href="/growth-diagnostic" class="btn btn-primary btn-sm mt-3">Book the Diagnostic to Start</a>
             </div>
@@ -120,7 +120,7 @@ howItWorks.get('/', (c) => {
         </div>
       </section>
 
-      {/* My Profit Life */}
+      {/* The Growth Acceleration System */}
       <section class="section bg-surface">
         <div class="container">
           <div class="grid-2" style="align-items:center; gap:4rem;">
@@ -128,8 +128,8 @@ howItWorks.get('/', (c) => {
               <span class="eyebrow">The Flagship Engagement</span>
               <h2>My Profit Life is the complete transformation container.</h2>
               <div class="gold-line"></div>
-              <p>For owners who are done with incremental progress. My Profit Life is a 6-month, invitation-only engagement that addresses all four growth pillars simultaneously — with Corbin directly involved in every phase.</p>
-              <p>It is not a course. It is not coaching in the traditional sense. It is system installation across your entire business with accountability built into every step.</p>
+              <p>For owners who are done with incremental progress. My Profit Life is a structured engagement that addresses all four growth pillars simultaneously — with Corbin directly involved in every phase and the full Growth Acceleration System installed as the operating framework.</p>
+              <p>It is not a course. It is not coaching in the traditional sense. It is system installation across your entire business with accountability built into every step. The six-month foundation sets the structure; the ongoing community deepens and optimizes it indefinitely.</p>
               <a href="/my-profit-life" class="btn btn-outline mt-3">Learn About My Profit Life</a>
             </div>
             <div class="highlight-box">

@@ -27,7 +27,7 @@ virtualCfo.get('/', (c) => {
               <div class="gold-line"></div>
               <p>Most virtual CFO services focus on spreadsheets and reports. This is different. As your Strategic Financial Partner, Corbin joins your executive team — not as a vendor, but as an embedded guide who gives your financials a voice inside every leadership decision.</p>
               <p>The financial conversation does not happen after the business decisions. It happens alongside them — aligning marketing, staffing, operations, and systems with profitability goals before commitments are made.</p>
-              <p>All Strategic Financial Partner engagements now include AI-assisted financial reporting, forecasting, and anomaly detection as standard. The same tools that are compressing delivery costs across the industry are built into your reporting rhythm from day one.</p>
+              <p>All Strategic Financial Partner engagements include AI-assisted financial reporting, forecasting, and anomaly detection as standard. The same tools that are compressing delivery costs across the industry are built into your reporting rhythm from day one.</p>
             </div>
             <div>
               <div class="card card-accent mb-3">
@@ -52,11 +52,11 @@ virtualCfo.get('/', (c) => {
         <div class="container">
           <div class="section-header center">
             <span class="eyebrow">What the Engagement Includes</span>
-            <h2>The full SMB ecosystem working in one engagement.</h2>
+            <h2>Financial strategy and growth acceleration working as one.</h2>
           </div>
           <div class="grid-2">
             <div class="highlight-box">
-              <h4 class="mb-3">Profit Acceleration Software (PAS)</h4>
+              <h4 class="mb-3">Growth Acceleration System — Financial Sprint</h4>
               <ul class="intensive-includes">
                 <li>Identify hidden profit and margin leaks</li>
                 <li>Create clear 12–18 month financial roadmaps</li>
@@ -104,7 +104,7 @@ virtualCfo.get('/', (c) => {
               <h2>When you give your financials a voice, decision-making stress drops.</h2>
               <div class="gold-line"></div>
               <p>The reporting rhythm is the backbone. When the numbers tell a clear, consistent story — customized to your business, not your industry template — you stop making decisions from fear and start making them from knowledge.</p>
-              <p>This program empowers you to make decisions based on perspective and control, not reaction and hope.</p>
+              <p>This engagement empowers you to make decisions based on perspective and control, not reaction and hope.</p>
             </div>
             <div>
               <h4 class="mb-3">What we work on together in the financial cadence:</h4>

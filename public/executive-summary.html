@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executive Summary — My Profit Life</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    * { font-family: 'Inter', sans-serif; }
+
+    :root {
+      --navy:       #0D1B2A;
+      --navy-mid:   #1B2E44;
+      --teal:       #0A7E8C;
+      --teal-light: #12A3B4;
+      --gold:       #C8952A;
+      --gold-light: #E8B84B;
+      --light-bg:   #F7FAFC;
+    }
+
+    body { background: var(--light-bg); color: var(--navy); }
+
+    .cover-gradient {
+      background: linear-gradient(135deg, #0D1B2A 0%, #1B3A52 45%, #0A5E70 100%);
+    }
+
+    .section-divider {
+      height: 4px;
+      background: linear-gradient(90deg, var(--teal), var(--gold));
+      border-radius: 2px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(200,149,42,0.12);
+      color: var(--gold);
+      border: 1px solid rgba(200,149,42,0.25);
+      border-radius: 4px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .card-teal  { border-top: 3px solid var(--teal); }
+    .card-gold  { border-top: 3px solid var(--gold); }
+    .card-left-teal { border-left: 4px solid var(--teal); }
+
+    .phase-badge {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 15px;
+      flex-shrink: 0;
+      background: var(--teal); color: white;
+    }
+
+    .chip {
+      background: rgba(10,126,140,0.08);
+      border: 1px solid rgba(10,126,140,0.2);
+      color: var(--teal);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px; font-weight: 500;
+      display: inline-block; margin: 3px;
+    }
+
+    .toc-item {
+      padding: 8px 12px; border-radius: 8px;
+      font-size: 14px; color: #4A5568;
+      transition: background 0.15s;
+      text-decoration: none; display: flex; align-items: center; gap: 10px;
+    }
+    .toc-item:hover { background: rgba(10,126,140,0.08); color: var(--teal); }
+
+    .engine-dark {
+      background: linear-gradient(135deg, #0D1B2A, #1B3A52);
+      border-radius: 14px; padding: 28px; color: white;
+    }
+
+    .journey-stage {
+      display: grid;
+      grid-template-columns: 40px 1fr 1.5fr 1.5fr;
+      gap: 16px; align-items: start;
+      padding: 18px 24px;
+      border-bottom: 1px solid #F1F5F9;
+      transition: background 0.15s;
+    }
+    .journey-stage:hover { background: #FAFCFD; }
+
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white; }
+      .cover-gradient { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════ COVER ══════════════════ -->
+<div class="cover-gradient min-h-screen flex flex-col justify-between px-8 py-12 md:px-16 md:py-16 print:min-h-0">
+
+  <div class="flex items-center justify-between">
+    <div>
+      <div class="text-teal-300 text-xs tracking-widest uppercase font-semibold mb-1">Confidential · Internal Use · Team &amp; Key Partners</div>
+      <div class="text-white font-bold text-xl">My Profit Life</div>
+    </div>
+    <div class="text-right">
+      <div class="text-gray-400 text-sm">Executive Summary</div>
+      <div class="text-gray-500 text-xs mt-1">Version 1.0 · 2026</div>
+    </div>
+  </div>
+
+  <div class="flex-1 flex flex-col justify-center py-16 max-w-4xl">
+    <div class="inline-flex items-center gap-3 mb-8">
+      <div class="h-1 w-12 rounded" style="background: var(--teal-light);"></div>
+      <span class="text-teal-300 text-sm tracking-widest uppercase font-medium">Company Overview</span>
+    </div>
+    <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+      Balance is the goal.<br/>
+      <span style="color: var(--gold-light);">Systems are the answer.</span>
+    </h1>
+    <p class="text-gray-300 text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
+      One company. One mission. We install the systems, financial clarity, leadership capacity, and execution infrastructure that move service-based businesses from founder-led chaos to professionally managed, profitable, and exit-ready — without sacrificing the life the owner set out to build.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <div class="px-5 py-2 rounded-full text-sm font-semibold" style="background: rgba(10,126,140,0.25); color: #7DD3DA; border: 1px solid rgba(10,126,140,0.4);">Coaching &amp; Systems</div>
+      <div class="px-5 py-2 rounded-full text-sm font-semibold" style="background: rgba(255,255,255,0.08); color: #CBD5E0; border: 1px solid rgba(255,255,255,0.15);">Financial Clarity</div>
+      <div class="px-5 py-2 rounded-full text-sm font-semibold" style="background: rgba(255,255,255,0.08); color: #CBD5E0; border: 1px solid rgba(255,255,255,0.15);">Exit &amp; Value Planning</div>
+      <div class="px-5 py-2 rounded-full text-sm font-semibold" style="background: rgba(255,255,255,0.08); color: #CBD5E0; border: 1px solid rgba(255,255,255,0.15);">Managed Execution</div>
+      <div class="px-5 py-2 rounded-full text-sm font-semibold" style="background: rgba(255,255,255,0.08); color: #CBD5E0; border: 1px solid rgba(255,255,255,0.15);">AI Enablement</div>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 pt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div>
+      <div class="text-gray-500 text-xs uppercase tracking-wider mb-1">Principal</div>
+      <div class="text-white font-semibold text-sm">Corbin Cook, CEPA, ASBC</div>
+    </div>
+    <div>
+      <div class="text-gray-500 text-xs uppercase tracking-wider mb-1">Primary Market</div>
+      <div class="text-white font-semibold text-sm">Service SMBs · $1M–$10M</div>
+    </div>
+    <div>
+      <div class="text-gray-500 text-xs uppercase tracking-wider mb-1">Headquarters</div>
+      <div class="text-white font-semibold text-sm">Atlanta, GA · Nationwide</div>
+    </div>
+    <div>
+      <div class="text-gray-500 text-xs uppercase tracking-wider mb-1">NAICS</div>
+      <div class="text-teal-300 font-semibold text-sm">541618 · Management Consulting</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ MAIN ══════════════════ -->
+<div class="max-w-5xl mx-auto px-4 md:px-8 py-12 space-y-20">
+
+  <!-- TABLE OF CONTENTS -->
+  <section>
+    <div class="card p-8">
+      <h2 class="text-base font-bold text-gray-700 mb-5 flex items-center gap-3">
+        <i class="fas fa-list-ul" style="color: var(--teal);"></i> Contents
+      </h2>
+      <div class="grid md:grid-cols-2 gap-1">
+        <a href="#vision-mission"  class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">01</span> Vision &amp; Mission</a>
+        <a href="#who-we-are"      class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">02</span> Who We Are — One Company</a>
+        <a href="#philosophy"      class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">03</span> Core Philosophy</a>
+        <a href="#business-model"  class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">04</span> Business Model</a>
+        <a href="#services"        class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">05</span> Services &amp; Offerings</a>
+        <a href="#two-engine"      class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">06</span> The Two-Engine Model</a>
+        <a href="#mpl"             class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">07</span> My Profit Life — Program &amp; Community</a>
+        <a href="#client-journey"  class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">08</span> Client Journey Map</a>
+        <a href="#execution"       class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">09</span> Execution Infrastructure &amp; AI Keepers</a>
+        <a href="#principles"      class="toc-item"><span class="font-black text-sm w-7" style="color:var(--teal);">10</span> Brand Anchors &amp; Voice</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 01 — VISION & MISSION ══ -->
+  <section id="vision-mission">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">01 — Foundation</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Vision &amp; Mission</h2>
+    <p class="text-gray-500 text-sm mb-10">What we believe. Why we exist. Where we're going.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+
+      <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <div class="cover-gradient px-8 py-7">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:rgba(255,255,255,0.15);">
+              <i class="fas fa-eye text-white text-sm"></i>
+            </div>
+            <span class="text-teal-300 text-xs tracking-widest uppercase font-bold">Vision</span>
+          </div>
+          <p class="text-white text-xl font-bold leading-snug">
+            A world where small business owners don't have to choose between a thriving company and a fulfilling life.
+          </p>
+        </div>
+        <div class="bg-white px-8 py-5">
+          <p class="text-gray-500 text-sm leading-relaxed">
+            We envision service-based businesses that scale with structure, generate predictable profit, and are led by owners who are present, purposeful, and positioned for legacy — not just revenue.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <div class="px-8 py-7" style="background: linear-gradient(135deg, #7B4F12, #C8952A);">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:rgba(255,255,255,0.15);">
+              <i class="fas fa-bullseye text-white text-sm"></i>
+            </div>
+            <span class="text-yellow-100 text-xs tracking-widest uppercase font-bold">Mission</span>
+          </div>
+          <p class="text-white text-xl font-bold leading-snug">
+            To install the systems, leadership capacity, and financial clarity that move businesses from founder-led chaos to professionally managed growth.
+          </p>
+        </div>
+        <div class="bg-white px-8 py-5">
+          <p class="text-gray-500 text-sm leading-relaxed">
+            We do this through a fully integrated capability set — coaching, financial advisory, community, and execution — so that growth never comes at the cost of the owner's health, family, or freedom.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tagline callout -->
+    <div class="card px-8 py-8 text-center">
+      <div class="text-gray-400 text-xs uppercase tracking-widest mb-4">The Standard We Hold Ourselves To</div>
+      <p class="text-2xl md:text-3xl font-black max-w-2xl mx-auto leading-snug" style="color: var(--navy);">
+        We don't just advise the business.<br/>
+        <span style="color: var(--teal);">We build the machine that runs it.</span>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══ 02 — WHO WE ARE ══ -->
+  <section id="who-we-are">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">02 — Company</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Who We Are — One Company</h2>
+    <p class="text-gray-500 text-sm mb-10">One vision. One leadership team. One client outcome. Our coaching, financial advisory, managed execution, and AI enablement capabilities all operate under a single, unified company — My Profit Life.</p>
+
+    <!-- Single company statement -->
+    <div class="engine-dark mb-8">
+      <div class="text-teal-300 text-xs uppercase tracking-widest font-bold mb-4">Company Identity</div>
+      <p class="text-white text-lg md:text-xl font-bold leading-relaxed max-w-3xl">
+        We are a business growth and systems company. We coach owners, build profit architecture, install scalable infrastructure, plan exits, and provide the managed execution capacity that turns strategy into reality — all as one integrated team.
+      </p>
+      <div class="mt-6 pt-6 border-t border-white border-opacity-10 grid md:grid-cols-3 gap-6">
+        <div>
+          <div class="text-teal-300 text-xs uppercase tracking-wider font-bold mb-2">What We Install</div>
+          <p class="text-gray-300 text-sm">Systems, profit architecture, and leadership capacity through the Profit Acceleration System and Two-Engine Model.</p>
+        </div>
+        <div>
+          <div class="text-teal-300 text-xs uppercase tracking-wider font-bold mb-2">What We Protect</div>
+          <p class="text-gray-300 text-sm">Financial clarity and exit readiness — ensuring the numbers are decision-grade at every stage of growth.</p>
+        </div>
+        <div>
+          <div class="text-teal-300 text-xs uppercase tracking-wider font-bold mb-2">What We Enable</div>
+          <p class="text-gray-300 text-sm">Scalable execution through a trained, principled delivery team — so capacity grows without chaos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Integrated Capabilities -->
+    <div class="card p-8 mb-6">
+      <h4 class="font-bold text-gray-800 mb-2 text-center">Our Integrated Capability Set</h4>
+      <p class="text-center text-xs text-gray-400 mb-6">Six capabilities. One company. Deployed in sequence based on where the client is.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="rounded-xl p-5 text-center" style="background: rgba(10,126,140,0.06);">
+          <i class="fas fa-rocket text-2xl mb-3" style="color: var(--teal);"></i>
+          <div class="font-bold text-gray-800 text-sm mb-1">Growth Coaching</div>
+          <div class="text-xs text-gray-400">PAS installation, sequencing, and systems-led growth</div>
+        </div>
+        <div class="rounded-xl p-5 text-center" style="background: rgba(10,126,140,0.06);">
+          <i class="fas fa-chart-line text-2xl mb-3" style="color: var(--teal);"></i>
+          <div class="font-bold text-gray-800 text-sm mb-1">Financial Advisory</div>
+          <div class="text-xs text-gray-400">Bookkeeping, Virtual CFO, cash flow, and profit architecture</div>
+        </div>
+        <div class="rounded-xl p-5 text-center" style="background: rgba(10,126,140,0.06);">
+          <i class="fas fa-map-marked-alt text-2xl mb-3" style="color: var(--teal);"></i>
+          <div class="font-bold text-gray-800 text-sm mb-1">Strategy Intensives</div>
+          <div class="text-xs text-gray-400">Targeted 90-day execution plans for high-impact constraints</div>
+        </div>
+        <div class="rounded-xl p-5 text-center" style="background: rgba(200,149,42,0.07);">
+          <i class="fas fa-door-open text-2xl mb-3" style="color: var(--gold);"></i>
+          <div class="font-bold text-gray-800 text-sm mb-1">Exit &amp; Value Planning</div>
+          <div class="text-xs text-gray-400">Capitaliz 21-Step process, Value Builder, CEPA-certified</div>
+        </div>
+        <div class="rounded-xl p-5 text-center" style="background: rgba(200,149,42,0.07);">
+          <i class="fas fa-users-cog text-2xl mb-3" style="color: var(--gold);"></i>
+          <div class="font-bold text-gray-800 text-sm mb-1">Managed Execution</div>
+          <div class="text-xs text-gray-400">Delegation design, SOP infrastructure, offshore delivery team</div>
+        </div>
+        <div class="rounded-xl p-5 text-center" style="background: rgba(200,149,42,0.07);">
+          <i class="fas fa-robot text-2xl mb-3" style="color: var(--gold);"></i>
+          <div class="font-bold text-gray-800 text-sm mb-1">AI Enablement</div>
+          <div class="text-xs text-gray-400">AI Keeper team providing governance, oversight, and the human layer</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How we're structured -->
+    <div class="card p-7 mb-6">
+      <h4 class="font-bold text-gray-800 mb-5 flex items-center gap-2">
+        <i class="fas fa-layer-group" style="color:var(--teal);"></i> How We're Structured Internally
+      </h4>
+      <p class="text-sm text-gray-500 mb-6">
+        While we operate as one company, our work is organized around three functional areas — each serving the same client outcome from a different vantage point. Clients experience this as a seamless, integrated engagement, not separate vendors.
+      </p>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="rounded-xl p-5 border border-gray-100">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(10,126,140,0.1);">
+              <i class="fas fa-compass text-sm" style="color:var(--teal);"></i>
+            </div>
+            <div class="font-bold text-gray-800 text-sm">Coaching &amp; Systems</div>
+          </div>
+          <p class="text-xs text-gray-500">The PAS, Two-Engine Model, community, and principle-centered leadership curriculum. The philosophy and programming engine of the company.</p>
+        </div>
+        <div class="rounded-xl p-5 border border-gray-100">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(10,126,140,0.1);">
+              <i class="fas fa-chart-pie text-sm" style="color:var(--teal);"></i>
+            </div>
+            <div class="font-bold text-gray-800 text-sm">Financial &amp; Advisory</div>
+          </div>
+          <p class="text-xs text-gray-500">Bookkeeping, Virtual CFO, exit planning, and value-building. The financial backbone that ensures every strategy is grounded in decision-grade numbers.</p>
+        </div>
+        <div class="rounded-xl p-5 border border-gray-100">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(200,149,42,0.1);">
+              <i class="fas fa-users-cog text-sm" style="color:var(--gold);"></i>
+            </div>
+            <div class="font-bold text-gray-800 text-sm">Execution &amp; Delivery</div>
+          </div>
+          <p class="text-xs text-gray-500">Managed offshore team, delegation design, SOP infrastructure, AI Keepers. The capacity engine that installs and sustains what strategy defines.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team line -->
+    <div class="rounded-2xl border-l-4 px-7 py-5 bg-white shadow-sm" style="border-color: var(--gold);">
+      <div class="text-xs font-bold uppercase tracking-wider mb-2" style="color: var(--gold);">Our Delivery Team</div>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Much of our execution capacity is supported by a long-standing leadership and delivery team that has been built and trained over time — allowing clients to scale with consistency, accountability, and culture instead of turnover.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══ 03 — PHILOSOPHY ══ -->
+  <section id="philosophy">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">03 — Philosophy</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Core Philosophy</h2>
+    <p class="text-gray-500 text-sm mb-10">The beliefs that govern every decision, recommendation, and system we build.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card card-left-teal p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background: rgba(10,126,140,0.1);">
+            <i class="fas fa-cogs" style="color:var(--teal); font-size:14px;"></i>
+          </div>
+          <h4 class="font-bold text-gray-800">Systems &amp; Process</h4>
+        </div>
+        <ul class="space-y-2">
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>Systems exist to remove judgment, not add bureaucracy.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>If a process only works when you're there, it isn't a process.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>Predictability is the real indicator of scalability.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>The business should get stronger as it gets bigger — not louder.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>Growth that increases friction is a signal, not success.</li>
+        </ul>
+      </div>
+
+      <div class="card p-6" style="border-left: 4px solid var(--gold);">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background: rgba(200,149,42,0.1);">
+            <i class="fas fa-brain" style="color:var(--gold); font-size:14px;"></i>
+          </div>
+          <h4 class="font-bold text-gray-800">Leadership &amp; Capacity</h4>
+        </div>
+        <ul class="space-y-2">
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>Leadership fatigue is usually structural, not personal.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>A leader should make fewer decisions as the business grows, not more.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>Burnout is often the cost of missing systems.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>If everything needs you, nothing is actually led.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>You don't scale past the limits of the business — you scale past the limits of the leader.</li>
+        </ul>
+      </div>
+
+      <div class="card card-left-teal p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background: rgba(10,126,140,0.1);">
+            <i class="fas fa-chess" style="color:var(--teal); font-size:14px;"></i>
+          </div>
+          <h4 class="font-bold text-gray-800">Strategy &amp; Sequencing</h4>
+        </div>
+        <ul class="space-y-2">
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>Strategy is deciding what not to fix yet.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>Sequence matters more than speed.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>Clarity reduces effort faster than motivation ever will.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>The right decision reduces future decisions.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--teal);"></i>Direction beats motion every time.</li>
+        </ul>
+      </div>
+
+      <div class="card p-6" style="border-left: 4px solid var(--gold);">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background: rgba(200,149,42,0.1);">
+            <i class="fas fa-dollar-sign" style="color:var(--gold); font-size:14px;"></i>
+          </div>
+          <h4 class="font-bold text-gray-800">Profit, Control &amp; Value</h4>
+        </div>
+        <ul class="space-y-2">
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>Profit is the reward for alignment, not volume.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>A business you can't step away from isn't controlled — it's managed by presence.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>Value is created when systems outlast effort.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>Optionality is built long before an exit is planned.</li>
+          <li class="text-sm text-gray-600 flex items-start gap-2"><i class="fas fa-circle mt-1.5" style="font-size:5px;color:var(--gold);"></i>Businesses don't need more hustle — they need fewer unknowns.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 04 — BUSINESS MODEL ══ -->
+  <section id="business-model">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">04 — Model</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Business Model</h2>
+    <p class="text-gray-500 text-sm mb-10">How we engage, create value, and build lasting client relationships — across every stage of growth.</p>
+
+    <!-- Methodology -->
+    <div class="grid md:grid-cols-4 gap-5 mb-10">
+      <div class="card card-teal p-6 text-center">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4" style="background: rgba(10,126,140,0.1);">
+          <i class="fas fa-search" style="color:var(--teal); font-size:18px;"></i>
+        </div>
+        <div class="font-black text-gray-900 mb-1">Diagnose</div>
+        <p class="text-xs text-gray-500">Identify the real constraint before any prescription. Nothing skips this step.</p>
+      </div>
+      <div class="card card-teal p-6 text-center">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4" style="background: rgba(10,126,140,0.1);">
+          <i class="fas fa-drafting-compass" style="color:var(--teal); font-size:18px;"></i>
+        </div>
+        <div class="font-black text-gray-900 mb-1">Design</div>
+        <p class="text-xs text-gray-500">Translate clarity into a sequenced plan — priorities, systems, and milestones.</p>
+      </div>
+      <div class="card card-teal p-6 text-center">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4" style="background: rgba(10,126,140,0.1);">
+          <i class="fas fa-wrench" style="color:var(--teal); font-size:18px;"></i>
+        </div>
+        <div class="font-black text-gray-900 mb-1">Install</div>
+        <p class="text-xs text-gray-500">Build and deploy systems, infrastructure, and execution capability in sequence.</p>
+      </div>
+      <div class="card card-gold p-6 text-center">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-4" style="background: rgba(200,149,42,0.1);">
+          <i class="fas fa-sync-alt" style="color:var(--gold); font-size:18px;"></i>
+        </div>
+        <div class="font-black text-gray-900 mb-1">Optimize</div>
+        <p class="text-xs text-gray-500">Continuously strengthen systems, deepen leadership, and build exit-ready value.</p>
+      </div>
+    </div>
+
+    <!-- Engagement types -->
+    <div class="card overflow-hidden">
+      <div class="px-8 py-4 border-b border-gray-100">
+        <h4 class="font-bold text-gray-800">Engagement Types &amp; Revenue Streams</h4>
+        <p class="text-xs text-gray-400 mt-1">All engagements delivered by one team — sequenced by where the client is, not by which "division" they're in.</p>
+      </div>
+      <div class="divide-y divide-gray-50">
+
+        <div class="px-8 py-5 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex items-center gap-4 min-w-0 md:w-56">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(10,126,140,0.1);">
+              <i class="fas fa-stethoscope" style="color:var(--teal);font-size:13px;"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-800 text-sm">Paid Diagnostic</div>
+              <div class="text-xs text-gray-400">One-time · Entry Point</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 flex-1">Constraint identification before any prescription. The front door to every engagement — diagnose first, always.</div>
+        </div>
+
+        <div class="px-8 py-5 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex items-center gap-4 min-w-0 md:w-56">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(10,126,140,0.1);">
+              <i class="fas fa-map-marked-alt" style="color:var(--teal);font-size:13px;"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-800 text-sm">Strategy Intensive</div>
+              <div class="text-xs text-gray-400">Project-based · 2–4 Sessions</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 flex-1">90-day execution roadmap targeting the single highest-impact constraint. One-page strategy map + follow-up plan.</div>
+        </div>
+
+        <div class="px-8 py-5 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex items-center gap-4 min-w-0 md:w-56">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(10,126,140,0.1);">
+              <i class="fas fa-rocket" style="color:var(--teal);font-size:13px;"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-800 text-sm">Growth Coaching + Community</div>
+              <div class="text-xs text-gray-400">Ongoing · Kajabi Platform</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 flex-1">PAS + Two-Engine installation. 6-month foundation, then continuous optimization. A community of principle-centered owners building profitable, balanced businesses.</div>
+        </div>
+
+        <div class="px-8 py-5 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex items-center gap-4 min-w-0 md:w-56">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(10,126,140,0.1);">
+              <i class="fas fa-book-open" style="color:var(--teal);font-size:13px;"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-800 text-sm">Bookkeeping Services</div>
+              <div class="text-xs text-gray-400">Monthly Retainer · 4 Tiers</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 flex-1">Decision-grade financials: Essential Compliance → Growth Reporting → Strategic + Value Builder → Advanced Cash Flow Advisory (Relay).</div>
+        </div>
+
+        <div class="px-8 py-5 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex items-center gap-4 min-w-0 md:w-56">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(10,126,140,0.1);">
+              <i class="fas fa-chart-pie" style="color:var(--teal);font-size:13px;"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-800 text-sm">Virtual CFO</div>
+              <div class="text-xs text-gray-400">Monthly Retainer · Limited</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 flex-1">Strategic Financial Partnership. Embedded advisory at the executive level — not a reporting function. PAS sprints, Value Builder, CEPA guidance.</div>
+        </div>
+
+        <div class="px-8 py-5 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex items-center gap-4 min-w-0 md:w-56">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(200,149,42,0.1);">
+              <i class="fas fa-door-open" style="color:var(--gold);font-size:13px;"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-800 text-sm">Exit Planning</div>
+              <div class="text-xs text-gray-400">12–24 Month Engagement</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 flex-1">Capitaliz 21-Step Sell-Ready Process. CEPA-certified. Value Builder System + Freedom Score™ + PREScore™. Sell on your terms.</div>
+        </div>
+
+        <div class="px-8 py-5 flex flex-col md:flex-row md:items-center gap-4">
+          <div class="flex items-center gap-4 min-w-0 md:w-56">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(200,149,42,0.1);">
+              <i class="fas fa-users-cog" style="color:var(--gold);font-size:13px;"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-800 text-sm">Managed Execution</div>
+              <div class="text-xs text-gray-400">Monthly Retainer · Tiered</div>
+            </div>
+          </div>
+          <div class="text-sm text-gray-500 flex-1">Workforce strategy, delegation design, leadership training, SOP infrastructure, and managed offshore delivery — including AI Keeper capability.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 05 — SERVICES ══ -->
+  <section id="services">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">05 — Services</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Services &amp; Offerings</h2>
+    <p class="text-gray-500 text-sm mb-10">Every service solves a specific constraint in a specific sequence. We don't offer programs — we install solutions.</p>
+
+    <div class="grid md:grid-cols-3 gap-5 mb-6">
+
+      <div class="card card-teal p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(10,126,140,0.1);">
+          <i class="fas fa-stethoscope" style="color:var(--teal);"></i>
+        </div>
+        <h4 class="font-bold text-gray-800 mb-1">Paid Diagnostic</h4>
+        <p class="text-xs text-gray-500 mb-4">Constraint identification before any prescription. Business vs. Leadership vs. Profit vs. Lead Flow.</p>
+        <div class="space-y-1 text-xs text-gray-500">
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Constraint mapping</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Root cause analysis</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Recommended next step</div>
+        </div>
+      </div>
+
+      <div class="card card-teal p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(10,126,140,0.1);">
+          <i class="fas fa-map-marked-alt" style="color:var(--teal);"></i>
+        </div>
+        <h4 class="font-bold text-gray-800 mb-1">Strategy Intensive</h4>
+        <p class="text-xs text-gray-500 mb-4">1:1 deep-dive. 2–4 sessions. One high-impact problem. Surgical, not subscriptive.</p>
+        <div class="space-y-1 text-xs text-gray-500">
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Root cause + opportunity mapping</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> 90-day execution roadmap</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> One-page strategy map + follow-up plan</div>
+        </div>
+      </div>
+
+      <div class="card card-teal p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(10,126,140,0.1);">
+          <i class="fas fa-rocket" style="color:var(--teal);"></i>
+        </div>
+        <h4 class="font-bold text-gray-800 mb-1">Growth Coaching + Community</h4>
+        <p class="text-xs text-gray-500 mb-4">PAS + Two-Engine installation. 6-month foundation; indefinite optimization through the My Profit Life community on Kajabi.</p>
+        <div class="space-y-1 text-xs text-gray-500">
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Full PAS implementation</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Two-Engine + PC Score development</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Ongoing community + accountability</div>
+        </div>
+      </div>
+
+      <div class="card card-teal p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(10,126,140,0.1);">
+          <i class="fas fa-book-open" style="color:var(--teal);"></i>
+        </div>
+        <h4 class="font-bold text-gray-800 mb-1">Bookkeeping — 4 Tiers</h4>
+        <p class="text-xs text-gray-500 mb-4">Decision-grade financials at every stage. QuickBooks required.</p>
+        <div class="space-y-1 text-xs text-gray-500">
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Essential Compliance</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Growth Bookkeeping + Reporting</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Strategic + Value Builder</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Advanced Cash Flow Advisory (Relay)</div>
+        </div>
+      </div>
+
+      <div class="card card-teal p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(10,126,140,0.1);">
+          <i class="fas fa-chart-pie" style="color:var(--teal);"></i>
+        </div>
+        <h4 class="font-bold text-gray-800 mb-1">Virtual CFO</h4>
+        <p class="text-xs text-gray-500 mb-4">Strategic financial partnership. Limited capacity. For $1M–$10M businesses.</p>
+        <div class="space-y-1 text-xs text-gray-500">
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Executive-level financial voice</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> PAS sprints + profitability tracking</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--teal);"></i> Quarterly Strategy Intensives</div>
+        </div>
+      </div>
+
+      <div class="card card-gold p-6">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(200,149,42,0.1);">
+          <i class="fas fa-door-open" style="color:var(--gold);"></i>
+        </div>
+        <h4 class="font-bold text-gray-800 mb-1">Exit Planning</h4>
+        <p class="text-xs text-gray-500 mb-4">Capitaliz 21-Step Sell-Ready Process. CEPA-certified. 12–24 months.</p>
+        <div class="space-y-1 text-xs text-gray-500">
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--gold);"></i> Value Builder Score™ + 8 drivers</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--gold);"></i> Freedom Score™ + PREScore™</div>
+          <div class="flex items-center gap-2"><i class="fas fa-check" style="color:var(--gold);"></i> Exit on your terms</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Managed execution + AI Keepers summary card -->
+    <div class="card card-gold p-7">
+      <div class="flex items-start gap-5">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(200,149,42,0.1);">
+          <i class="fas fa-users-cog text-xl" style="color:var(--gold);"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-800 text-lg mb-1">Managed Execution + AI Keepers</h4>
+          <p class="text-sm text-gray-500 mb-4">Our execution infrastructure gives clients leverage without chaos. Workforce strategy, delegation design, SOP development, remote team leadership training, and ongoing accountability — delivered through a trained, principled team that includes our AI Keeper specialists.</p>
+          <div class="grid md:grid-cols-3 gap-3">
+            <div class="rounded-xl p-4 text-center" style="background:rgba(200,149,42,0.06);">
+              <i class="fas fa-sitemap mb-2" style="color:var(--gold);"></i>
+              <div class="text-xs font-bold text-gray-700">Role &amp; Delegation Design</div>
+            </div>
+            <div class="rounded-xl p-4 text-center" style="background:rgba(200,149,42,0.06);">
+              <i class="fas fa-book mb-2" style="color:var(--gold);"></i>
+              <div class="text-xs font-bold text-gray-700">SOP Infrastructure</div>
+            </div>
+            <div class="rounded-xl p-4 text-center" style="background:rgba(200,149,42,0.06);">
+              <i class="fas fa-robot mb-2" style="color:var(--gold);"></i>
+              <div class="text-xs font-bold text-gray-700">AI Keeper Governance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 06 — TWO-ENGINE MODEL ══ -->
+  <section id="two-engine">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">06 — Framework</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">The Two-Engine Model</h2>
+    <p class="text-gray-500 text-sm mb-10">Real scale only happens when both engines rise together. One without the other creates an invisible ceiling — and eventually, a breakdown.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+
+      <div class="engine-dark">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:var(--teal);">
+            <i class="fas fa-cogs text-white text-lg"></i>
+          </div>
+          <div>
+            <div class="text-teal-300 text-xs uppercase tracking-wider font-bold">Engine 01</div>
+            <h3 class="text-white text-xl font-black">Business Engine</h3>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm mb-5">The operational architecture that makes the business run without depending on the owner's constant judgment.</p>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3">
+            <i class="fas fa-check-circle text-teal-400 mt-0.5 flex-shrink-0"></i>
+            <div>
+              <div class="text-white text-sm font-semibold">Strategy &amp; Operating Systems</div>
+              <div class="text-gray-400 text-xs">PAS installation, process architecture, decision frameworks</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-check-circle text-teal-400 mt-0.5 flex-shrink-0"></i>
+            <div>
+              <div class="text-white text-sm font-semibold">Scalable Growth Sequencing</div>
+              <div class="text-gray-400 text-xs">MDP, offer design, lead flow, alliances — in the right order</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-check-circle text-teal-400 mt-0.5 flex-shrink-0"></i>
+            <div>
+              <div class="text-white text-sm font-semibold">Margin &amp; Profit Architecture</div>
+              <div class="text-gray-400 text-xs">Financial clarity, pricing strategy, profit accountability</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-7" style="border: 2px solid var(--gold);">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center" style="background:var(--gold);">
+            <i class="fas fa-brain text-white text-lg"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider mb-0.5" style="color:var(--gold);">Engine 02</div>
+            <h3 class="text-gray-800 text-xl font-black">Leadership Engine</h3>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm mb-5">The owner's capacity to lead at the altitude the business requires — without burning out or becoming the bottleneck.</p>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3">
+            <i class="fas fa-check-circle mt-0.5 flex-shrink-0" style="color:var(--gold);"></i>
+            <div>
+              <div class="text-gray-800 text-sm font-semibold">PC Score — Performance Capacity</div>
+              <div class="text-gray-500 text-xs">Measured capacity to absorb complexity and make sound decisions</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-check-circle mt-0.5 flex-shrink-0" style="color:var(--gold);"></i>
+            <div>
+              <div class="text-gray-800 text-sm font-semibold">Decision Load &amp; Clarity</div>
+              <div class="text-gray-500 text-xs">Reducing decision fatigue through role design and structure</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-check-circle mt-0.5 flex-shrink-0" style="color:var(--gold);"></i>
+            <div>
+              <div class="text-gray-800 text-sm font-semibold">Burnout Resistance · 7 Habits Alignment</div>
+              <div class="text-gray-500 text-xs">Principle-centered operating system — Private Victory → Public Victory → Renewal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="engine-dark text-center py-8 px-6">
+      <div class="text-teal-300 text-xs uppercase tracking-widest font-bold mb-3">The Linkage Principle</div>
+      <p class="text-white text-lg md:text-xl font-bold max-w-2xl mx-auto">
+        When business demand exceeds leadership capacity, the founder becomes the bottleneck —
+        <span style="color:var(--gold-light);"> regardless of revenue.</span>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══ 07 — MY PROFIT LIFE ══ -->
+  <section id="mpl">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">07 — Program &amp; Community</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">My Profit Life — Program &amp; Community</h2>
+    <p class="text-gray-500 text-sm mb-4">The coaching, systems, and community platform at the heart of what we do.</p>
+
+    <div class="rounded-xl border border-teal-200 bg-teal-50 px-6 py-5 mb-10">
+      <p class="text-sm text-teal-800 leading-relaxed">
+        <strong>6 months builds the foundation</strong> — and the engagement continues indefinitely. My Profit Life is not a program with a finish line. It is a <strong>community of business owners</strong> who believe being profitable means living a balanced life that looks beyond the income statement. The community lives in Kajabi and delivers the full transformation: scaling the business <em>and</em> becoming a principle-centered leader capable of sustaining the pressures of massive success — without sacrificing family, health, or legacy — as the world transitions into an AI-driven era.
+      </p>
+    </div>
+
+    <!-- PAS Steps -->
+    <h3 class="font-bold text-gray-700 mb-6">The Profit Acceleration System (PAS) — Business Engine Installation</h3>
+    <div class="space-y-4 mb-10">
+
+      <div class="flex gap-5 items-start">
+        <div class="phase-badge">1</div>
+        <div class="card p-5 flex-1">
+          <div class="font-bold text-gray-800 mb-1">ASSESS — Diagnostic Clarity</div>
+          <p class="text-sm text-gray-500">Run the constraint diagnostic. Identify where the business is truly being held back: profit mechanics, positioning, systems, capacity, or lead flow. Nothing is prescribed until the constraint is named.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5 items-start">
+        <div class="phase-badge">2</div>
+        <div class="card p-5 flex-1">
+          <div class="font-bold text-gray-800 mb-1">SCALING FOUNDATION</div>
+          <p class="text-sm text-gray-500 mb-3">Build the base everything else rests on.</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="chip">Financial Foundation (numbers you trust)</span>
+            <span class="chip">Profit Architecture</span>
+            <span class="chip">Market Dominating Position</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 items-start">
+        <div class="phase-badge">3</div>
+        <div class="card p-5 flex-1">
+          <div class="font-bold text-gray-800 mb-1">BUILD THE MACHINE</div>
+          <p class="text-sm text-gray-500 mb-3">Install the revenue architecture and go-to-market engine.</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="chip">Offer Architecture + Bundling</span>
+            <span class="chip">Upsell / Cross-sell / Downsell</span>
+            <span class="chip">Pricing Strategy</span>
+            <span class="chip">Drip Campaigns (Nurture + Conversion)</span>
+            <span class="chip">Digital Markets</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-5 items-start">
+        <div class="phase-badge">4</div>
+        <div class="card p-5 flex-1">
+          <div class="font-bold text-gray-800 mb-1">OPTIMIZE LEAD FLOW</div>
+          <p class="text-sm text-gray-500 mb-3">Scale the front end with consistent, leveraged acquisition.</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="chip">Primary Lead Channels</span>
+            <span class="chip">Strategic Alliances + Joint Ventures</span>
+            <span class="chip">Referral Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community -->
+    <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+      <div class="px-8 py-5 cover-gradient">
+        <div class="text-teal-300 text-xs uppercase tracking-widest font-bold mb-1">The Community</div>
+        <h4 class="text-white text-xl font-black">My Profit Life on Kajabi</h4>
+      </div>
+      <div class="bg-white px-8 py-6 grid md:grid-cols-3 gap-6">
+        <div>
+          <div class="font-semibold text-gray-800 text-sm mb-2 flex items-center gap-2">
+            <i class="fas fa-users text-teal-500 text-xs"></i> A Community of Owners
+          </div>
+          <p class="text-xs text-gray-500">Business owners who define profitability as a balanced life — beyond the income statement. Shared frameworks, accountability, and lasting growth.</p>
+        </div>
+        <div>
+          <div class="font-semibold text-gray-800 text-sm mb-2 flex items-center gap-2">
+            <i class="fas fa-infinity text-teal-500 text-xs"></i> Ongoing by Design
+          </div>
+          <p class="text-xs text-gray-500">6 months builds the foundation. The community continues to deepen systems, strengthen infrastructure, and develop leadership capacity — indefinitely.</p>
+        </div>
+        <div>
+          <div class="font-semibold text-gray-800 text-sm mb-2 flex items-center gap-2">
+            <i class="fas fa-compass text-teal-500 text-xs"></i> Principle-Centered Leadership
+          </div>
+          <p class="text-xs text-gray-500">Members become leaders worth following — present parents, great partners, and sustainable executives — as the world transitions into an AI-driven era.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 08 — CLIENT JOURNEY ══ -->
+  <section id="client-journey">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">08 — Journey</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Client Journey Map</h2>
+    <p class="text-gray-500 text-sm mb-10">Where the client is → what they need → what we deploy. Every stage has a milestone, a risk, and a clear next step.</p>
+
+    <div class="card overflow-hidden mb-8">
+      <!-- Header -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-3 border-b border-gray-100" style="background:#F7FAFC;">
+        <div class="col-span-1 text-xs text-gray-400 font-bold uppercase tracking-wider">#</div>
+        <div class="col-span-3 text-xs text-gray-400 font-bold uppercase tracking-wider">Stage</div>
+        <div class="col-span-4 text-xs text-gray-400 font-bold uppercase tracking-wider">Owner's Reality</div>
+        <div class="col-span-4 text-xs text-gray-400 font-bold uppercase tracking-wider">What We Deploy</div>
+      </div>
+
+      <!-- Stage 1 -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+        <div class="col-span-1"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--teal);">1</div></div>
+        <div class="col-span-3"><div class="font-bold text-gray-800 text-sm">Grow</div><div class="text-xs text-gray-400 mt-0.5">Focus: Cash Flow</div></div>
+        <div class="col-span-4 text-xs text-gray-500">Cash is unpredictable. Decisions are reactive. Flying blind on financials.</div>
+        <div class="col-span-4 text-xs text-gray-600">Bookkeeping setup · Cash flow clarity · Decision-grade reporting · PAS Assess</div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+        <div class="col-span-1"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--teal);">2</div></div>
+        <div class="col-span-3"><div class="font-bold text-gray-800 text-sm">Entrepreneurial Managed</div><div class="text-xs text-gray-400 mt-0.5">Focus: Gut Instinct</div></div>
+        <div class="col-span-4 text-xs text-gray-500">Revenue is growing but decisions are owner-dependent. No systems yet. Echo-chamber inputs.</div>
+        <div class="col-span-4 text-xs text-gray-600">Paid Diagnostic · Strategy Intensive · MDP development · Constraint identification</div>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+        <div class="col-span-1"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--teal);">3</div></div>
+        <div class="col-span-3"><div class="font-bold text-gray-800 text-sm">Develop Leadership</div><div class="text-xs text-gray-400 mt-0.5">Focus: Capacity</div></div>
+        <div class="col-span-4 text-xs text-gray-500">Owner stops being the only executive brain. Team begins carrying outcomes, not personalities.</div>
+        <div class="col-span-4 text-xs text-gray-600">Leadership Engine · PC Score baseline · 7 Habits curriculum · Role + delegation design · Managed execution integration begins</div>
+      </div>
+
+      <!-- Stage 4 -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+        <div class="col-span-1"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--teal);">4</div></div>
+        <div class="col-span-3"><div class="font-bold text-gray-800 text-sm">Professionally Managed</div><div class="text-xs text-gray-400 mt-0.5">Focus: Scalability + Profit</div></div>
+        <div class="col-span-4 text-xs text-gray-500">The business runs with the owner, not around them. Systems absorb complexity. Profit is predictable.</div>
+        <div class="col-span-4 text-xs text-gray-600">Full PAS execution · AI Keeper activation · Virtual CFO engagement · Community deepening · Profit Acceleration sprint</div>
+      </div>
+
+      <!-- Stage 5 -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+        <div class="col-span-1"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--teal);">5</div></div>
+        <div class="col-span-3"><div class="font-bold text-gray-800 text-sm">Optimize Infrastructure</div><div class="text-xs text-gray-400 mt-0.5">Focus: Leverage + Value</div></div>
+        <div class="col-span-4 text-xs text-gray-500">Systems are working. Now optimize, deepen delegation, and build enterprise value intentionally.</div>
+        <div class="col-span-4 text-xs text-gray-600">Value Builder System · AI-enabled operations · Capacity scaling · Advanced cash flow advisory</div>
+      </div>
+
+      <!-- Stage 6 -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-5 border-b border-gray-50 hover:bg-gray-50 transition-colors">
+        <div class="col-span-1"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:var(--gold);">6</div></div>
+        <div class="col-span-3"><div class="font-bold text-gray-800 text-sm">Exit the Business</div><div class="text-xs text-gray-400 mt-0.5">Focus: Maximize Multiple</div></div>
+        <div class="col-span-4 text-xs text-gray-500">Owner is positioned to sell, transition, or exit on their terms — with maximum value and full clarity.</div>
+        <div class="col-span-4 text-xs text-gray-600">Capitaliz 21-Step Exit Process · CEPA engagement · Freedom Score™ · PREScore™ · Transition team coordination</div>
+      </div>
+
+      <!-- Risk Checkpoint -->
+      <div class="grid grid-cols-12 gap-2 px-6 py-5" style="background:rgba(229,62,62,0.04); border-top: 2px solid rgba(229,62,62,0.2);">
+        <div class="col-span-1">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background:#E53E3E;">
+            <i class="fas fa-exclamation text-xs"></i>
+          </div>
+        </div>
+        <div class="col-span-3"><div class="font-bold text-red-700 text-sm">Risk Checkpoint</div><div class="text-xs text-red-400 mt-0.5">"Successfully Unsuccessful"</div></div>
+        <div class="col-span-4 text-xs text-red-600">The business grew — but at the cost of family, health, or legacy. Revenue without alignment.</div>
+        <div class="col-span-4 text-xs text-gray-600">This risk can emerge at any stage. Our Leadership Engine and community exist specifically to prevent this outcome.</div>
+      </div>
+    </div>
+
+    <!-- Horizontal flow diagram -->
+    <div class="card p-6 overflow-x-auto">
+      <div class="text-xs text-gray-400 uppercase tracking-wider font-bold mb-6 text-center">Journey at a Glance</div>
+      <div class="flex items-end justify-start md:justify-center gap-1 min-w-max mx-auto">
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex flex-col items-center justify-center text-white mx-auto" style="background:var(--teal);">
+            <i class="fas fa-search text-sm mb-1"></i>
+            <div class="text-xs font-bold leading-tight">Diagnose</div>
+          </div>
+          <div class="text-xs text-gray-400 mt-2 w-20">Paid Diagnostic</div>
+        </div>
+        <i class="fas fa-arrow-right text-gray-300 mx-2 mb-8"></i>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex flex-col items-center justify-center text-white mx-auto" style="background:var(--teal);">
+            <i class="fas fa-map text-sm mb-1"></i>
+            <div class="text-xs font-bold leading-tight">Design</div>
+          </div>
+          <div class="text-xs text-gray-400 mt-2 w-20">Strategy Intensive</div>
+        </div>
+        <i class="fas fa-arrow-right text-gray-300 mx-2 mb-8"></i>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex flex-col items-center justify-center text-white mx-auto" style="background:var(--teal);">
+            <i class="fas fa-wrench text-sm mb-1"></i>
+            <div class="text-xs font-bold leading-tight">Install</div>
+          </div>
+          <div class="text-xs text-gray-400 mt-2 w-20">PAS + Two-Engine</div>
+        </div>
+        <i class="fas fa-arrow-right text-gray-300 mx-2 mb-8"></i>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex flex-col items-center justify-center text-white mx-auto" style="background:var(--teal);">
+            <i class="fas fa-chart-line text-sm mb-1"></i>
+            <div class="text-xs font-bold leading-tight">Scale</div>
+          </div>
+          <div class="text-xs text-gray-400 mt-2 w-20">Community + Coaching</div>
+        </div>
+        <i class="fas fa-arrow-right text-gray-300 mx-2 mb-8"></i>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex flex-col items-center justify-center text-white mx-auto" style="background:var(--navy-mid);">
+            <i class="fas fa-building text-sm mb-1"></i>
+            <div class="text-xs font-bold leading-tight">Value</div>
+          </div>
+          <div class="text-xs text-gray-400 mt-2 w-20">Value Builder + CFO</div>
+        </div>
+        <i class="fas fa-arrow-right text-gray-300 mx-2 mb-8"></i>
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-full flex flex-col items-center justify-center text-white mx-auto" style="background:var(--gold);">
+            <i class="fas fa-flag-checkered text-sm mb-1"></i>
+            <div class="text-xs font-bold leading-tight">Exit</div>
+          </div>
+          <div class="text-xs text-gray-400 mt-2 w-20">Capitaliz Process</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 09 — EXECUTION + AI KEEPERS ══ -->
+  <section id="execution">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">09 — Execution Infrastructure</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Execution Infrastructure &amp; AI Keepers</h2>
+    <p class="text-gray-500 text-sm mb-10">The scalable execution layer that gives clients leverage without losing control, consistency, or culture — including our AI Keeper capability for human-governed AI operations.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+
+      <div class="card p-7" style="border-left: 4px solid var(--teal);">
+        <h4 class="font-bold text-gray-800 text-lg mb-4">Optimizing a Team for Scalability</h4>
+        <p class="text-sm text-gray-500 mb-5">We design execution capacity as a system — not a headcount. Every role, process, and tool is built to carry outcomes, not depend on personalities.</p>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <i class="fas fa-sitemap mt-0.5 flex-shrink-0" style="color:var(--teal);"></i>
+            <div>
+              <div class="text-sm font-bold text-gray-800">Outcomes-Based Role Design</div>
+              <div class="text-xs text-gray-500">Roles are built around results, not tasks. Delegation becomes clear and transferable.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-book mt-0.5 flex-shrink-0" style="color:var(--teal);"></i>
+            <div>
+              <div class="text-sm font-bold text-gray-800">SOP Infrastructure</div>
+              <div class="text-xs text-gray-500">Documented systems that carry processes, not just people. The business outlasts any individual.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fas fa-graduation-cap mt-0.5 flex-shrink-0" style="color:var(--teal);"></i>
+            <div>
+              <div class="text-sm font-bold text-gray-800">Remote Team Leadership Training</div>
+              <div class="text-xs text-gray-500">Accountability frameworks, performance culture, and communication structure for distributed teams.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <div class="px-7 py-5 cover-gradient">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background:var(--teal);">
+              <i class="fas fa-robot text-white text-sm"></i>
+            </div>
+            <div>
+              <div class="text-teal-300 text-xs uppercase tracking-widest font-bold">Internal Capability</div>
+              <h4 class="text-white text-lg font-black">AI Keepers</h4>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white px-7 py-6">
+          <p class="text-sm text-gray-600 leading-relaxed mb-5">
+            A trained group within our delivery team — developed as <strong>AI Enablement Specialists</strong> who provide the human oversight, gatekeeping, and governance layer for client AI systems. Built for the world our clients are stepping into.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <i class="fas fa-shield-alt mt-0.5 flex-shrink-0 text-teal-500 text-xs"></i>
+              <div>
+                <div class="text-sm font-semibold text-gray-700">Oversight &amp; Gatekeeping</div>
+                <div class="text-xs text-gray-400">Human review of AI outputs — quality control, accuracy, and client-specific judgment</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-plug mt-0.5 flex-shrink-0 text-teal-500 text-xs"></i>
+              <div>
+                <div class="text-sm font-semibold text-gray-700">AI Enablement Support</div>
+                <div class="text-xs text-gray-400">Prompt management, workflow integration, and AI tooling administration</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fas fa-heart mt-0.5 flex-shrink-0 text-teal-500 text-xs"></i>
+              <div>
+                <div class="text-sm font-semibold text-gray-700">The Human Element</div>
+                <div class="text-xs text-gray-400">AI handles volume; humans maintain governance. Context, nuance, and judgment stay with the team.</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 rounded-xl p-4 border border-teal-100" style="background:rgba(10,126,140,0.05);">
+            <div class="text-xs text-teal-700 leading-relaxed">
+              AI Keepers are a scalability multiplier — ensuring that as clients integrate AI into their operations, the human governance layer is already in place and trained.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ 10 — BRAND ANCHORS ══ -->
+  <section id="principles">
+    <div class="section-divider mb-8"></div>
+    <div class="tag">10 — Brand Voice</div>
+    <h2 class="text-3xl font-black text-gray-900 mb-2">Brand Anchors &amp; Voice</h2>
+    <p class="text-gray-500 text-sm mb-10">The statements that define how we think, communicate, and show up — for clients, partners, and each other.</p>
+
+    <div class="card overflow-hidden mb-8">
+      <div class="px-8 py-5 cover-gradient">
+        <div class="text-teal-300 text-xs uppercase tracking-widest font-bold">Top 10 Brand Anchors</div>
+      </div>
+      <div class="bg-white divide-y divide-gray-50">
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--teal);">01</span>
+          <p class="text-gray-700 font-medium pt-1">Growth doesn't break businesses. <span style="color:var(--teal);">Misalignment does.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--teal);">02</span>
+          <p class="text-gray-700 font-medium pt-1">Effort is not a growth strategy. <span style="color:var(--teal);">Structure is.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--teal);">03</span>
+          <p class="text-gray-700 font-medium pt-1">If growth feels heavy, <span style="color:var(--teal);">something is carrying load it shouldn't.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--gold);">04</span>
+          <p class="text-gray-700 font-medium pt-1">You don't scale past the limits of the business — <span style="color:var(--gold);">you scale past the limits of the leader.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--gold);">05</span>
+          <p class="text-gray-700 font-medium pt-1">Leadership fatigue is usually <span style="color:var(--gold);">structural, not personal.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--teal);">06</span>
+          <p class="text-gray-700 font-medium pt-1">Strategy is deciding <span style="color:var(--teal);">what not to fix yet.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--teal);">07</span>
+          <p class="text-gray-700 font-medium pt-1">Predictability is the <span style="color:var(--teal);">real indicator of scalability.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--gold);">08</span>
+          <p class="text-gray-700 font-medium pt-1">The gap between systems and capacity is <span style="color:var(--gold);">where pressure hides.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--teal);">09</span>
+          <p class="text-gray-700 font-medium pt-1">Control means <span style="color:var(--teal);">the business runs without constant intervention.</span></p>
+        </div>
+        <div class="px-8 py-4 flex items-start gap-4 hover:bg-gray-50 transition-colors">
+          <span class="text-2xl font-black min-w-[40px]" style="color:var(--gold);">10</span>
+          <p class="text-gray-700 font-medium pt-1">Constraints aren't obstacles — <span style="color:var(--gold);">they're design instructions.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-check-circle text-teal-500 text-lg"></i>
+          <h4 class="font-bold text-gray-800">Always Emphasize</h4>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">Constraints</span>
+          <span class="chip">Systems</span>
+          <span class="chip">Sequencing</span>
+          <span class="chip">Profit Architecture</span>
+          <span class="chip">Capacity Alignment</span>
+          <span class="chip">Professionally Managed</span>
+          <span class="chip">Diagnose → Design → Install → Optimize</span>
+          <span class="chip">Outcomes over tasks</span>
+        </div>
+      </div>
+      <div class="card p-6">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-times-circle text-red-400 text-lg"></i>
+          <h4 class="font-bold text-gray-800">Never Use</h4>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">"Virtual Assistant"</span>
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">Task catalogs</span>
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">Agency framing</span>
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">Marketing as the identity</span>
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">Hustle-focused language</span>
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">Tactics before diagnosis</span>
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">"Three separate companies"</span>
+          <span class="bg-red-50 text-red-400 rounded-full px-3 py-1 text-xs border border-red-100">Staffing agency framing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="border-t border-gray-200 pt-10">
+    <div class="cover-gradient rounded-2xl px-8 py-10 text-center">
+      <p class="text-teal-300 text-xs uppercase tracking-widest font-bold mb-2">Executive Summary · Confidential · Version 1.0 · 2026</p>
+      <h3 class="text-white text-2xl font-black mb-1">My Profit Life</h3>
+      <p class="text-gray-400 text-sm mb-6">5555 Glenridge Connector, Suite 200 · Atlanta, GA 30342 · smbstrategyconsultants.com</p>
+      <div class="inline-flex items-center gap-3 mb-6">
+        <div class="h-px w-12 rounded" style="background:var(--teal);"></div>
+        <p class="text-gray-400 text-xs italic">"Balance is the goal. Systems are the answer."</p>
+        <div class="h-px w-12 rounded" style="background:var(--teal);"></div>
+      </div>
+      <div class="text-gray-600 text-xs">
+        Corbin Cook, CEPA, ASBC · For internal use and key partner distribution
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Print button -->
+<div class="fixed bottom-6 right-6 no-print">
+  <button onclick="window.print()"
+    class="flex items-center gap-2 text-white text-sm font-semibold px-5 py-3 rounded-full shadow-lg transition-all hover:scale-105"
+    style="background: var(--teal);">
+    <i class="fas fa-print"></i> Print / Save PDF
+  </button>
+</div>
+
+</body>
+</html>

@@ -33,24 +33,17 @@ aiEnablement.get('/', (c) => {
               <p>This is not a prediction. It is already happening in legal, accounting, marketing, and professional services. The question is not whether AI will change your cost structure. It is whether you will be on the right side of that change when it does.</p>
             </div>
             <div>
-              <div style="background:var(--color-bg-card); border:1px solid var(--color-bg-border); border-radius:var(--radius-lg); padding:2rem;">
-                <p class="text-muted mb-3" style="font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">The AIOS Economic Advantage</p>
-                <p style="font-size:0.82rem; color:var(--color-text-muted); margin-bottom:1.5rem; font-style:italic;">AI compresses the cost of everything — your margin depends on how fast you adopt</p>
-                <div style="position:relative; height:180px; border-left:1px solid var(--color-bg-border); border-bottom:1px solid var(--color-bg-border); margin-bottom:0.5rem;">
-                  <div style="position:absolute; top:8%; left:0; right:0; height:30%; background:linear-gradient(90deg, rgba(201,168,76,0.35) 0%, rgba(201,168,76,0.12) 100%); border-radius:0 8px 0 0;"></div>
-                  <div style="position:absolute; top:20%; left:0; right:0; height:40%; background:linear-gradient(90deg, rgba(201,168,76,0.18) 0%, rgba(201,168,76,0.28) 60%, rgba(201,168,76,0.08) 100%); clip-path: polygon(0 0, 100% 30%, 100% 80%, 0 50%);"></div>
-                  <div style="position:absolute; top:48%; left:0; right:0; height:2px; background:linear-gradient(90deg, rgba(201,168,76,0.6), rgba(201,168,76,0.15)); border-top: 1px dashed rgba(201,168,76,0.5);"></div>
-                  <div style="position:absolute; top:6%; left:8px; font-size:0.65rem; color:var(--color-text-muted);">Market Price</div>
-                  <div style="position:absolute; top:42%; left:35%; font-size:0.8rem; color:var(--color-gold); font-weight:600;">Your Margin</div>
-                  <div style="position:absolute; top:55%; left:8px; font-size:0.65rem; color:var(--color-text-muted);">Cost with AI</div>
-                  <div style="position:absolute; bottom:-20px; left:0; font-size:0.62rem; color:var(--color-text-muted);">Now</div>
-                  <div style="position:absolute; bottom:-20px; left:43%; font-size:0.62rem; color:var(--color-text-muted);">12 Months</div>
-                  <div style="position:absolute; bottom:-20px; right:0; font-size:0.62rem; color:var(--color-text-muted);">24 Months</div>
+              <div class="highlight-box">
+                <h4 class="mb-3">Three things that shift when AI is properly installed</h4>
+                <ul class="intensive-includes">
+                  <li>Delivery cost drops — the same output requires fewer hours and less coordination overhead</li>
+                  <li>Decision speed increases — owners and team leads stop waiting on information to act</li>
+                  <li>Owner capacity opens — low-leverage work routes away from the person with the highest hourly cost</li>
+                </ul>
+                <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.15); border-radius:4px; padding:0.75rem 1rem; margin-top:1.5rem;">
+                  <p style="font-size:0.85rem; color:var(--color-text); margin:0;">The businesses that build AI into their operations today will have a measurable margin advantage over those that adopt it later. The window is open now.</p>
                 </div>
-                <p style="font-size:0.72rem; text-align:center; color:var(--color-text-muted); margin-top:1.5rem; letter-spacing:0.06em; text-transform:uppercase;">Time Progression</p>
-                <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.15); border-radius:4px; padding:0.75rem 1rem; margin-top:1.25rem;">
-                  <p style="font-size:0.8rem; color:var(--color-text); margin:0;"><strong style="color:var(--color-gold);">Key insight:</strong> Get in now — high prices, rapidly falling costs. The margin window is open today.</p>
-                </div>
+                <a href="/ai-assessment" class="btn btn-ghost btn-sm mt-4">Book the Free AI Readiness Assessment</a>
               </div>
             </div>
           </div>

@@ -127,43 +127,29 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* AI / AIOS Section */}
+      {/* AI Moment Section */}
       <section class="section aios-section">
         <div class="container">
-          <div class="aios-inner">
+          <div class="grid-2" style="align-items:start; gap:4rem;">
             <div>
               <span class="eyebrow">The AI Moment</span>
               <h2>The cost to deliver great work is falling fast. Your margin depends on how fast you adopt.</h2>
               <div class="gold-line"></div>
-              <p>Right now, market prices for consulting and professional services are still high. AI is rapidly compressing the cost to deliver those same services. The businesses that build AI into their operations today will widen their margin. The ones that wait will find themselves squeezed from both sides.</p>
+              <p>AI is rapidly compressing the cost to deliver professional services. The businesses that build it into their operations today will widen their margin. The ones that wait will find themselves squeezed from both sides — prices falling as the market normalizes, costs staying high because nothing changed internally.</p>
               <p>We are not talking about autonomous AI or replacing your team. We are talking about 1–3 bounded workflows — inside the tools you already use — that reduce delivery cost, speed up decisions, and free the owner from low-leverage work.</p>
               <a href="/ai-enablement" class="btn btn-outline mt-3">Learn About AI Enablement</a>
             </div>
             <div>
-              <div style="background:var(--color-bg-card); border:1px solid var(--color-bg-border); border-radius:var(--radius-lg); padding:2rem;">
-                <p class="text-muted mb-3" style="font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">The AIOS Economic Advantage</p>
-                <p style="font-size:0.82rem; color:var(--color-text-muted); margin-bottom:1.5rem; font-style:italic;">AI compresses the cost of everything — your margin depends on how fast you adopt</p>
-                {/* Stylized chart representation */}
-                <div style="position:relative; height:180px; border-left:1px solid var(--color-bg-border); border-bottom:1px solid var(--color-bg-border); margin-bottom:0.5rem;">
-                  {/* Market price band - upper */}
-                  <div style="position:absolute; top:8%; left:0; right:0; height:30%; background:linear-gradient(90deg, rgba(201,168,76,0.35) 0%, rgba(201,168,76,0.12) 100%); border-radius:0 8px 0 0;"></div>
-                  {/* Your margin - gold fill */}
-                  <div style="position:absolute; top:20%; left:0; right:0; height:40%; background:linear-gradient(90deg, rgba(201,168,76,0.18) 0%, rgba(201,168,76,0.28) 60%, rgba(201,168,76,0.08) 100%); clip-path: polygon(0 0, 100% 30%, 100% 80%, 0 50%);"></div>
-                  {/* Cost line - dashed */}
-                  <div style="position:absolute; top:48%; left:0; right:0; height:2px; background:linear-gradient(90deg, rgba(201,168,76,0.6), rgba(201,168,76,0.15)); border-top: 1px dashed rgba(201,168,76,0.5);"></div>
-                  {/* Labels */}
-                  <div style="position:absolute; top:6%; left:8px; font-size:0.65rem; color:var(--color-text-muted);">Market Price</div>
-                  <div style="position:absolute; top:42%; left:35%; font-size:0.8rem; color:var(--color-gold); font-weight:600;">Your Margin</div>
-                  <div style="position:absolute; top:55%; left:8px; font-size:0.65rem; color:var(--color-text-muted);">Cost with AI</div>
-                  {/* X-axis labels */}
-                  <div style="position:absolute; bottom:-20px; left:0; font-size:0.62rem; color:var(--color-text-muted);">Now</div>
-                  <div style="position:absolute; bottom:-20px; left:43%; font-size:0.62rem; color:var(--color-text-muted);">12 Months</div>
-                  <div style="position:absolute; bottom:-20px; right:0; font-size:0.62rem; color:var(--color-text-muted);">24 Months</div>
-                </div>
-                <p style="font-size:0.72rem; text-align:center; color:var(--color-text-muted); margin-top:1.5rem; letter-spacing:0.06em; text-transform:uppercase;">Time Progression</p>
-                <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.15); border-radius:4px; padding:0.75rem 1rem; margin-top:1.25rem;">
-                  <p style="font-size:0.8rem; color:var(--color-text); margin:0;"><strong style="color:var(--color-gold);">Key insight:</strong> Get in now — high prices, rapidly falling costs. This window does not stay open.</p>
-                </div>
+              <div class="highlight-box">
+                <h4 class="mb-3">What safe AI integration looks like in practice</h4>
+                <ul class="intensive-includes">
+                  <li>Automated follow-up sequences that escalate to a human at the right moment</li>
+                  <li>Quote and proposal workflows that reduce turnaround from days to hours</li>
+                  <li>Scheduling and task routing that removes the owner from low-leverage coordination</li>
+                  <li>Financial reporting summaries that flag anomalies before the monthly meeting</li>
+                  <li>Lead qualification workflows that filter before human time is spent</li>
+                </ul>
+                <a href="/ai-assessment" class="btn btn-ghost btn-sm mt-4">Book the Free AI Readiness Assessment</a>
               </div>
             </div>
           </div>

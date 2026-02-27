@@ -1,0 +1,307 @@
+import { Hono } from 'hono'
+
+const home = new Hono()
+
+home.get('/', (c) => {
+  return c.render(
+    <div>
+      {/* Hero */}
+      <section class="hero section-lg bg-dark">
+        <div class="container">
+          <span class="eyebrow hero-eyebrow">Atlanta, GA — Serving SMBs Nationwide</span>
+          <h1>If revenue is up but everything still feels hard, you have hit a growth ceiling.</h1>
+          <p class="lead">In one free Growth Diagnostic, we identify the constraint creating bottlenecks, slowing decisions, and limiting momentum — and give you the next best move.</p>
+          <div class="hero-actions">
+            <a href="/growth-diagnostic" class="btn btn-primary btn-lg">Book the Free Growth Diagnostic</a>
+            <a href="/growth-constraint-quiz" class="btn btn-ghost btn-lg">Find My Growth Constraint</a>
+          </div>
+          <p class="hero-microcopy">Free. Live. Practical. You leave with a clear next step.</p>
+        </div>
+      </section>
+
+      {/* Pillars Strip */}
+      <section class="pillars-strip">
+        <div class="container" style="margin-bottom:1.25rem;">
+          <p class="text-center" style="font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-text-muted); font-weight:600;">Growth gets simpler when the right systems are in place</p>
+        </div>
+        <div class="container" style="padding:0;">
+          <div class="pillars-grid">
+            <a href="/strategy-intensives#finance" class="pillar-item" style="text-decoration:none;">
+              <div class="pillar-number">01</div>
+              <h4>Financial Foundations</h4>
+              <p>Cash clarity and profit visibility</p>
+            </a>
+            <a href="/strategy-intensives#growth" class="pillar-item" style="text-decoration:none;">
+              <div class="pillar-number">02</div>
+              <h4>Brand and Strategy</h4>
+              <p>Positioning and pipeline systems</p>
+            </a>
+            <a href="/strategy-intensives#capacity" class="pillar-item" style="text-decoration:none;">
+              <div class="pillar-number">03</div>
+              <h4>Growth Acceleration</h4>
+              <p>Lead flow and conversion engines</p>
+            </a>
+            <a href="/strategy-intensives#ai" class="pillar-item" style="text-decoration:none;">
+              <div class="pillar-number">04</div>
+              <h4>Capacity</h4>
+              <p>Leadership, team, and AI process</p>
+            </a>
+          </div>
+        </div>
+        <div class="container" style="margin-top:1.25rem;">
+          <p class="text-center" style="font-size:0.85rem; color:var(--color-text-muted);">Most businesses do not need more ideas. They need alignment across these four areas.</p>
+        </div>
+      </section>
+
+      {/* Validation */}
+      <section class="section bg-dark">
+        <div class="container">
+          <div class="grid-2" style="align-items:start; gap:4rem;">
+            <div>
+              <span class="eyebrow">Sound Familiar?</span>
+              <h2>If any of this describes your business right now, you are not alone.</h2>
+              <div class="gold-line"></div>
+              <p>Most service-based businesses in the $1M–$10M range hit the same walls. The problems are predictable. So are the solutions.</p>
+              <a href="/growth-diagnostic" class="btn btn-outline mt-4">Book the Free Growth Diagnostic</a>
+            </div>
+            <div>
+              <ul class="pain-list">
+                <li>The business grew but the backend did not keep up with it.</li>
+                <li>You are the bottleneck — every decision runs through you.</li>
+                <li>The team is busy but the needle is not moving.</li>
+                <li>Cash flow is unpredictable even when revenue looks good.</li>
+                <li>You know AI matters but you do not know where to start without disrupting everything.</li>
+                <li>You are closer to burnout than your revenue would suggest.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What the Diagnostic Is */}
+      <section class="section bg-surface">
+        <div class="container">
+          <div class="grid-2" style="align-items:center; gap:4rem;">
+            <div class="highlight-box">
+              <span class="eyebrow">The Growth Diagnostic</span>
+              <h3 style="margin-bottom:1rem;">This is not a pitch call.</h3>
+              <p>It is a guided working session to identify the one constraint holding the most growth hostage. We look at your financials, your team structure, your pipeline, and your operations — and we tell you exactly what to fix first.</p>
+              <p>You leave with a 30–90 day focus plan and a clear next action. No obligations.</p>
+              <ul class="intensive-includes" style="margin-top:1.5rem;">
+                <li>Identify your top growth constraint</li>
+                <li>Pinpoint the number-one operational bottleneck</li>
+                <li>Map a 30–90 day priority plan</li>
+                <li>Understand which engagement path fits your stage</li>
+              </ul>
+              <a href="/growth-diagnostic" class="btn btn-primary mt-4">Book the Free Growth Diagnostic</a>
+            </div>
+            <div>
+              <span class="eyebrow">The Process</span>
+              <h2 style="margin-bottom:2rem;">From constraint to clarity in one conversation.</h2>
+              <div class="steps">
+                <div class="step">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <h4>Assess and Clarify</h4>
+                    <p>We diagnose the primary constraint — financial, operational, growth, or capacity — and score your AI readiness.</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <h4>Build and Install</h4>
+                    <p>We build the specific system that removes the constraint. One focused intensive at a time.</p>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <h4>Activate and Scale</h4>
+                    <p>We activate the team, integrate AI where it creates leverage, and install the operating rhythm that holds it together.</p>
+                  </div>
+                </div>
+              </div>
+              <a href="/how-it-works" class="btn btn-ghost mt-4">See the Full Process</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI / AIOS Section */}
+      <section class="section aios-section">
+        <div class="container">
+          <div class="aios-inner">
+            <div>
+              <span class="eyebrow">The AI Moment</span>
+              <h2>The cost to deliver great work is falling fast. Your margin depends on how fast you adopt.</h2>
+              <div class="gold-line"></div>
+              <p>Right now, market prices for consulting and professional services are still high. AI is rapidly compressing the cost to deliver those same services. The businesses that build AI into their operations today will widen their margin. The ones that wait will find themselves squeezed from both sides.</p>
+              <p>We are not talking about autonomous AI or replacing your team. We are talking about 1–3 bounded workflows — inside the tools you already use — that reduce delivery cost, speed up decisions, and free the owner from low-leverage work.</p>
+              <a href="/ai-enablement" class="btn btn-outline mt-3">Learn About AI Enablement</a>
+            </div>
+            <div>
+              <div style="background:var(--color-bg-card); border:1px solid var(--color-bg-border); border-radius:var(--radius-lg); padding:2rem;">
+                <p class="text-muted mb-3" style="font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;">The AIOS Economic Advantage</p>
+                <p style="font-size:0.82rem; color:var(--color-text-muted); margin-bottom:1.5rem; font-style:italic;">AI compresses the cost of everything — your margin depends on how fast you adopt</p>
+                {/* Stylized chart representation */}
+                <div style="position:relative; height:180px; border-left:1px solid var(--color-bg-border); border-bottom:1px solid var(--color-bg-border); margin-bottom:0.5rem;">
+                  {/* Market price band - upper */}
+                  <div style="position:absolute; top:8%; left:0; right:0; height:30%; background:linear-gradient(90deg, rgba(201,168,76,0.35) 0%, rgba(201,168,76,0.12) 100%); border-radius:0 8px 0 0;"></div>
+                  {/* Your margin - gold fill */}
+                  <div style="position:absolute; top:20%; left:0; right:0; height:40%; background:linear-gradient(90deg, rgba(201,168,76,0.18) 0%, rgba(201,168,76,0.28) 60%, rgba(201,168,76,0.08) 100%); clip-path: polygon(0 0, 100% 30%, 100% 80%, 0 50%);"></div>
+                  {/* Cost line - dashed */}
+                  <div style="position:absolute; top:48%; left:0; right:0; height:2px; background:linear-gradient(90deg, rgba(201,168,76,0.6), rgba(201,168,76,0.15)); border-top: 1px dashed rgba(201,168,76,0.5);"></div>
+                  {/* Labels */}
+                  <div style="position:absolute; top:6%; left:8px; font-size:0.65rem; color:var(--color-text-muted);">Market Price</div>
+                  <div style="position:absolute; top:42%; left:35%; font-size:0.8rem; color:var(--color-gold); font-weight:600;">Your Margin</div>
+                  <div style="position:absolute; top:55%; left:8px; font-size:0.65rem; color:var(--color-text-muted);">Cost with AI</div>
+                  {/* X-axis labels */}
+                  <div style="position:absolute; bottom:-20px; left:0; font-size:0.62rem; color:var(--color-text-muted);">Now</div>
+                  <div style="position:absolute; bottom:-20px; left:43%; font-size:0.62rem; color:var(--color-text-muted);">12 Months</div>
+                  <div style="position:absolute; bottom:-20px; right:0; font-size:0.62rem; color:var(--color-text-muted);">24 Months</div>
+                </div>
+                <p style="font-size:0.72rem; text-align:center; color:var(--color-text-muted); margin-top:1.5rem; letter-spacing:0.06em; text-transform:uppercase;">Time Progression</p>
+                <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.15); border-radius:4px; padding:0.75rem 1rem; margin-top:1.25rem;">
+                  <p style="font-size:0.8rem; color:var(--color-text); margin:0;"><strong style="color:var(--color-gold);">Key insight:</strong> Get in now — high prices, rapidly falling costs. This window does not stay open.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Four Pillar Deep Dive */}
+      <section class="section bg-dark">
+        <div class="container">
+          <div class="section-header center">
+            <span class="eyebrow">The Four Pillars</span>
+            <h2>Every constraint lives in one of four places.</h2>
+            <p>We identify which one is holding your business back — then we build the system to fix it.</p>
+          </div>
+          <div class="grid-2">
+            <div class="card card-accent">
+              <h4 class="mb-2">Financial Foundations</h4>
+              <p style="font-size:0.9rem;">Unclear cash flow creates decision paralysis. We install the reporting and forecasting that lets you run the business calmly — knowing your numbers before your bank statement does.</p>
+            </div>
+            <div class="card card-accent">
+              <h4 class="mb-2">Brand and Strategy</h4>
+              <p style="font-size:0.9rem;">Outdated positioning repels the right clients. We sharpen your message and rebuild your demand engine so you attract better-fit clients at higher margins.</p>
+            </div>
+            <div class="card card-accent">
+              <h4 class="mb-2">Growth Acceleration</h4>
+              <p style="font-size:0.9rem;">Inconsistent follow-through kills pipeline value. We tighten the system so qualified leads move through a defined process — not through the owner's memory.</p>
+            </div>
+            <div class="card card-accent">
+              <h4 class="mb-2">Capacity</h4>
+              <p style="font-size:0.9rem;">Owner dependency caps the ceiling. We install delegation frameworks, team structure, and AI-assisted workflows so the business runs without you at every decision point.</p>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <a href="/strategy-intensives" class="btn btn-outline">Explore the Strategy Intensives</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Engagement Paths */}
+      <section class="section bg-surface">
+        <div class="container">
+          <div class="section-header center">
+            <span class="eyebrow">Engagement Paths</span>
+            <h2>Four ways to work together.</h2>
+            <p>After the diagnostic, you enter the path that matches your constraint and your stage.</p>
+          </div>
+          <div class="grid-2">
+            <div class="path-card">
+              <span class="intensive-tag">Focused</span>
+              <h3 class="mb-2">Strategy Intensive</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">One problem. One intensive. Massive impact. 2–4 sessions targeting your single highest-leverage constraint. You leave with a 90-day roadmap and a clear plan to execute it.</p>
+              <a href="/strategy-intensives" class="btn btn-ghost btn-sm mt-3">View the Intensives</a>
+            </div>
+            <div class="path-card featured">
+              <span class="path-badge">Most Popular</span>
+              <span class="intensive-tag">90 Days</span>
+              <h3 class="mb-2">GAS Sprint</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">The 90-Day Growth Acceleration Sprint. Stabilize and ignite. A full system build across your top two constraints — with implementation support and AI integration built in.</p>
+              <a href="/how-it-works#gas" class="btn btn-primary btn-sm mt-3">Learn About the GAS Sprint</a>
+            </div>
+            <div class="path-card">
+              <span class="intensive-tag">Ongoing</span>
+              <h3 class="mb-2">Strategic Financial Partner</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">A leadership seat at your table. Not a reporting function — a strategic financial mind involved in every key decision. Monthly cadence. Real-time support. Limited availability.</p>
+              <a href="/virtual-cfo" class="btn btn-ghost btn-sm mt-3">Learn More</a>
+            </div>
+            <div class="path-card">
+              <span class="intensive-tag">12–24 Months</span>
+              <h3 class="mb-2">Exit Planning</h3>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);">Exit on your terms. The 21-Step Sell-Ready Process positions your business in the top 20% of its industry — with AI-ready operations as a core part of the value story.</p>
+              <a href="/exit-planning" class="btn btn-ghost btn-sm mt-3">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section class="section bg-dark">
+        <div class="container">
+          <div class="section-header center">
+            <span class="eyebrow">What Clients Say</span>
+            <h2>Results from the work.</h2>
+          </div>
+          <div class="grid-3">
+            <div class="testimonial">
+              <p class="testimonial-text">SMB Strategy Consultants has been a great resource for our company for a number of years. Corbin has the ability to keep us at the 10,000 foot level and brings insights and discernment that we need to keep our business growing with a long-range plan. The service he provides is exceptional.</p>
+              <p class="testimonial-author">Client, Multi-Year Engagement</p>
+            </div>
+            <div class="testimonial">
+              <p class="testimonial-text">Corbin brings a unique perspective to growing your business. Not only is he able to quickly understand the nuances of your particular business, but he has been invaluable in introducing me to key people to help me transform and grow.</p>
+              <p class="testimonial-author">Steve Thompson</p>
+            </div>
+            <div class="testimonial">
+              <p class="testimonial-text">Corbin and the SMB team jumped in during a very tough period for our company. The onboarding process was seamless and the team quickly took control of the situation. What I thought would be a short-term engagement turned into a successful two-year partnership.</p>
+              <p class="testimonial-author">Gerrie van Niekerk</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Growth Constraint Quiz CTA */}
+      <section class="section bg-surface">
+        <div class="container">
+          <div class="grid-2" style="align-items:center; gap:4rem;">
+            <div>
+              <span class="eyebrow">Not Sure Where to Start?</span>
+              <h2>Find your growth constraint in 3 minutes.</h2>
+              <div class="gold-line"></div>
+              <p>Answer a short set of questions about your business and we will identify which of the four pillars is most likely holding your growth hostage — and what to do about it.</p>
+              <a href="/growth-constraint-quiz" class="btn btn-outline mt-2">Take the Growth Constraint Quiz</a>
+            </div>
+            <div class="highlight-box">
+              <h4 class="mb-3">The five most common growth ceilings</h4>
+              <ul class="intensive-includes">
+                <li>The owner is the primary decision-maker for everything</li>
+                <li>Team execution does not match leadership's standards</li>
+                <li>No consistent operating rhythm week to week</li>
+                <li>Lead follow-through is inconsistent or manual</li>
+                <li>Financial visibility lags behind the business reality</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Band */}
+      <section class="cta-band">
+        <div class="container">
+          <span class="eyebrow" style="display:block; text-align:center; margin-bottom:1rem;">Ready for a clear next step?</span>
+          <h2>Book the Free Growth Diagnostic.</h2>
+          <p class="lead">One conversation. One constraint identified. One clear next move.</p>
+          <a href="/growth-diagnostic" class="btn btn-primary btn-lg">Book the Free Growth Diagnostic</a>
+          <p class="hero-microcopy mt-2" style="display:block;">Free. Live. Practical. You leave with a clear next step.</p>
+        </div>
+      </section>
+    </div>,
+    { title: 'AI-Enabled Business Growth for SMBs', activeNav: 'home' }
+  )
+})
+
+export default home

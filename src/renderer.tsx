@@ -35,10 +35,44 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               <li><a href="/strategy-intensives" class={activeNav === 'intensives' ? 'active' : ''}>Strategy Intensives</a></li>
               <li><a href="/ai-enablement" class={activeNav === 'ai' ? 'active' : ''}>AI Enablement</a></li>
               <li><a href="/my-profit-life" class={activeNav === 'mpl' ? 'active' : ''}>My Profit Life</a></li>
-              <li><a href="/virtual-cfo" class={activeNav === 'cfo' ? 'active' : ''}>Virtual CFO</a></li>
-              <li><a href="/exit-planning" class={activeNav === 'exit' ? 'active' : ''}>Exit Planning</a></li>
-              <li><a href="/resources" class={activeNav === 'resources' ? 'active' : ''}>Resources</a></li>
-              <li><a href="/about" class={activeNav === 'about' ? 'active' : ''}>About</a></li>
+              <li class="nav-dropdown">
+                <button class={`nav-drop-btn${['cfo','exit','staffing'].includes(activeNav||'') ? ' active' : ''}`} aria-expanded="false" aria-haspopup="true">
+                  Other Services <svg class="drop-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="nav-drop-menu" role="menu">
+                  <a href="/virtual-cfo" class={activeNav === 'cfo' ? 'active' : ''} role="menuitem">
+                    <span class="drop-label">Virtual CFO</span>
+                    <span class="drop-sub">Strategic financial partnership</span>
+                  </a>
+                  <a href="/exit-planning" class={activeNav === 'exit' ? 'active' : ''} role="menuitem">
+                    <span class="drop-label">Exit Planning</span>
+                    <span class="drop-sub">21-step sell-ready process</span>
+                  </a>
+                  <a href="/virtual-staffing" class={activeNav === 'staffing' ? 'active' : ''} role="menuitem">
+                    <span class="drop-label">Virtual Staffing</span>
+                    <span class="drop-sub">Managed remote workforce solutions</span>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-dropdown">
+                <button class={`nav-drop-btn${['about','resources'].includes(activeNav||'') ? ' active' : ''}`} aria-expanded="false" aria-haspopup="true">
+                  More <svg class="drop-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="nav-drop-menu" role="menu">
+                  <a href="/about" class={activeNav === 'about' ? 'active' : ''} role="menuitem">
+                    <span class="drop-label">About</span>
+                    <span class="drop-sub">Who we are and how we work</span>
+                  </a>
+                  <a href="/resources" class={activeNav === 'resources' ? 'active' : ''} role="menuitem">
+                    <span class="drop-label">Resources</span>
+                    <span class="drop-sub">Guides, tools, and insights</span>
+                  </a>
+                  <a href="/contact" role="menuitem">
+                    <span class="drop-label">Contact</span>
+                    <span class="drop-sub">Get in touch with our team</span>
+                  </a>
+                </div>
+              </li>
             </ul>
             <a href="/growth-diagnostic" class="btn btn-primary btn-sm nav-cta">Book a Diagnostic</a>
             <button class="nav-hamburger" id="hamburger" aria-label="Open navigation">
@@ -51,11 +85,14 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
             <a href="/strategy-intensives">Strategy Intensives</a>
             <a href="/ai-enablement">AI Enablement</a>
             <a href="/my-profit-life">My Profit Life</a>
-            <a href="/virtual-cfo">Virtual CFO</a>
-            <a href="/exit-planning">Exit Planning</a>
-            <a href="/resources">Resources</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <div class="mobile-section-label">Other Services</div>
+            <a href="/virtual-cfo" style="padding-left:1.5rem;">Virtual CFO</a>
+            <a href="/exit-planning" style="padding-left:1.5rem;">Exit Planning</a>
+            <a href="/virtual-staffing" style="padding-left:1.5rem;">Virtual Staffing</a>
+            <div class="mobile-section-label">More</div>
+            <a href="/about" style="padding-left:1.5rem;">About</a>
+            <a href="/resources" style="padding-left:1.5rem;">Resources</a>
+            <a href="/contact" style="padding-left:1.5rem;">Contact</a>
             <a href="/growth-diagnostic" style="color: #c9a84c; font-weight: 600; margin-top: 0.5rem;">Book a Growth Diagnostic</a>
           </div>
         </nav>
@@ -85,6 +122,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                   <li><a href="/my-profit-life">My Profit Life</a></li>
                   <li><a href="/virtual-cfo">Virtual CFO</a></li>
                   <li><a href="/exit-planning">Exit Planning</a></li>
+                  <li><a href="/virtual-staffing">Virtual Staffing</a></li>
                 </ul>
               </div>
               <div class="footer-col">
@@ -115,6 +153,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
         </footer>
 
         <script dangerouslySetInnerHTML={{ __html: `
+          // Mobile hamburger
           const hamburger = document.getElementById('hamburger');
           const mobileNav = document.getElementById('nav-mobile');
           if (hamburger && mobileNav) {
@@ -122,6 +161,35 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               mobileNav.classList.toggle('open');
             });
           }
+
+          // Desktop dropdowns
+          document.querySelectorAll('.nav-dropdown').forEach(function(dropdown) {
+            const btn = dropdown.querySelector('.nav-drop-btn');
+            const menu = dropdown.querySelector('.nav-drop-menu');
+            if (!btn || !menu) return;
+
+            btn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              const isOpen = dropdown.classList.contains('open');
+              // close all
+              document.querySelectorAll('.nav-dropdown').forEach(function(d) {
+                d.classList.remove('open');
+                d.querySelector('.nav-drop-btn') && d.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+              });
+              if (!isOpen) {
+                dropdown.classList.add('open');
+                btn.setAttribute('aria-expanded', 'true');
+              }
+            });
+          });
+
+          // Close dropdowns when clicking outside
+          document.addEventListener('click', function() {
+            document.querySelectorAll('.nav-dropdown').forEach(function(d) {
+              d.classList.remove('open');
+              d.querySelector('.nav-drop-btn') && d.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+            });
+          });
         `}} />
       </body>
     </html>

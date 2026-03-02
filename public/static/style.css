@@ -270,9 +270,90 @@ strong { color: var(--color-white); font-weight: 600; }
 .nav-mobile a:last-child { border-bottom: none; }
 .nav-mobile a:hover { color: var(--color-gold); }
 
+/* Mobile section labels */
+.mobile-section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  padding: 0.75rem 1.25rem 0.25rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 0.25rem;
+}
+
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
+}
+
+/* ---- Dropdown nav ---- */
+.nav-dropdown { position: relative; }
+
+.nav-drop-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  transition: color var(--transition), background var(--transition);
+  line-height: 1;
+}
+.nav-drop-btn:hover { color: var(--color-white); background: var(--color-bg-surface); }
+.nav-drop-btn.active { color: var(--color-gold); }
+
+.drop-chevron {
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.nav-dropdown.open .drop-chevron { transform: rotate(180deg); }
+
+.nav-drop-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  background: var(--color-bg-dark);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  overflow: hidden;
+  z-index: 200;
+  padding: 0.35rem;
+}
+.nav-dropdown.open .nav-drop-menu { display: block; }
+
+.nav-drop-menu a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+.nav-drop-menu a:hover { background: rgba(255,255,255,0.06); }
+.nav-drop-menu a.active .drop-label { color: var(--color-gold); }
+
+.drop-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-white);
+  line-height: 1.2;
+}
+.drop-sub {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
 }
 
 /* ---- Hero ---- */

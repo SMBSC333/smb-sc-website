@@ -10,6 +10,7 @@ import exitPlanning from './pages/exit-planning'
 import about from './pages/about'
 import resources from './pages/resources'
 import contact from './pages/contact'
+import virtualStaffing from './pages/virtual-staffing'
 import landingPages from './pages/landing-pages'
 
 import execSummaryHtml from '../public/executive-summary.html?raw'
@@ -29,6 +30,7 @@ app.route('/exit-planning', exitPlanning)
 app.route('/about', about)
 app.route('/resources', resources)
 app.route('/contact', contact)
+app.route('/virtual-staffing', virtualStaffing)
 
 // Landing pages
 app.route('/', landingPages)

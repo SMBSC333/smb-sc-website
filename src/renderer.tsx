@@ -25,6 +25,8 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
           body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
         `}</style>
         <link href="/static/style.css" rel="stylesheet" />
+        {/* Netlify Identity Widget — required for Decap CMS login */}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </head>
       <body>
         <nav class="nav" id="main-nav">
@@ -190,6 +192,19 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               d.querySelector('.nav-drop-btn') && d.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
             });
           });
+        `}} />
+
+        {/* Netlify Identity redirect — sends logged-in users back to /admin/ */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on('init', function(user) {
+              if (!user) {
+                window.netlifyIdentity.on('login', function() {
+                  document.location.href = '/admin/';
+                });
+              }
+            });
+          }
         `}} />
       </body>
     </html>

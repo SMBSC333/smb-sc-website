@@ -1,0 +1,78 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Media files will be stored in the repo under public/static/uploads
+media_folder: "public/static/uploads"
+public_folder: "/static/uploads"
+
+# Editorial workflow - saves drafts as PRs before publishing
+publish_mode: editorial_workflow
+
+collections:
+
+  # ─── BLOG / RESOURCES ARTICLES ───────────────────────────────────────────
+  - name: "blog"
+    label: "Blog Articles"
+    label_singular: "Article"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/resources/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "MMM D, YYYY", date_format: "MMM D, YYYY", time_format: false }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Financial"
+          - "Cash Flow"
+          - "Exit Planning"
+          - "AI Enablement"
+          - "Growth Strategy"
+          - "Tools"
+          - "Leadership"
+      - { label: "Excerpt / Summary", name: "excerpt", widget: "text", hint: "Short summary shown on the Resources listing page (1–2 sentences)" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false, hint: "Optional. Recommended 1200x630px." }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "SEO Title", name: "seo_title", widget: "string", required: false, hint: "Defaults to article title if blank" }
+      - { label: "SEO Description", name: "seo_description", widget: "text", required: false, hint: "150–160 characters for best results" }
+
+  # ─── EBOOKS / DOWNLOADS ───────────────────────────────────────────────────
+  - name: "ebooks"
+    label: "Ebooks & Downloads"
+    label_singular: "Ebook"
+    folder: "content/ebooks"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Short Description", name: "description", widget: "text", hint: "One sentence shown on the Resources page" }
+      - { label: "Cover Image", name: "cover", widget: "image", required: false }
+      - { label: "Download URL / Link", name: "download_url", widget: "string", hint: "External link or path to uploaded PDF" }
+      - { label: "Body / Details", name: "body", widget: "markdown", required: false }
+
+  # ─── SITE SETTINGS (editable text snippets) ────────────────────────────────
+  - name: "settings"
+    label: "Site Settings"
+    files:
+
+      - label: "Homepage"
+        name: "homepage"
+        file: "content/settings/homepage.json"
+        fields:
+          - { label: "Hero Headline", name: "hero_headline", widget: "string" }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "text" }
+          - { label: "Hero CTA Label", name: "hero_cta_label", widget: "string" }
+          - { label: "Hero CTA URL", name: "hero_cta_url", widget: "string" }
+
+      - label: "Global / Footer"
+        name: "global"
+        file: "content/settings/global.json"
+        fields:
+          - { label: "Company Name", name: "company_name", widget: "string", default: "SMB Strategy Consultants" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Email", name: "email", widget: "string", required: false }

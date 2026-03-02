@@ -141,7 +141,7 @@ home.get('/', (c) => {
             </div>
             <div>
               <div class="highlight-box">
-                <h4 class="mb-3">What safe AI integration looks like in practice</h4>
+                <h4 class="mb-3">What practical AI integration looks like in practice</h4>
                 <ul class="intensive-includes">
                   <li>Automated follow-up sequences that escalate to a human at the right moment</li>
                   <li>Quote and proposal workflows that reduce turnaround from days to hours</li>

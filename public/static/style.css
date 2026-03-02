@@ -233,7 +233,14 @@ strong { color: var(--color-white); font-weight: 600; }
 }
 .nav-links a:hover { color: var(--color-white); background: var(--color-bg-surface); }
 .nav-links a.active { color: var(--color-gold); }
-.nav-cta { margin-left: 1rem; }
+.nav-cta {
+  margin-left: 1rem;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.07em !important;
+  padding: 0.55rem 1.1rem !important;
+  white-space: nowrap;
+}
 
 /* Mobile nav */
 .nav-hamburger {

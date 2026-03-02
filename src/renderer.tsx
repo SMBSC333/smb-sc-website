@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export const renderer = jsxRenderer(({ children, title, description, activeNav }: LayoutProps & { children?: any }) => {
   const pageTitle = title ? `${title} — SMB Strategy Consultants` : 'SMB Strategy Consultants | AI-Enabled Business Growth for SMBs'
-  const pageDesc = description || 'We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and safe AI integration for service-based businesses.'
+  const pageDesc = description || 'We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration for service-based businesses.'
 
   return (
     <html lang="en">
@@ -106,7 +106,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
             <div class="footer-grid">
               <div class="footer-brand">
                 <div class="nav-logo" style="font-size:1rem; font-family: Georgia, serif; color: #f5f5f5;">SMB <span style="color:#c9a84c;">Strategy</span> Consultants</div>
-                <p>We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and safe AI integration.</p>
+                <p>We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration.</p>
                 <div class="cred-bar" style="margin-top:1.25rem;">
                   <span class="cred-badge">CEPA</span>
                   <span class="cred-badge">AASBC</span>

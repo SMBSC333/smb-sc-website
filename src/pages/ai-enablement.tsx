@@ -50,11 +50,11 @@ aiEnablement.get('/', (c) => {
         </div>
       </section>
 
-      {/* What Safe AI Looks Like */}
+      {/* What Practical AI Looks Like */}
       <section class="section bg-dark">
         <div class="container">
           <div class="section-header center">
-            <span class="eyebrow">Safe AI Integration</span>
+            <span class="eyebrow">Practical AI Integration</span>
             <h2>Not autonomous. Not chaotic. Bounded.</h2>
             <p>We install AI the way a good contractor installs a system — with the right guardrails, tested before it runs, and built for the people who have to use it every day.</p>
           </div>
@@ -180,7 +180,7 @@ aiEnablement.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'AI Enablement — Safe AI Integration for SMBs', activeNav: 'ai' }
+    { title: 'AI Enablement — Practical AI Integration for SMBs', activeNav: 'ai' }
   )
 })
 

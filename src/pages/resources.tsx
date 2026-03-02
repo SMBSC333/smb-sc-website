@@ -109,7 +109,7 @@ resources.get('/', (c) => {
               <ul class="intensive-includes">
                 <li>Cash flow management and financial clarity</li>
                 <li>Exit planning and business valuation</li>
-                <li>Safe AI integration for service businesses</li>
+                <li>Practical AI integration for service businesses</li>
                 <li>Team capacity and delegation frameworks</li>
                 <li>Owner psychology and leadership development</li>
                 <li>Growth strategy and market positioning</li>

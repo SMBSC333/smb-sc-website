@@ -62,7 +62,7 @@ about.get('/', (c) => {
             </div>
             <div class="card card-accent">
               <div class="card-number">03</div>
-              <h4 class="mb-2">Safe AI, Not Autonomous AI</h4>
+              <h4 class="mb-2">Practical AI, Not Autonomous AI</h4>
               <p style="font-size:0.88rem;">Human judgment at every critical node. We never automate decisions that require human accountability. We automate the work that does not require it.</p>
             </div>
             <div class="card card-accent">

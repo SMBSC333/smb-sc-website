@@ -5,9 +5,15 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Redirect /admin to /admin/ (trailing slash required for index.html to load)
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301
+
 # Edge function handles all dynamic routes
 # excludedPath ensures static assets + admin are served directly by Netlify CDN
 [[edge_functions]]
   path = "/*"
   function = "index"
-  excludedPath = ["/static/*", "/admin/*", "/*.html", "/*.ico", "/*.txt", "/*.xml", "/*.json"]
+  excludedPath = ["/static/*", "/admin", "/admin/*", "/*.html", "/*.ico", "/*.txt", "/*.xml", "/*.json"]

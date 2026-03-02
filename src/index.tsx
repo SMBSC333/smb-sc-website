@@ -62,6 +62,9 @@ app.get('/terms-conditions', (c) => c.render(
   { title: 'Terms of Service' }
 ))
 
+// Admin CMS redirect — /admin → /admin/ (Decap CMS needs trailing slash)
+app.get('/admin', (c) => c.redirect('/admin/', 301))
+
 // Legacy redirects — catch common old URLs
 app.get('/executive-summary', (c) => c.html(execSummaryHtml))
 app.get('/bookkeeping', (c) => c.redirect('/strategy-intensives#finance'))

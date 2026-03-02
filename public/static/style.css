@@ -290,21 +290,25 @@ strong { color: var(--color-white); font-weight: 600; }
 /* ---- Dropdown nav ---- */
 .nav-dropdown { position: relative; }
 
+/* Match exactly the same style as .nav-links a */
 .nav-drop-btn {
   background: none;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.35rem;
   font-family: inherit;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--color-text-muted);
-  padding: 0.4rem 0.65rem;
-  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
   transition: color var(--transition), background var(--transition);
   line-height: 1;
+  white-space: nowrap;
 }
 .nav-drop-btn:hover { color: var(--color-white); background: var(--color-bg-surface); }
 .nav-drop-btn.active { color: var(--color-gold); }
@@ -312,6 +316,7 @@ strong { color: var(--color-white); font-weight: 600; }
 .drop-chevron {
   transition: transform 0.2s ease;
   flex-shrink: 0;
+  opacity: 0.6;
 }
 .nav-dropdown.open .drop-chevron { transform: rotate(180deg); }
 
@@ -321,39 +326,42 @@ strong { color: var(--color-white); font-weight: 600; }
   top: calc(100% + 0.5rem);
   left: 50%;
   transform: translateX(-50%);
-  min-width: 220px;
-  background: var(--color-bg-dark);
-  border: 1px solid rgba(255,255,255,0.08);
+  min-width: 240px;
+  /* Solid background — no transparency fallback */
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 10px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.7);
   overflow: hidden;
-  z-index: 200;
-  padding: 0.35rem;
+  z-index: 9999;
+  padding: 0.4rem;
 }
 .nav-dropdown.open .nav-drop-menu { display: block; }
 
 .nav-drop-menu a {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
-  padding: 0.6rem 0.85rem;
+  gap: 0.2rem;
+  padding: 0.65rem 0.9rem;
   border-radius: 7px;
   text-decoration: none;
   transition: background var(--transition);
 }
-.nav-drop-menu a:hover { background: rgba(255,255,255,0.06); }
+.nav-drop-menu a:hover { background: rgba(255,255,255,0.07); }
 .nav-drop-menu a.active .drop-label { color: var(--color-gold); }
 
 .drop-label {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--color-white);
   line-height: 1.2;
 }
 .drop-sub {
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   color: var(--color-text-muted);
   line-height: 1.3;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 /* ---- Hero ---- */

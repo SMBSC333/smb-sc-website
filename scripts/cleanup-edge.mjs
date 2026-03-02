@@ -4,7 +4,7 @@ import { readdirSync, rmSync } from 'fs'
 const dir = 'netlify/edge-functions'
 try {
   readdirSync(dir).forEach(f => {
-    if (!f.endsWith('.js')) {
+    if (!f.endsWith('.js') && f !== '.gitkeep') {
       rmSync(`${dir}/${f}`, { recursive: true, force: true })
       console.log(`Removed: ${dir}/${f}`)
     }

@@ -4,3 +4,10 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Edge function handles all dynamic routes
+# excludedPath ensures static assets are served directly by Netlify CDN
+[[edge_functions]]
+  path = "/*"
+  function = "index"
+  excludedPath = ["/static/*", "/*.html", "/*.ico", "/*.txt", "/*.xml", "/*.json"]

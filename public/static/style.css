@@ -673,19 +673,25 @@ strong { color: var(--color-white); font-weight: 600; }
   border-top: 1px solid var(--color-bg-border);
   border-bottom: 1px solid var(--color-bg-border);
   overflow: hidden;
-  /* Circuit board background — WebP loaded via JS below; JPG fallback here */
-  background-color: #111;
+  background-color: #0a0a0a;
+  /* JPG fallback for all browsers */
   background-image: url('/static/images/ai-circuit-bg.jpg');
+  /* WebP for supporting browsers via image-set */
+  background-image: image-set(
+    url('/static/images/ai-circuit-bg.webp') type('image/webp'),
+    url('/static/images/ai-circuit-bg.jpg') type('image/jpeg')
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 /* Dark overlay so text stays readable over the circuit image */
+/* Reduced from 0.82 to 0.70 so the image is visible through the overlay */
 .aios-section::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(10, 10, 10, 0.82);
+  background: rgba(8, 8, 8, 0.72);
   pointer-events: none;
   z-index: 0;
 }

@@ -783,6 +783,60 @@ strong { color: var(--color-white); font-weight: 600; }
   .phase-label { text-align: left; }
 }
 
+/* ---- Diagnostic CTA section — desk photo background ---- */
+.diagnostic-cta-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #0d0b08;
+  /* JPG fallback */
+  background-image: url('/static/images/desk-diagnostic-bg.jpg');
+  /* WebP for supporting browsers */
+  background-image: image-set(
+    url('/static/images/desk-diagnostic-bg.webp') type('image/webp'),
+    url('/static/images/desk-diagnostic-bg.jpg') type('image/jpeg')
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Position: keep the warm lamp glow visible on the right */
+  background-position: 60% center;
+}
+/* Multi-layer overlay: strong left-side darken for text, lighter right side for image */
+.diagnostic-cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(5, 4, 2, 0.90) 0%,
+    rgba(5, 4, 2, 0.80) 40%,
+    rgba(5, 4, 2, 0.55) 65%,
+    rgba(5, 4, 2, 0.35) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+/* All direct children sit above the overlay */
+.diagnostic-cta-section > * {
+  position: relative;
+  z-index: 1;
+}
+/* Highlight box inside this section — slightly more opaque so it pops */
+.diagnostic-cta-section .highlight-box {
+  background: rgba(14, 11, 6, 0.82);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+/* Mobile: stack layout, heavier overall tint since gradient direction changes */
+@media (max-width: 768px) {
+  .diagnostic-cta-section {
+    background-position: 55% center;
+  }
+  .diagnostic-cta-section::before {
+    background: rgba(5, 4, 2, 0.82);
+  }
+}
+
 /* ---- Engagement paths ---- */
 .path-card {
   background: var(--color-bg-card);

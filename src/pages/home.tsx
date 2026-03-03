@@ -273,25 +273,25 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* Growth Constraint Quiz CTA */}
-      <section class="section bg-surface">
+      {/* Growth Diagnostic CTA — desk photo background */}
+      <section class="section diagnostic-cta-section">
         <div class="container">
           <div class="grid-2" style="align-items:center; gap:4rem;">
             <div>
-              <span class="eyebrow">Not Sure Where to Start?</span>
-              <h2>Find your growth constraint in 3 minutes.</h2>
+              <span class="eyebrow">Ready for Clarity?</span>
+              <h2>Find your growth constraint.</h2>
               <div class="gold-line"></div>
-              <p>Answer a short set of questions about your business and we will identify which of the four pillars is most likely holding your growth hostage — and what to do about it.</p>
-              <a href="/growth-constraint-quiz" class="btn btn-outline mt-2">Take the Growth Constraint Quiz</a>
+              <p>In one free, live Growth Diagnostic we identify the single constraint that is limiting your revenue, draining your time, and slowing your momentum — then hand you the exact next move to break through it. You leave with a clear 30–90 day plan and the confidence to execute it.</p>
+              <a href="/growth-diagnostic" class="btn btn-primary mt-2">Book the Free Growth Diagnostic</a>
             </div>
             <div class="highlight-box">
-              <h4 class="mb-3">The five most common growth ceilings</h4>
+              <h4 class="mb-3">What you walk away with</h4>
               <ul class="intensive-includes">
-                <li>The owner is the primary decision-maker for everything</li>
-                <li>Team execution does not match leadership's standards</li>
-                <li>No consistent operating rhythm week to week</li>
-                <li>Lead follow-through is inconsistent or manual</li>
-                <li>Financial visibility lags behind the business reality</li>
+                <li>Your single highest-leverage growth constraint identified</li>
+                <li>A 30–90 day priority action plan built around your business</li>
+                <li>Clarity on which engagement path fits your current stage</li>
+                <li>An honest read on where AI can reduce cost and increase margin</li>
+                <li>A clear next step — no ambiguity, no obligations</li>
               </ul>
             </div>
           </div>

@@ -12,7 +12,7 @@ landingPages.get('/growth-diagnostic', (c) => {
           <h1>Book the Free Growth Diagnostic.</h1>
           <p class="lead">In one guided working session, we identify the constraint that is creating bottlenecks, slowing decisions, and limiting momentum — and show you the next best move for your business.</p>
           <div class="hero-actions">
-            <a href="https://link.pipelinedash.com/widget/form/5OCNv2Z4BjJKEjGTIrHq" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Book the Growth Diagnostic Now</a>
+            <a href="#book-diagnostic" class="btn btn-primary btn-lg">Book the Growth Diagnostic Now</a>
           </div>
           <p class="hero-microcopy">Free. No obligation. You leave with a written 30–90 day focus plan.</p>
         </div>
@@ -86,8 +86,39 @@ landingPages.get('/growth-diagnostic', (c) => {
               <span class="eyebrow">Who This Is For</span>
               <h3 class="mb-3">Service-based businesses in the $500K–$10M range.</h3>
               <p>You have revenue and a team. Something is working. But growth has stalled, complexity has outpaced structure, or the owner is working too hard for the results the business is producing. The Growth Diagnostic is the fastest way to identify what to fix first.</p>
-              <a href="https://link.pipelinedash.com/widget/form/5OCNv2Z4BjJKEjGTIrHq" class="btn btn-primary btn-lg mt-3" target="_blank" rel="noopener">Book the Free Growth Diagnostic</a>
+              <a href="#book-diagnostic" class="btn btn-primary btn-lg mt-3">Book the Free Growth Diagnostic</a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Embedded booking form */}
+      <section class="section bg-dark" id="book-diagnostic">
+        <div class="container">
+          <div class="section-header center" style="margin-bottom:2.5rem;">
+            <span class="eyebrow">Schedule Your Session</span>
+            <h2>Pick a time that works for you.</h2>
+            <p>The session is free, live, and typically 60 minutes. Fill out the form below to get on the calendar.</p>
+          </div>
+          <div class="diagnostic-form-wrap">
+            <iframe
+              src="https://link.pipelinedash.com/widget/form/5OCNv2Z4BjJKEjGTIrHq"
+              style="width:100%;height:1152px;border:none;border-radius:4px;"
+              id="inline-5OCNv2Z4BjJKEjGTIrHq"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Schedule a Strategy Session"
+              data-height="1152"
+              data-layout-iframe-id="inline-5OCNv2Z4BjJKEjGTIrHq"
+              data-form-id="5OCNv2Z4BjJKEjGTIrHq"
+              title="Schedule a Strategy Session"
+            ></iframe>
+            <script src="https://link.pipelinedash.com/js/form_embed.js"></script>
           </div>
         </div>
       </section>

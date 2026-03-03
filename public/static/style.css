@@ -866,6 +866,24 @@ strong { color: var(--color-white); font-weight: 600; }
 }
 
 /* ---- CTA Band ---- */
+/* ---- Diagnostic booking form embed ---- */
+.diagnostic-form-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  /* Subtle gold border to frame the form against the dark background */
+  border: 1px solid rgba(201, 168, 76, 0.20);
+  background: rgba(255, 255, 255, 0.02);
+}
+.diagnostic-form-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 1152px;
+  border: none;
+  border-radius: 4px;
+}
+
 .cta-band {
   background: linear-gradient(135deg, var(--color-bg-surface) 0%, rgba(201,168,76,0.05) 100%);
   border-top: 1px solid var(--color-bg-border);

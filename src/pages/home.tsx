@@ -152,6 +152,14 @@ home.get('/', (c) => {
 
       {/* AI Moment Section */}
       <section class="section aios-section">
+        {/* WebP background upgrade for supporting browsers */}
+        <style>{`
+          @supports (background-image: url('/static/images/ai-circuit-bg.webp')) {
+            .aios-section {
+              background-image: url('/static/images/ai-circuit-bg.webp');
+            }
+          }
+        `}</style>
         <div class="container">
           <div class="grid-2" style="align-items:start; gap:4rem;">
             <div>

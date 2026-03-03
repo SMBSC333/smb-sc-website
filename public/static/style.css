@@ -669,9 +669,30 @@ strong { color: var(--color-white); font-weight: 600; }
 
 /* ---- AIOS margin graphic section ---- */
 .aios-section {
-  background: var(--color-bg-surface);
+  position: relative;
   border-top: 1px solid var(--color-bg-border);
   border-bottom: 1px solid var(--color-bg-border);
+  overflow: hidden;
+  /* Circuit board background — WebP loaded via JS below; JPG fallback here */
+  background-color: #111;
+  background-image: url('/static/images/ai-circuit-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* Dark overlay so text stays readable over the circuit image */
+.aios-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.82);
+  pointer-events: none;
+  z-index: 0;
+}
+/* Push all section content above the overlay */
+.aios-section > * {
+  position: relative;
+  z-index: 1;
 }
 .aios-inner {
   display: grid;
@@ -1011,10 +1032,12 @@ strong { color: var(--color-white); font-weight: 600; }
   margin: 3rem 0;
 }
 .highlight-box {
-  background: rgba(201,168,76,0.05);
-  border: 1px solid rgba(201,168,76,0.15);
+  background: rgba(18, 16, 10, 0.80);
+  border: 1px solid rgba(201,168,76,0.28);
   border-radius: var(--radius-lg);
   padding: 2rem;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 .tag {
   display: inline-block;

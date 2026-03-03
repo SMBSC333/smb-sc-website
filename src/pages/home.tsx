@@ -6,8 +6,31 @@ home.get('/', (c) => {
   return c.render(
     <div>
       {/* Hero */}
-      <section class="hero section-lg bg-dark">
-        <div class="container">
+      <section class="hero hero-photo section-lg">
+        {/* Responsive background image — WebP with JPG fallback */}
+        <picture class="hero-bg-picture" aria-hidden="true">
+          <source
+            type="image/webp"
+            srcset="/static/images/smb-sc-hero-768.webp 768w, /static/images/smb-sc-hero-1024.webp 1024w, /static/images/smb-sc-hero-1440.webp 1440w, /static/images/smb-sc-hero-1920.webp 1920w"
+            sizes="100vw"
+          />
+          <source
+            type="image/jpeg"
+            srcset="/static/images/smb-sc-hero-768.jpg 768w, /static/images/smb-sc-hero-1024.jpg 1024w, /static/images/smb-sc-hero-1440.jpg 1440w, /static/images/smb-sc-hero-1920.jpg 1920w"
+            sizes="100vw"
+          />
+          <img
+            src="/static/images/smb-sc-hero-1024.jpg"
+            alt=""
+            class="hero-bg-img"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+        {/* Dark gradient overlay — heavier on left where text lives */}
+        <div class="hero-overlay" aria-hidden="true"></div>
+        {/* Content */}
+        <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">Atlanta, GA — Serving SMBs Nationwide</span>
           <h1>If revenue is up but everything still feels hard, you have hit a growth ceiling.</h1>
           <p class="lead">In one free Growth Diagnostic, we identify the constraint creating bottlenecks, slowing decisions, and limiting momentum — and give you the next best move.</p>

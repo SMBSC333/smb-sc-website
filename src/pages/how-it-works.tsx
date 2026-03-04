@@ -14,14 +14,14 @@ howItWorks.get('/', (c) => {
       </section>
 
       {/* Three Phases */}
-      <section class="section bg-dark">
+      <section class="section bg-soft">
         <div class="container">
-          <div class="section-header">
+          <div class="section-header center">
             <span class="eyebrow">The Three Phases</span>
             <h2>Not advice. Installation.</h2>
             <p>Most consultants hand you a report and leave. We stay in the engagement until the system is running. Here is how that process works.</p>
           </div>
-          <div style="max-width:680px;">
+          <div class="grid-2" style="align-items:center; gap:4rem; margin-top:3rem;">
             <div class="steps">
               <div class="step">
                 <div class="step-num">1</div>
@@ -44,6 +44,12 @@ howItWorks.get('/', (c) => {
                   <p>We activate the team around the installed system, integrate AI where it creates measurable leverage, and build the operating rhythm that holds it all together. This is where the business begins running with the owner in it strategically — not operationally at every node.</p>
                 </div>
               </div>
+            </div>
+            <div class="hiw-img-wrap">
+              <picture>
+                <source srcset="/static/images/hiw-strategy-session.webp" type="image/webp" />
+                <img src="/static/images/hiw-strategy-session.jpg" alt="Consultant and business owner working through a strategy plan together" class="hiw-img" loading="lazy" />
+              </picture>
             </div>
           </div>
         </div>
@@ -118,9 +124,15 @@ howItWorks.get('/', (c) => {
       </section>
 
       {/* The Growth Acceleration System */}
-      <section class="section bg-surface">
+      <section class="section bg-warm">
         <div class="container">
           <div class="grid-2" style="align-items:center; gap:4rem;">
+            <div class="hiw-img-wrap">
+              <picture>
+                <source srcset="/static/images/hiw-owner-clarity.webp" type="image/webp" />
+                <img src="/static/images/hiw-owner-clarity.jpg" alt="Business owner confidently reviewing metrics and growth data" class="hiw-img" loading="lazy" />
+              </picture>
+            </div>
             <div>
               <span class="eyebrow">The Flagship Engagement</span>
               <h2>My Profit Life is the complete transformation container.</h2>
@@ -128,39 +140,6 @@ howItWorks.get('/', (c) => {
               <p>For owners who are done with incremental progress. My Profit Life is a structured engagement that addresses all four growth pillars simultaneously — with Corbin directly involved in every phase and the full Growth Acceleration System installed as the operating framework.</p>
               <p>It is not a course. It is not coaching in the traditional sense. It is system installation across your entire business with accountability built into every step. The six-month foundation sets the structure; the ongoing community deepens and optimizes it indefinitely.</p>
               <a href="/my-profit-life" class="btn btn-outline mt-3">Learn About My Profit Life</a>
-            </div>
-            <div class="highlight-box">
-              <h4 class="mb-3" style="color:var(--color-gold);">My Profit Life — Invitation Only</h4>
-              <div class="steps" style="margin-top:1rem;">
-                <div class="step">
-                  <div class="step-num" style="width:2.25rem;height:2.25rem;font-size:0.8rem;">1</div>
-                  <div class="step-content">
-                    <h4>Diagnose and Set Standards</h4>
-                    <p style="font-size:0.82rem;">Deep diagnostic, financial baseline, team assessment, AI readiness score. Months 1–2.</p>
-                  </div>
-                </div>
-                <div class="step">
-                  <div class="step-num" style="width:2.25rem;height:2.25rem;font-size:0.8rem;">2</div>
-                  <div class="step-content">
-                    <h4>Install Core Systems</h4>
-                    <p style="font-size:0.82rem;">Strategy intensives across constrained pillars. Operating cadence installation. Months 2–4.</p>
-                  </div>
-                </div>
-                <div class="step">
-                  <div class="step-num" style="width:2.25rem;height:2.25rem;font-size:0.8rem;">3</div>
-                  <div class="step-content">
-                    <h4>Adopt and Delegate</h4>
-                    <p style="font-size:0.82rem;">Leadership development, team activation, AI workflow adoption. Months 3–5.</p>
-                  </div>
-                </div>
-                <div class="step">
-                  <div class="step-num" style="width:2.25rem;height:2.25rem;font-size:0.8rem;">4</div>
-                  <div class="step-content">
-                    <h4>Scale and Lock In</h4>
-                    <p style="font-size:0.82rem;">Scoreboard tracking, weekly cadence, exit or growth path confirmed. Months 5–6.</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

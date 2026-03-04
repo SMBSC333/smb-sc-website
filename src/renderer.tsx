@@ -7,7 +7,7 @@ interface LayoutProps {
 }
 
 export const renderer = jsxRenderer(({ children, title, description, activeNav }: LayoutProps & { children?: any }) => {
-  const pageTitle = title ? `${title} — SMB Strategy Consultants` : 'SMB Strategy Consultants | AI-Enabled Business Growth for SMBs'
+  const pageTitle = title ? `${title} — SMB Strategy Consultants` : 'AI-Enabled Business Growth for SMBs — SMB Strategy Consultants'
   const pageDesc = description || 'We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration for service-based businesses.'
 
   return (
@@ -20,10 +20,6 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <style>{`
-          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-          body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
-        `}</style>
         <link href="/static/style.css" rel="stylesheet" />
         {/* Netlify Identity Widget — required for Decap CMS login */}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -31,7 +27,16 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
       <body>
         <nav class="nav" id="main-nav">
           <div class="nav-inner">
-            <a href="/" class="nav-logo">SMB <span>Strategy</span> Consultants</a>
+            {/* Logo — transparent PNG, no white box */}
+            <a href="/" class="nav-logo" aria-label="SMB Strategy Consultants — Home">
+              <img
+                src="/static/images/logo-horizontal-transparent.png"
+                alt="SMB Strategy Consultants"
+                class="nav-logo-img"
+                width="220"
+                height="44"
+              />
+            </a>
             <ul class="nav-links">
               <li><a href="/how-it-works" class={activeNav === 'how' ? 'active' : ''}>How It Works</a></li>
               <li><a href="/strategy-intensives" class={activeNav === 'intensives' ? 'active' : ''}>Strategy Intensives</a></li>
@@ -95,7 +100,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
             <a href="/about" style="padding-left:1.5rem;">About</a>
             <a href="/resources" style="padding-left:1.5rem;">Resources</a>
             <a href="/contact" style="padding-left:1.5rem;">Contact</a>
-            <a href="/growth-diagnostic" style="color: #c9a84c; font-weight: 600; margin-top: 0.5rem;">Book a Growth Diagnostic</a>
+            <a href="/growth-diagnostic" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book a Growth Diagnostic</a>
           </div>
         </nav>
 
@@ -107,9 +112,15 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
           <div class="container">
             <div class="footer-grid">
               <div class="footer-brand">
-                <div class="nav-logo" style="font-size:1rem; font-family: Georgia, serif; color: #f5f5f5;">SMB <span style="color:#c9a84c;">Strategy</span> Consultants</div>
+                <img
+                  src="/static/images/logo-horizontal-transparent.png"
+                  alt="SMB Strategy Consultants"
+                  class="footer-logo-img"
+                  width="180"
+                  height="38"
+                />
                 <p>We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration.</p>
-                <div class="cred-bar" style="margin-top:1.25rem;">
+                <div class="cred-bar">
                   <span class="cred-badge">CEPA</span>
                   <span class="cred-badge">AASBC</span>
                   <span class="cred-badge">Value Builder</span>
@@ -149,7 +160,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
             </div>
             <div class="footer-bottom">
               <p>5555 Glenridge Connector, Suite 200, Atlanta, GA 30342 &nbsp;|&nbsp; Mon–Fri 9am–6pm</p>
-              <p>2026 SMB Strategy Consultants. All rights reserved.</p>
+              <p>&copy; 2026 SMB Strategy Consultants. All rights reserved.</p>
             </div>
           </div>
         </footer>
@@ -163,20 +174,18 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               mobileNav.classList.toggle('open');
             });
           }
-
           // Desktop dropdowns
           document.querySelectorAll('.nav-dropdown').forEach(function(dropdown) {
             const btn = dropdown.querySelector('.nav-drop-btn');
             const menu = dropdown.querySelector('.nav-drop-menu');
             if (!btn || !menu) return;
-
             btn.addEventListener('click', function(e) {
               e.stopPropagation();
               const isOpen = dropdown.classList.contains('open');
-              // close all
               document.querySelectorAll('.nav-dropdown').forEach(function(d) {
                 d.classList.remove('open');
-                d.querySelector('.nav-drop-btn') && d.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+                var b = d.querySelector('.nav-drop-btn');
+                if (b) b.setAttribute('aria-expanded', 'false');
               });
               if (!isOpen) {
                 dropdown.classList.add('open');
@@ -184,17 +193,23 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               }
             });
           });
-
-          // Close dropdowns when clicking outside
           document.addEventListener('click', function() {
             document.querySelectorAll('.nav-dropdown').forEach(function(d) {
               d.classList.remove('open');
-              d.querySelector('.nav-drop-btn') && d.querySelector('.nav-drop-btn').setAttribute('aria-expanded', 'false');
+              var b = d.querySelector('.nav-drop-btn');
+              if (b) b.setAttribute('aria-expanded', 'false');
             });
           });
+          // Subtle nav shadow on scroll
+          var nav = document.getElementById('main-nav');
+          if (nav) {
+            window.addEventListener('scroll', function() {
+              nav.classList.toggle('scrolled', window.scrollY > 10);
+            }, { passive: true });
+          }
         `}} />
 
-        {/* Netlify Identity redirect — sends logged-in users back to /admin/ */}
+        {/* Netlify Identity redirect */}
         <script dangerouslySetInnerHTML={{ __html: `
           if (window.netlifyIdentity) {
             window.netlifyIdentity.on('init', function(user) {

@@ -16,6 +16,7 @@
 
   /* Brand colors */
   --color-navy:         #13263f;
+  --color-navy-deep:    #0d1c2e;
   --color-navy-mid:     #1c3553;
   --color-gold:         #c9a84c;
   --color-gold-light:   #e0b95e;
@@ -1124,9 +1125,9 @@ strong { color: var(--color-heading); font-weight: 600; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.25rem 0.7rem;
-  border: 1px solid rgba(201,168,76,0.4);
+  border: 1px solid rgba(255,255,255,0.35);
   border-radius: 3px;
-  color: var(--color-gold-light);
+  color: rgba(255,255,255,0.75);
 }
 @media (max-width: 900px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }

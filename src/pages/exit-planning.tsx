@@ -10,34 +10,40 @@ exitPlanning.get('/', (c) => {
           <span class="eyebrow">Plan Intelligently. Extract Confidently. Exit on Your Terms.</span>
           <h1>8 out of 10 businesses do not sell for what the owner hopes.</h1>
           <p class="lead">Our 21-Step Sell-Ready Process methodically drives your business to the top 20% of its industry — and in the AI era, that includes building the AI-ready operations that buyers increasingly factor into their valuation.</p>
-          <a href="/growth-diagnostic" class="btn btn-primary mt-4">Start the Conversation</a>
+          <a href="https://exit.capitaliz.com/?verify=https%3A%2F%2Fapi.capitaliz.com%2Fapi%2F2021-10%2Fwebhook%2Fexit-assessment%2F901%2Fadvisor%3Fsignature%3D1844b632a487fa756fbb51423b31957a722a60cace9841965498cf25d0a950de" class="btn btn-primary mt-4" target="_blank" rel="noopener noreferrer">Take Your Exit Readiness Assessment</a>
         </div>
       </section>
 
       {/* The Problem */}
-      <section class="section bg-dark">
+      <section class="section bg-soft">
         <div class="container">
-          <div class="grid-2" style="align-items:start; gap:4rem;">
+          <div class="grid-2" style="align-items:center; gap:4rem;">
             <div>
               <span class="eyebrow">The Reality</span>
               <h2>Most owners have the majority of their wealth tied up in their business.</h2>
               <div class="gold-line"></div>
               <p>And most have no formal plan to extract it. The result is lost value, higher taxes, and missed opportunities — not because the business was not good, but because it was never made ready to sell.</p>
               <p style="color:var(--color-text-muted); font-style:italic; font-size:0.95rem;">"It is just plain wrong that so many business owners' life and business plans fail to materialize or take years longer than they should. When in reality, they run into the same challenges time and time again." — Corbin Cook, ASBC, CEPA</p>
+              <div class="mt-3" style="display:flex; gap:1.5rem; flex-wrap:wrap;">
+                <div class="card card-accent" style="flex:1; min-width:120px; text-align:center; padding:1.25rem;">
+                  <div class="stat-number" style="font-size:2rem;">69%</div>
+                  <p style="font-size:0.78rem; margin:0;">say exit strategy is a priority</p>
+                </div>
+                <div class="card card-accent" style="flex:1; min-width:120px; text-align:center; padding:1.25rem;">
+                  <div class="stat-number" style="font-size:2rem;">53%</div>
+                  <p style="font-size:0.78rem; margin:0;">have no written transition plan</p>
+                </div>
+                <div class="card card-accent" style="flex:1; min-width:120px; text-align:center; padding:1.25rem;">
+                  <div class="stat-number" style="font-size:2rem;">78%</div>
+                  <p style="font-size:0.78rem; margin:0;">still need a transition team</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <div class="card card-accent mb-3">
-                <div class="stat-number" style="font-size:2rem;">69%</div>
-                <p style="font-size:0.85rem; margin:0;">of business owners say exit strategy is a priority</p>
-              </div>
-              <div class="card card-accent mb-3">
-                <div class="stat-number" style="font-size:2rem;">53%</div>
-                <p style="font-size:0.85rem; margin:0;">do not have a written, formal transition plan</p>
-              </div>
-              <div class="card card-accent">
-                <div class="stat-number" style="font-size:2rem;">78%</div>
-                <p style="font-size:0.85rem; margin:0;">still need to develop a transition team</p>
-              </div>
+            <div class="hiw-img-wrap">
+              <picture>
+                <source srcset="/static/images/exit-valuation-review.webp" type="image/webp" />
+                <img src="/static/images/exit-valuation-review.jpg" alt="Business owner reviewing a business valuation and exit plan" class="hiw-img" loading="lazy" />
+              </picture>
             </div>
           </div>
         </div>
@@ -102,55 +108,86 @@ exitPlanning.get('/', (c) => {
       </section>
 
       {/* Assessment Tools */}
-      <section class="section bg-surface">
+      <section class="section bg-warm">
         <div class="container">
-          <div class="section-header center">
-            <span class="eyebrow">Assessment Tools</span>
-            <h2>Three tools to understand where you stand today.</h2>
-          </div>
-          <div class="grid-3">
-            <div class="card card-accent">
-              <h4 class="mb-2">Value Builder Score</h4>
-              <p style="font-size:0.85rem;">A data-driven assessment measuring your company's performance across the 8 key drivers buyers evaluate. Identifies your strengths and closes your gaps — whether you are selling soon or building long-term.</p>
-              <a href="/value-builder-score-questionnaire" class="btn btn-ghost btn-sm mt-3">Take the Assessment</a>
+          <div class="grid-2" style="align-items:center; gap:4rem;">
+            <div class="hiw-img-wrap">
+              <picture>
+                <source srcset="/static/images/exit-handshake.webp" type="image/webp" />
+                <img src="/static/images/exit-handshake.jpg" alt="Business partners completing a deal — the result of a well-planned exit" class="hiw-img" loading="lazy" />
+              </picture>
             </div>
-            <div class="card card-accent">
-              <h4 class="mb-2">Freedom Score</h4>
-              <p style="font-size:0.85rem;">A 10-minute online assessment that calculates your Freedom Point — the moment when the sale of your business can fund your ideal post-exit lifestyle. Gives you clarity on what the exit needs to deliver.</p>
-              <a href="/growth-diagnostic" class="btn btn-ghost btn-sm mt-3">Discuss in the Diagnostic</a>
-            </div>
-            <div class="card card-accent">
-              <h4 class="mb-2">PREScore</h4>
-              <p style="font-size:0.85rem;">A short tool assessing your personal readiness for exit based on four key drivers: vision for life after the sale, flexibility in deal structure, emotional detachment from the business, and team independence.</p>
-              <a href="/pre-score-questionnaire" class="btn btn-ghost btn-sm mt-3">Take the Assessment</a>
+            <div>
+              <span class="eyebrow">Assessment Tools</span>
+              <h2>Three tools to understand where you stand today.</h2>
+              <div class="gold-line"></div>
+              <div class="steps" style="margin-top:1.75rem;">
+                <div class="step">
+                  <div class="step-num">1</div>
+                  <div class="step-content">
+                    <h4>Value Builder Score</h4>
+                    <p style="font-size:0.88rem;">A data-driven assessment measuring your company across the 8 key drivers buyers evaluate. Identifies strengths and gaps — whether you're selling soon or building long-term.</p>
+                    <a href="/value-builder-score-questionnaire" class="btn btn-ghost btn-sm mt-2">Take the Assessment</a>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-num">2</div>
+                  <div class="step-content">
+                    <h4>Freedom Score</h4>
+                    <p style="font-size:0.88rem;">Calculates your Freedom Point — the moment when the sale of your business funds your ideal post-exit lifestyle. Gives you clarity on what the exit needs to deliver.</p>
+                    <a href="/growth-diagnostic" class="btn btn-ghost btn-sm mt-2">Discuss in the Diagnostic</a>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-num">3</div>
+                  <div class="step-content">
+                    <h4>Exit Readiness Assessment</h4>
+                    <p style="font-size:0.88rem;">A comprehensive assessment of your personal and business readiness for exit — covering vision for life after the sale, deal structure flexibility, emotional readiness, and team independence.</p>
+                    <a href="https://exit.capitaliz.com/?verify=https%3A%2F%2Fapi.capitaliz.com%2Fapi%2F2021-10%2Fwebhook%2Fexit-assessment%2F901%2Fadvisor%3Fsignature%3D1844b632a487fa756fbb51423b31957a722a60cace9841965498cf25d0a950de" class="btn btn-ghost btn-sm mt-2" target="_blank" rel="noopener noreferrer">Take Your Exit Readiness Assessment</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CEPA and Team */}
-      <section class="section bg-dark">
+      <section class="section bg-soft">
         <div class="container">
+          <div class="section-header center" style="margin-bottom:3rem;">
+            <span class="eyebrow">Your Exit Planning Team</span>
+            <h2>Corbin Cook, CEPA — and Steve Ike.</h2>
+          </div>
           <div class="grid-2" style="align-items:start; gap:4rem;">
-            <div>
-              <span class="eyebrow">Your Exit Planning Team</span>
-              <h2>Corbin Cook, CEPA — and Steve Ike.</h2>
-              <div class="gold-line"></div>
-              <p>Our exit planning practice is led by Corbin Cook, a Certified Exit Planning Advisor (CEPA) and accredited Capitaliz advisor, and Steve Ike. Together, they bring the financial, operational, and strategic perspective needed to build a business that commands a premium when the time comes.</p>
-              <p>Whether you are planning to exit in 1 year or 10, the work of building a more valuable business starts now. The 21-step process runs in parallel with everything you are already doing — and every improvement in the business makes both the day-to-day and the eventual exit better.</p>
+            <div style="display:flex; gap:2rem; align-items:flex-start;">
+              <div style="flex-shrink:0;">
+                <picture>
+                  <source srcset="/static/images/corbin-cook-headshot.webp" type="image/webp" />
+                  <img src="/static/images/corbin-cook-headshot.jpg" alt="Corbin Cook, CEPA — Exit Planning Advisor" style="width:140px; height:140px; object-fit:cover; object-position:top; border-radius:50%; border:3px solid var(--color-gold); box-shadow:var(--shadow-md);" loading="lazy" />
+                </picture>
+              </div>
+              <div>
+                <h3 style="color:var(--color-navy); margin-bottom:0.25rem;">Corbin Cook</h3>
+                <p style="color:var(--color-gold-dark); font-weight:600; font-size:0.88rem; margin-bottom:0.75rem;">CEPA · AASBC · Capitaliz Accredited</p>
+                <div class="gold-line" style="margin-bottom:1rem;"></div>
+                <p style="font-size:0.92rem;">Our exit planning practice is led by Corbin Cook, a Certified Exit Planning Advisor (CEPA) and accredited Capitaliz advisor, and Steve Ike. Together, they bring the financial, operational, and strategic perspective needed to build a business that commands a premium when the time comes.</p>
+                <p style="font-size:0.92rem;">Whether you are planning to exit in 1 year or 10, the work of building a more valuable business starts now. Every improvement in the business makes both the day-to-day and the eventual exit better.</p>
+              </div>
             </div>
             <div>
-              <div class="cred-bar" style="flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
-                <span class="cred-badge">CEPA</span>
-                <span class="cred-badge">Capitaliz Accredited</span>
-                <span class="cred-badge">AASBC</span>
-                <span class="cred-badge">Value Builder Certified</span>
-                <span class="cred-badge">Fathom Certified</span>
-                <span class="cred-badge">EPI Member</span>
+              <div class="cred-bar" style="flex-wrap:wrap; gap:0.75rem; margin-bottom:2rem;">
+                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">CEPA</span>
+                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">Capitaliz Accredited</span>
+                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">AASBC</span>
+                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">Value Builder Certified</span>
+                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">Fathom Certified</span>
+                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">EPI Member</span>
               </div>
-              <div class="highlight-box">
+              <div class="card card-accent">
                 <h4 class="mb-2">Exit Planning Services Available In</h4>
                 <p style="font-size:0.88rem;">Atlanta, Marietta, Roswell, Sandy Springs, Smyrna — and nationwide for qualified engagements.</p>
+                <a href="https://exit.capitaliz.com/?verify=https%3A%2F%2Fapi.capitaliz.com%2Fapi%2F2021-10%2Fwebhook%2Fexit-assessment%2F901%2Fadvisor%3Fsignature%3D1844b632a487fa756fbb51423b31957a722a60cace9841965498cf25d0a950de" class="btn btn-primary btn-sm mt-3" target="_blank" rel="noopener noreferrer">Take Your Exit Readiness Assessment</a>
               </div>
             </div>
           </div>
@@ -163,7 +200,7 @@ exitPlanning.get('/', (c) => {
           <span class="eyebrow" style="display:block; text-align:center; margin-bottom:1rem;">Your business is likely your largest financial asset.</span>
           <h2>Preparing it for exit is not optional. It is essential.</h2>
           <p class="lead">Start the conversation with the Growth Diagnostic. Whether exit is 2 years or 10 years away, the work of building a more valuable business starts today.</p>
-          <a href="/growth-diagnostic" class="btn btn-primary btn-lg">Start the Conversation</a>
+          <a href="https://exit.capitaliz.com/?verify=https%3A%2F%2Fapi.capitaliz.com%2Fapi%2F2021-10%2Fwebhook%2Fexit-assessment%2F901%2Fadvisor%3Fsignature%3D1844b632a487fa756fbb51423b31957a722a60cace9841965498cf25d0a950de" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Take Your Exit Readiness Assessment</a>
         </div>
       </section>
     </div>,

@@ -5,226 +5,321 @@ const intensives = new Hono()
 intensives.get('/', (c) => {
   return c.render(
     <div>
-      <section class="page-hero bg-dark">
+
+      {/* ── PAGE HERO ── */}
+      <section class="page-hero">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>Strategy Intensives</span>
-          </div>
           <span class="eyebrow">The Core Offer</span>
           <h1>One problem. One intensive. Measurable movement.</h1>
-          <p class="lead">A Strategy Intensive is a 1-on-1 engagement of 2–4 sessions designed to diagnose and resolve one high-impact constraint. You leave with a 90-day roadmap and a clear plan to execute it.</p>
-          <div class="hero-actions">
+          <p class="lead">A Strategy Intensive is a focused 1-on-1 engagement — 2 to 4 sessions designed to diagnose one high-impact constraint and build the system to resolve it. You leave with a 90-day roadmap and a clear plan to execute.</p>
+          <div class="hero-actions" style="margin-top:2rem;">
             <a href="/growth-diagnostic" class="btn btn-primary">Book the Free Growth Diagnostic</a>
-            <a href="#finance" class="btn btn-ghost">Explore the Four Intensives</a>
+            <a href="#finance" class="btn btn-ghost-light">Explore the Four Intensives</a>
           </div>
           <p class="hero-microcopy" style="margin-top:1rem;">Not sure which intensive fits? The Growth Diagnostic tells you exactly where to start.</p>
         </div>
       </section>
 
-      {/* What it is */}
-      <section class="section bg-surface">
+      {/* ── STICKY INTENSIVE NAV ── */}
+      <nav class="intensive-nav" aria-label="Jump to intensive">
+        <div class="intensive-nav-inner">
+          <a href="#finance"  class="intensive-nav-link"><span class="intensive-nav-num">01</span>Financial Foundations</a>
+          <a href="#growth"   class="intensive-nav-link"><span class="intensive-nav-num">02</span>Brand &amp; Strategy</a>
+          <a href="#capacity" class="intensive-nav-link"><span class="intensive-nav-num">03</span>Capacity</a>
+          <a href="#ai"       class="intensive-nav-link"><span class="intensive-nav-num">04</span>AI Enablement</a>
+        </div>
+      </nav>
+
+      {/* ── WHAT IT IS ── */}
+      <section class="section bg-soft">
         <div class="container">
-          <div class="grid-2" style="align-items:start; gap:4rem;">
+          <div class="grid-2" style="align-items:center; gap:4rem;">
             <div>
               <span class="eyebrow">The Format</span>
               <h2>Surgical. Focused. Fast.</h2>
               <div class="gold-line"></div>
-              <p>This is not a retainer. This is not a 6-month program. A Strategy Intensive is a concentrated engagement — designed for founders in the $1M–$5M range who have identified a specific ceiling and need to move through it quickly.</p>
-              <p>We go deep on one problem. We build the system that resolves it. You walk away with a clear 90-day plan and the tools to execute it — whether you implement it yourself or use our partner network to do it with you.</p>
+              <p>This is not a retainer. This is not a six-month program. A Strategy Intensive is a concentrated engagement built for founders in the $1M–$5M range who have identified a specific ceiling and need to move through it quickly.</p>
+              <p>We go deep on one problem. We build the system that resolves it. You leave with a clear 90-day plan and the tools to execute it — whether you implement it yourself or use our partner network to do it with you.</p>
             </div>
             <div>
-              <h4 class="mb-3">Every Intensive includes:</h4>
-              <ul class="pain-list">
-                <li>90-minute strategy sessions (1–3 depending on depth)</li>
+              <h4 style="color:var(--color-navy); margin-bottom:1.25rem;">Every Intensive includes:</h4>
+              <ul class="intensive-includes" style="gap:0.85rem;">
+                <li>90-minute strategy sessions (2–4 depending on depth)</li>
                 <li>Root cause and opportunity mapping</li>
                 <li>Customized strategy audit report</li>
                 <li>One-page strategy map aligned to your top goal</li>
                 <li>Follow-up summary and next steps plan</li>
               </ul>
-              <div class="highlight-box mt-4">
-                <h4 class="mb-2">Optional Add-On</h4>
-                <p style="font-size:0.88rem;">Implementation Leadership through our partner network. Virtual staffing, marketing, financial operations, payroll, and AI agent deployment available as execution support after the intensive.</p>
+              <div class="highlight-box" style="margin-top:1.75rem;">
+                <h4 class="mb-2">Optional: Implementation Support</h4>
+                <p style="font-size:0.88rem; color:var(--color-text-muted);">Every intensive can extend into hands-on implementation through our partner network — virtual staffing, marketing execution, financial operations, and AI workflow deployment.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who it's for */}
-      <section class="section-sm bg-dark">
+      {/* ── WHO IT'S FOR ── */}
+      <section class="section-sm bg-navy">
         <div class="container">
-          <div class="highlight-box" style="max-width:820px; margin:0 auto;">
-            <span class="eyebrow">Who This Is For</span>
-            <h3 class="mb-2">Built for growing businesses that have hit a specific ceiling.</h3>
-            <div class="grid-2" style="margin-top:1.5rem; gap:1rem;">
+          <div style="max-width:860px; margin:0 auto; text-align:center;">
+            <span class="eyebrow" style="color:var(--color-gold-light);">Who This Is For</span>
+            <h3 style="color:#fff; margin-bottom:1.5rem;">Built for growth-stage businesses that have hit a specific ceiling.</h3>
+            <div class="grid-2" style="text-align:left; gap:1.5rem; margin-top:1rem;">
               <ul class="intensive-includes">
-                <li>Led by founders who need to become leader-driven companies</li>
-                <li>Feeling the weight of misalignment between departments</li>
-                <li>Plenty of opportunity, unclear execution</li>
+                <li style="color:rgba(255,255,255,0.88);">Led by founders ready to become leader-driven companies</li>
+                <li style="color:rgba(255,255,255,0.88);">Plenty of opportunity — unclear on which to execute first</li>
+                <li style="color:rgba(255,255,255,0.88);">Cash is coming in but clarity is not following</li>
               </ul>
               <ul class="intensive-includes">
-                <li>Preparing for new growth, new markets, or exit readiness</li>
-                <li>Team is busy but the needle is not moving</li>
-                <li>Cash is coming in but clarity is not</li>
+                <li style="color:rgba(255,255,255,0.88);">Team is busy but the needle is not moving</li>
+                <li style="color:rgba(255,255,255,0.88);">Preparing for new growth, new markets, or exit readiness</li>
+                <li style="color:rgba(255,255,255,0.88);">Revenue exists — but it is unpredictable and hard-won</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Four Intensives */}
-      <section class="section bg-dark">
+      {/* ════════════════════════════════════════════
+          INTENSIVE 01 — FINANCIAL FOUNDATIONS
+      ════════════════════════════════════════════ */}
+      <section class="intensive-section" id="finance">
         <div class="container">
-          <div class="section-header center">
-            <span class="eyebrow">The Four Intensives</span>
-            <h2>Each one targets a specific constraint.</h2>
-            <p>Choose the one that matches the primary bottleneck in your business. If you are not sure, the Growth Diagnostic will tell you.</p>
-          </div>
 
-          {/* Finance Intensive */}
-          <div class="intensive-card mb-4" id="finance">
-            <div class="grid-2" style="align-items:start; gap:3rem;">
-              <div>
-                <span class="intensive-tag">Finance</span>
-                <h2 class="mb-2">Finance Intensive</h2>
-                <p class="intensive-problem">You do not have clear visibility into cash, profit, or what the numbers are telling you. Decisions get made on intuition because the data is not accessible or trustworthy.</p>
-                <div class="gold-line"></div>
-                <h4 class="mb-2">What We Do</h4>
-                <ul class="intensive-includes">
-                  <li>P and L review and restructure for decision-making</li>
-                  <li>Cash flow architecture and 13-week forecast installation</li>
-                  <li>Financial reporting rhythm setup (monthly, quarterly)</li>
-                  <li>KPI identification and scoreboard design</li>
-                  <li>Budget vs. actual framework</li>
-                  <li>AI-assisted anomaly detection and reporting summary</li>
-                </ul>
+          {/* Header */}
+          <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;">
+            <span class="intensive-tag">01 &nbsp;Financial Foundations</span>
+          </div>
+          <h2 style="max-width:680px; margin-bottom:0.5rem;">You are running hard — and still not sure if you are winning.</h2>
+          <div class="gold-line"></div>
+
+          {/* Main split: hook copy + photo */}
+          <div class="grid-2" style="align-items:center; gap:4rem; margin-top:2.5rem;">
+            <div>
+              <p class="intensive-hook">"Revenue is up. Why does it still feel like we are barely getting by?"</p>
+              <p>That quiet anxiety at the end of every month — wondering if payroll will clear, whether the strong quarter was real or just luck — is one of the most common and least talked-about experiences of growing a business. It is not a cash flow problem. It is a visibility problem.</p>
+              <p>When the numbers are not structured to tell you the truth, every major decision carries more risk than it should. You hesitate on hiring. You delay investment. You hold back on growth moves that the business is probably ready for — because you cannot be sure.</p>
+              <p>The Financial Foundations Intensive builds the reporting and forecasting infrastructure that turns your financials from a rear-view mirror into a forward-looking instrument panel.</p>
+              <div class="intensive-outcome-statement">
+                <strong>After this intensive:</strong> You know your cash position, your true margins, and your trend lines — before your bank statement does. Decisions stop feeling like guesses.
               </div>
-              <div>
-                <div class="intensive-outcome mb-3">
-                  <strong>Outcome:</strong> Decision clarity from your numbers. You know your cash position, your margins, and your trend lines — before your bank statement tells you.
-                </div>
-                <h4 class="mb-2">Typical Problems We Solve</h4>
-                <ul class="intensive-includes">
-                  <li>Cash disappears even when revenue is strong</li>
-                  <li>No reliable forecast beyond next month</li>
-                  <li>Financials are not reviewed until tax season</li>
-                  <li>Owner makes pricing decisions without margin data</li>
-                  <li>Payroll feels like a gamble every two weeks</li>
-                </ul>
-                <a href="/growth-diagnostic" class="btn btn-primary mt-4">Start with the Diagnostic</a>
-              </div>
+              <a href="/growth-diagnostic" class="btn btn-primary">Start with the Diagnostic</a>
+            </div>
+            <div class="intensive-photo" style="aspect-ratio:4/3;">
+              <picture>
+                <source type="image/webp" srcset="/static/images/intensive-finance.webp" />
+                <img src="/static/images/intensive-finance.jpg" alt="Business owner reviewing financial reports" loading="lazy" />
+              </picture>
             </div>
           </div>
 
-          {/* Growth Intensive */}
-          <div class="intensive-card mb-4" id="growth">
-            <div class="grid-2" style="align-items:start; gap:3rem;">
-              <div>
-                <span class="intensive-tag">Growth</span>
-                <h2 class="mb-2">Growth Intensive</h2>
-                <p class="intensive-problem">Your pipeline is inconsistent, your message is muddy, or your lead-to-close process is leaking value. Revenue exists but it is unpredictable.</p>
-                <div class="gold-line"></div>
-                <h4 class="mb-2">What We Do</h4>
-                <ul class="intensive-includes">
-                  <li>Go-to-market strategy review and rebuild</li>
-                  <li>Brand message sharpening and positioning clarity</li>
-                  <li>Pipeline architecture and stage definition</li>
-                  <li>Lead-to-close process mapping and gap analysis</li>
-                  <li>Conversion point identification and optimization</li>
-                  <li>AI-assisted follow-up and nurture workflow design</li>
-                </ul>
-              </div>
-              <div>
-                <div class="intensive-outcome mb-3">
-                  <strong>Outcome:</strong> Qualified demand and a system that moves leads. Your message attracts better-fit clients and your pipeline runs through a defined process — not through the owner's memory.
-                </div>
-                <h4 class="mb-2">Typical Problems We Solve</h4>
-                <ul class="intensive-includes">
-                  <li>Most clients come from referrals with no consistent mechanism</li>
-                  <li>Positioning is unclear — you sound like everyone else</li>
-                  <li>Proposals go out and then disappear into silence</li>
-                  <li>Marketing spend exists but ROI is not tracked</li>
-                  <li>Sales depend entirely on the founder showing up</li>
-                </ul>
-                <a href="/growth-diagnostic" class="btn btn-primary mt-4">Start with the Diagnostic</a>
-              </div>
+          {/* Detail boxes */}
+          <div class="intensive-detail-grid">
+            <div class="intensive-detail-box">
+              <h4>What We Do</h4>
+              <ul class="intensive-includes">
+                <li>P&amp;L review and restructure for real decision-making</li>
+                <li>Cash flow architecture and 13-week forecast installation</li>
+                <li>Financial reporting rhythm — monthly and quarterly cadence</li>
+                <li>KPI identification and scorecard design</li>
+                <li>Budget vs. actual framework</li>
+                <li>AI-assisted anomaly detection and reporting summaries</li>
+              </ul>
+            </div>
+            <div class="intensive-detail-box outcome-box">
+              <h4>What This Fixes</h4>
+              <ul class="intensive-includes">
+                <li>Cash disappears even when revenue looks strong</li>
+                <li>No reliable forecast beyond the current month</li>
+                <li>Financials are not reviewed until tax season</li>
+                <li>Pricing decisions made without real margin data</li>
+                <li>Payroll feels like a gamble every two weeks</li>
+              </ul>
             </div>
           </div>
 
-          {/* Capacity Intensive */}
-          <div class="intensive-card mb-4" id="capacity">
-            <div class="grid-2" style="align-items:start; gap:3rem;">
-              <div>
-                <span class="intensive-tag">Capacity</span>
-                <h2 class="mb-2">Capacity Intensive</h2>
-                <p class="intensive-problem">You are the bottleneck. Every decision runs through you. The team is capable but the systems do not exist to let them operate without you at every node.</p>
-                <div class="gold-line"></div>
-                <h4 class="mb-2">What We Do</h4>
-                <ul class="intensive-includes">
-                  <li>Accountability chart and organizational design</li>
-                  <li>Task and workflow audit and optimization</li>
-                  <li>Delegation map — what to keep, what to assign, what to automate</li>
-                  <li>Virtual staffing integration and role design</li>
-                  <li>Operating cadence and meeting rhythm installation</li>
-                  <li>Leadership capacity development framework</li>
-                </ul>
+        </div>
+      </section>
+      <div class="intensive-divider"></div>
+
+      {/* ════════════════════════════════════════════
+          INTENSIVE 02 — BRAND & STRATEGY / GROWTH
+      ════════════════════════════════════════════ */}
+      <section class="intensive-section" id="growth">
+        <div class="container">
+
+          <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;">
+            <span class="intensive-tag">02 &nbsp;Brand &amp; Strategy</span>
+          </div>
+          <h2 style="max-width:680px; margin-bottom:0.5rem;">You are doing good work — but the right people are not finding you.</h2>
+          <div class="gold-line"></div>
+
+          <div class="grid-2" style="align-items:center; gap:4rem; margin-top:2.5rem;">
+            <div class="intensive-photo" style="aspect-ratio:4/3;">
+              <picture>
+                <source type="image/webp" srcset="/static/images/intensive-growth.webp" />
+                <img src="/static/images/intensive-growth.jpg" alt="Business owner thinking strategically, looking out window" loading="lazy" />
+              </picture>
+            </div>
+            <div>
+              <p class="intensive-hook">"We get referrals, but I have no idea how to create demand intentionally."</p>
+              <p>There is a particular frustration that comes with knowing your work is excellent — and still watching lesser competitors win business you should have. It usually comes down to one thing: clarity. Clarity about who you serve, what you solve, and why you are the only credible choice for that specific client at that specific moment.</p>
+              <p>When positioning is vague, every sales conversation starts from scratch. When the pipeline runs entirely on referrals and the owner's relationships, growth is capped by the founder's calendar. Revenue is there — but it is fragile, inconsistent, and exhausting to sustain.</p>
+              <p>The Brand &amp; Strategy Intensive sharpens your message, rebuilds your demand system, and installs a pipeline that moves without the owner manually pushing every deal forward.</p>
+              <div class="intensive-outcome-statement">
+                <strong>After this intensive:</strong> Your message attracts better-fit clients at higher margins. Your pipeline runs through a defined process — not through your personal inbox.
               </div>
-              <div>
-                <div class="intensive-outcome mb-3">
-                  <strong>Outcome:</strong> A team that runs without you at every decision point. The owner moves from operator to strategist — with systems and people doing the work.
-                </div>
-                <h4 class="mb-2">Typical Problems We Solve</h4>
-                <ul class="intensive-includes">
-                  <li>Owner works 60+ hours and cannot step away without things slipping</li>
-                  <li>No clear accountability for who owns what</li>
-                  <li>Team members ask for decisions the owner should not be making</li>
-                  <li>Hiring has happened but leverage has not increased</li>
-                  <li>Owner knows what needs to happen but cannot get the team to execute it</li>
-                </ul>
-                <a href="/growth-diagnostic" class="btn btn-primary mt-4">Start with the Diagnostic</a>
-              </div>
+              <a href="/growth-diagnostic" class="btn btn-primary">Start with the Diagnostic</a>
             </div>
           </div>
 
-          {/* AI Enablement Intensive */}
-          <div class="intensive-card" id="ai">
-            <div class="grid-2" style="align-items:start; gap:3rem;">
-              <div>
-                <span class="intensive-tag">AI Enablement</span>
-                <h2 class="mb-2">AI Enablement Intensive</h2>
-                <p class="intensive-problem">You know AI should be part of your operation but every direction feels risky, overwhelming, or disconnected from how your business actually works.</p>
-                <div class="gold-line"></div>
-                <h4 class="mb-2">What We Do</h4>
-                <ul class="intensive-includes">
-                  <li>AI readiness assessment scored against your current operations</li>
-                  <li>Workflow mapping — where AI creates leverage vs. where it creates chaos</li>
-                  <li>Installation of 1–3 bounded AI workflows inside existing tools</li>
-                  <li>Guardrail and QA system setup for every workflow</li>
-                  <li>Pilot implementation and team walkthrough</li>
-                  <li>90-day AI adoption scorecard</li>
-                </ul>
+          <div class="intensive-detail-grid">
+            <div class="intensive-detail-box">
+              <h4>What We Do</h4>
+              <ul class="intensive-includes">
+                <li>Go-to-market strategy review and rebuild</li>
+                <li>Brand message sharpening and positioning clarity</li>
+                <li>Pipeline architecture and stage definition</li>
+                <li>Lead-to-close process mapping and gap analysis</li>
+                <li>Conversion point identification and optimization</li>
+                <li>AI-assisted follow-up and nurture workflow design</li>
+              </ul>
+            </div>
+            <div class="intensive-detail-box outcome-box">
+              <h4>What This Fixes</h4>
+              <ul class="intensive-includes">
+                <li>Revenue depends entirely on referrals with no consistent engine</li>
+                <li>Your positioning sounds like every other firm in your category</li>
+                <li>Proposals go out and then go silent</li>
+                <li>Marketing spend exists but ROI is invisible</li>
+                <li>Every new client requires the founder to close it personally</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <div class="intensive-divider"></div>
+
+      {/* ════════════════════════════════════════════
+          INTENSIVE 03 — CAPACITY
+      ════════════════════════════════════════════ */}
+      <section class="intensive-section" id="capacity">
+        <div class="container">
+
+          <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;">
+            <span class="intensive-tag">03 &nbsp;Capacity</span>
+          </div>
+          <h2 style="max-width:700px; margin-bottom:0.5rem;">You built something worth protecting — now the business needs a structure to match its ambition.</h2>
+          <div class="gold-line"></div>
+
+          <div class="grid-2" style="align-items:center; gap:4rem; margin-top:2.5rem;">
+            <div>
+              <p class="intensive-hook">"I have great people. I just cannot figure out why I still have to be involved in everything."</p>
+              <p>This is one of the most disorienting stages of business growth. You hired well. The team genuinely wants to perform. But somewhere between the hiring and the execution, the systems needed to support independent operation were never fully built. So decisions still flow up. Approvals still land in your inbox. The business still runs at the speed of the founder.</p>
+              <p>This is not a personnel problem. It is a structural one. The accountability is unclear. The operating rhythm is informal. The handoffs are undocumented. And so, despite having capable people around you, growth is still constrained by how much of yourself you can give to it.</p>
+              <p>The Capacity Intensive installs the organizational structure, delegation framework, and operating rhythm that allows your team to run the day-to-day — and frees you to lead at the level the business now requires.</p>
+              <div class="intensive-outcome-statement">
+                <strong>After this intensive:</strong> Your team operates with clarity and ownership. You move from managing tasks to leading strategy — with time and energy to actually grow.
               </div>
-              <div>
-                <div class="intensive-outcome mb-3">
-                  <strong>Outcome:</strong> Safe, practical AI running inside your business. Not autonomous. Not chaotic. Bounded workflows with human judgment at every critical node — measurable within 90 days.
-                </div>
-                <h4 class="mb-2">Typical Problems We Solve</h4>
-                <ul class="intensive-includes">
-                  <li>Owners have tried AI tools but nothing stuck or scaled</li>
-                  <li>No framework for deciding where AI is appropriate</li>
-                  <li>Team is resistant because AI feels threatening</li>
-                  <li>Delivery time is a competitive disadvantage</li>
-                  <li>The cost to deliver is too high relative to what the market will pay</li>
-                </ul>
-                <a href="/ai-enablement" class="btn btn-primary mt-4">Learn More About AI Enablement</a>
+              <a href="/growth-diagnostic" class="btn btn-primary">Start with the Diagnostic</a>
+            </div>
+            <div class="intensive-photo" style="aspect-ratio:4/3;">
+              <picture>
+                <source type="image/webp" srcset="/static/images/intensive-capacity.webp" />
+                <img src="/static/images/intensive-capacity.jpg" alt="Engaged team collaborating independently in modern office" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+
+          <div class="intensive-detail-grid">
+            <div class="intensive-detail-box">
+              <h4>What We Do</h4>
+              <ul class="intensive-includes">
+                <li>Accountability chart and organizational design</li>
+                <li>Task and workflow audit — clarity on who owns what</li>
+                <li>Delegation map: what to keep, assign, and automate</li>
+                <li>Virtual staffing integration and role design</li>
+                <li>Operating cadence and meeting rhythm installation</li>
+                <li>Leadership capacity framework for the next stage</li>
+              </ul>
+            </div>
+            <div class="intensive-detail-box outcome-box">
+              <h4>What This Fixes</h4>
+              <ul class="intensive-includes">
+                <li>Important things slip whenever the owner steps away</li>
+                <li>No one is fully clear on who owns which outcomes</li>
+                <li>Growth has added headcount but not leverage</li>
+                <li>The team asks for guidance on decisions that should not require you</li>
+                <li>You know what needs to happen — getting it executed consistently is the problem</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <div class="intensive-divider"></div>
+
+      {/* ════════════════════════════════════════════
+          INTENSIVE 04 — AI ENABLEMENT
+      ════════════════════════════════════════════ */}
+      <section class="intensive-section" id="ai">
+        <div class="container">
+
+          <div style="display:flex; align-items:center; gap:1rem; margin-bottom:0.5rem;">
+            <span class="intensive-tag">04 &nbsp;AI Enablement</span>
+          </div>
+          <h2 style="max-width:680px; margin-bottom:0.5rem;">Every competitor is moving. The question is whether you move with intent or scramble to catch up.</h2>
+          <div class="gold-line"></div>
+
+          <div class="grid-2" style="align-items:center; gap:4rem; margin-top:2.5rem;">
+            <div class="intensive-photo" style="aspect-ratio:4/3;">
+              <picture>
+                <source type="image/webp" srcset="/static/images/intensive-ai.webp" />
+                <img src="/static/images/intensive-ai.jpg" alt="Professional reviewing AI workflow on laptop in calm office" loading="lazy" />
+              </picture>
+            </div>
+            <div>
+              <p class="intensive-hook">"I know AI matters. I just do not know where to start without creating more chaos."</p>
+              <p>The pressure is real. AI is compressing delivery costs, accelerating competitor capabilities, and redefining client expectations — often faster than most owners have time to process. The instinct is to wait until things are clearer. But waiting has its own cost: every quarter of inaction is a quarter your margins stay under pressure and your competitors grow more efficient.</p>
+              <p>What makes AI complicated is not the technology. It is knowing where in your specific operation it creates genuine leverage — versus where it creates distraction, risk, or team friction. The wrong workflow in the wrong place can cost more than it saves.</p>
+              <p>The AI Enablement Intensive builds your AI strategy from the inside out — assessing your operations, identifying 1 to 3 bounded workflows with clear ROI, and installing them inside the tools your team already uses. No disruption. No experiments. Measurable results within 90 days.</p>
+              <div class="intensive-outcome-statement">
+                <strong>After this intensive:</strong> AI is running inside your business — bounded, practical, and producing measurable time and cost savings within the first 90 days.
               </div>
+              <a href="/ai-enablement" class="btn btn-primary">Learn More About AI Enablement</a>
+            </div>
+          </div>
+
+          <div class="intensive-detail-grid">
+            <div class="intensive-detail-box">
+              <h4>What We Do</h4>
+              <ul class="intensive-includes">
+                <li>AI readiness assessment scored against your current operations</li>
+                <li>Workflow mapping — where AI creates leverage vs. where it creates risk</li>
+                <li>Installation of 1–3 bounded AI workflows inside existing tools</li>
+                <li>Guardrail and quality assurance setup for every workflow</li>
+                <li>Pilot implementation and team walkthrough</li>
+                <li>90-day AI adoption scorecard</li>
+              </ul>
+            </div>
+            <div class="intensive-detail-box outcome-box">
+              <h4>What This Fixes</h4>
+              <ul class="intensive-includes">
+                <li>AI tools have been tried but nothing has stuck or scaled</li>
+                <li>No framework for deciding where AI is actually appropriate</li>
+                <li>Team friction because AI feels like a threat, not a tool</li>
+                <li>Delivery time is a growing competitive disadvantage</li>
+                <li>The cost to deliver is too high relative to what the market pays</li>
+              </ul>
             </div>
           </div>
 
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ── CTA BAND ── */}
       <section class="cta-band">
         <div class="container">
           <span class="eyebrow" style="display:block; text-align:center; margin-bottom:1rem;">Start with the Diagnostic</span>
@@ -233,6 +328,7 @@ intensives.get('/', (c) => {
           <a href="/growth-diagnostic" class="btn btn-primary btn-lg">Book the Free Growth Diagnostic</a>
         </div>
       </section>
+
     </div>,
     { title: 'Strategy Intensives', activeNav: 'intensives' }
   )

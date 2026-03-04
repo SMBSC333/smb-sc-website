@@ -392,7 +392,7 @@ landingPages.get('/growth-constraint-quiz', (c) => {
             '<div class="highlight-box">' +
             '<h3 style="color:var(--color-gold);margin-bottom:1rem;">' + r.title + '</h3>' +
             '<p>' + r.desc + '</p>' +
-            '<a href="' + r.cta + '" class="btn btn-outline btn-sm mt-3">Learn About the ' + r.title.split(' ')[0] + ' Intensive</a>' +
+            '<a href="' + r.cta + '" class="btn btn-outline-gold btn-sm mt-3">Learn About the ' + r.title.split(' ')[0] + ' Intensive</a>' +
             '</div>';
         }
 

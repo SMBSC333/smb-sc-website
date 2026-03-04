@@ -184,7 +184,7 @@ about.get('/', (c) => {
           <p class="lead">One conversation to identify the constraint and map the next move.</p>
           <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
             <a href="/growth-diagnostic" class="btn btn-primary btn-lg">Book the Growth Diagnostic</a>
-            <a href="/contact" class="btn btn-outline btn-lg">Contact Us</a>
+            <a href="/contact" class="btn btn-ghost-light btn-lg">Contact Us</a>
           </div>
         </div>
       </section>

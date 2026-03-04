@@ -15,9 +15,9 @@ virtualCfo.get('/', (c) => {
       </section>
 
       {/* What Makes It Different */}
-      <section class="section bg-dark">
+      <section class="section bg-soft">
         <div class="container">
-          <div class="grid-2" style="align-items:start; gap:4rem;">
+          <div class="grid-2" style="align-items:center; gap:4rem;">
             <div>
               <span class="eyebrow">Not a Controller Role</span>
               <h2>Strategy-first. Leadership-oriented. Scalability-focused.</h2>
@@ -26,19 +26,11 @@ virtualCfo.get('/', (c) => {
               <p>The financial conversation does not happen after the business decisions. It happens alongside them — aligning marketing, staffing, operations, and systems with profitability goals before commitments are made.</p>
               <p>All Strategic Financial Partner engagements include AI-assisted financial reporting, forecasting, and anomaly detection as standard. The same tools that are compressing delivery costs across the industry are built into your reporting rhythm from day one.</p>
             </div>
-            <div>
-              <div class="card card-accent mb-3">
-                <h4 class="mb-1">Strategy-First</h4>
-                <p style="font-size:0.88rem;">Driven by insight, not inputs. We are not generating reports — we are telling you what the reports mean for your next decision.</p>
-              </div>
-              <div class="card card-accent mb-3">
-                <h4 class="mb-1">Leadership-Oriented</h4>
-                <p style="font-size:0.88rem;">A voice in key decisions, not just a monthly review. Corbin sits in the leadership cadence and weighs in on every significant commitment before it is made.</p>
-              </div>
-              <div class="card card-accent">
-                <h4 class="mb-1">Scalability-Focused</h4>
-                <p style="font-size:0.88rem;">Built to prepare the business for its next level — whether that is scale, exit, or freedom from operational dependency.</p>
-              </div>
+            <div class="hiw-img-wrap">
+              <picture>
+                <source srcset="/static/images/cfo-strategy-session.webp" type="image/webp" />
+                <img src="/static/images/cfo-strategy-session.jpg" alt="Financial advisor and business owner reviewing strategy together" class="hiw-img" loading="lazy" />
+              </picture>
             </div>
           </div>
         </div>
@@ -93,19 +85,22 @@ virtualCfo.get('/', (c) => {
       </section>
 
       {/* Reporting Rhythm */}
-      <section class="section bg-dark">
+      <section class="section bg-warm">
         <div class="container">
           <div class="grid-2" style="align-items:center; gap:4rem;">
+            <div class="hiw-img-wrap">
+              <picture>
+                <source srcset="/static/images/cfo-owner-clarity.webp" type="image/webp" />
+                <img src="/static/images/cfo-owner-clarity.jpg" alt="Business owner confidently reviewing financial reports" class="hiw-img" loading="lazy" />
+              </picture>
+            </div>
             <div>
               <span class="eyebrow">Operational Intelligence</span>
               <h2>When you give your financials a voice, decision-making stress drops.</h2>
               <div class="gold-line"></div>
               <p>The reporting rhythm is the backbone. When the numbers tell a clear, consistent story — customized to your business, not your industry template — you stop making decisions from fear and start making them from knowledge.</p>
               <p>This engagement empowers you to make decisions based on perspective and control, not reaction and hope.</p>
-            </div>
-            <div>
-              <h4 class="mb-3">What we work on together in the financial cadence:</h4>
-              <ul class="pain-list">
+              <ul class="pain-list" style="margin-top:1.5rem;">
                 <li>Cash flow optimization and forward forecasting</li>
                 <li>Reviewing operational and marketing efficiency</li>
                 <li>Variance analysis — actual vs. forecast</li>

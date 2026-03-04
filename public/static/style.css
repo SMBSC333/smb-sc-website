@@ -170,11 +170,12 @@ strong { color: var(--color-heading); font-weight: 600; }
 .btn-ghost {
   background: transparent;
   color: var(--color-navy);
-  border: 2px solid var(--color-bg-border);
+  border: 2px solid rgba(19,38,63,0.35);
 }
 .btn-ghost:hover {
   border-color: var(--color-navy);
   color: var(--color-navy);
+  background: rgba(19,38,63,0.05);
 }
 /* Light versions — for use on dark navy sections */
 .btn-ghost-light {

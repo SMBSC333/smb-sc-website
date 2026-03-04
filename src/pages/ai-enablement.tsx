@@ -12,7 +12,7 @@ aiEnablement.get('/', (c) => {
           <p class="lead">We help service-based businesses install 1–3 practical AI workflows inside their existing tools — with human guardrails, no chaos, and measurable results within 90 days.</p>
           <div class="hero-actions">
             <a href="/ai-assessment" class="btn btn-primary btn-lg">Book the Free AI Readiness Assessment</a>
-            <a href="/growth-diagnostic" class="btn btn-ghost btn-lg">Book the Growth Diagnostic</a>
+            <a href="/growth-diagnostic" class="btn btn-ghost-light btn-lg">Book the Growth Diagnostic</a>
           </div>
         </div>
       </section>
@@ -40,7 +40,7 @@ aiEnablement.get('/', (c) => {
                 <div style="background:rgba(201,168,76,0.07); border:1px solid rgba(201,168,76,0.15); border-radius:4px; padding:0.75rem 1rem; margin-top:1.5rem;">
                   <p style="font-size:0.85rem; color:var(--color-text); margin:0;">The businesses that build AI into their operations today will have a measurable margin advantage over those that adopt it later. The window is open now.</p>
                 </div>
-                <a href="/ai-assessment" class="btn btn-ghost btn-sm mt-4">Book the Free AI Readiness Assessment</a>
+                <a href="/ai-assessment" class="btn btn-outline-gold btn-sm mt-4">Book the Free AI Readiness Assessment</a>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ aiEnablement.get('/', (c) => {
           <p class="lead">The free AI Readiness Assessment scores your current operations and identifies your highest-leverage AI opportunity. You leave knowing exactly where to start.</p>
           <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
             <a href="/ai-assessment" class="btn btn-primary btn-lg">Book the Free AI Assessment</a>
-            <a href="/growth-diagnostic" class="btn btn-outline btn-lg">Book the Growth Diagnostic</a>
+            <a href="/growth-diagnostic" class="btn btn-ghost-light btn-lg">Book the Growth Diagnostic</a>
           </div>
         </div>
       </section>

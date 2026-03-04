@@ -7,9 +7,6 @@ howItWorks.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>How It Works</span>
-          </div>
           <span class="eyebrow">The Model</span>
           <h1>We diagnose the constraint. We install the system. We stay in the room while it works.</h1>
           <p class="lead">A structured, three-phase process built for service-based businesses ready to move from founder-led chaos to scalable, systems-driven growth.</p>

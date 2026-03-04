@@ -7,9 +7,6 @@ mpl.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>My Profit Life</span>
-          </div>
           <span class="eyebrow">The Flagship Engagement — Invitation Only</span>
           <h1>Built for owners who are done with incremental.</h1>
           <p class="lead">My Profit Life is the complete business transformation engagement. Six months builds the foundation. The community continues indefinitely. Four pillars. One system. Limited availability.</p>

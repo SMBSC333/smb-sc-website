@@ -7,9 +7,6 @@ contact.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>Contact</span>
-          </div>
           <span class="eyebrow">Get in Touch</span>
           <h1>Start the conversation.</h1>
           <p class="lead">Whether you have a specific question, want to discuss the Growth Diagnostic, or need to know which engagement path fits your situation — reach out directly.</p>

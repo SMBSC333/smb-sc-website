@@ -7,9 +7,6 @@ virtualStaffing.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>Virtual Staffing</span>
-          </div>
           <span class="eyebrow">Managed Remote Workforce Solutions</span>
           <h1>Scale your team without scaling your payroll.</h1>
           <p class="lead">SMB Strategy Consultants helps small business owners design smart delegation frameworks, then delivers qualified remote team members — managed and trained to your standard — through our Philippine-based delivery partner.</p>

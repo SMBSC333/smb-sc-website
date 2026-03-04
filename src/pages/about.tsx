@@ -7,9 +7,6 @@ about.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>About</span>
-          </div>
           <span class="eyebrow">About SMB Strategy Consultants</span>
           <h1>We help ambitious business owners win in an AI-transformed world.</h1>
           <p class="lead">Practical. Financial. Forward-thinking. We are not theorists — we are strategists who recognize patterns, install systems, and stay in the engagement until the work is done.</p>

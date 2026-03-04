@@ -7,9 +7,6 @@ exitPlanning.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>Exit Planning</span>
-          </div>
           <span class="eyebrow">Plan Intelligently. Extract Confidently. Exit on Your Terms.</span>
           <h1>8 out of 10 businesses do not sell for what the owner hopes.</h1>
           <p class="lead">Our 21-Step Sell-Ready Process methodically drives your business to the top 20% of its industry — and in the AI era, that includes building the AI-ready operations that buyers increasingly factor into their valuation.</p>

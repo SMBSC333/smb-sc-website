@@ -7,9 +7,6 @@ virtualCfo.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>Virtual CFO</span>
-          </div>
           <span class="eyebrow">Strategic Financial Partnership</span>
           <h1>A strategic ally in the room where it happens.</h1>
           <p class="lead">This is not a reporting role. This is not back-office accounting. It is a high-trust, high-involvement leadership seat designed for founders ready to graduate from entrepreneur-led chaos to professionally managed growth.</p>

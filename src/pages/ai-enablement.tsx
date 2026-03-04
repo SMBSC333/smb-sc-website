@@ -7,9 +7,6 @@ aiEnablement.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>AI Enablement</span>
-          </div>
           <span class="eyebrow">The AI Moment — Act Now</span>
           <h1>AI is compressing the cost of everything. Your margin depends on how fast you adopt.</h1>
           <p class="lead">We help service-based businesses install 1–3 practical AI workflows inside their existing tools — with human guardrails, no chaos, and measurable results within 90 days.</p>

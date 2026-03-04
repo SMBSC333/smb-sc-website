@@ -34,9 +34,6 @@ resources.get('/', (c) => {
     <div>
       <section class="page-hero bg-dark">
         <div class="container">
-          <div class="breadcrumb">
-            <a href="/">Home</a><span class="breadcrumb-sep">/</span><span>Resources</span>
-          </div>
           <span class="eyebrow">Resources</span>
           <h1>Practical tools and insights for business owners building with intention.</h1>
           <p class="lead">Free diagnostic tools, downloadable guides, the PMB Podcast, and a library of articles on financial management, exit planning, AI adoption, and growth strategy.</p>

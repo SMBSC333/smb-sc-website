@@ -1370,41 +1370,53 @@ strong { color: var(--color-heading); font-weight: 600; }
 /* Hero */
 .mpl-hero {
   position: relative;
-  background: url('/static/images/mpl-confident-owner.jpg') center/cover no-repeat;
-  min-height: 560px;
+  background: url('/static/images/mpl-confident-owner.jpg') center 30%/cover no-repeat;
+  min-height: 600px;
   display: flex;
   align-items: center;
-  padding: 5rem 0 4rem;
+  padding: 7rem 0 6rem;
 }
 .mpl-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(13,28,50,0.90) 55%, rgba(13,28,50,0.55) 100%);
+  background: linear-gradient(105deg, rgba(5,12,24,0.95) 45%, rgba(5,12,24,0.65) 100%);
 }
 .mpl-hero-content {
   position: relative;
   z-index: 1;
-  max-width: 760px;
+  max-width: 600px;
 }
 .mpl-hero h1 {
-  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  font-size: clamp(3.4rem, 6vw, 5.2rem);
   color: #fff;
-  margin-bottom: 0.5rem;
-  line-height: 1.1;
+  margin-bottom: 0;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
 }
-.mpl-hero-h2 {
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
-  color: var(--color-gold-light);
+/* Gold divider rule under H1 */
+.mpl-hero-rule {
+  width: 52px;
+  height: 3px;
+  background: var(--color-gold);
+  border-radius: 2px;
+  margin: 1.4rem 0 1.2rem;
+}
+/* One-line descriptor beneath rule */
+.mpl-hero-tagline {
+  font-size: 0.82rem;
   font-family: var(--font-body);
-  font-weight: 400;
-  margin-bottom: 1rem;
-  line-height: 1.45;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin: 0;
 }
 .mpl-micro {
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.6);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.38);
   letter-spacing: 0.02em;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 /* Truth block */

@@ -193,54 +193,67 @@ mpl.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── WHO THIS IS FOR ── */}
-      <section class="section bg-soft">
+      {/* ── WHO THIS IS FOR — Persona Tabs ── */}
+      <section class="section bg-warm">
         <div class="container">
           <div class="section-header center" style="margin-bottom:3rem;">
             <span class="eyebrow">Ideal Client</span>
             <h2>Who This Is For</h2>
             <div class="gold-line" style="margin:1.25rem auto 0;"></div>
-            <h3 style="font-size:1.3rem; font-weight:400; color:var(--color-text-muted); margin-top:1rem; font-family:var(--font-body);">Built for One Type of Leader</h3>
-            <p style="max-width:600px; margin:0.5rem auto 0;">Service business owners between $500K–$10M who refuse to let urgency win over legacy.</p>
+            <p style="max-width:560px; margin:1rem auto 0; color:var(--color-text-muted);">Service business owners between $500K–$10M who refuse to let urgency win over legacy.</p>
           </div>
 
-          {/* Persona Cards */}
-          <div class="grid-3" style="margin-bottom:3rem;">
-            <div class="mpl-persona-card">
-              <span class="mpl-persona-tag most-common">Most Common</span>
-              <h4>The Bottleneck Builder</h4>
-              <p class="mpl-persona-meta">$800K–$3M · 5–15 employees · Professional Services</p>
-              <p style="font-size:0.88rem;">Your business depends entirely on you. You can't take a vacation. You miss family moments. You're exhausted—and secretly scared a key person walks out the door and takes everything with them.</p>
-              <div class="mpl-persona-gives">
-                <strong>This program gives you:</strong>
-                <p style="font-size:0.85rem; margin:0.5rem 0 0;">20 hours back per week, delegation confidence, and a business that runs on principle—not your presence.</p>
-              </div>
+          {/* Interactive persona selector */}
+          <div class="mpl-persona-tabs">
+            <div class="mpl-persona-nav">
+              <button class="mpl-ptab active" data-tab="0">
+                <span class="mpl-ptab-tag">Most Common</span>
+                <span class="mpl-ptab-name">The Bottleneck Builder</span>
+                <span class="mpl-ptab-meta">$800K–$3M · Professional Services</span>
+              </button>
+              <button class="mpl-ptab" data-tab="1">
+                <span class="mpl-ptab-name">The Scaling Operator</span>
+                <span class="mpl-ptab-meta">$2M–$8M · Service Delivery</span>
+              </button>
+              <button class="mpl-ptab" data-tab="2">
+                <span class="mpl-ptab-name">The Creative Sovereign</span>
+                <span class="mpl-ptab-meta">$1.5M–$6M · Creative/Knowledge</span>
+              </button>
             </div>
-            <div class="mpl-persona-card">
-              <h4>The Scaling Operator</h4>
-              <p class="mpl-persona-meta">$2M–$8M · 15–50 employees · Service Delivery</p>
-              <p style="font-size:0.88rem;">You're growing—but operational chaos and financial fog are eating your margins. Competitors are deploying AI to undercut your pricing. A PE firm reached out last quarter. You're not ready.</p>
-              <div class="mpl-persona-gives">
-                <strong>This program gives you:</strong>
-                <p style="font-size:0.85rem; margin:0.5rem 0 0;">AI-powered operations, 25–30% margins, and a business positioned for a $8M–$25M exit.</p>
+            <div class="mpl-persona-panel">
+              <div class="mpl-ppanel active" data-panel="0">
+                <p class="mpl-ppanel-body">Your business depends entirely on you. You can't take a vacation. You miss family moments. You're exhausted—and secretly scared a key person walks out the door and takes everything with them.</p>
+                <div class="mpl-ppanel-gives">
+                  <span class="mpl-ppanel-gives-label">This program gives you</span>
+                  <p>20 hours back per week, delegation confidence, and a business that runs on principle—not your presence.</p>
+                </div>
               </div>
-            </div>
-            <div class="mpl-persona-card">
-              <h4>The Creative Sovereign</h4>
-              <p class="mpl-persona-meta">$1.5M–$6M · 8–30 employees · Creative/Knowledge Services</p>
-              <p style="font-size:0.88rem;">You've built something with real craft and identity. Revenue is inconsistent. You're underpriced. And the fear that AI will replace what you do keeps you up at night—even though you haven't tested that assumption.</p>
-              <div class="mpl-persona-gives">
-                <strong>This program gives you:</strong>
-                <p style="font-size:0.85rem; margin:0.5rem 0 0;">Stable retainer revenue, 30–40% margins, and AI positioned as your creative amplifier—not your replacement.</p>
+              <div class="mpl-ppanel" data-panel="1">
+                <p class="mpl-ppanel-body">You're growing—but operational chaos and financial fog are eating your margins. Competitors are deploying AI to undercut your pricing. A PE firm reached out last quarter. You're not ready.</p>
+                <div class="mpl-ppanel-gives">
+                  <span class="mpl-ppanel-gives-label">This program gives you</span>
+                  <p>AI-powered operations, 25–30% margins, and a business positioned for a $8M–$25M exit.</p>
+                </div>
+              </div>
+              <div class="mpl-ppanel" data-panel="2">
+                <p class="mpl-ppanel-body">You've built something with real craft and identity. Revenue is inconsistent. You're underpriced. And the fear that AI will replace what you do keeps you up at night—even though you haven't tested that assumption.</p>
+                <div class="mpl-ppanel-gives">
+                  <span class="mpl-ppanel-gives-label">This program gives you</span>
+                  <p>Stable retainer revenue, 30–40% margins, and AI positioned as your creative amplifier—not your replacement.</p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Fit Filters */}
-          <div class="grid-2" style="gap:2rem;">
-            <div class="mpl-fit-card fit-yes">
-              <h4 style="color:var(--color-navy); margin-bottom:1.25rem;">✓ &nbsp;This IS for you if…</h4>
-              <ul class="mpl-fit-list">
+      {/* ── FIT FILTER — dark strip ── */}
+      <section class="mpl-fit-strip">
+        <div class="container">
+          <div class="mpl-fit-cols">
+            <div class="mpl-fit-col mpl-fit-col--yes">
+              <h4>This IS for you if…</h4>
+              <ul>
                 <li>You own or lead a $500K–$10M service business</li>
                 <li>You're serious about transformation—not just tactics</li>
                 <li>You're willing to do the inner work AND the strategic work</li>
@@ -249,23 +262,22 @@ mpl.get('/', (c) => {
                 <li>You sense the AI window is open right now and you need to move</li>
               </ul>
             </div>
-            <div class="mpl-fit-card fit-no">
-              <h4 style="color:var(--color-text-muted); margin-bottom:1.25rem;">✗ &nbsp;This is NOT for you if…</h4>
-              <ul class="mpl-fit-list muted">
+            <div class="mpl-fit-divider" aria-hidden="true"></div>
+            <div class="mpl-fit-col mpl-fit-col--no">
+              <h4>This is NOT for you if…</h4>
+              <ul>
                 <li>You're looking for a cheap AI course or a toolbox of shortcuts</li>
                 <li>You want someone else to do the work while you observe</li>
                 <li>You're not open to examining your own leadership patterns</li>
                 <li>Your business is under $500K in annual revenue</li>
-                <li>You're not willing to show up consistently for coaching and mastermind</li>
+                <li>You're not willing to show up consistently</li>
                 <li>You believe mindset work is "soft" and just want tactics</li>
               </ul>
             </div>
           </div>
-
-          {/* CTA Repeat */}
-          <div style="text-align:center; margin-top:3rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <div style="text-align:center; margin-top:2.5rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
             <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Clarity Kickoff Call</a>
-            <a href="https://ydbg-pc-score-assessment.lovable.app/" class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">Take the Principle-Centered Assessment</a>
+            <a href="https://ydbg-pc-score-assessment.lovable.app/" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener noreferrer">Take the Principle-Centered Assessment</a>
           </div>
         </div>
       </section>

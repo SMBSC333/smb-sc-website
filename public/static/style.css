@@ -1549,7 +1549,170 @@ strong { color: var(--color-heading); font-weight: 600; }
 .mpl-diff-card h4 { color: #fff; margin-bottom: 0.5rem; font-size: 0.98rem; }
 .mpl-diff-card p  { color: rgba(255,255,255,0.68); font-size: 0.88rem; margin: 0; }
 
-/* Persona cards */
+/* ── Persona tabs ── */
+.mpl-persona-tabs {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  border: 1px solid var(--color-bg-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-md);
+}
+.mpl-persona-nav {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--color-bg-border);
+  background: var(--color-bg-soft);
+}
+.mpl-ptab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 1.5rem 1.5rem;
+  border: none;
+  border-bottom: 1px solid var(--color-bg-border);
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+.mpl-ptab:last-child { border-bottom: none; }
+.mpl-ptab:hover { background: var(--color-bg-warm); }
+.mpl-ptab.active {
+  background: #fff;
+  border-left: 3px solid var(--color-gold);
+  padding-left: calc(1.5rem - 3px);
+}
+.mpl-ptab-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  background: rgba(201,168,76,0.12);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.15rem;
+}
+.mpl-ptab-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+}
+.mpl-ptab-meta {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+/* Panels */
+.mpl-persona-panel {
+  padding: 2.5rem 2.5rem;
+  position: relative;
+  min-height: 280px;
+  display: flex;
+  align-items: stretch;
+}
+.mpl-ppanel {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.mpl-ppanel.active { display: flex; }
+.mpl-ppanel-body {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+.mpl-ppanel-gives {
+  background: var(--color-bg-warm);
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.1rem 1.25rem;
+}
+.mpl-ppanel-gives-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-bottom: 0.4rem;
+}
+.mpl-ppanel-gives p {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ── Fit filter strip ── */
+.mpl-fit-strip {
+  background: var(--color-bg-navy);
+  padding: 4rem 0;
+}
+.mpl-fit-cols {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 3rem;
+  align-items: start;
+}
+.mpl-fit-divider {
+  background: rgba(255,255,255,0.12);
+  align-self: stretch;
+}
+.mpl-fit-col h4 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.mpl-fit-col--yes h4 { color: var(--color-gold-light); }
+.mpl-fit-col--no  h4 { color: rgba(255,255,255,0.45); }
+.mpl-fit-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+}
+.mpl-fit-col li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-left: 1.4rem;
+  position: relative;
+}
+.mpl-fit-col--yes li { color: rgba(255,255,255,0.88); }
+.mpl-fit-col--yes li::before {
+  content: '✓';
+  position: absolute; left: 0;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+.mpl-fit-col--no li { color: rgba(255,255,255,0.4); }
+.mpl-fit-col--no li::before {
+  content: '✗';
+  position: absolute; left: 0;
+  color: rgba(255,255,255,0.25);
+}
+@media (max-width: 768px) {
+  .mpl-persona-tabs { grid-template-columns: 1fr; }
+  .mpl-persona-nav { border-right: none; border-bottom: 1px solid var(--color-bg-border); flex-direction: row; overflow-x: auto; }
+  .mpl-ptab { border-bottom: none; border-right: 1px solid var(--color-bg-border); flex-shrink: 0; min-width: 160px; }
+  .mpl-ptab.active { border-left: none; border-bottom: 3px solid var(--color-gold); padding-left: 1.5rem; padding-bottom: calc(1.5rem - 3px); }
+  .mpl-persona-panel { padding: 1.75rem; }
+  .mpl-fit-cols { grid-template-columns: 1fr; gap: 2rem; }
+  .mpl-fit-divider { display: none; }
+}
+
+/* Persona cards — keep for any legacy references */
 .mpl-persona-card {
   background: var(--color-bg-card);
   border: 1px solid var(--color-bg-border);

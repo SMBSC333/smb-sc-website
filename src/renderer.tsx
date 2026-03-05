@@ -200,6 +200,22 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               if (b) b.setAttribute('aria-expanded', 'false');
             });
           });
+          // Persona tabs on My Profit Life page
+          (function() {
+            var tabs = document.querySelectorAll('.mpl-ptab');
+            var panels = document.querySelectorAll('.mpl-ppanel');
+            if (!tabs.length) return;
+            tabs.forEach(function(tab) {
+              tab.addEventListener('click', function() {
+                var idx = tab.getAttribute('data-tab');
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                panels.forEach(function(p) { p.classList.remove('active'); });
+                tab.classList.add('active');
+                var target = document.querySelector('.mpl-ppanel[data-panel="' + idx + '"]');
+                if (target) target.classList.add('active');
+              });
+            });
+          })();
           // Subtle nav shadow on scroll
           var nav = document.getElementById('main-nav');
           if (nav) {

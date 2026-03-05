@@ -1421,6 +1421,99 @@ strong { color: var(--color-heading); font-weight: 600; }
   max-width: 560px;
 }
 
+/* ── What This Is: full-width image strip ── */
+.mpl-wti-img {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+.mpl-wti-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+.mpl-wti-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(248,247,244,0) 40%, rgba(248,247,244,1) 100%);
+}
+
+/* At-a-glance 2x2 grid */
+.mpl-glance-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.mpl-glance-item {
+  background: #fff;
+  border: 1px solid var(--color-bg-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.25rem 1rem;
+}
+.mpl-glance-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-bottom: 0.5rem;
+}
+.mpl-glance-item p {
+  font-size: 0.88rem;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ── Why It Works: dark section with 3-up cards ── */
+.mpl-why-section {
+  background: var(--color-bg-navy);
+  padding: 5rem 0;
+}
+.mpl-why-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 0;
+}
+.mpl-why-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+}
+.mpl-why-card--featured {
+  background: rgba(201,168,76,0.1);
+  border-color: var(--color-gold);
+}
+.mpl-why-icon {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: var(--color-gold-light);
+}
+.mpl-why-card h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.mpl-why-card p {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  margin: 0;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .mpl-why-cards { grid-template-columns: 1fr; }
+  .mpl-glance-row { grid-template-columns: 1fr; }
+  .mpl-wti-img { height: 220px; }
+}
+
 /* Truth block */
 .mpl-truth-block {
   background: rgba(201,168,76,0.07);

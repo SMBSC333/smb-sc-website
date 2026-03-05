@@ -22,9 +22,16 @@ mpl.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── WHAT THIS IS ── */}
-      <section class="section bg-soft">
-        <div class="container">
+      {/* ── WHAT THIS IS ── image-left / content-right */}
+      <section class="section bg-soft" style="padding-top:0;">
+        <div class="mpl-wti-img">
+          <picture>
+            <source srcset="/static/images/mpl-principle-leader.webp" type="image/webp" />
+            <img src="/static/images/mpl-principle-leader.jpg" alt="Principle-centered leader working with intention" loading="lazy" />
+          </picture>
+          <div class="mpl-wti-img-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="container" style="padding-top:3rem;">
           <div class="grid-2" style="align-items:start; gap:4rem;">
             <div>
               <span class="eyebrow">What This Is</span>
@@ -36,41 +43,57 @@ mpl.get('/', (c) => {
                 <li>A chaotic experiment run by whoever is most "techy"</li>
                 <li>Another thing the owner has to carry</li>
               </ul>
-              <p>If your leadership system is reactive, AI doesn't create leverage—it creates noise.</p>
+              <p style="margin:0;">If your leadership system is reactive, AI doesn't create leverage—it creates noise.</p>
             </div>
-            <div class="highlight-box">
-              <h4 class="mb-3" style="color:var(--color-gold);">The Principle-Centered AI Framework — At a Glance</h4>
-              <ul class="pain-list">
-                <li><strong>Foundation:</strong> Principle-centered leadership method (measurable progress)</li>
-                <li><strong>Leverage:</strong> AI integration + brand positioning + go-to-market strategy installed into operations</li>
-                <li><strong>Support:</strong> 1:1 coaching + small-group mastermind</li>
-                <li><strong>Outcome:</strong> More clarity, more leverage, less owner dependency</li>
-              </ul>
-              <div style="margin-top:2rem;">
-                <picture>
-                  <source srcset="/static/images/mpl-principle-leader.webp" type="image/webp" />
-                  <img src="/static/images/mpl-principle-leader.jpg" alt="Principle-centered leader working with intention" style="width:100%; border-radius:var(--radius-lg); box-shadow:var(--shadow-md);" loading="lazy" />
-                </picture>
+            <div>
+              <h4 style="color:var(--color-navy); margin-bottom:1.5rem;">The Principle-Centered AI Framework — At a Glance</h4>
+              <div class="mpl-glance-row">
+                <div class="mpl-glance-item">
+                  <span class="mpl-glance-label">Foundation</span>
+                  <p>Principle-centered leadership method with measurable progress</p>
+                </div>
+                <div class="mpl-glance-item">
+                  <span class="mpl-glance-label">Leverage</span>
+                  <p>AI integration + brand positioning + go-to-market strategy installed into operations</p>
+                </div>
+                <div class="mpl-glance-item">
+                  <span class="mpl-glance-label">Support</span>
+                  <p>1:1 coaching + small-group mastermind</p>
+                </div>
+                <div class="mpl-glance-item">
+                  <span class="mpl-glance-label">Outcome</span>
+                  <p>More clarity, more leverage, less owner dependency</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── CLOSING THE GAP ── */}
-      <section class="section bg-warm">
+      {/* ── WHY IT WORKS ── dark full-width, 3-up truth cards */}
+      <section class="mpl-why-section">
         <div class="container">
-          <div class="grid-2" style="align-items:center; gap:4rem;">
-            <div>
-              <span class="eyebrow">Why It Works</span>
-              <h2>Most AI programs start with tools. Most leadership programs ignore leverage.</h2>
-              <div class="gold-line"></div>
-              <p><strong>The Principle-Centered AI Framework closes the gap</strong> by building principle-centered leadership and installing AI leverage you can trust—so your business scales with intelligence, without losing standards, culture, or sanity.</p>
+          <div class="section-header center" style="margin-bottom:3rem;">
+            <span class="eyebrow" style="color:var(--color-gold-light);">Why It Works</span>
+            <h2 style="color:#fff;">Most AI programs start with tools.<br/>Most leadership programs ignore leverage.</h2>
+            <div class="gold-line" style="margin:1.25rem auto 0;"></div>
+            <p style="color:rgba(255,255,255,0.78); max-width:580px; margin:1.25rem auto 0;"><strong style="color:#fff;">The Principle-Centered AI Framework closes the gap</strong> — building principle-centered leadership and installing AI leverage you can trust, so your business scales with intelligence without losing standards, culture, or sanity.</p>
+          </div>
+          <div class="mpl-why-cards">
+            <div class="mpl-why-card">
+              <div class="mpl-why-icon" aria-hidden="true">⚡</div>
+              <h4>Technology without principle creates chaos.</h4>
+              <p>Tools amplify whatever system is already in place. If that system is reactive, AI makes the chaos faster—not better.</p>
             </div>
-            <div class="mpl-truth-block" style="margin-top:0;">
-              <p><strong>Technology without principle-centered leadership creates chaos, not growth.</strong></p>
-              <p>You can't scale with intelligence if you're leading from reaction, not clarity.</p>
-              <p style="margin:0;">This engagement builds both—together—so you can lead with principle, install real leverage, and build a business that runs with less reliance on you.</p>
+            <div class="mpl-why-card mpl-why-card--featured">
+              <div class="mpl-why-icon" aria-hidden="true">◎</div>
+              <h4>You can't scale from reaction. Only from clarity.</h4>
+              <p>Principle-centered leadership gives you the operating foundation that makes delegation, AI adoption, and growth sustainable.</p>
+            </div>
+            <div class="mpl-why-card">
+              <div class="mpl-why-icon" aria-hidden="true">↑</div>
+              <h4>Both, together. That's the difference.</h4>
+              <p>This engagement builds the leader and the business simultaneously—so what gets installed actually sticks and compounds.</p>
             </div>
           </div>
         </div>

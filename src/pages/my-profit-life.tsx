@@ -22,7 +22,7 @@ mpl.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── NOT A COURSE ── */}
+      {/* ── WHAT THIS IS ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="grid-2" style="align-items:start; gap:4rem;">
@@ -37,12 +37,6 @@ mpl.get('/', (c) => {
                 <li>Another thing the owner has to carry</li>
               </ul>
               <p>If your leadership system is reactive, AI doesn't create leverage—it creates noise.</p>
-              <p>Most AI programs start with tools. Most leadership programs ignore leverage. <strong>The Principle-Centered AI Framework closes the gap</strong> by building principle-centered leadership and installing AI leverage you can trust—so your business scales with intelligence, without losing standards, culture, or sanity.</p>
-              <div class="mpl-truth-block">
-                <p><strong>Technology without principle-centered leadership creates chaos, not growth.</strong></p>
-                <p>You can't scale with intelligence if you're leading from reaction, not clarity.</p>
-                <p style="margin:0;">This engagement builds both—together—so you can lead with principle, install real leverage, and build a business that runs with less reliance on you.</p>
-              </div>
             </div>
             <div class="highlight-box">
               <h4 class="mb-3" style="color:var(--color-gold);">The Principle-Centered AI Framework — At a Glance</h4>
@@ -58,6 +52,25 @@ mpl.get('/', (c) => {
                   <img src="/static/images/mpl-principle-leader.jpg" alt="Principle-centered leader working with intention" style="width:100%; border-radius:var(--radius-lg); box-shadow:var(--shadow-md);" loading="lazy" />
                 </picture>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CLOSING THE GAP ── */}
+      <section class="section bg-warm">
+        <div class="container">
+          <div class="grid-2" style="align-items:center; gap:4rem;">
+            <div>
+              <span class="eyebrow">Why It Works</span>
+              <h2>Most AI programs start with tools. Most leadership programs ignore leverage.</h2>
+              <div class="gold-line"></div>
+              <p><strong>The Principle-Centered AI Framework closes the gap</strong> by building principle-centered leadership and installing AI leverage you can trust—so your business scales with intelligence, without losing standards, culture, or sanity.</p>
+            </div>
+            <div class="mpl-truth-block" style="margin-top:0;">
+              <p><strong>Technology without principle-centered leadership creates chaos, not growth.</strong></p>
+              <p>You can't scale with intelligence if you're leading from reaction, not clarity.</p>
+              <p style="margin:0;">This engagement builds both—together—so you can lead with principle, install real leverage, and build a business that runs with less reliance on you.</p>
             </div>
           </div>
         </div>

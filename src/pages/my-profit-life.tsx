@@ -193,56 +193,68 @@ mpl.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── WHO THIS IS FOR — Persona Tabs ── */}
+      {/* ── WHO THIS IS FOR — always-visible personas ── */}
       <section class="section bg-warm">
         <div class="container">
-          <div class="section-header center" style="margin-bottom:3rem;">
+          <div class="section-header center" style="margin-bottom:3.5rem;">
             <span class="eyebrow">Ideal Client</span>
             <h2>Who This Is For</h2>
             <div class="gold-line" style="margin:1.25rem auto 0;"></div>
             <p style="max-width:560px; margin:1rem auto 0; color:var(--color-text-muted);">Service business owners between $500K–$10M who refuse to let urgency win over legacy.</p>
           </div>
 
-          {/* Interactive persona selector */}
-          <div class="mpl-persona-tabs">
-            <div class="mpl-persona-nav">
-              <button class="mpl-ptab active" data-tab="0">
+          <div class="mpl-persona-stack">
+
+            <div class="mpl-persona-row">
+              <div class="mpl-persona-label">
+                <span class="mpl-persona-num">01</span>
                 <span class="mpl-ptab-tag">Most Common</span>
-                <span class="mpl-ptab-name">The Bottleneck Builder</span>
-                <span class="mpl-ptab-meta">$800K–$3M · Professional Services</span>
-              </button>
-              <button class="mpl-ptab" data-tab="1">
-                <span class="mpl-ptab-name">The Scaling Operator</span>
-                <span class="mpl-ptab-meta">$2M–$8M · Service Delivery</span>
-              </button>
-              <button class="mpl-ptab" data-tab="2">
-                <span class="mpl-ptab-name">The Creative Sovereign</span>
-                <span class="mpl-ptab-meta">$1.5M–$6M · Creative/Knowledge</span>
-              </button>
-            </div>
-            <div class="mpl-persona-panel">
-              <div class="mpl-ppanel active" data-panel="0">
-                <p class="mpl-ppanel-body">Your business depends entirely on you. You can't take a vacation. You miss family moments. You're exhausted—and secretly scared a key person walks out the door and takes everything with them.</p>
+                <h3>The Bottleneck Builder</h3>
+                <p class="mpl-persona-meta">$800K–$3M &nbsp;·&nbsp; 5–15 employees &nbsp;·&nbsp; Professional Services</p>
+              </div>
+              <div class="mpl-persona-content">
+                <p>Your business depends entirely on you. You can't take a vacation. You miss family moments. You're exhausted—and secretly scared a key person walks out the door and takes everything with them.</p>
                 <div class="mpl-ppanel-gives">
                   <span class="mpl-ppanel-gives-label">This program gives you</span>
                   <p>20 hours back per week, delegation confidence, and a business that runs on principle—not your presence.</p>
                 </div>
               </div>
-              <div class="mpl-ppanel" data-panel="1">
-                <p class="mpl-ppanel-body">You're growing—but operational chaos and financial fog are eating your margins. Competitors are deploying AI to undercut your pricing. A PE firm reached out last quarter. You're not ready.</p>
+            </div>
+
+            <div class="mpl-persona-divider" aria-hidden="true"></div>
+
+            <div class="mpl-persona-row">
+              <div class="mpl-persona-label">
+                <span class="mpl-persona-num">02</span>
+                <h3>The Scaling Operator</h3>
+                <p class="mpl-persona-meta">$2M–$8M &nbsp;·&nbsp; 15–50 employees &nbsp;·&nbsp; Service Delivery</p>
+              </div>
+              <div class="mpl-persona-content">
+                <p>You're growing—but operational chaos and financial fog are eating your margins. Competitors are deploying AI to undercut your pricing. A PE firm reached out last quarter. You're not ready.</p>
                 <div class="mpl-ppanel-gives">
                   <span class="mpl-ppanel-gives-label">This program gives you</span>
                   <p>AI-powered operations, 25–30% margins, and a business positioned for a $8M–$25M exit.</p>
                 </div>
               </div>
-              <div class="mpl-ppanel" data-panel="2">
-                <p class="mpl-ppanel-body">You've built something with real craft and identity. Revenue is inconsistent. You're underpriced. And the fear that AI will replace what you do keeps you up at night—even though you haven't tested that assumption.</p>
+            </div>
+
+            <div class="mpl-persona-divider" aria-hidden="true"></div>
+
+            <div class="mpl-persona-row">
+              <div class="mpl-persona-label">
+                <span class="mpl-persona-num">03</span>
+                <h3>The Creative Sovereign</h3>
+                <p class="mpl-persona-meta">$1.5M–$6M &nbsp;·&nbsp; 8–30 employees &nbsp;·&nbsp; Creative/Knowledge Services</p>
+              </div>
+              <div class="mpl-persona-content">
+                <p>You've built something with real craft and identity. Revenue is inconsistent. You're underpriced. And the fear that AI will replace what you do keeps you up at night—even though you haven't tested that assumption.</p>
                 <div class="mpl-ppanel-gives">
                   <span class="mpl-ppanel-gives-label">This program gives you</span>
                   <p>Stable retainer revenue, 30–40% margins, and AI positioned as your creative amplifier—not your replacement.</p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>

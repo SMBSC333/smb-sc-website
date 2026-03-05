@@ -10,15 +10,15 @@ mpl.get('/', (c) => {
       <section class="mpl-hero">
         <div class="mpl-hero-overlay" aria-hidden="true"></div>
         <div class="container mpl-hero-content">
-          <span class="eyebrow hero-eyebrow">The Flagship Engagement</span>
-          <h1>My<br/>Profit Life</h1>
+          <span class="eyebrow hero-eyebrow">My Profit Life</span>
+          <h1>The Principle-Centered AI Framework that helps you master yourself and multiply your impact.</h1>
           <div class="mpl-hero-rule" aria-hidden="true"></div>
-          <p class="mpl-hero-tagline">Principle-Centered Leadership&ensp;·&ensp;AI Leverage&ensp;·&ensp;Business That Scales</p>
+          <p class="mpl-hero-sub">Build the leadership foundation to scale your business with AI—without losing your soul.</p>
           <div class="hero-actions" style="margin-top:2rem;">
             <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Clarity Kickoff Call</a>
             <a href="https://ydbg-pc-score-assessment.lovable.app/" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener noreferrer">Take the Assessment</a>
           </div>
-          <p class="mpl-micro">For $500K–$10M service business owners.</p>
+          <p class="mpl-micro">For $500K–$10M service business owners navigating AI disruption, margin pressure, and owner dependency.</p>
         </div>
       </section>
 

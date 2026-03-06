@@ -14,9 +14,10 @@ mpl.get('/', (c) => {
           <h1>The Principle-Centered AI Framework that helps you master yourself and multiply your impact.</h1>
           <div class="mpl-hero-rule" aria-hidden="true"></div>
           <p class="mpl-hero-sub">Build the leadership foundation to scale your business with AI—without losing your soul.</p>
+          <p class="mpl-hero-outcome">Get your time back. Build a team that runs without you. Use AI without turning your business into chaos.</p>
           <div class="hero-actions" style="margin-top:2rem;">
             <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Clarity Kickoff Call</a>
-            <a href="https://ydbg-pc-score-assessment.lovable.app/" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener noreferrer">Take the Assessment</a>
+            <a href="https://ydbg-pc-score-assessment.lovable.app/" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener noreferrer">Take the Principle-Centered Assessment</a>
           </div>
           <p class="mpl-micro">For $500K–$10M service business owners navigating AI disruption, margin pressure, and owner dependency.</p>
         </div>
@@ -75,27 +76,24 @@ mpl.get('/', (c) => {
         <div class="container">
           <div class="section-header center" style="margin-bottom:3rem;">
             <span class="eyebrow" style="color:var(--color-gold-light);">Why It Works</span>
-            <h2 style="color:#fff;">Most AI programs start with tools.<br/>Most leadership programs ignore leverage.</h2>
+            <h2 style="color:#fff;">AI shouldn't feel like another thing you have to carry.</h2>
             <div class="gold-line" style="margin:1.25rem auto 0;"></div>
-            <p style="color:rgba(255,255,255,0.78); max-width:580px; margin:1.25rem auto 0;"><strong style="color:#fff;">The Principle-Centered AI Framework closes the gap</strong> — building principle-centered leadership and installing AI leverage you can trust, so your business scales with intelligence without losing standards, culture, or sanity.</p>
           </div>
           <div class="mpl-why-cards">
             <div class="mpl-why-card">
-              <div class="mpl-why-icon" aria-hidden="true">⚡</div>
-              <h4>Technology without principle creates chaos.</h4>
-              <p>Tools amplify whatever system is already in place. If that system is reactive, AI makes the chaos faster—not better.</p>
+              <div class="mpl-why-icon" aria-hidden="true">◻</div>
+              <h4>We set the rules so your team isn't guessing what's okay and what isn't.</h4>
             </div>
             <div class="mpl-why-card mpl-why-card--featured">
               <div class="mpl-why-icon" aria-hidden="true">◎</div>
-              <h4>You can't scale from reaction. Only from clarity.</h4>
-              <p>Principle-centered leadership gives you the operating foundation that makes delegation, AI adoption, and growth sustainable.</p>
+              <h4>We start small on purpose—1–3 places where AI saves time fast without risking quality.</h4>
             </div>
             <div class="mpl-why-card">
-              <div class="mpl-why-icon" aria-hidden="true">↑</div>
-              <h4>Both, together. That's the difference.</h4>
-              <p>This engagement builds the leader and the business simultaneously—so what gets installed actually sticks and compounds.</p>
+              <div class="mpl-why-icon" aria-hidden="true">✓</div>
+              <h4>We make it stick with training, checklists, and simple accountability.</h4>
             </div>
           </div>
+          <p style="text-align:center; color:rgba(255,255,255,0.6); margin-top:2rem; font-size:0.95rem;">So AI becomes helpful… not chaotic.</p>
         </div>
       </section>
 
@@ -324,10 +322,10 @@ mpl.get('/', (c) => {
               <h3 class="mpl-phase-title">Integrate the Leverage</h3>
               <p class="mpl-phase-sub">AI Integration, Brand Positioning &amp; Go-To-Market Strategy</p>
               <ul class="intensive-includes" style="margin-top:1.25rem;">
-                <li><strong>AI Opportunity Audit + Roadmap:</strong> highest-ROI use-cases + a prioritized plan with owners and milestones</li>
-                <li><strong>Brand Positioning Rebuild:</strong> messaging clarity + premium market position anchored to your principle-centered promise</li>
-                <li><strong>Offer Design &amp; Packaging:</strong> restructure offers for margin, value, scalable delivery</li>
-                <li><strong>GTM + Team Adoption:</strong> channel strategy + training + change management so execution sticks</li>
+                <li>Find the best AI plays: where it saves time or money first (without risking quality).</li>
+                <li>Get a simple 90-day plan: what to do first, who owns it, and what "done" looks like.</li>
+                <li>Tighten your message + offer: so you stop underpricing and overdelivering.</li>
+                <li>Help your team adopt it: training + support so it doesn't die after week two.</li>
               </ul>
             </div>
             {/* Phase 03 */}
@@ -411,35 +409,35 @@ mpl.get('/', (c) => {
           <div class="mpl-faq-grid">
             <div class="mpl-faq-item">
               <h4>How long does the program run?</h4>
-              <p>The Framework is delivered in a structured, phase-by-phase sequence. The exact timeline depends on your starting point, team readiness, and the scope confirmed during the Clarity Kickoff.</p>
+              <p>It runs in phases, not "weeks on a calendar." Some owners move faster, some take longer depending on team readiness and how much we're building at once. You'll get a clear timeline after the Clarity Kickoff.</p>
             </div>
             <div class="mpl-faq-item">
               <h4>Is this only available in Atlanta? I'm not local.</h4>
-              <p>No. Most of the work is delivered virtually. Atlanta is required only for the two GameDays (in-person assessment + breakthrough sessions). Everything else can be completed remotely.</p>
+              <p>No. Most of it is virtual. The only Atlanta piece is the two in-person GameDays. Everything else works remotely.</p>
             </div>
             <div class="mpl-faq-item">
               <h4>What if I'm already working with SMB Strategy Consultants?</h4>
-              <p>Great. We'll align the Framework to your current engagement and avoid duplication. The Clarity Kickoff determines the cleanest path and what gets prioritized first.</p>
+              <p>That's fine. We'll line this up with what you're already doing and avoid overlap. The Clarity Kickoff is where we decide what stays, what changes, and what we prioritize next.</p>
             </div>
             <div class="mpl-faq-item">
               <h4>What's the weekly time commitment?</h4>
-              <p>Expect a focused weekly cadence—designed to create real change without becoming another burden. Your exact commitment depends on the phase you're in, and we'll set expectations clearly during onboarding.</p>
+              <p>Plan on 2–4 hours per week most weeks. Some weeks are lighter, and some weeks (like GameDays or key planning sessions) are heavier. The goal is progress without this becoming another full-time job.</p>
             </div>
             <div class="mpl-faq-item">
               <h4>How is this different from other AI consultants?</h4>
-              <p>Most AI consultants sell tools, prompts, or experiments. This Framework installs principle-centered leadership first—then applies AI through clear standards, ownership, and adoption so it becomes leverage you can trust (not tool sprawl or chaos).</p>
+              <p>Most AI consultants hand you tools, prompts, or ideas. This starts with how you lead—because if the leadership system is messy, AI just makes the mess faster. We set rules, pick a few smart use-cases, and help your team actually use it.</p>
             </div>
             <div class="mpl-faq-item">
               <h4>What if I'm not "ready" for AI? I don't even know where to start.</h4>
-              <p>That's exactly why the Framework begins with clarity and foundation. You don't need to be "good at AI." You need a clear starting point, standards, and a practical sequence—so you don't waste time or introduce risk.</p>
+              <p>That's normal. You don't need to be "good at AI." You need a starting point and a plan that won't create chaos. We make it simple: what to do first, what to ignore for now, and how to roll it out safely.</p>
             </div>
             <div class="mpl-faq-item">
               <h4>What is the PC Score and why does it matter?</h4>
-              <p>The PC Score is a measurable baseline that reflects your leadership capacity across the areas that drive sustainable performance—so you're not guessing whether you're improving. In this Framework, it acts as a simple way to track whether your leadership foundation is strengthening as leverage is installed.</p>
+              <p>It's a baseline that shows how strong your leadership capacity is right now—so you're not guessing. It helps us track whether you're actually getting clearer, more consistent, and less reactive as the business grows.</p>
             </div>
             <div class="mpl-faq-item">
               <h4>Are spots really limited to 15 participants per month?</h4>
-              <p>Yes—this Framework includes deep support (coaching, small-group accountability, and implementation guidance), so enrollment is intentionally capped to protect outcomes and quality.</p>
+              <p>Yes. This includes real support (coaching + small group accountability), so we cap spots to protect outcomes and keep quality high.</p>
             </div>
           </div>
         </div>

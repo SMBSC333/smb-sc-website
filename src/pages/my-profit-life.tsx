@@ -10,16 +10,14 @@ mpl.get('/', (c) => {
       <section class="mpl-hero">
         <div class="mpl-hero-overlay" aria-hidden="true"></div>
         <div class="container mpl-hero-content">
-          <span class="eyebrow hero-eyebrow">My Profit Life</span>
-          <h1>The Principle-Centered AI Framework that helps you master yourself and multiply your impact.</h1>
+          <span class="eyebrow hero-eyebrow">For Founders &amp; Business Owners Doing $500K–$10M</span>
+          <h1>Most business owners are dabbling with AI.<br/>Almost none are using it to run a sharper business.</h1>
           <div class="mpl-hero-rule" aria-hidden="true"></div>
-          <p class="mpl-hero-sub">Build the leadership foundation to scale your business with AI—without losing your soul.</p>
-          <p class="mpl-hero-outcome">Get your time back. Build a team that runs without you. Use AI without turning your business into chaos.</p>
+          <p class="mpl-hero-sub">The difference isn't better tools. It's sharper thinking and better decisions.</p>
+          <p class="mpl-hero-outcome">The Principle-Centered AI Framework gives you the clarity and decision advantage to lead your business with the confidence and capacity of a team twice the size.</p>
           <div class="hero-actions" style="margin-top:2rem;">
             <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Clarity Kickoff Call</a>
-            <a href="https://ydbg-pc-score-assessment.lovable.app/" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener noreferrer">Take the Principle-Centered Assessment</a>
           </div>
-          <p class="mpl-micro">For $500K–$10M service business owners navigating AI disruption, margin pressure, and owner dependency.</p>
         </div>
       </section>
 

@@ -1384,7 +1384,7 @@ strong { color: var(--color-heading); font-weight: 600; }
 .mpl-hero-content {
   position: relative;
   z-index: 1;
-  max-width: 680px;
+  max-width: 720px;
 }
 .mpl-hero h1 {
   font-size: clamp(1.75rem, 3.2vw, 2.6rem);

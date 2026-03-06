@@ -322,10 +322,10 @@ mpl.get('/', (c) => {
               <h3 class="mpl-phase-title">Integrate the Leverage</h3>
               <p class="mpl-phase-sub">AI Integration, Brand Positioning &amp; Go-To-Market Strategy</p>
               <ul class="intensive-includes" style="margin-top:1.25rem;">
-                <li>Find the best AI plays: where it saves time or money first (without risking quality).</li>
-                <li>Get a simple 90-day plan: what to do first, who owns it, and what "done" looks like.</li>
-                <li>Tighten your message + offer: so you stop underpricing and overdelivering.</li>
-                <li>Help your team adopt it: training + support so it doesn't die after week two.</li>
+                <li><strong>Find the best AI plays:</strong> where it saves time or money first (without risking quality).</li>
+                <li><strong>Get a simple 90-day plan:</strong> what to do first, who owns it, and what "done" looks like.</li>
+                <li><strong>Tighten your message + offer:</strong> so you stop underpricing and overdelivering.</li>
+                <li><strong>Help your team adopt it:</strong> training + support so it doesn't die after week two.</li>
               </ul>
             </div>
             {/* Phase 03 */}

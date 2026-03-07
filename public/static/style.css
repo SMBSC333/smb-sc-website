@@ -636,6 +636,8 @@ strong { color: var(--color-heading); font-weight: 600; }
   gap: 0;
   align-items: stretch;
   min-height: 0;
+}
+.split-section.split-capped {
   max-height: 680px;
   overflow: hidden;
 }
@@ -663,7 +665,8 @@ strong { color: var(--color-heading); font-weight: 600; }
 .split-content.bg-navy .eyebrow { color: var(--color-gold-light); }
 .split-content.bg-soft { background: var(--color-bg-soft); }
 @media (max-width: 900px) {
-  .split-section { grid-template-columns: 1fr; max-height: none; }
+  .split-section { grid-template-columns: 1fr; }
+  .split-section.split-capped { max-height: none; }
   .split-img { min-height: 320px; max-height: 420px; }
   .split-content { padding: 2.5rem 1.5rem; }
 }

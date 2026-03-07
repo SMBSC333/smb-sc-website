@@ -90,7 +90,7 @@ home.get('/', (c) => {
 
       {/* ── PAIN SECTION — split: text left, frustrated owner photo right ── */}
       <div class="split-section">
-        <div class="split-content bg-soft" style="padding:4rem;">
+        <div class="split-content bg-soft" style="padding:4.5rem 4rem;">
           <span class="eyebrow">Sound Familiar?</span>
           <h2>If any of this describes your business right now, you are not alone.</h2>
           <div class="gold-line"></div>
@@ -114,7 +114,7 @@ home.get('/', (c) => {
       </div>
 
       {/* ── THE DIAGNOSTIC — split: Corbin photo left, content right ── */}
-      <div class="split-section">
+      <div class="split-section split-capped">
         <div class="split-img">
           <picture>
             <source type="image/webp" srcset="/static/images/corbin-headshot-new.webp" />

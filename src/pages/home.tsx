@@ -117,8 +117,8 @@ home.get('/', (c) => {
       <div class="split-section">
         <div class="split-img">
           <picture>
-            <source type="image/webp" srcset="/static/images/corbin-headshot-outdoor.webp" />
-            <img src="/static/images/corbin-headshot-outdoor.jpg" alt="Corbin Smith, SMB Strategy Consultants founder" loading="lazy" style="object-position:center top;" />
+            <source type="image/webp" srcset="/static/images/corbin-headshot-new.webp" />
+            <img src="/static/images/corbin-headshot-new.jpg" alt="Corbin Smith, SMB Strategy Consultants founder" loading="eager" style="object-position:center 15%;" />
           </picture>
         </div>
         <div class="split-content bg-navy">

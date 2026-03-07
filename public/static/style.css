@@ -636,7 +636,7 @@ strong { color: var(--color-heading); font-weight: 600; }
   gap: 0;
   align-items: stretch;
   min-height: 0;
-  max-height: 600px;
+  max-height: 680px;
   overflow: hidden;
 }
 .split-img {
@@ -650,7 +650,7 @@ strong { color: var(--color-heading); font-weight: 600; }
   display: block;
 }
 .split-content {
-  padding: 3.5rem 4rem;
+  padding: 4.5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

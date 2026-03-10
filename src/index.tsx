@@ -12,6 +12,8 @@ import resources from './pages/resources'
 import contact from './pages/contact'
 import virtualStaffing from './pages/virtual-staffing'
 import landingPages from './pages/landing-pages'
+import privacy from './pages/privacy-policy'
+import terms from './pages/terms-conditions'
 
 import execSummaryHtml from '../public/executive-summary.html?raw'
 
@@ -35,32 +37,9 @@ app.route('/virtual-staffing', virtualStaffing)
 // Landing pages
 app.route('/', landingPages)
 
-// Privacy / Terms stubs
-app.get('/privacy-policy', (c) => c.render(
-  <div>
-    <section class="page-hero bg-dark">
-      <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="lead">SMB Strategy Consultants is committed to protecting your privacy. Contact us at the address below with any questions.</p>
-        <p style="color:var(--color-text-muted);">5555 Glenridge Connector, Suite 200, Atlanta, GA 30342</p>
-      </div>
-    </section>
-  </div>,
-  { title: 'Privacy Policy' }
-))
-
-app.get('/terms-conditions', (c) => c.render(
-  <div>
-    <section class="page-hero bg-dark">
-      <div class="container">
-        <h1>Terms of Service</h1>
-        <p class="lead">Please contact us with any questions about our terms of service.</p>
-        <p style="color:var(--color-text-muted);">5555 Glenridge Connector, Suite 200, Atlanta, GA 30342</p>
-      </div>
-    </section>
-  </div>,
-  { title: 'Terms of Service' }
-))
+// Legal pages
+app.route('/privacy-policy', privacy)
+app.route('/terms-conditions', terms)
 
 // Admin CMS redirect — /admin → /admin/ (Decap CMS needs trailing slash)
 app.get('/admin', (c) => c.redirect('/admin/', 301))

@@ -301,7 +301,7 @@ home.get('/', (c) => {
           <div class="grid-3">
             <div class="testimonial">
               <p class="testimonial-text">SMB Strategy Consultants has been a great resource for our company for a number of years. Corbin has the ability to keep us at the 10,000 foot level and brings insights and discernment that we need to keep our business growing with a long-range plan. The service he provides is exceptional.</p>
-              <p class="testimonial-author">Client, Multi-Year Engagement</p>
+              <p class="testimonial-author">Guy Roberts, Pat Murphy Electric</p>
             </div>
             <div class="testimonial">
               <p class="testimonial-text">Corbin brings a unique perspective to growing your business. Not only is he able to quickly understand the nuances of your particular business, but he has been invaluable in introducing me to key people to help me transform and grow.</p>

@@ -79,7 +79,7 @@ landingPages.get('/growth-diagnostic', (c) => {
             <div>
               <div class="testimonial">
                 <p class="testimonial-text">Corbin has the ability to keep us at the 10,000 foot level and brings insights and discernment that we need to keep our business growing with a long-range plan. The service is exceptional.</p>
-                <p class="testimonial-author">Client, Multi-Year Engagement</p>
+                <p class="testimonial-author">Guy Roberts, Pat Murphy Electric</p>
               </div>
             </div>
             <div>
@@ -454,7 +454,7 @@ landingPages.get('/partner-referral', (c) => {
           <div class="grid-3">
             <div class="testimonial">
               <p class="testimonial-text">SMB Strategy Consultants has been a great resource for our company. Corbin keeps us at the 10,000 foot level and brings insights we need to keep growing with a long-range plan.</p>
-              <p class="testimonial-author">Client, Multi-Year Engagement</p>
+              <p class="testimonial-author">Guy Roberts, Pat Murphy Electric</p>
             </div>
             <div class="testimonial">
               <p class="testimonial-text">Corbin is able to quickly understand the nuances of your business and has been invaluable in introducing me to key people to help me transform and grow.</p>

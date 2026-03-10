@@ -66,7 +66,7 @@ contact.get('/', (c) => {
               <span class="eyebrow">Office Information</span>
               <h3 class="mb-4">Atlanta, Georgia — Serving SMBs Nationwide</h3>
               <ul class="pain-list mb-4">
-                <li><strong>Address:</strong> 5555 Glenridge Connector, Suite 200, Atlanta, GA 30342</li>
+                <li><strong>Address:</strong> 303 Perimeter Center N. Ste. 300, Dunwoody, GA 30346</li>
                 <li><strong>Hours:</strong> Monday through Friday, 9am – 6pm Eastern</li>
                 <li><strong>Markets Served:</strong> Atlanta, Marietta, Roswell, Sandy Springs, Smyrna, and nationwide</li>
               </ul>

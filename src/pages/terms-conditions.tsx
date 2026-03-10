@@ -21,7 +21,7 @@ terms.get('/', (c) => {
           <div class="legal-wrap">
 
             <div class="legal-intro">
-              <p>These Terms and Conditions ("Terms") govern your use of the website <strong>smbstrategyconsultants.com</strong> (the "Site") and any consulting, advisory, or related services (collectively, the "Services") provided by <strong>SMB Strategy Consultants, LLC</strong> ("Company," "we," "us," or "our"), a Georgia limited liability company located at 5555 Glenridge Connector, Suite 200, Atlanta, GA 30342.</p>
+              <p>These Terms and Conditions ("Terms") govern your use of the website <strong>smbstrategyconsultants.com</strong> (the "Site") and any consulting, advisory, or related services (collectively, the "Services") provided by <strong>SMB Strategy Consultants, LLC</strong> ("Company," "we," "us," or "our"), a Georgia limited liability company located at 303 Perimeter Center N. Ste. 300, Dunwoody, GA 30346.</p>
               <p>By accessing the Site or engaging our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="/privacy-policy">Privacy Policy</a>, which is incorporated herein by reference. If you do not agree, do not use the Site or Services.</p>
             </div>
 
@@ -202,10 +202,10 @@ terms.get('/', (c) => {
               <p>If you have questions or concerns about these Terms, please contact us:</p>
               <div class="legal-contact-block">
                 <p><strong>SMB Strategy Consultants, LLC</strong><br/>
-                5555 Glenridge Connector, Suite 200<br/>
-                Atlanta, GA 30342<br/>
+                303 Perimeter Center N. Ste. 300<br/>
+                Dunwoody, GA 30346<br/>
                 Email: <a href="mailto:hello@smbstrategyconsultants.com">hello@smbstrategyconsultants.com</a><br/>
-                Hours: Monday–Friday, 9am–6pm ET</p>
+                Hours: Monday–Friday, 9am–4pm ET</p>
               </div>
             </div>
 

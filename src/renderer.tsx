@@ -159,7 +159,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               </div>
             </div>
             <div class="footer-bottom">
-              <p>5555 Glenridge Connector, Suite 200, Atlanta, GA 30342 &nbsp;|&nbsp; Mon–Fri 9am–6pm</p>
+              <p>303 Perimeter Center N. Ste. 300, Dunwoody, GA 30346 &nbsp;|&nbsp; Mon–Fri 9am–4pm</p>
               <p>&copy; 2026 SMB Strategy Consultants. All rights reserved.</p>
             </div>
           </div>

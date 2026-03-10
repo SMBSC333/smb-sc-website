@@ -189,10 +189,10 @@ privacy.get('/', (c) => {
               <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
               <div class="legal-contact-block">
                 <p><strong>SMB Strategy Consultants, LLC</strong><br/>
-                5555 Glenridge Connector, Suite 200<br/>
-                Atlanta, GA 30342<br/>
+                303 Perimeter Center N. Ste. 300<br/>
+                Dunwoody, GA 30346<br/>
                 Email: <a href="mailto:hello@smbstrategyconsultants.com">hello@smbstrategyconsultants.com</a><br/>
-                Hours: Monday–Friday, 9am–6pm ET</p>
+                Hours: Monday–Friday, 9am–4pm ET</p>
               </div>
               <p>If you are in the EEA or UK and believe we have not addressed your concern adequately, you have the right to lodge a complaint with your local data protection authority.</p>
             </div>

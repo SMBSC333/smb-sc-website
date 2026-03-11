@@ -36,10 +36,6 @@ home.get('/', (c) => {
               <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"                loading="lazy" />
               <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor"               loading="lazy" />
             </div>
-            <span class="trust-bar-sub">
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-              Serving SMBs Since 2015
-            </span>
           </div>
         </div>
       </div>

@@ -95,12 +95,12 @@ about.get('/', (c) => {
             </div>
             <div>
               <div class="cred-bar" style="flex-wrap:wrap; gap:0.75rem; margin-bottom:2rem;">
-                <span class="cred-badge">CEPA — Certified Exit Planning Advisor</span>
-                <span class="cred-badge">ASBC — Accredited Small Business Consultant</span>
-                <span class="cred-badge">Capitaliz Accredited Advisor</span>
-                <span class="cred-badge">Value Builder Certified</span>
-                <span class="cred-badge">Fathom Certified Advisor</span>
-                <span class="cred-badge">EPI Member</span>
+                <div class="cert-logo-bar" style="justify-content:flex-start; gap:1.5rem;">
+                  <img src="/static/images/badge-cepa.png"          alt="CEPA — Certified Exit Planning Advisor" loading="lazy" style="height:52px;" />
+                  <img src="/static/images/badge-aasbc.png"         alt="AASBC Member"                          loading="lazy" style="height:52px;" />
+                  <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"               loading="lazy" style="height:52px;" />
+                  <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor"              loading="lazy" style="height:52px;" />
+                </div>
               </div>
               <div class="highlight-box">
                 <p style="font-size:0.95rem; font-style:italic; color:var(--color-text); margin:0;">"Quality data cuts through hope, qualifies intuition, and drives improvement month over month. Be one of the 30% who achieve the business and lifestyle they set out to build."</p>

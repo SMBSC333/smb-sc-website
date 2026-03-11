@@ -26,28 +26,18 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── TRUST BAR — credentials strip ── */}
+      {/* ── TRUST BAR — certification badges ── */}
       <div class="trust-bar">
         <div class="container">
           <div class="trust-bar-inner">
-            <span class="trust-item">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-              CEPA Certified
-            </span>
-            <span class="trust-item">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-              AASBC Member
-            </span>
-            <span class="trust-item">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-              Value Builder Advisor
-            </span>
-            <span class="trust-item">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-              Fathom Certified
-            </span>
-            <span class="trust-item">
-              <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <div class="cert-logo-bar">
+              <img src="/static/images/badge-cepa.png"          alt="CEPA — Certified Exit Planning Advisor"  loading="lazy" />
+              <img src="/static/images/badge-aasbc.png"         alt="AASBC Member"                           loading="lazy" />
+              <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"                loading="lazy" />
+              <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor"               loading="lazy" />
+            </div>
+            <span class="trust-bar-sub">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
               Serving SMBs Since 2015
             </span>
           </div>

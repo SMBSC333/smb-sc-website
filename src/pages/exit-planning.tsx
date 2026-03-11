@@ -177,12 +177,12 @@ exitPlanning.get('/', (c) => {
             </div>
             <div>
               <div class="cred-bar" style="flex-wrap:wrap; gap:0.75rem; margin-bottom:2rem;">
-                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">CEPA</span>
-                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">Capitaliz Accredited</span>
-                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">AASBC</span>
-                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">Value Builder Certified</span>
-                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">Fathom Certified</span>
-                <span class="cred-badge" style="color:var(--color-navy); border-color:var(--color-navy); opacity:0.8;">EPI Member</span>
+                <div class="cert-logo-bar" style="justify-content:flex-start; gap:1.5rem;">
+                  <img src="/static/images/badge-cepa.png"          alt="CEPA Certified"           loading="lazy" style="height:52px;" />
+                  <img src="/static/images/badge-aasbc.png"         alt="AASBC Member"             loading="lazy" style="height:52px;" />
+                  <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"  loading="lazy" style="height:52px;" />
+                  <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor" loading="lazy" style="height:52px;" />
+                </div>
               </div>
               <div class="card card-accent">
                 <h4 class="mb-2">Exit Planning Services Available In</h4>

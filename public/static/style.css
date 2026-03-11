@@ -1121,10 +1121,12 @@ strong { color: var(--color-heading); font-weight: 600; }
 .footer-bottom p { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin: 0; line-height: 1.8; }
 .cred-bar {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
+/* Legacy text badge — kept for any inline overrides */
 .cred-badge {
   font-size: 0.68rem;
   font-weight: 700;
@@ -1134,6 +1136,41 @@ strong { color: var(--color-heading); font-weight: 600; }
   border: 1px solid rgba(255,255,255,0.35);
   border-radius: 3px;
   color: rgba(255,255,255,0.75);
+}
+/* ── Certification logo badges ──────────────────────────── */
+.cert-logo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cert-logo-bar img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  opacity: 0.85;
+  filter: grayscale(15%);
+  transition: opacity 0.2s, filter 0.2s;
+}
+.cert-logo-bar img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+/* Footer variant — slightly smaller on dark background */
+.cred-bar .cert-logo-bar {
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+.cred-bar .cert-logo-bar img {
+  height: 38px;
+  filter: grayscale(100%) brightness(1.8);
+  opacity: 0.75;
+}
+.cred-bar .cert-logo-bar img:hover {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
 }
 @media (max-width: 900px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -1322,15 +1359,33 @@ strong { color: var(--color-heading); font-weight: 600; }
   background: var(--color-bg-warm);
   border-top: 1px solid var(--color-bg-border);
   border-bottom: 1px solid var(--color-bg-border);
-  padding: 1.75rem 0;
+  padding: 2rem 0;
 }
 .trust-bar-inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
+.trust-bar-inner .cert-logo-bar {
+  gap: 2.5rem;
+}
+.trust-bar-inner .cert-logo-bar img {
+  height: 56px;
+}
+.trust-bar-sub {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  opacity: 0.55;
+}
+.trust-bar-sub svg { opacity: 0.7; }
+/* Legacy .trust-item kept for back-compat */
 .trust-item {
   display: flex;
   align-items: center;
@@ -1343,6 +1398,10 @@ strong { color: var(--color-heading); font-weight: 600; }
   opacity: 0.7;
 }
 .trust-item svg { opacity: 0.5; }
+@media (max-width: 680px) {
+  .trust-bar-inner .cert-logo-bar { gap: 1.25rem; }
+  .trust-bar-inner .cert-logo-bar img { height: 42px; }
+}
 
 /* ── Stat callout block ─────────────────────────────────── */
 .stat-block {

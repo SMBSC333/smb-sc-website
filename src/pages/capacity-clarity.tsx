@@ -1319,8 +1319,11 @@ capacityClarity.get('/', (c) => {
             <p>That means installing role clarity, decision rights, accountability systems, and leadership rhythm — so the business runs on infrastructure instead of the founder's constant involvement.</p>
             <p>This is the operating principle behind the SMB Strategy Consultants framework: helping owner-led businesses move from reactive, founder-centered growth to a more professionally managed operation.</p>
             <p>Not through culture talks or motivational frameworks. <strong>Through structure.</strong></p>
-            <div class="cc-authority-badge">
-              SMB Strategy Consultants · Principle-Centered Business Advisory
+            <div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap; margin-top:1.75rem;">
+              <img src="/static/images/badge-cepa.png"          alt="CEPA Certified"           loading="lazy" style="height:50px; width:auto; opacity:0.75; filter:grayscale(100%) brightness(2);" />
+              <img src="/static/images/badge-aasbc.png"         alt="AASBC Member"             loading="lazy" style="height:50px; width:auto; opacity:0.75; filter:grayscale(100%) brightness(2);" />
+              <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"  loading="lazy" style="height:50px; width:auto; opacity:0.75; filter:grayscale(100%) brightness(2);" />
+              <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor" loading="lazy" style="height:50px; width:auto; opacity:0.75; filter:grayscale(100%) brightness(2);" />
             </div>
           </div>
 

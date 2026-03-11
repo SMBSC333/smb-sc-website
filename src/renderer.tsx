@@ -126,10 +126,12 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                 />
                 <p>We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration.</p>
                 <div class="cred-bar">
-                  <span class="cred-badge">CEPA</span>
-                  <span class="cred-badge">AASBC</span>
-                  <span class="cred-badge">Value Builder</span>
-                  <span class="cred-badge">Fathom Certified</span>
+                  <div class="cert-logo-bar">
+                    <img src="/static/images/badge-cepa.png"          alt="CEPA Certified"           loading="lazy" />
+                    <img src="/static/images/badge-aasbc.png"         alt="AASBC Member"             loading="lazy" />
+                    <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"  loading="lazy" />
+                    <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor" loading="lazy" />
+                  </div>
                 </div>
               </div>
               <div class="footer-col">

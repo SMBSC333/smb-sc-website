@@ -982,14 +982,14 @@ capacityClarity.get('/', (c) => {
             <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="cc-hero-btn" target="_blank" rel="noopener noreferrer">
               Book My Capacity Clarity Session <span class="arrow">→</span>
             </a>
-            <p class="cc-hero-micro">45 minutes. A real diagnosis. A clear next step.</p>
+            <p class="cc-hero-micro">45 minutes. Real clarity. A clear next step.</p>
           </div>
         </div>
 
         <!-- Right column — card -->
         <div class="cc-hero-card">
           <p class="cc-hero-card-label">What you walk away with</p>
-          <h3>A diagnosis — not just a conversation.</h3>
+          <h3>Clarity — not just a conversation.</h3>
           <ul class="cc-card-list">
             <li>Your primary owner bottleneck, specifically named</li>
             <li>What it is costing in time, energy, and growth drag</li>
@@ -1181,7 +1181,7 @@ capacityClarity.get('/', (c) => {
         <span class="cc-diagnosis-eyebrow">What you leave with</span>
         <h2 class="cc-diagnosis-quote">
           You will not leave with a conversation.<br/>
-          You will leave with a <em>diagnosis.</em>
+          You will leave with <em>clarity.</em>
         </h2>
         <hr class="cc-diagnosis-rule" />
         <p class="cc-diagnosis-sub">A clear picture of where the dependency lives, what it is costing, and which structural piece needs to change first.</p>
@@ -1291,7 +1291,7 @@ capacityClarity.get('/', (c) => {
             <p>Less founder drag. More consistent, team-led execution.</p>
           </div>
         </div>
-        <p class="cc-s8-foot">The session is where the diagnosis happens. The Intensive is where the structure gets built. If it is a fit, you will know by the end of the call.</p>
+        <p class="cc-s8-foot">The session is where the clarity happens. The Intensive is where the structure gets built. If it is a fit, you will know by the end of the call.</p>
       </div>
     </section>
 

@@ -1356,9 +1356,9 @@ strong { color: var(--color-heading); font-weight: 600; }
 
 /* ── Credential/trust bar ───────────────────────────────── */
 .trust-bar {
-  background: #d6d3cc;
-  border-top: 1px solid #c4c1ba;
-  border-bottom: 1px solid #c4c1ba;
+  background: #d7d3cc;
+  border-top: 1px solid #c8c4bd;
+  border-bottom: 1px solid #c8c4bd;
   padding: 2rem 0;
 }
 .trust-bar-inner {

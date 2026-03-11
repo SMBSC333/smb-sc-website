@@ -3,7 +3,6 @@ import { Hono } from 'hono'
 const capacityClarity = new Hono()
 
 capacityClarity.get('/', (c) => {
-  // Bypass renderer — custom layout with logo-only header (no nav)
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,436 +12,714 @@ capacityClarity.get('/', (c) => {
   <title>Capacity Clarity Session — SMB Strategy Consultants</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="/static/style.css" rel="stylesheet" />
   <style>
-    /* ── Capacity Clarity landing-page overrides ─────────────── */
-    .cc-header {
-      background: #fff;
-      border-bottom: 1px solid #e8e3da;
-      padding: 1.1rem 0;
-      text-align: center;
-    }
-    .cc-header img { height: 40px; width: auto; display: inline-block; }
+    *, *::before, *::after { box-sizing: border-box; }
 
-    /* Hero */
+    /* ── ANNOUNCEMENT BAR ─────────────────────────────────── */
+    .cc-announce {
+      background: var(--color-gold, #c9a84c);
+      padding: 0.55rem 1rem;
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-navy, #0d1c32);
+    }
+    .cc-announce span { margin-right: 0.5rem; }
+
+    /* ── LOGO HEADER ──────────────────────────────────────── */
+    .cc-header {
+      background: var(--color-navy, #0d1c32);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 1.1rem 2rem;
+    }
+    .cc-header-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+    .cc-header img { height: 38px; width: auto; display: block; }
+
+    /* ── HERO — 2-COLUMN SPLIT ────────────────────────────── */
     .cc-hero {
       background: var(--color-navy, #0d1c32);
-      padding: 5rem 0 4.5rem;
-      text-align: center;
+      padding: 5rem 0 5.5rem;
       position: relative;
       overflow: hidden;
     }
-    .cc-hero::before {
+    .cc-hero::after {
       content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 60% 0%, rgba(201,168,76,0.12) 0%, transparent 65%);
+      position: absolute;
+      top: 0; right: 0;
+      width: 55%;
+      height: 100%;
+      background: radial-gradient(ellipse at 80% 30%, rgba(201,168,76,0.07) 0%, transparent 65%);
       pointer-events: none;
     }
-    .cc-hero .eyebrow { color: var(--color-gold-light, #e0b84c); }
+    .cc-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 4rem;
+      align-items: center;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    @media (max-width: 900px) {
+      .cc-hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    /* Left col */
+    .cc-hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid rgba(201,168,76,0.4);
+      border-radius: 100px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-gold-light, #e0b84c);
+      margin-bottom: 1.5rem;
+    }
+    .cc-hero-pill::before {
+      content: '+';
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-gold, #c9a84c);
+    }
     .cc-hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
       font-weight: 800;
       color: #fff;
-      line-height: 1.2;
-      max-width: 780px;
-      margin: 0.75rem auto 1.5rem;
+      line-height: 1.1;
+      margin: 0 0 1.5rem;
+    }
+    .cc-hero h1 em {
+      font-style: italic;
+      color: var(--color-gold-light, #e0b84c);
+      font-weight: 800;
     }
     .cc-hero-sub {
-      font-size: clamp(1rem, 1.8vw, 1.2rem);
-      color: rgba(255,255,255,0.82);
-      max-width: 680px;
-      margin: 0 auto 1.25rem;
-      line-height: 1.7;
-    }
-    .cc-hero-body {
-      font-size: 0.97rem;
-      color: rgba(255,255,255,0.68);
-      max-width: 620px;
-      margin: 0 auto 2.5rem;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.72);
       line-height: 1.75;
+      margin-bottom: 2.25rem;
+      max-width: 500px;
     }
-    .cc-hero-micro {
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.42);
-      letter-spacing: 0.03em;
-      margin-top: 1rem;
-    }
-
-    /* Gold rule */
-    .cc-rule {
-      width: 48px; height: 3px;
+    .cc-hero-cta-row { display: flex; flex-direction: column; gap: 0.9rem; align-items: flex-start; }
+    .cc-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       background: var(--color-gold, #c9a84c);
-      border: none; margin: 1.25rem auto;
-      border-radius: 2px;
+      color: var(--color-navy, #0d1c32);
+      font-size: 0.92rem;
+      font-weight: 700;
+      padding: 0.85rem 1.75rem;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .cc-hero-btn:hover { background: #b8943e; transform: translateY(-1px); }
+    .cc-hero-btn .arrow { font-size: 1rem; }
+    .cc-hero-micro {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.38);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .cc-hero-micro::before { content: '✓'; color: var(--color-gold, #c9a84c); font-size: 0.8rem; }
+
+    /* Right col — takeaway card */
+    .cc-hero-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-top: 3px solid var(--color-gold, #c9a84c);
+      border-radius: 8px;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .cc-hero-card-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 0.75rem;
+    }
+    .cc-hero-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+    }
+    .cc-card-list {
+      list-style: none;
+      padding: 0; margin: 0 0 1.75rem;
+    }
+    .cc-card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.55;
+    }
+    .cc-card-list li:last-child { border-bottom: none; }
+    .cc-card-list li::before {
+      content: '→';
+      color: var(--color-gold, #c9a84c);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .cc-card-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .cc-card-meta-item {
+      background: rgba(255,255,255,0.03);
+      padding: 0.75rem 1rem;
+    }
+    .cc-card-meta-item span {
+      display: block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 0.2rem;
+    }
+    .cc-card-meta-item strong {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
     }
 
-    /* Section label */
-    .cc-section-label {
-      font-size: 0.7rem;
+    /* ── SHARED SECTION UTILITIES ─────────────────────────── */
+    .cc-section { padding: 5.5rem 0; }
+    .cc-container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .cc-eyebrow {
+      font-size: 0.68rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--color-gold, #c9a84c);
-      margin-bottom: 0.6rem;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    .cc-rule {
+      width: 40px; height: 3px;
+      background: var(--color-gold, #c9a84c);
+      border: none; margin: 1.1rem 0 1.5rem;
+      border-radius: 2px;
       display: block;
     }
+    .cc-rule-center { margin: 1.1rem auto 1.5rem; }
 
-    /* Problem section */
-    .cc-problem { background: var(--color-bg-soft, #f8f7f4); padding: 5rem 0; }
-    .cc-problem h2 {
+    /* ── SECTION 2 — THE REAL PROBLEM: image left, list right ─ */
+    .cc-s2 { background: var(--color-bg-soft, #f8f7f4); }
+    .cc-s2-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 820px) { .cc-s2-grid { grid-template-columns: 1fr; gap: 3rem; } }
+    .cc-s2-img {
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+    .cc-s2-img img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .cc-s2-img-badge {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      background: var(--color-navy, #0d1c32);
+      border-left: 3px solid var(--color-gold, #c9a84c);
+      border-radius: 4px;
+      padding: 0.65rem 1rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.4;
+    }
+    .cc-s2-img-badge strong { color: #fff; display: block; font-size: 0.85rem; }
+    .cc-s2 h2 {
       font-size: clamp(1.5rem, 2.8vw, 2.1rem);
       font-weight: 700;
       color: var(--color-navy, #0d1c32);
-      max-width: 640px;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+    .cc-s2 p {
+      font-size: 0.97rem;
+      color: var(--color-text-muted, #4a5568);
+      line-height: 1.75;
       margin-bottom: 1.25rem;
     }
-    .cc-problem-intro {
-      font-size: 1.05rem;
-      color: var(--color-text-muted, #4a5568);
-      max-width: 640px;
-      line-height: 1.75;
-      margin-bottom: 2rem;
-    }
-    .cc-symptom-list {
+    .cc-dash-list {
       list-style: none;
-      padding: 0; margin: 0 0 2rem;
-      max-width: 640px;
+      padding: 0; margin: 0 0 1.5rem;
     }
-    .cc-symptom-list li {
+    .cc-dash-list li {
       display: flex;
-      align-items: flex-start;
       gap: 0.75rem;
-      padding: 0.65rem 0;
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-      font-size: 0.97rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      font-size: 0.94rem;
       color: var(--color-text, #1a2a3a);
       line-height: 1.6;
     }
-    .cc-symptom-list li:last-child { border-bottom: none; }
-    .cc-symptom-list li::before {
+    .cc-dash-list li:last-child { border-bottom: none; }
+    .cc-dash-list li::before {
       content: '–';
       color: var(--color-gold, #c9a84c);
       font-weight: 700;
       flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .cc-closing-note {
-      font-size: 0.97rem;
-      color: var(--color-text-muted, #4a5568);
-      max-width: 620px;
-      line-height: 1.75;
-      font-style: italic;
     }
 
-    /* Misdiagnosis — dark navy */
-    .cc-misdiag {
+    /* ── SECTION 3 — MISDIAGNOSIS: full-width dark with callout ── */
+    .cc-s3 {
       background: var(--color-navy, #0d1c32);
-      padding: 5rem 0;
     }
-    .cc-misdiag h2 {
-      font-size: clamp(1.45rem, 2.6vw, 2rem);
+    .cc-s3-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 5rem;
+      align-items: start;
+    }
+    @media (max-width: 820px) { .cc-s3-grid { grid-template-columns: 1fr; gap: 3rem; } }
+    .cc-s3 h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
       font-weight: 700;
       color: #fff;
-      max-width: 620px;
+      line-height: 1.2;
       margin-bottom: 0.5rem;
     }
-    .cc-misdiag h3 {
+    .cc-s3-sub {
       font-size: 1.05rem;
       font-weight: 600;
       color: var(--color-gold-light, #e0b84c);
-      max-width: 620px;
       margin-bottom: 1.5rem;
     }
-    .cc-misdiag p {
+    .cc-s3 p {
       font-size: 0.97rem;
-      color: rgba(255,255,255,0.75);
-      max-width: 620px;
+      color: rgba(255,255,255,0.68);
       line-height: 1.75;
-      margin-bottom: 1.1rem;
-    }
-    .cc-misdiag .cc-symptom-list li { color: rgba(255,255,255,0.85); border-bottom-color: rgba(255,255,255,0.08); }
-    .cc-misdiag-closer {
-      font-size: 1rem;
-      color: rgba(255,255,255,0.6);
-      max-width: 480px;
-      margin-top: 2rem;
-      line-height: 1.75;
-      font-style: italic;
-    }
-    .cc-misdiag-closer strong { color: rgba(255,255,255,0.9); font-style: normal; }
-
-    /* Symptoms callout — warm bg */
-    .cc-symptoms { background: var(--color-bg-warm, #f2efe9); padding: 5rem 0; }
-    .cc-symptoms h2 {
-      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-      font-weight: 700;
-      color: var(--color-navy, #0d1c32);
-      max-width: 580px;
-      margin-bottom: 2rem;
-    }
-    .cc-check-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem 3rem;
-      max-width: 720px;
-      margin-bottom: 2rem;
-    }
-    @media (max-width: 640px) { .cc-check-grid { grid-template-columns: 1fr; } }
-    .cc-check-grid li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.65rem;
-      font-size: 0.94rem;
-      color: var(--color-text, #1a2a3a);
-      line-height: 1.6;
-      list-style: none;
-    }
-    .cc-check-grid li .cc-dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--color-gold, #c9a84c);
-      flex-shrink: 0;
-      margin-top: 6px;
-    }
-    .cc-expose-note {
-      font-size: 0.95rem;
-      color: var(--color-text-muted, #4a5568);
-      max-width: 560px;
-      line-height: 1.75;
-      font-style: italic;
-    }
-
-    /* What the session does */
-    .cc-session { background: var(--color-bg-soft, #f8f7f4); padding: 5rem 0; }
-    .cc-session-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: start;
-    }
-    @media (max-width: 760px) { .cc-session-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
-    .cc-session h2 {
-      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-      font-weight: 700;
-      color: var(--color-navy, #0d1c32);
       margin-bottom: 1rem;
     }
-    .cc-session p {
+    .cc-s3-list {
+      list-style: none;
+      padding: 0; margin: 0;
+    }
+    .cc-s3-list li {
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.6;
+    }
+    .cc-s3-list li:last-child { border-bottom: none; }
+    .cc-s3-list li::before {
+      content: '–';
+      color: var(--color-gold, #c9a84c);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    /* Right callout box */
+    .cc-s3-callout {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 8px;
+      padding: 1.75rem;
+      position: sticky;
+      top: 2rem;
+    }
+    .cc-s3-callout-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-gold-light, #e0b84c);
+      margin-bottom: 1rem;
+    }
+    .cc-s3-callout p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+    .cc-s3-callout p:last-child { margin-bottom: 0; }
+    .cc-s3-callout strong { color: #fff; font-style: normal; }
+
+    /* ── SECTION 4 — SYMPTOMS: full-width dark grid ─────────── */
+    .cc-s4 { background: var(--color-bg-warm, #f2efe9); }
+    .cc-s4-header { text-align: center; margin-bottom: 3rem; }
+    .cc-s4-header h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+      font-weight: 700;
+      color: var(--color-navy, #0d1c32);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .cc-s4-header p {
+      font-size: 0.97rem;
+      color: var(--color-text-muted, #4a5568);
+      margin-top: 1rem;
+    }
+    .cc-symptom-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 900px) { .cc-symptom-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 540px)  { .cc-symptom-grid { grid-template-columns: 1fr; } }
+    .cc-symptom-card {
+      background: #fff;
+      border: 1px solid #e8e3da;
+      border-top: 2px solid var(--color-gold, #c9a84c);
+      border-radius: 6px;
+      padding: 1.25rem;
+    }
+    .cc-symptom-card p {
+      font-size: 0.88rem;
+      color: var(--color-text, #1a2a3a);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .cc-symptom-card .cc-num {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: rgba(201,168,76,0.25);
+      display: block;
+      margin-bottom: 0.5rem;
+      line-height: 1;
+    }
+    .cc-s4-footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.93rem;
+      color: var(--color-text-muted, #4a5568);
+      font-style: italic;
+    }
+
+    /* ── SECTION 5 — WHAT THE SESSION DOES: image right ─────── */
+    .cc-s5 { background: var(--color-bg-soft, #f8f7f4); }
+    .cc-s5-grid {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 5rem;
+      align-items: start;
+    }
+    @media (max-width: 860px) { .cc-s5-grid { grid-template-columns: 1fr; gap: 3rem; } }
+    .cc-s5 h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+      font-weight: 700;
+      color: var(--color-navy, #0d1c32);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+    .cc-s5 p {
       font-size: 0.97rem;
       color: var(--color-text-muted, #4a5568);
       line-height: 1.75;
-      margin-bottom: 0.9rem;
+      margin-bottom: 1rem;
     }
     .cc-agenda {
       list-style: none;
-      padding: 0; margin: 0 0 2rem;
+      padding: 0; margin: 1.5rem 0 2rem;
       counter-reset: agenda;
     }
     .cc-agenda li {
       display: flex;
       gap: 1rem;
-      padding: 0.85rem 0;
+      padding: 0.9rem 0;
       border-bottom: 1px solid rgba(0,0,0,0.07);
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       color: var(--color-text, #1a2a3a);
       line-height: 1.6;
-      counter-increment: agenda;
     }
     .cc-agenda li:last-child { border-bottom: none; }
     .cc-agenda-num {
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: var(--color-gold, #c9a84c);
-      background: rgba(201,168,76,0.12);
+      min-width: 28px;
+      height: 24px;
       border-radius: 3px;
-      padding: 2px 6px;
+      background: rgba(201,168,76,0.15);
+      color: var(--color-gold, #c9a84c);
+      font-size: 0.68rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       flex-shrink: 0;
-      margin-top: 2px;
-      letter-spacing: 0.04em;
+      margin-top: 1px;
     }
-    .cc-takeaway-box {
-      background: var(--color-navy, #0d1c32);
+    .cc-s5-img-wrap {
+      position: sticky;
+      top: 2rem;
+    }
+    .cc-s5-img-wrap img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
       border-radius: 8px;
-      padding: 2rem;
-      color: #fff;
+      display: block;
     }
-    .cc-takeaway-box h4 {
-      font-size: 0.7rem;
+    .cc-s5-takeaway {
+      background: var(--color-navy, #0d1c32);
+      border-radius: 0 0 8px 8px;
+      padding: 1.5rem;
+      margin-top: -4px;
+    }
+    .cc-s5-takeaway-label {
+      font-size: 0.65rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--color-gold-light, #e0b84c);
-      margin-bottom: 1rem;
+      margin-bottom: 0.6rem;
     }
-    .cc-takeaway-box p {
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.85);
-      line-height: 1.7;
-      margin-bottom: 0;
+    .cc-s5-takeaway p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.78);
+      margin: 0;
+      line-height: 1.6;
     }
+    .cc-s5-takeaway strong { color: #fff; }
 
-    /* Who This Is For */
-    .cc-who { background: var(--color-navy, #0d1c32); padding: 5rem 0; }
-    .cc-who h2 {
-      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    /* ── SECTION 6 — WHO THIS IS FOR: 3-col split ────────────── */
+    .cc-s6 { background: var(--color-navy, #0d1c32); }
+    .cc-s6-header { margin-bottom: 3rem; }
+    .cc-s6-header h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
       font-weight: 700;
       color: #fff;
-      margin-bottom: 2.5rem;
     }
-    .cc-who-cols {
+    .cc-s6-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
+      grid-template-columns: 1fr 40px 1fr;
+      gap: 2rem;
+      align-items: start;
     }
-    @media (max-width: 680px) { .cc-who-cols { grid-template-columns: 1fr; } }
-    .cc-who-col { padding: 2rem; border-radius: 8px; }
-    .cc-who-col.yes { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); }
-    .cc-who-col.no  { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); }
-    .cc-who-col h4 {
-      font-size: 0.72rem;
+    @media (max-width: 720px) { .cc-s6-grid { grid-template-columns: 1fr; gap: 2.5rem; } .cc-s6-divider { display: none; } }
+    .cc-s6-col h4 {
+      font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
       margin-bottom: 1rem;
     }
-    .cc-who-col.yes h4 { color: var(--color-gold-light, #e0b84c); }
-    .cc-who-col.no  h4 { color: rgba(255,255,255,0.35); }
+    .cc-s6-col.yes h4 { color: var(--color-gold-light, #e0b84c); }
+    .cc-s6-col.no  h4 { color: rgba(255,255,255,0.3); }
     .cc-fit-list { list-style: none; padding: 0; margin: 0; }
     .cc-fit-list li {
-      font-size: 0.9rem;
-      line-height: 1.65;
-      padding: 0.45rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
       display: flex;
+      gap: 0.65rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      font-size: 0.9rem;
+      line-height: 1.6;
       align-items: flex-start;
-      gap: 0.6rem;
     }
     .cc-fit-list li:last-child { border-bottom: none; }
-    .cc-who-col.yes .cc-fit-list li { color: rgba(255,255,255,0.85); }
-    .cc-who-col.no  .cc-fit-list li { color: rgba(255,255,255,0.38); }
-    .cc-fit-list li .fi { flex-shrink: 0; font-style: normal; }
-    .cc-who-col.yes .fi { color: var(--color-gold, #c9a84c); }
-    .cc-who-col.no  .fi { color: rgba(255,255,255,0.22); }
+    .cc-s6-col.yes .cc-fit-list li { color: rgba(255,255,255,0.82); }
+    .cc-s6-col.no  .cc-fit-list li { color: rgba(255,255,255,0.32); }
+    .cc-fit-icon { flex-shrink: 0; font-style: normal; }
+    .cc-s6-col.yes .cc-fit-icon { color: var(--color-gold, #c9a84c); }
+    .cc-s6-col.no  .cc-fit-icon { color: rgba(255,255,255,0.2); }
+    .cc-s6-divider {
+      width: 1px;
+      background: rgba(255,255,255,0.1);
+      height: 100%;
+      margin: 0 auto;
+    }
 
-    /* Why Now */
-    .cc-why-now { background: var(--color-bg-warm, #f2efe9); padding: 5rem 0; }
-    .cc-why-now h2 {
-      font-size: clamp(1.45rem, 2.6vw, 2rem);
+    /* ── SECTION 7 — WHY NOW: bold statement + image ─────────── */
+    .cc-s7 { background: var(--color-bg-warm, #f2efe9); }
+    .cc-s7-grid {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 860px) { .cc-s7-grid { grid-template-columns: 1fr; gap: 3rem; } }
+    .cc-s7-img {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .cc-s7-img img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      display: block;
+    }
+    .cc-s7 h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
       font-weight: 700;
       color: var(--color-navy, #0d1c32);
-      max-width: 600px;
       margin-bottom: 1rem;
     }
-    .cc-why-now > .container > p {
+    .cc-s7 > .cc-container > .cc-s7-grid > div > p {
       font-size: 0.97rem;
       color: var(--color-text-muted, #4a5568);
-      max-width: 580px;
       line-height: 1.75;
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.25rem;
     }
-    .cc-compound-list {
-      list-style: none; padding: 0; margin: 0 0 2rem;
-      max-width: 600px;
+    .cc-arrow-list {
+      list-style: none;
+      padding: 0; margin: 0 0 1.5rem;
     }
-    .cc-compound-list li {
+    .cc-arrow-list li {
       display: flex;
-      align-items: flex-start;
       gap: 0.75rem;
       padding: 0.6rem 0;
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      font-size: 0.93rem;
       color: var(--color-text, #1a2a3a);
       line-height: 1.6;
     }
-    .cc-compound-list li:last-child { border-bottom: none; }
-    .cc-compound-list li::before {
+    .cc-arrow-list li:last-child { border-bottom: none; }
+    .cc-arrow-list li::before {
       content: '→';
       color: var(--color-gold, #c9a84c);
       font-weight: 600;
       flex-shrink: 0;
     }
-    .cc-why-now-close {
-      font-size: 0.97rem;
+    .cc-s7-closer {
+      font-size: 0.95rem;
       color: var(--color-text-muted, #4a5568);
-      max-width: 560px;
       line-height: 1.75;
     }
-    .cc-why-now-close strong { color: var(--color-navy, #0d1c32); }
+    .cc-s7-closer strong { color: var(--color-navy, #0d1c32); }
 
-    /* Transition / Intensive preview */
-    .cc-intensive { background: var(--color-bg-soft, #f8f7f4); padding: 5rem 0; }
-    .cc-intensive-inner {
-      max-width: 740px;
-      margin: 0 auto;
+    /* ── SECTION 8 — NEXT STEP: centered + 4 cards ───────────── */
+    .cc-s8 { background: var(--color-bg-soft, #f8f7f4); }
+    .cc-s8-head {
+      max-width: 660px;
+      margin: 0 auto 3rem;
       text-align: center;
     }
-    .cc-intensive h2 {
-      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    .cc-s8-head h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
       font-weight: 700;
       color: var(--color-navy, #0d1c32);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
-    .cc-intensive p {
+    .cc-s8-head p {
       font-size: 0.97rem;
       color: var(--color-text-muted, #4a5568);
       line-height: 1.75;
-      margin-bottom: 1rem;
-      text-align: left;
     }
-    .cc-intensive-cards {
+    .cc-s8-cards {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
-      margin: 2rem 0;
+      margin-bottom: 2.5rem;
     }
-    @media (max-width: 580px) { .cc-intensive-cards { grid-template-columns: 1fr; } }
-    .cc-intensive-card {
+    @media (max-width: 860px) { .cc-s8-cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px)  { .cc-s8-cards { grid-template-columns: 1fr; } }
+    .cc-s8-card {
       background: #fff;
       border: 1px solid #e8e3da;
       border-left: 3px solid var(--color-gold, #c9a84c);
       border-radius: 6px;
-      padding: 1.25rem 1.25rem 1.25rem 1.4rem;
-      text-align: left;
-      font-size: 0.9rem;
-      color: var(--color-text, #1a2a3a);
-      line-height: 1.6;
+      padding: 1.4rem;
     }
-    .cc-intensive-close {
-      font-size: 0.9rem;
+    .cc-s8-card .step-num {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-gold, #c9a84c);
+      margin-bottom: 0.6rem;
+    }
+    .cc-s8-card p {
+      font-size: 0.88rem;
+      color: var(--color-text, #1a2a3a);
+      line-height: 1.65;
+      margin: 0;
+    }
+    .cc-s8-foot {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.93rem;
       color: var(--color-text-muted, #4a5568);
-      text-align: left;
       line-height: 1.75;
     }
 
-    /* Authority */
-    .cc-authority {
-      background: var(--color-navy, #0d1c32);
-      padding: 5rem 0;
+    /* ── SECTION 9 — AUTHORITY: image + text ─────────────────── */
+    .cc-s9 { background: var(--color-navy, #0d1c32); }
+    .cc-s9-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 5rem;
+      align-items: center;
     }
-    .cc-authority-inner { max-width: 680px; margin: 0 auto; text-align: center; }
-    .cc-authority h2 {
-      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    @media (max-width: 820px) { .cc-s9-grid { grid-template-columns: 1fr; gap: 3rem; } }
+    .cc-s9-img {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .cc-s9-img img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      object-position: center 15%;
+      display: block;
+    }
+    .cc-s9 h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
       font-weight: 700;
       color: #fff;
-      margin-bottom: 1.5rem;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
     }
-    .cc-authority p {
+    .cc-s9 p {
       font-size: 0.97rem;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255,255,255,0.68);
       line-height: 1.8;
       margin-bottom: 1rem;
-      text-align: left;
     }
+    .cc-s9 strong { color: #fff; }
     .cc-authority-badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      background: rgba(201,168,76,0.12);
-      border: 1px solid rgba(201,168,76,0.3);
+      gap: 0.5rem;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
       border-radius: 4px;
-      padding: 0.6rem 1rem;
-      font-size: 0.78rem;
+      padding: 0.55rem 1rem;
+      font-size: 0.72rem;
       font-weight: 600;
       color: var(--color-gold-light, #e0b84c);
       letter-spacing: 0.05em;
@@ -450,187 +727,310 @@ capacityClarity.get('/', (c) => {
       margin-top: 1.5rem;
     }
 
-    /* FAQ */
-    .cc-faq { background: var(--color-bg-soft, #f8f7f4); padding: 5rem 0; }
-    .cc-faq h2 {
-      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    /* ── SECTION 10 — FAQ: 2 columns ─────────────────────────── */
+    .cc-s10 { background: var(--color-bg-soft, #f8f7f4); }
+    .cc-s10-head {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .cc-s10-head h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
       font-weight: 700;
       color: var(--color-navy, #0d1c32);
-      margin-bottom: 2.5rem;
-      text-align: center;
     }
-    .cc-faq-list { max-width: 740px; margin: 0 auto; }
+    .cc-faq-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 4rem;
+    }
+    @media (max-width: 720px) { .cc-faq-cols { grid-template-columns: 1fr; } }
     .cc-faq-item {
       padding: 1.5rem 0;
       border-bottom: 1px solid rgba(0,0,0,0.08);
     }
     .cc-faq-item:last-child { border-bottom: none; }
     .cc-faq-item h4 {
-      font-size: 1rem;
+      font-size: 0.97rem;
       font-weight: 700;
       color: var(--color-navy, #0d1c32);
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.55rem;
     }
     .cc-faq-item p {
-      font-size: 0.93rem;
+      font-size: 0.9rem;
       color: var(--color-text-muted, #4a5568);
       line-height: 1.75;
       margin: 0;
     }
 
-    /* Final CTA */
-    .cc-final-cta {
+    /* ── SECTION 11 — FINAL CTA ───────────────────────────────── */
+    .cc-s11 {
       background: var(--color-navy, #0d1c32);
-      padding: 6rem 0 5rem;
-      text-align: center;
+      padding: 6.5rem 0 5.5rem;
       position: relative;
       overflow: hidden;
+      text-align: center;
     }
-    .cc-final-cta::before {
+    .cc-s11::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.1) 0%, transparent 65%);
+      background: radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.1) 0%, transparent 60%);
       pointer-events: none;
     }
-    .cc-final-cta h2 {
-      font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+    .cc-s11-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+    .cc-s11 h2 {
+      font-size: clamp(1.9rem, 3.8vw, 2.8rem);
       font-weight: 800;
       color: #fff;
-      max-width: 660px;
-      margin: 0 auto 1rem;
-      line-height: 1.25;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
     }
-    .cc-final-cta .cc-sub {
-      font-size: clamp(1rem, 1.8vw, 1.15rem);
-      color: rgba(255,255,255,0.78);
-      max-width: 560px;
-      margin: 0 auto 2rem;
-      line-height: 1.7;
+    .cc-s11-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
     }
-    .cc-final-cta .cc-limit-note {
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.45);
-      max-width: 480px;
+    .cc-s11-limit {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.38);
+      max-width: 440px;
       margin: 1.25rem auto 0;
       line-height: 1.65;
     }
-    .cc-final-cta .cc-confirm-note {
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.38);
-      max-width: 480px;
-      margin: 0.75rem auto 0;
+    .cc-s11-confirm {
+      font-size: 0.76rem;
+      color: rgba(255,255,255,0.28);
+      max-width: 420px;
+      margin: 0.65rem auto 0;
       line-height: 1.6;
     }
-    .cc-final-support {
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.28);
+    .cc-s11-support {
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.2);
       letter-spacing: 0.04em;
-      margin-top: 2rem;
+      text-transform: uppercase;
+      margin-top: 2.5rem;
     }
 
-    /* Minimal footer for landing page */
+    /* ── MINIMAL FOOTER ───────────────────────────────────────── */
     .cc-footer {
-      background: #0a1626;
+      background: #080f1a;
       padding: 1.75rem 0;
       text-align: center;
     }
     .cc-footer p {
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.28);
-      margin: 0.2rem 0;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.25);
+      margin: 0.25rem 0;
     }
-    .cc-footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
-    .cc-footer a:hover { color: rgba(255,255,255,0.7); }
+    .cc-footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+    .cc-footer a:hover { color: rgba(255,255,255,0.6); }
   </style>
 </head>
 <body>
 
-  <!-- ── LOGO-ONLY HEADER (no nav) ───────────────────────── -->
+  <!-- ── ANNOUNCEMENT BAR ─────────────────────────────────────── -->
+  <div class="cc-announce">
+    <span>⚡</span> Limited availability — we cap diagnostic sessions to ensure every call gets full focus
+  </div>
+
+  <!-- ── LOGO-ONLY HEADER ─────────────────────────────────────── -->
   <header class="cc-header">
-    <a href="/" aria-label="SMB Strategy Consultants">
-      <img src="/static/images/logo-horizontal-transparent.png" alt="SMB Strategy Consultants" />
-    </a>
+    <div class="cc-header-inner">
+      <a href="/" aria-label="SMB Strategy Consultants">
+        <img src="/static/images/logo-horizontal-transparent.png" alt="SMB Strategy Consultants" />
+      </a>
+    </div>
   </header>
 
   <main>
 
-    <!-- ── SECTION 1: HERO ──────────────────────────────── -->
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 1 — HERO: left text + right takeaway card
+    ════════════════════════════════════════════════════════════ -->
     <section class="cc-hero">
-      <div class="container">
-        <span class="eyebrow">Capacity Clarity Session</span>
-        <h1>Your business is growing.<br/>So why does it still run through you?</h1>
-        <hr class="cc-rule" />
-        <p class="cc-hero-sub">If approvals, decisions, problem-solving, and follow-through still funnel back to you — that is not a motivation problem. That is a structural bottleneck. And it has a cost most owners never stop to calculate.</p>
-        <p class="cc-hero-body">The Capacity Clarity Session is a focused 45-minute working session for owner-led businesses that are hitting a ceiling because too much of the operation still runs on the founder. We will help you identify exactly where the dependency is coming from, what it is costing you, and the next moves to reduce the drag.</p>
-        <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book My Capacity Clarity Session</a>
-        <p class="cc-hero-micro">For service businesses that are growing — but still too dependent on the owner</p>
+      <div class="cc-hero-grid">
+
+        <!-- Left column -->
+        <div>
+          <div class="cc-hero-pill">Capacity Clarity Session</div>
+          <h1>
+            Your business is growing.<br/>
+            So why does it still<br/>
+            <em>run through you?</em>
+          </h1>
+          <p class="cc-hero-sub">If approvals, decisions, problem-solving, and follow-through still funnel back to you — that is not a motivation problem. That is a structural bottleneck. And it has a cost most owners never stop to calculate.</p>
+          <div class="cc-hero-cta-row">
+            <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="cc-hero-btn" target="_blank" rel="noopener noreferrer">
+              Book My Capacity Clarity Session <span class="arrow">→</span>
+            </a>
+            <p class="cc-hero-micro">45 minutes. A real diagnosis. A clear next step.</p>
+          </div>
+        </div>
+
+        <!-- Right column — card -->
+        <div class="cc-hero-card">
+          <p class="cc-hero-card-label">What you walk away with</p>
+          <h3>A diagnosis — not just a conversation.</h3>
+          <ul class="cc-card-list">
+            <li>Your primary owner bottleneck, specifically named</li>
+            <li>What it is costing in time, energy, and growth drag</li>
+            <li>Why it has persisted despite real effort</li>
+            <li>The structural piece that is missing underneath it</li>
+            <li>Your next 3 moves to reduce the pressure fastest</li>
+          </ul>
+          <div class="cc-card-meta">
+            <div class="cc-card-meta-item">
+              <span>Session length</span>
+              <strong>45 Minutes</strong>
+            </div>
+            <div class="cc-card-meta-item">
+              <span>Format</span>
+              <strong>Live 1-on-1</strong>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- ── SECTION 2: THE REAL PROBLEM ─────────────────── -->
-    <section class="cc-problem">
-      <div class="container">
-        <span class="cc-section-label">The Real Problem</span>
-        <h2>This is the stage where growth starts feeling heavier instead of better.</h2>
-        <p class="cc-problem-intro">From the outside, the business may look healthy. Revenue is moving. The team is working. Clients are being served.<br/>But from the inside, it still feels like this:</p>
-        <ul class="cc-symptom-list">
-          <li>You are the default decision-maker for things that should not require you</li>
-          <li>The team needs too much clarification before they can move</li>
-          <li>Problems wait in your inbox instead of getting solved</li>
-          <li>Delegation happens — but nothing really changes</li>
-          <li>Time away feels risky, not earned</li>
-          <li>You are working harder than ever, and it is not getting easier</li>
-        </ul>
-        <p class="cc-closing-note">That is not a small inefficiency. That is the signal that the business is still structured around the founder. And the longer that stays true, the more expensive growth becomes — in time, in energy, in margin, and in the opportunities you are too stretched to pursue.</p>
-      </div>
-    </section>
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 2 — THE REAL PROBLEM: image left / copy + list right
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s2">
+      <div class="cc-container">
+        <div class="cc-s2-grid">
 
-    <!-- ── SECTION 3: THE MISDIAGNOSIS ─────────────────── -->
-    <section class="cc-misdiag">
-      <div class="container">
-        <span class="cc-section-label" style="color:var(--color-gold-light,#e0b84c);">The Misdiagnosis</span>
-        <h2>Most owners think they have a people problem.</h2>
-        <h3>Usually, they have a structure problem.</h3>
-        <p>This is where most businesses stall. The instinct is to push the team harder, hire someone better, communicate more often, or just hold people more accountable. But none of that fixes the root issue.</p>
-        <p>Because when the founder is still the safety net for decisions, quality, follow-through, and coordination — the real problem is structural:</p>
-        <ul class="cc-symptom-list">
-          <li>Ownership is fuzzy</li>
-          <li>Roles are unclear</li>
-          <li>Decision rights are not defined</li>
-          <li>Handoffs break because nothing is documented</li>
-          <li>The operating rhythm is too informal to support a team that can run independently</li>
-        </ul>
-        <p class="cc-misdiag-closer">So the owner becomes the glue.<br/><strong>And glue does not scale.</strong></p>
-      </div>
-    </section>
+          <!-- Image -->
+          <div class="cc-s2-img">
+            <img
+              src="/static/images/section-overwhelmed-owner.webp"
+              alt="Owner at desk feeling the weight of the business"
+            />
+            <div class="cc-s2-img-badge">
+              <strong>The hidden cost</strong>
+              Every decision that flows back to you is time, margin, and momentum you will not get back.
+            </div>
+          </div>
 
-    <!-- ── SECTION 4: SYMPTOMS BLOCK ───────────────────── -->
-    <section class="cc-symptoms">
-      <div class="container">
-        <span class="cc-section-label">What It Looks Like</span>
-        <h2>What founder dependency actually looks like</h2>
-        <p style="font-size:0.97rem; color:var(--color-text-muted,#4a5568); max-width:580px; line-height:1.75; margin-bottom:1.75rem;">You may not call it a bottleneck. But it probably shows up like this:</p>
-        <ul class="cc-check-grid">
-          <li><span class="cc-dot"></span>Team members ask you questions they should be able to answer</li>
-          <li><span class="cc-dot"></span>Things stall whenever you are unavailable</li>
-          <li><span class="cc-dot"></span>Standards slip unless you are personally checking them</li>
-          <li><span class="cc-dot"></span>Meetings happen — but ownership is never clear afterward</li>
-          <li><span class="cc-dot"></span>You keep hiring, but your load does not get lighter</li>
-          <li><span class="cc-dot"></span>You are still translating, clarifying, and cleaning up behind the team</li>
-          <li><span class="cc-dot"></span>You have capable people around you, but not enough leverage from them</li>
-          <li><span class="cc-dot"></span>The business works — because you are holding it together</li>
-        </ul>
-        <p class="cc-expose-note">That is the exact pattern this session is designed to expose.</p>
-      </div>
-    </section>
-
-    <!-- ── SECTION 5: WHAT THE SESSION DOES ────────────── -->
-    <section class="cc-session">
-      <div class="container">
-        <span class="cc-section-label">The Session</span>
-        <div class="cc-session-grid">
+          <!-- Copy -->
           <div>
-            <h2>What happens in the Capacity Clarity Session — and what you leave with</h2>
+            <span class="cc-eyebrow">The Real Problem</span>
+            <h2>This is the stage where growth starts feeling heavier instead of better.</h2>
+            <hr class="cc-rule" />
+            <p>From the outside, the business may look healthy. Revenue is moving. The team is working. Clients are being served. But from the inside, it still feels like this:</p>
+            <ul class="cc-dash-list">
+              <li>You are the default decision-maker for things that should not require you</li>
+              <li>The team needs too much clarification before they can move</li>
+              <li>Problems wait in your inbox instead of getting solved</li>
+              <li>Delegation happens — but nothing really changes</li>
+              <li>Time away feels risky, not earned</li>
+              <li>You are working harder than ever, and it is not getting easier</li>
+            </ul>
+            <p style="font-size:0.93rem; color:var(--color-text-muted,#4a5568); font-style:italic; line-height:1.75;">That is the signal that the business is still structured around the founder. And the longer that stays true, the more expensive growth becomes.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 3 — THE MISDIAGNOSIS: dark bg, copy left, callout right
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s3">
+      <div class="cc-container">
+        <div class="cc-s3-grid">
+
+          <!-- Left copy -->
+          <div>
+            <span class="cc-eyebrow" style="color:var(--color-gold-light,#e0b84c);">The Misdiagnosis</span>
+            <h2>Most owners think they have a people problem.</h2>
+            <p class="cc-s3-sub">Usually, they have a structure problem.</p>
+            <p>This is where most businesses stall. The instinct is to push the team harder, hire someone better, communicate more often, or just hold people more accountable. But none of that fixes the root issue.</p>
+            <p>Because when the founder is still the safety net for decisions, quality, follow-through, and coordination — the real problem is structural:</p>
+            <ul class="cc-s3-list">
+              <li>Ownership is fuzzy</li>
+              <li>Roles are unclear</li>
+              <li>Decision rights are not defined</li>
+              <li>Handoffs break because nothing is documented</li>
+              <li>The operating rhythm is too informal to support an independent team</li>
+            </ul>
+          </div>
+
+          <!-- Right callout -->
+          <div class="cc-s3-callout">
+            <p class="cc-s3-callout-label">The result</p>
+            <p>So the owner becomes the glue.</p>
+            <p><strong>And glue does not scale.</strong></p>
+            <p>The harder you hold it together, the harder it becomes to step back — and the more the business depends on your constant presence to function.</p>
+            <p>Structure is the only thing that changes this. Not effort. Not more meetings. <strong>Structure.</strong></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 4 — SYMPTOMS: centered header + 8-card grid
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s4">
+      <div class="cc-container">
+        <div class="cc-s4-header">
+          <span class="cc-eyebrow" style="text-align:center; display:block;">What It Looks Like</span>
+          <h2>What founder dependency actually looks like</h2>
+          <p>You may not call it a bottleneck. But it probably shows up like this.</p>
+        </div>
+        <div class="cc-symptom-grid">
+          <div class="cc-symptom-card">
+            <span class="cc-num">01</span>
+            <p>Team members ask you questions they should be able to answer</p>
+          </div>
+          <div class="cc-symptom-card">
+            <span class="cc-num">02</span>
+            <p>Things stall whenever you are unavailable</p>
+          </div>
+          <div class="cc-symptom-card">
+            <span class="cc-num">03</span>
+            <p>Standards slip unless you are personally checking them</p>
+          </div>
+          <div class="cc-symptom-card">
+            <span class="cc-num">04</span>
+            <p>Meetings happen — but ownership is never clear afterward</p>
+          </div>
+          <div class="cc-symptom-card">
+            <span class="cc-num">05</span>
+            <p>You keep hiring, but your load does not get lighter</p>
+          </div>
+          <div class="cc-symptom-card">
+            <span class="cc-num">06</span>
+            <p>You are still translating, clarifying, and cleaning up behind the team</p>
+          </div>
+          <div class="cc-symptom-card">
+            <span class="cc-num">07</span>
+            <p>You have capable people around you, but not enough leverage from them</p>
+          </div>
+          <div class="cc-symptom-card">
+            <span class="cc-num">08</span>
+            <p>The business works — because you are holding it together</p>
+          </div>
+        </div>
+        <p class="cc-s4-footer">That is the exact pattern this session is designed to expose.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 5 — THE SESSION: agenda left, image + card right
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s5">
+      <div class="cc-container">
+        <div class="cc-s5-grid">
+
+          <!-- Left: agenda -->
+          <div>
+            <span class="cc-eyebrow">The Session</span>
+            <h2>What happens in 45 minutes — and what you leave with</h2>
+            <hr class="cc-rule" />
             <p>This is not a discovery call. It is not a free coaching session. It is a focused diagnostic.</p>
             <p>In 45 minutes, we will work through:</p>
             <ol class="cc-agenda">
@@ -642,155 +1042,222 @@ capacityClarity.get('/', (c) => {
             </ol>
             <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Reserve My Session</a>
           </div>
+
+          <!-- Right: image + takeaway -->
+          <div class="cc-s5-img-wrap">
+            <img
+              src="/static/images/hiw-strategy-session.webp"
+              alt="Strategy session in progress"
+            />
+            <div class="cc-s5-takeaway">
+              <p class="cc-s5-takeaway-label">What you leave with</p>
+              <p>You will not leave with a conversation. You will leave with a <strong>diagnosis</strong> — a clear picture of where the dependency lives, what it is costing, and which structural piece needs to change first.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 6 — WHO THIS IS FOR: dark + 2-col fit filter
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s6">
+      <div class="cc-container">
+        <div class="cc-s6-header">
+          <span class="cc-eyebrow" style="color:var(--color-gold-light,#e0b84c);">Who This Is For</span>
+          <h2 style="font-size:clamp(1.5rem,2.8vw,2.1rem); font-weight:700; color:#fff; margin-top:0.25rem;">This session is built for a specific kind of owner.</h2>
+        </div>
+        <div class="cc-s6-grid">
+          <div class="cc-s6-col yes">
+            <h4>This is for you if</h4>
+            <ul class="cc-fit-list">
+              <li><i class="cc-fit-icon">✓</i> You lead a service-based business with an existing team</li>
+              <li><i class="cc-fit-icon">✓</i> Revenue is real, but the business still leans too hard on you</li>
+              <li><i class="cc-fit-icon">✓</i> The company slows down or stalls when you step away</li>
+              <li><i class="cc-fit-icon">✓</i> Delegation has happened — but not deeply enough to change your workload</li>
+              <li><i class="cc-fit-icon">✓</i> You are tired of being the backstop for too much</li>
+              <li><i class="cc-fit-icon">✓</i> You want structural change, not motivational advice</li>
+              <li><i class="cc-fit-icon">✓</i> You know the next level requires a different way of operating</li>
+            </ul>
+          </div>
+          <div class="cc-s6-divider"></div>
+          <div class="cc-s6-col no">
+            <h4>Probably not a fit if</h4>
+            <ul class="cc-fit-list">
+              <li><i class="cc-fit-icon">✗</i> You are a solo operator with no team</li>
+              <li><i class="cc-fit-icon">✗</i> You want a general brainstorming call</li>
+              <li><i class="cc-fit-icon">✗</i> You are unwilling to change how ownership, accountability, or decisions work</li>
+              <li><i class="cc-fit-icon">✗</i> You want a quick fix rather than an operational change</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 7 — WHY NOW: image left + copy right
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s7">
+      <div class="cc-container">
+        <div class="cc-s7-grid">
+
+          <!-- Image -->
+          <div class="cc-s7-img">
+            <img
+              src="/static/images/intensive-capacity.webp"
+              alt="The cost of waiting compounds quietly"
+            />
+          </div>
+
+          <!-- Copy -->
           <div>
-            <div class="cc-takeaway-box">
-              <h4>What you leave with</h4>
-              <p>You will not leave with a conversation.</p>
-              <p>You will leave with a <strong style="color:#fff;">diagnosis</strong> — a clear picture of where the dependency lives, what it is costing, and which structural piece needs to change first.</p>
-              <p style="margin-top:1.5rem; font-size:0.82rem; color:rgba(255,255,255,0.45); font-style:italic;">45 minutes · Working session · Owner-led service businesses</p>
+            <span class="cc-eyebrow">Why Now</span>
+            <h2>The longer this goes unaddressed, the more it compounds.</h2>
+            <hr class="cc-rule" />
+            <p style="font-size:0.97rem; color:var(--color-text-muted,#4a5568); line-height:1.75; margin-bottom:1.25rem;">Most owners tolerate this because the business is still functioning. But functioning is not the same as scalable. When founder dependency stays in place:</p>
+            <ul class="cc-arrow-list">
+              <li>Decision-making stays slow and centralized around you</li>
+              <li>Leaders never fully develop underneath you</li>
+              <li>Execution becomes uneven and hard to maintain at scale</li>
+              <li>Your hours stay inflated — the calendar never actually clears</li>
+              <li>Growth adds stress instead of freedom</li>
+              <li>The business becomes harder to hand off, exit, or scale beyond what you can personally carry</li>
+            </ul>
+            <p class="cc-s7-closer">The cost is not dramatic. It is quiet. It shows up in the things you keep pushing to next quarter.<br/><br/><strong>This is the point where structure starts producing capacity. Not later. Now.</strong></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 8 — WHAT COMES NEXT: centered + 4 cards + close
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s8">
+      <div class="cc-container">
+        <div class="cc-s8-head">
+          <span class="cc-eyebrow" style="text-align:center; display:block;">What Comes Next</span>
+          <h2>The diagnostic comes first. The prescription follows.</h2>
+          <p>Not every business needs the same next step. For some owners, the session alone will create enough clarity to act. For the right fit, the next step is the <strong>Capacity Intensive</strong> — a focused 90-day engagement that installs the structure the business needs to run more independently.</p>
+        </div>
+        <div class="cc-s8-cards">
+          <div class="cc-s8-card">
+            <p class="step-num">Outcome 01</p>
+            <p>Clearer ownership and accountability across the team</p>
+          </div>
+          <div class="cc-s8-card">
+            <p class="step-num">Outcome 02</p>
+            <p>A delegation structure that actually holds without your constant reinforcement</p>
+          </div>
+          <div class="cc-s8-card">
+            <p class="step-num">Outcome 03</p>
+            <p>An operating cadence your team can run without the founder in the middle of everything</p>
+          </div>
+          <div class="cc-s8-card">
+            <p class="step-num">Outcome 04</p>
+            <p>Less founder drag. More consistent, team-led execution.</p>
+          </div>
+        </div>
+        <p class="cc-s8-foot">The session is where the diagnosis happens. The Intensive is where the structure gets built. If it is a fit, you will know by the end of the call.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 9 — AUTHORITY: headshot left + copy right
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s9">
+      <div class="cc-container">
+        <div class="cc-s9-grid">
+
+          <!-- Headshot -->
+          <div class="cc-s9-img">
+            <img
+              src="/static/images/corbin-headshot-new.webp"
+              alt="Corbin Cook — SMB Strategy Consultants"
+            />
+          </div>
+
+          <!-- Copy -->
+          <div>
+            <span class="cc-eyebrow" style="color:var(--color-gold-light,#e0b84c);">Why This Approach Works</span>
+            <h2>Most businesses do not become less dependent on the founder by accident.</h2>
+            <hr class="cc-rule" />
+            <p>They become less dependent when structure gets stronger than personality.</p>
+            <p>That means installing role clarity, decision rights, accountability systems, and leadership rhythm — so the business runs on infrastructure instead of the founder's constant involvement.</p>
+            <p>This is the operating principle behind the SMB Strategy Consultants framework: helping owner-led businesses move from reactive, founder-centered growth to a more professionally managed operation.</p>
+            <p>Not through culture talks or motivational frameworks. <strong>Through structure.</strong></p>
+            <div class="cc-authority-badge">
+              SMB Strategy Consultants · Principle-Centered Business Advisory
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 10 — FAQ: 2-column layout
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-s10">
+      <div class="cc-container">
+        <div class="cc-s10-head">
+          <span class="cc-eyebrow" style="text-align:center; display:block;">Common Questions</span>
+          <h2>Answers before you book.</h2>
+        </div>
+        <div class="cc-faq-cols">
+          <div>
+            <div class="cc-faq-item">
+              <h4>Is this just a sales call?</h4>
+              <p>No. This is a working diagnostic session. We will actually identify where your owner bottleneck is, what it is costing, and what structural piece is missing. If you are a strong fit for the Capacity Intensive, we will tell you clearly and explain why. If you are not, you will still leave with a useful next step.</p>
+            </div>
+            <div class="cc-faq-item">
+              <h4>Who is this best suited for?</h4>
+              <p>Owner-led service businesses with a real team, real revenue, and a clear sense that the company is still leaning too hard on the founder. The feeling that things should be running more independently than they are is enough of a starting point.</p>
+            </div>
+            <div class="cc-faq-item">
+              <h4>How long is the session?</h4>
+              <p>Plan for 45 minutes.</p>
+            </div>
+          </div>
+          <div>
+            <div class="cc-faq-item">
+              <h4>What will we cover?</h4>
+              <p>Where the dependency is showing up, why it has persisted, what it is costing in real terms, and what the structural next steps look like.</p>
+            </div>
+            <div class="cc-faq-item">
+              <h4>What is the Capacity Intensive and what does it cost?</h4>
+              <p>The Capacity Intensive is a focused 90-day engagement — 2 to 4 sessions — designed to install the structure your business needs to operate with more team ownership and less founder involvement. The investment is $2,500. We only recommend it after the diagnostic confirms it is the right fit.</p>
+            </div>
+            <div class="cc-faq-item">
+              <h4>What if I just need better delegation?</h4>
+              <p>Delegation is usually part of it — but shallow delegation is almost never the root cause. We are looking at the structural layer underneath: ownership clarity, decision rights, accountability systems, and operating rhythm. Better delegation follows better structure.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── SECTION 6: WHO THIS IS FOR ──────────────────── -->
-    <section class="cc-who">
-      <div class="container">
-        <span class="cc-section-label" style="color:var(--color-gold-light,#e0b84c);">Who This Is For</span>
-        <h2>This session is built for a specific kind of owner.</h2>
-        <div class="cc-who-cols">
-          <div class="cc-who-col yes">
-            <h4>This is for you if</h4>
-            <ul class="cc-fit-list">
-              <li><i class="fi">✓</i> You lead a service-based business with an existing team</li>
-              <li><i class="fi">✓</i> Revenue is real, but the business still leans too hard on you</li>
-              <li><i class="fi">✓</i> The company slows down or stalls when you step away</li>
-              <li><i class="fi">✓</i> Delegation has happened — but not deeply enough to change your workload</li>
-              <li><i class="fi">✓</i> You are tired of being the backstop for too much</li>
-              <li><i class="fi">✓</i> You want structural change, not motivational advice</li>
-              <li><i class="fi">✓</i> You know the next level requires a different way of operating</li>
-            </ul>
-          </div>
-          <div class="cc-who-col no">
-            <h4>Probably not a fit if</h4>
-            <ul class="cc-fit-list">
-              <li><i class="fi">✗</i> You are a solo operator with no team</li>
-              <li><i class="fi">✗</i> You want a general brainstorming call</li>
-              <li><i class="fi">✗</i> You are unwilling to change how ownership, accountability, or decisions work in your business</li>
-              <li><i class="fi">✗</i> You want a quick fix rather than an operational change</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SECTION 7: WHY NOW ───────────────────────────── -->
-    <section class="cc-why-now">
-      <div class="container">
-        <span class="cc-section-label">Why Now</span>
-        <h2>The longer this goes unaddressed, the more it compounds.</h2>
-        <p>Most owners tolerate this because the business is still functioning. But functioning is not the same as scalable.</p>
-        <p>When founder dependency stays in place:</p>
-        <ul class="cc-compound-list">
-          <li>Decision-making stays slow and centralized around you</li>
-          <li>Leaders never fully develop underneath you</li>
-          <li>Execution becomes uneven and hard to maintain at scale</li>
-          <li>Your hours stay inflated — and the calendar never actually clears</li>
-          <li>Growth adds stress instead of freedom</li>
-          <li>The business becomes harder to hand off, harder to exit, and harder to scale beyond what you can personally carry</li>
-        </ul>
-        <p class="cc-why-now-close">The cost is not dramatic. It is quiet. It shows up in the things you keep pushing to next quarter.<br/><br/><strong>This is the point where structure starts producing capacity. Not later. Now.</strong></p>
-      </div>
-    </section>
-
-    <!-- ── SECTION 8: TRANSITION TO INTENSIVE ──────────── -->
-    <section class="cc-intensive">
-      <div class="container">
-        <div class="cc-intensive-inner">
-          <span class="cc-section-label" style="text-align:center; display:block;">What Comes Next</span>
-          <h2>What comes next — if the fit is right</h2>
-          <p>The diagnostic comes first. The prescription follows.</p>
-          <p>Not every business needs the same next step. For some owners, the session alone will create enough clarity to act. For the right fit, the next step is the <strong>Capacity Intensive</strong>: a focused 90-day engagement that installs the organizational structure, delegation framework, and operating rhythm the business needs to run more independently.</p>
-          <p>That means:</p>
-          <div class="cc-intensive-cards">
-            <div class="cc-intensive-card">Clearer ownership and accountability across the team</div>
-            <div class="cc-intensive-card">A delegation structure that actually holds without your constant reinforcement</div>
-            <div class="cc-intensive-card">An operating cadence your team can run without the founder in the middle of everything</div>
-            <div class="cc-intensive-card">Less founder drag. More consistent, team-led execution.</div>
-          </div>
-          <p class="cc-intensive-close">The session is where the diagnosis happens. The Intensive is where the structure gets built.<br/><br/>If it is a fit, you will know by the end of the call.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SECTION 9: AUTHORITY ─────────────────────────── -->
-    <section class="cc-authority">
-      <div class="container">
-        <div class="cc-authority-inner">
-          <span class="cc-section-label" style="text-align:center; display:block; color:var(--color-gold-light,#e0b84c);">Why This Approach Works</span>
-          <h2>Most businesses do not become less dependent on the founder by accident.</h2>
-          <p>They become less dependent when structure gets stronger than personality.</p>
-          <p>That means installing role clarity, decision rights, accountability systems, and leadership rhythm — so the business runs on infrastructure instead of the founder's constant involvement.</p>
-          <p>This is the operating principle behind the SMB Strategy Consultants framework: helping owner-led businesses move from reactive, founder-centered growth to a more professionally managed operation.</p>
-          <p>Not through culture talks or motivational frameworks. <strong style="color:#fff;">Through structure.</strong></p>
-          <div class="cc-authority-badge">
-            SMB Strategy Consultants · Principle-Centered Business Advisory
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SECTION 10: FAQ ──────────────────────────────── -->
-    <section class="cc-faq">
-      <div class="container">
-        <h2>Common Questions</h2>
-        <div class="cc-faq-list">
-          <div class="cc-faq-item">
-            <h4>Is this just a sales call?</h4>
-            <p>No. This is a working diagnostic session. We will actually do the work of identifying where your owner bottleneck is, what it is costing, and what structural piece is missing. If you are a strong fit for the Capacity Intensive after that, we will tell you clearly and explain why. If you are not, we will still give you a useful next step. The goal of the session is an honest diagnosis — not a pitch dressed up as a consultation.</p>
-          </div>
-          <div class="cc-faq-item">
-            <h4>Who is this best suited for?</h4>
-            <p>Owner-led service businesses with a real team, real revenue, and a clear sense that the company is still leaning too hard on the founder. You do not need to have a perfectly defined problem — the feeling that things should be running more independently than they are is enough of a starting point.</p>
-          </div>
-          <div class="cc-faq-item">
-            <h4>How long is the session?</h4>
-            <p>Plan for 45 minutes.</p>
-          </div>
-          <div class="cc-faq-item">
-            <h4>What will we cover?</h4>
-            <p>Where the dependency is showing up, why it has persisted, what it is costing in real terms, and what the structural next steps look like.</p>
-          </div>
-          <div class="cc-faq-item">
-            <h4>What is the Capacity Intensive and what does it cost?</h4>
-            <p>The Capacity Intensive is a focused 90-day engagement — 2 to 4 sessions — designed to install the structure your business needs to operate with more team ownership and less founder involvement. It includes organizational design, delegation mapping, and an operating cadence your team can run independently. The investment is $2,500. We only recommend it after the diagnostic confirms it is the right fit for where you are.</p>
-          </div>
-          <div class="cc-faq-item">
-            <h4>What if I just need better delegation?</h4>
-            <p>Delegation is usually part of it — but shallow delegation is almost never the root cause. We are looking at the structural layer underneath: ownership clarity, decision rights, accountability systems, and operating rhythm. Better delegation follows better structure. Without the structure, delegation keeps slipping back to you.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── SECTION 11: FINAL CTA ────────────────────────── -->
-    <section class="cc-final-cta">
-      <div class="container">
-        <span class="cc-section-label" style="text-align:center; display:block; color:var(--color-gold-light,#e0b84c);">Ready to Start</span>
+    <!-- ═══════════════════════════════════════════════════════════
+         SECTION 11 — FINAL CTA
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-s11">
+      <div class="cc-s11-inner">
+        <span class="cc-eyebrow" style="text-align:center; display:block; color:var(--color-gold-light,#e0b84c);">Ready to Start</span>
         <h2>You do not need to stay the glue holding everything together.</h2>
-        <hr class="cc-rule" />
-        <p class="cc-sub">You need to know where the dependency is — and what to fix first.<br/>Book the Capacity Clarity Session and get a direct, honest look at the bottleneck that is quietly limiting your growth, your team, and your time.</p>
-        <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book My Capacity Clarity Session</a>
-        <p class="cc-limit-note">We take a limited number of new diagnostic sessions each month to make sure every session gets the focus it deserves.</p>
-        <p class="cc-confirm-note">You will choose a time, receive a confirmation, and get three short prep questions so we can make the most of 45 minutes together.</p>
-        <p class="cc-final-support">For owner-led service businesses ready to reduce founder dependency and build a structure that holds.</p>
+        <p class="cc-s11-sub">You need to know where the dependency is — and what to fix first. Book the Capacity Clarity Session and get a direct, honest look at the bottleneck that is quietly limiting your growth, your team, and your time.</p>
+        <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="cc-hero-btn" style="display:inline-flex; margin:0 auto;" target="_blank" rel="noopener noreferrer">
+          Book My Capacity Clarity Session <span class="arrow">→</span>
+        </a>
+        <p class="cc-s11-limit">We take a limited number of new diagnostic sessions each month to make sure every session gets the focus it deserves.</p>
+        <p class="cc-s11-confirm">You will choose a time, receive a confirmation, and get three short prep questions so we can make the most of 45 minutes together.</p>
+        <p class="cc-s11-support">For owner-led service businesses ready to reduce founder dependency and build a structure that holds.</p>
       </div>
     </section>
 
   </main>
 
-  <!-- ── MINIMAL FOOTER ───────────────────────────────────── -->
+  <!-- ── MINIMAL FOOTER ─────────────────────────────────────────── -->
   <footer class="cc-footer">
     <p>&copy; 2026 SMB Strategy Consultants, LLC. All rights reserved.</p>
     <p><a href="/privacy-policy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms-conditions">Terms of Service</a> &nbsp;·&nbsp; <a href="/">smbstrategyconsultants.com</a></p>

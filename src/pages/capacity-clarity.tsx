@@ -773,6 +773,75 @@ capacityClarity.get('/', (c) => {
       margin-top: 1.5rem;
     }
 
+    /* ── TESTIMONIALS ─────────────────────────────────────────── */
+    .cc-testi { background: var(--color-bg-warm, #f2efe9); }
+    .cc-testi-head {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .cc-testi-head h2 {
+      font-size: clamp(1.4rem, 2.6vw, 2rem);
+      font-weight: 700;
+      color: var(--color-navy, #0d1c32);
+    }
+    .cc-testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 860px) { .cc-testi-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; } }
+    .cc-testi-card {
+      background: #fff;
+      border: 1px solid #e8e3da;
+      border-radius: 8px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: relative;
+    }
+    .cc-testi-card::before {
+      content: '“';
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      font-size: 3.5rem;
+      line-height: 1;
+      color: rgba(201,168,76,0.18);
+      font-family: Georgia, serif;
+      font-weight: 700;
+    }
+    .cc-testi-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-gold, #c9a84c);
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    .cc-testi-quote {
+      font-size: 0.97rem;
+      color: var(--color-text, #1a2a3a);
+      line-height: 1.75;
+      flex: 1;
+      margin: 0;
+    }
+    .cc-testi-author {
+      border-top: 1px solid #e8e3da;
+      padding-top: 1rem;
+    }
+    .cc-testi-author strong {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--color-navy, #0d1c32);
+      display: block;
+    }
+    .cc-testi-author span {
+      font-size: 0.78rem;
+      color: var(--color-text-muted, #4a5568);
+    }
+
     /* ── SECTION 10 — FAQ: 2 columns ─────────────────────────── */
     .cc-s10 { background: var(--color-bg-soft, #f8f7f4); }
     .cc-s10-head {
@@ -1252,6 +1321,57 @@ capacityClarity.get('/', (c) => {
             <p>Not through culture talks or motivational frameworks. <strong>Through structure.</strong></p>
             <div class="cc-authority-badge">
               SMB Strategy Consultants · Principle-Centered Business Advisory
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-section cc-testi">
+      <div class="cc-container">
+        <div class="cc-testi-head">
+          <span class="cc-eyebrow" style="text-align:center; display:block;">What Owners Say</span>
+          <h2>From people who were in the same position.</h2>
+        </div>
+        <div class="cc-testi-grid">
+
+          <!-- Guy Roberts — retooled toward staying elevated / out of daily operations -->
+          <div class="cc-testi-card">
+            <div>
+              <span class="cc-testi-label">On staying out of the weeds</span>
+              <p class="cc-testi-quote">Corbin has the ability to keep us at the 10,000 foot level and brings insights and discernment that we need to keep our business growing with a long-range plan. The service he provides is exceptional.</p>
+            </div>
+            <div class="cc-testi-author">
+              <strong>Guy Roberts</strong>
+              <span>Pat Murphy Electric</span>
+            </div>
+          </div>
+
+          <!-- Steve Thompson — retooled toward rapid, precise diagnosis of the specific business -->
+          <div class="cc-testi-card">
+            <div>
+              <span class="cc-testi-label">On getting a precise diagnosis</span>
+              <p class="cc-testi-quote">Corbin brings a unique perspective to growing your business. Not only is he able to quickly understand the nuances of your particular business, but he has been invaluable in introducing me to key people to help me transform and grow.</p>
+            </div>
+            <div class="cc-testi-author">
+              <strong>Steve Thompson</strong>
+              <span>Business Owner</span>
+            </div>
+          </div>
+
+          <!-- Gerrie van Niekerk — retooled toward what starts as one session can become real structural change -->
+          <div class="cc-testi-card">
+            <div>
+              <span class="cc-testi-label">On what one session can become</span>
+              <p class="cc-testi-quote">Corbin and the SMB team jumped in during a very tough period for our company. The onboarding process was seamless and the team quickly took control of the situation. What I thought would be a short-term engagement turned into a successful two-year partnership.</p>
+            </div>
+            <div class="cc-testi-author">
+              <strong>Gerrie van Niekerk</strong>
+              <span>Business Owner</span>
             </div>
           </div>
 

@@ -503,27 +503,61 @@ capacityClarity.get('/', (c) => {
       border-radius: 8px;
       display: block;
     }
-    .cc-s5-takeaway {
+    /* ── DIAGNOSIS BREAK — full-width statement ────────────── */
+    .cc-diagnosis-break {
       background: var(--color-navy, #0d1c32);
-      border-radius: 0 0 8px 8px;
-      padding: 1.5rem;
-      margin-top: -4px;
+      padding: 5rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
-    .cc-s5-takeaway-label {
-      font-size: 0.65rem;
+    .cc-diagnosis-break::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cc-diagnosis-break-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .cc-diagnosis-eyebrow {
+      font-size: 0.68rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.14em;
+      color: var(--color-gold, #c9a84c);
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+    .cc-diagnosis-quote {
+      font-size: clamp(1.5rem, 3.2vw, 2.4rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.25;
+      margin: 0 0 0.5rem;
+    }
+    .cc-diagnosis-quote em {
+      font-style: italic;
       color: var(--color-gold-light, #e0b84c);
-      margin-bottom: 0.6rem;
     }
-    .cc-s5-takeaway p {
-      font-size: 0.88rem;
-      color: rgba(255,255,255,0.78);
-      margin: 0;
-      line-height: 1.6;
+    .cc-diagnosis-rule {
+      width: 40px; height: 3px;
+      background: var(--color-gold, #c9a84c);
+      border: none;
+      border-radius: 2px;
+      margin: 1.5rem auto;
     }
-    .cc-s5-takeaway strong { color: #fff; }
+    .cc-diagnosis-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.75;
+      margin: 0 auto 2.5rem;
+      max-width: 580px;
+    }
 
     /* ── SECTION 6 — WHO THIS IS FOR: 3-col split ────────────── */
     .cc-s6 { background: var(--color-navy, #0d1c32); }
@@ -1057,19 +1091,34 @@ capacityClarity.get('/', (c) => {
             <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Reserve My Session</a>
           </div>
 
-          <!-- Right: image + takeaway -->
+          <!-- Right: image only -->
           <div class="cc-s5-img-wrap">
             <img
               src="/static/images/hiw-strategy-session.webp"
               alt="Strategy session in progress"
+              style="border-radius:8px;"
             />
-            <div class="cc-s5-takeaway">
-              <p class="cc-s5-takeaway-label">What you leave with</p>
-              <p>You will not leave with a conversation. You will leave with a <strong>diagnosis</strong> — a clear picture of where the dependency lives, what it is costing, and which structural piece needs to change first.</p>
-            </div>
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         DIAGNOSIS BREAK — full-width pull-quote + CTA
+    ════════════════════════════════════════════════════════════ -->
+    <section class="cc-diagnosis-break">
+      <div class="cc-diagnosis-break-inner">
+        <span class="cc-diagnosis-eyebrow">What you leave with</span>
+        <h2 class="cc-diagnosis-quote">
+          You will not leave with a conversation.<br/>
+          You will leave with a <em>diagnosis.</em>
+        </h2>
+        <hr class="cc-diagnosis-rule" />
+        <p class="cc-diagnosis-sub">A clear picture of where the dependency lives, what it is costing, and which structural piece needs to change first.</p>
+        <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="cc-hero-btn" style="display:inline-flex; margin:0 auto;" target="_blank" rel="noopener noreferrer">
+          Book My Capacity Clarity Session <span class="arrow">→</span>
+        </a>
       </div>
     </section>
 

@@ -34,13 +34,22 @@ capacityClarity.get('/', (c) => {
     .cc-header {
       background: var(--color-navy, #0d1c32);
       border-bottom: 1px solid rgba(255,255,255,0.08);
-      padding: 1.1rem 2rem;
+      padding: 1.5rem 2rem;
+      text-align: center;
     }
     .cc-header-inner {
       max-width: 1160px;
       margin: 0 auto;
+      display: flex;
+      justify-content: center;
     }
-    .cc-header img { height: 38px; width: auto; display: block; }
+    .cc-header-logo-wrap {
+      display: inline-block;
+      background: #fff;
+      border-radius: 6px;
+      padding: 0.6rem 1.25rem;
+    }
+    .cc-header img { height: 60px; width: auto; display: block; }
 
     /* ── HERO — 2-COLUMN SPLIT ────────────────────────────── */
     .cc-hero {
@@ -172,9 +181,9 @@ capacityClarity.get('/', (c) => {
       gap: 0.65rem;
       padding: 0.55rem 0;
       border-bottom: 1px solid rgba(255,255,255,0.07);
-      font-size: 0.88rem;
+      font-size: 0.93rem;
       color: rgba(255,255,255,0.78);
-      line-height: 1.55;
+      line-height: 1.6;
     }
     .cc-card-list li:last-child { border-bottom: none; }
     .cc-card-list li::before {
@@ -291,9 +300,9 @@ capacityClarity.get('/', (c) => {
       gap: 0.75rem;
       padding: 0.6rem 0;
       border-bottom: 1px solid rgba(0,0,0,0.07);
-      font-size: 0.94rem;
+      font-size: 0.97rem;
       color: var(--color-text, #1a2a3a);
-      line-height: 1.6;
+      line-height: 1.65;
     }
     .cc-dash-list li:last-child { border-bottom: none; }
     .cc-dash-list li::before {
@@ -342,9 +351,9 @@ capacityClarity.get('/', (c) => {
       gap: 0.75rem;
       padding: 0.6rem 0;
       border-bottom: 1px solid rgba(255,255,255,0.07);
-      font-size: 0.93rem;
+      font-size: 0.97rem;
       color: rgba(255,255,255,0.78);
-      line-height: 1.6;
+      line-height: 1.65;
     }
     .cc-s3-list li:last-child { border-bottom: none; }
     .cc-s3-list li::before {
@@ -409,15 +418,17 @@ capacityClarity.get('/', (c) => {
       padding: 1.25rem;
     }
     .cc-symptom-card p {
-      font-size: 0.88rem;
+      font-size: 0.95rem;
       color: var(--color-text, #1a2a3a);
-      line-height: 1.6;
+      line-height: 1.65;
       margin: 0;
     }
     .cc-symptom-card .cc-num {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: rgba(201,168,76,0.25);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-gold, #c9a84c);
       display: block;
       margin-bottom: 0.5rem;
       line-height: 1;
@@ -546,7 +557,7 @@ capacityClarity.get('/', (c) => {
       gap: 0.65rem;
       padding: 0.5rem 0;
       border-bottom: 1px solid rgba(255,255,255,0.05);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       line-height: 1.6;
       align-items: flex-start;
     }
@@ -603,9 +614,9 @@ capacityClarity.get('/', (c) => {
       gap: 0.75rem;
       padding: 0.6rem 0;
       border-bottom: 1px solid rgba(0,0,0,0.07);
-      font-size: 0.93rem;
+      font-size: 0.97rem;
       color: var(--color-text, #1a2a3a);
-      line-height: 1.6;
+      line-height: 1.65;
     }
     .cc-arrow-list li:last-child { border-bottom: none; }
     .cc-arrow-list li::before {
@@ -652,7 +663,7 @@ capacityClarity.get('/', (c) => {
       border: 1px solid #e8e3da;
       border-left: 3px solid var(--color-gold, #c9a84c);
       border-radius: 6px;
-      padding: 1.4rem;
+      padding: 1.5rem;
     }
     .cc-s8-card .step-num {
       font-size: 0.65rem;
@@ -660,10 +671,11 @@ capacityClarity.get('/', (c) => {
       text-transform: uppercase;
       letter-spacing: 0.1em;
       color: var(--color-gold, #c9a84c);
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.65rem;
+      display: block;
     }
     .cc-s8-card p {
-      font-size: 0.88rem;
+      font-size: 0.95rem;
       color: var(--color-text, #1a2a3a);
       line-height: 1.65;
       margin: 0;
@@ -756,7 +768,7 @@ capacityClarity.get('/', (c) => {
       margin-bottom: 0.55rem;
     }
     .cc-faq-item p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--color-text-muted, #4a5568);
       line-height: 1.75;
       margin: 0;
@@ -838,9 +850,11 @@ capacityClarity.get('/', (c) => {
   <!-- ── LOGO-ONLY HEADER ─────────────────────────────────────── -->
   <header class="cc-header">
     <div class="cc-header-inner">
-      <a href="/" aria-label="SMB Strategy Consultants">
-        <img src="/static/images/logo-horizontal-transparent.png" alt="SMB Strategy Consultants" />
-      </a>
+      <div class="cc-header-logo-wrap">
+        <a href="/" aria-label="SMB Strategy Consultants">
+          <img src="/static/images/logo-horizontal-transparent.png" alt="SMB Strategy Consultants" />
+        </a>
+      </div>
     </div>
   </header>
 
@@ -1143,19 +1157,19 @@ capacityClarity.get('/', (c) => {
         </div>
         <div class="cc-s8-cards">
           <div class="cc-s8-card">
-            <p class="step-num">Outcome 01</p>
+            <span class="step-num">Outcome 01</span>
             <p>Clearer ownership and accountability across the team</p>
           </div>
           <div class="cc-s8-card">
-            <p class="step-num">Outcome 02</p>
+            <span class="step-num">Outcome 02</span>
             <p>A delegation structure that actually holds without your constant reinforcement</p>
           </div>
           <div class="cc-s8-card">
-            <p class="step-num">Outcome 03</p>
+            <span class="step-num">Outcome 03</span>
             <p>An operating cadence your team can run without the founder in the middle of everything</p>
           </div>
           <div class="cc-s8-card">
-            <p class="step-num">Outcome 04</p>
+            <span class="step-num">Outcome 04</span>
             <p>Less founder drag. More consistent, team-led execution.</p>
           </div>
         </div>

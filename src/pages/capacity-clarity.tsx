@@ -665,7 +665,7 @@ capacityClarity.get('/', (c) => {
       border-radius: 6px;
       padding: 1.5rem;
     }
-    .cc-s8-card .step-num {
+    .cc-s8-card .cc-outcome-label {
       font-size: 0.65rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -1157,19 +1157,19 @@ capacityClarity.get('/', (c) => {
         </div>
         <div class="cc-s8-cards">
           <div class="cc-s8-card">
-            <span class="step-num">Outcome 01</span>
+            <span class="cc-outcome-label">Outcome 01</span>
             <p>Clearer ownership and accountability across the team</p>
           </div>
           <div class="cc-s8-card">
-            <span class="step-num">Outcome 02</span>
+            <span class="cc-outcome-label">Outcome 02</span>
             <p>A delegation structure that actually holds without your constant reinforcement</p>
           </div>
           <div class="cc-s8-card">
-            <span class="step-num">Outcome 03</span>
+            <span class="cc-outcome-label">Outcome 03</span>
             <p>An operating cadence your team can run without the founder in the middle of everything</p>
           </div>
           <div class="cc-s8-card">
-            <span class="step-num">Outcome 04</span>
+            <span class="cc-outcome-label">Outcome 04</span>
             <p>Less founder drag. More consistent, team-led execution.</p>
           </div>
         </div>

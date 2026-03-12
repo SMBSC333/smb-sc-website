@@ -19,8 +19,8 @@ businessBaseline.get('/', (c) => {
 
     /* ── LOGO HEADER ──────────────────────────────────────── */
     .bb-header {
-      background: var(--color-navy, #0d1c32);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: #ffffff;
+      border-bottom: 1px solid #e4e0d8;
       padding: 1.25rem 2rem;
     }
     .bb-header-inner {
@@ -32,9 +32,6 @@ businessBaseline.get('/', (c) => {
     }
     .bb-header-logo-wrap {
       display: inline-block;
-      background: #fff;
-      border-radius: 6px;
-      padding: 0.55rem 1.15rem;
     }
     .bb-header-logo-wrap img { height: 38px; width: auto; display: block; }
     .bb-header-cta {

@@ -15,6 +15,7 @@ import landingPages from './pages/landing-pages'
 import privacy from './pages/privacy-policy'
 import terms from './pages/terms-conditions'
 import capacityClarity from './pages/capacity-clarity'
+import businessBaseline from './pages/business-baseline'
 
 import execSummaryHtml from '../public/executive-summary.html?raw'
 
@@ -44,6 +45,9 @@ app.route('/terms-conditions', terms)
 
 // Capacity Clarity landing page
 app.route('/capacity-clarity', capacityClarity)
+
+// Business Baseline landing page
+app.route('/business-baseline', businessBaseline)
 
 // Admin CMS redirect — /admin → /admin/ (Decap CMS needs trailing slash)
 app.get('/admin', (c) => c.redirect('/admin/', 301))

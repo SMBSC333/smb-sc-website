@@ -62,7 +62,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                 </div>
               </li>
               <li class="nav-dropdown">
-                <button class={`nav-drop-btn${['about','resources','capacity'].includes(activeNav||'') ? ' active' : ''}`} aria-expanded="false" aria-haspopup="true">
+                <button class={`nav-drop-btn${['about','resources','capacity','baseline'].includes(activeNav||'') ? ' active' : ''}`} aria-expanded="false" aria-haspopup="true">
                   More <svg class="drop-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
                 <div class="nav-drop-menu" role="menu">
@@ -77,6 +77,10 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                   <a href="/capacity-clarity" class={activeNav === 'capacity' ? 'active' : ''} role="menuitem">
                     <span class="drop-label">Capacity Clarity</span>
                     <span class="drop-sub">Free yourself from founder bottlenecks</span>
+                  </a>
+                  <a href="/business-baseline" class={activeNav === 'baseline' ? 'active' : ''} role="menuitem">
+                    <span class="drop-label">The Business Baseline</span>
+                    <span class="drop-sub">Your half-day growth diagnostic</span>
                   </a>
                   <a href="/contact" role="menuitem">
                     <span class="drop-label">Contact</span>
@@ -104,6 +108,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
             <a href="/about" style="padding-left:1.5rem;">About</a>
             <a href="/resources" style="padding-left:1.5rem;">Resources</a>
             <a href="/capacity-clarity" style="padding-left:1.5rem;">Capacity Clarity</a>
+            <a href="/business-baseline" style="padding-left:1.5rem;">The Business Baseline</a>
             <a href="/contact" style="padding-left:1.5rem;">Contact</a>
             <a href="/growth-diagnostic" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book a Growth Diagnostic</a>
           </div>

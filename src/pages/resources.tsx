@@ -2,6 +2,9 @@ import { Hono } from 'hono'
 
 const resources = new Hono()
 
+// TODO: Implement file-system based content fetching for Netlify Edge
+// FOR NOW: We will keep the hardcoded list but add the file structure needed for CMS
+
 const blogPosts = [
   { title: 'Mastering Management Succession: A Guide to Effective Succession Planning', date: 'May 28, 2025', slug: 'mastering-management-succession-a-guide-to-effective-succession-planning', category: 'Exit Planning' },
   { title: "Mastering Excel's Profit Percentage Formula: A Comprehensive Guide", date: 'May 7, 2025', slug: 'mastering-excels-profit-percentage-formula-a-comprehensive-guide', category: 'Financial' },

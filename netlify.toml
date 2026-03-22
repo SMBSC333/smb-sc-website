@@ -13,7 +13,8 @@
 
 # Edge function handles all dynamic routes
 # excludedPath ensures static assets + admin are served directly by Netlify CDN
+# IMPORTANT: Added /.netlify/* to excludedPath to allow Identity/Functions to work
 [[edge_functions]]
   path = "/*"
   function = "index"
-  excludedPath = ["/static/*", "/admin", "/admin/*", "/*.html", "/*.ico", "/*.txt", "/*.xml", "/*.json"]
+  excludedPath = ["/static/*", "/admin", "/admin/*", "/*.html", "/*.ico", "/*.txt", "/*.xml", "/*.json", "/.netlify/*"]

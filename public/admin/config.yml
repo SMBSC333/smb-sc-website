@@ -19,6 +19,8 @@ collections:
     create: true
     slug: "{{slug}}"
     preview_path: "/resources/{{slug}}"
+    # SECURE: Limit even blog editing to authorized roles
+    roles: ["admin", "editor"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", format: "MMM D, YYYY", date_format: "MMM D, YYYY", time_format: false }
@@ -46,6 +48,7 @@ collections:
     folder: "content/ebooks"
     create: true
     slug: "{{slug}}"
+    roles: ["admin", "editor"]
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Short Description", name: "description", widget: "text", hint: "One sentence shown on the Resources page" }
@@ -56,6 +59,8 @@ collections:
   # ─── SITE SETTINGS ──────────────────────────────────────────
   - name: "settings"
     label: "Site Settings"
+    # SECURE: Strict admin-only access for global settings
+    roles: ["admin"]
     files:
 
       - label: "Homepage"

@@ -1,5 +1,8 @@
 backend:
   name: git-gateway
+  # Force the identity URL to bypass domain proxy issues
+  identity_url: "https://smb-sc-website.netlify.app/.netlify/identity"
+  gateway_url: "https://smb-sc-website.netlify.app/.netlify/git"
   branch: main
 
 # Media files will be stored in the repo under public/static/uploads

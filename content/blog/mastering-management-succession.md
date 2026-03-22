@@ -5,4 +5,4 @@ category: "Exit Planning"
 excerpt: "Learn how to identify and develop next-generation leaders to ensure your business thrives after you exit."
 ---
 
-This is a test blog article created for Decap CMS.
+This is a test blog article created for Decap CMS. You can edit this directly in the admin panel!

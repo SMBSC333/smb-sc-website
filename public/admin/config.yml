@@ -53,11 +53,9 @@ collections:
       - { label: "Download URL / Link", name: "download_url", widget: "string", hint: "External link or path to uploaded PDF" }
       - { label: "Body / Details", name: "body", widget: "markdown", required: false }
 
-  # ─── SITE SETTINGS (Admin Only) ──────────────────────────────────────────
+  # ─── SITE SETTINGS ──────────────────────────────────────────
   - name: "settings"
     label: "Site Settings"
-    # Restricted to admin role
-    roles: ["admin"]
     files:
 
       - label: "Homepage"

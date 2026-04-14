@@ -971,18 +971,14 @@ capacityClarity.get('/', (c) => {
 
         <!-- Left column -->
         <div>
-          <div class="cc-hero-pill">Capacity Clarity Session</div>
-          <h1>
-            Your business is growing.<br/>
-            So why does it still<br/>
-            <em>run through you?</em>
-          </h1>
-          <p class="cc-hero-sub">If approvals, decisions, problem-solving, and follow-through still funnel back to you — that is not a motivation problem. That is a structural bottleneck. And it has a cost most owners never stop to calculate.</p>
+          <div class="cc-hero-pill">Advanced Capacity Design</div>
+          <h1>A specialized path for businesses where owner dependency is the real bottleneck.</h1>
+          <p class="cc-hero-sub">If the Strategy Call reveals that too much still runs through the founder, this is the deeper work we may recommend.</p>
           <div class="cc-hero-cta-row">
-            <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="cc-hero-btn" target="_blank" rel="noopener noreferrer">
-              Book My Capacity Clarity Session <span class="arrow">→</span>
+            <a href="/strategy-call" class="cc-hero-btn">
+              Book the AI Implementation Strategy Call <span class="arrow">→</span>
             </a>
-            <p class="cc-hero-micro">45 minutes. Real clarity. A clear next step.</p>
+            <p class="cc-hero-micro">20-minute diagnostic. Zero-risk exit. A clear roadmap.</p>
           </div>
         </div>
 
@@ -1157,7 +1153,7 @@ capacityClarity.get('/', (c) => {
               <li><span class="cc-agenda-num">04</span> What structural piece is missing underneath the problem</li>
               <li><span class="cc-agenda-num">05</span> The next 3 moves that would reduce the pressure fastest</li>
             </ol>
-            <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Reserve My Session</a>
+            <a href="/strategy-call" class="btn btn-primary">Book the AI Implementation Strategy Call</a>
           </div>
 
           <!-- Right: image only -->
@@ -1185,8 +1181,8 @@ capacityClarity.get('/', (c) => {
         </h2>
         <hr class="cc-diagnosis-rule" />
         <p class="cc-diagnosis-sub">A clear picture of where the dependency lives, what it is costing, and which structural piece needs to change first.</p>
-        <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="cc-hero-btn" style="display:inline-flex; margin:0 auto;" target="_blank" rel="noopener noreferrer">
-          Book My Capacity Clarity Session <span class="arrow">→</span>
+        <a href="/strategy-call" class="cc-hero-btn" style="display:inline-flex; margin:0 auto;">
+          Book the AI Implementation Strategy Call <span class="arrow">→</span>
         </a>
       </div>
     </section>
@@ -1412,8 +1408,8 @@ capacityClarity.get('/', (c) => {
               <p>Where the dependency is showing up, why it has persisted, what it is costing in real terms, and what the structural next steps look like.</p>
             </div>
             <div class="cc-faq-item">
-              <h4>What is the Capacity Intensive and what does it cost?</h4>
-              <p>The Capacity Intensive is a focused 90-day engagement — 2 to 4 sessions — designed to install the structure your business needs to operate with more team ownership and less founder involvement. The investment is $2,500. We only recommend it after the diagnostic confirms it is the right fit.</p>
+              <h4>What is the Capacity Intensive?</h4>
+              <p>The Capacity Intensive is a focused 90-day engagement — 2 to 4 sessions — designed to install the structure your business needs to operate with more team ownership and less founder involvement. We only recommend it after the diagnostic confirms it is the right fit.</p>
             </div>
             <div class="cc-faq-item">
               <h4>What if I just need better delegation?</h4>
@@ -1431,12 +1427,12 @@ capacityClarity.get('/', (c) => {
       <div class="cc-s11-inner">
         <span class="cc-eyebrow" style="text-align:center; display:block; color:var(--color-gold-light,#e0b84c);">Ready to Start</span>
         <h2>You do not need to stay the glue holding everything together.</h2>
-        <p class="cc-s11-sub">You need to know where the dependency is — and what to fix first. Book the Capacity Clarity Session and get a direct, honest look at the bottleneck that is quietly limiting your growth, your team, and your time.</p>
-        <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="cc-hero-btn" style="display:inline-flex; margin:0 auto;" target="_blank" rel="noopener noreferrer">
-          Book My Capacity Clarity Session <span class="arrow">→</span>
+        <p class="cc-s11-sub">If the Strategy Call reveals that too much still runs through the founder, this is the deeper structural work we may recommend.</p>
+        <a href="/strategy-call" class="cc-hero-btn" style="display:inline-flex; margin:0 auto;">
+          Book the AI Implementation Strategy Call <span class="arrow">→</span>
         </a>
-        <p class="cc-s11-limit">We take a limited number of new diagnostic sessions each month to make sure every session gets the focus it deserves.</p>
-        <p class="cc-s11-confirm">You will choose a time, receive a confirmation, and get three short prep questions so we can make the most of 45 minutes together.</p>
+        <p class="cc-s11-limit">We take a limited number of new strategy calls each week to ensure maximum focus on every business case.</p>
+        <p class="cc-s11-confirm">Select a time, confirm your details, and walk away with a clear picture of your implementation roadmap.</p>
         <p class="cc-s11-support">For owner-led service businesses ready to reduce founder dependency and build a structure that holds.</p>
       </div>
     </section>

@@ -8,7 +8,7 @@ businessBaseline.get('/', (c) => {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Business Baseline: a half-day diagnostic session for $500K–$5M service businesses ready to understand what is actually limiting their growth and what to fix first." />
+  <meta name="description" content="A deeper analysis we may recommend when the issue is broader than AI alone. Available by recommendation after the Strategy Call." />
   <title>The Business Baseline — SMB Strategy Consultants</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
@@ -1022,7 +1022,7 @@ businessBaseline.get('/', (c) => {
       <a href="/" class="bb-header-logo-wrap" aria-label="SMB Strategy Consultants — Home">
         <img src="/static/images/logo-horizontal-transparent.png" alt="SMB Strategy Consultants" width="180" height="36" />
       </a>
-      <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="bb-header-cta">Book The Business Baseline →</a>
+      <a href="/strategy-call" class="bb-header-cta">Book the AI Implementation Strategy Call →</a>
     </div>
   </header>
 
@@ -1034,12 +1034,12 @@ businessBaseline.get('/', (c) => {
 
         <!-- Left: headline + CTA -->
         <div>
-          <span class="bb-hero-pill">Primary Offer — The Business Baseline</span>
-          <h1>Revenue is up.<br><em>So why does everything still feel hard?</em></h1>
-          <p class="bb-hero-sub">A half-day diagnostic session for $500K–$5M service businesses ready to stop guessing and start fixing the right things — in the right order.</p>
+          <span class="bb-hero-pill">Service by Recommendation</span>
+          <h1>A deeper analysis we may recommend when the issue is broader than AI alone.</h1>
+          <p class="bb-hero-sub">When the Strategy Call reveals a deeper business-structure issue, Business Baseline provides a more comprehensive look at financial foundations, scalability, and positioning.</p>
           <div class="bb-hero-cta-row">
-            <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="bb-hero-btn">Book The Business Baseline — $2,500 <span>→</span></a>
-            <p class="bb-hero-micro">Requires 48-hour pre-work submission before the session.</p>
+            <a href="/strategy-call" class="bb-hero-btn">Book the AI Implementation Strategy Call <span>→</span></a>
+            <p class="bb-hero-micro">Available by recommendation after the Strategy Call.</p>
           </div>
         </div>
 
@@ -1062,7 +1062,7 @@ businessBaseline.get('/', (c) => {
             </div>
             <div class="bb-card-meta-item">
               <span>Investment</span>
-              <strong>$2,500</strong>
+              <strong>See Strategy Call</strong>
             </div>
             <div class="bb-card-meta-item">
               <span>Pre-Work</span>
@@ -1485,8 +1485,8 @@ businessBaseline.get('/', (c) => {
           </div>
 
           <div class="bb-faq-card">
-            <h4>"Is a four-hour session really worth $2,500?"</h4>
-            <p>One right decision — repricing a service, cutting the wrong client, making one hire before the wrong one — tends to return multiples of that within a quarter. The question isn't whether it's worth it. It's whether you can afford to keep guessing.</p>
+            <h4>"Is this really worth the investment?"</h4>
+            <p>One right decision — repricing a service, cutting the wrong client, making one hire before the wrong one — tends to return multiples of the cost within a quarter. The question isn't whether it's worth it. It's whether you can afford to keep guessing.</p>
           </div>
 
           <div class="bb-faq-card">
@@ -1547,16 +1547,12 @@ businessBaseline.get('/', (c) => {
     <!-- ── SECTION 11 — CTA ──────────────────────────────────────── -->
     <section class="bb-s11">
       <div class="bb-s11-inner">
-        <div class="bb-s11-price">
-          <span class="amount">$2,500</span>
-          <span class="label">&nbsp;— flat rate, all deliverables included</span>
-        </div>
         <h2>Stop guessing.<br><em>Get your baseline.</em></h2>
-        <p class="bb-s11-sub">A half-day session, a full set of deliverables, and a clear sequence for what to fix first. For $500K–$5M service businesses that are serious about growth.</p>
+        <p class="bb-s11-sub">A half-day session, a full set of deliverables, and a clear sequence for what to fix first. Available only by recommendation after your initial Strategy Call.</p>
         <div>
-          <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="bb-s11-btn">Book The Business Baseline →</a>
+          <a href="/strategy-call" class="bb-s11-btn">Book the AI Implementation Strategy Call →</a>
         </div>
-        <p class="bb-s11-guarantee">Includes a 30-day follow-up call. Pre-work required 48 hours in advance.</p>
+        <p class="bb-s11-guarantee">Pre-work required 48 hours in advance once recommended.</p>
         <p class="bb-s11-avail">Limited availability — typically 2–3 sessions per month</p>
       </div>
     </section>

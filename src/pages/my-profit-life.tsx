@@ -10,13 +10,12 @@ mpl.get('/', (c) => {
       <section class="mpl-hero">
         <div class="mpl-hero-overlay" aria-hidden="true"></div>
         <div class="container mpl-hero-content">
-          <span class="eyebrow hero-eyebrow">For Founders &amp; Business Owners Doing $500K–$10M</span>
-          <h1>Most business owners are dabbling with AI.<br/>Almost none are using it to run a sharper business.</h1>
+          <span class="eyebrow hero-eyebrow">My Profit Life</span>
+          <h1>Advanced support for the right-stage owner.</h1>
           <div class="mpl-hero-rule" aria-hidden="true"></div>
-          <p class="mpl-hero-sub">The difference isn't better tools. It's sharper thinking and better decisions.</p>
-          <p class="mpl-hero-outcome">The Principle-Centered AI Framework gives you the clarity and decision advantage to lead your business with the confidence and capacity of a team twice the size.</p>
+          <p class="mpl-hero-sub">My Profit Life is a deeper leadership and operating support path for owners who have already clarified the business constraint and are ready to build stronger decisions, better priorities, and more durable leverage.</p>
           <div class="hero-actions" style="margin-top:2rem;">
-            <a href="https://app.usemotion.com/meet/corbin/SMB?d=60" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Book a Clarity Kickoff Call</a>
+            <a href="/strategy-call" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
           </div>
         </div>
       </section>
@@ -196,7 +195,7 @@ mpl.get('/', (c) => {
             <span class="eyebrow">Ideal Client</span>
             <h2>Who This Is For</h2>
             <div class="gold-line" style="margin:1.25rem auto 0;"></div>
-            <p style="max-width:560px; margin:1rem auto 0; color:var(--color-text-muted);">Service business owners between $500K–$10M who refuse to let urgency win over legacy.</p>
+            <p style="max-width:560px; margin:1rem auto 0; color:var(--color-text-muted);">Service business owners between $1M–$5M who refuse to let urgency win over legacy.</p>
           </div>
 
           <div class="mpl-persona-stack">
@@ -206,7 +205,7 @@ mpl.get('/', (c) => {
                 <span class="mpl-persona-num">01</span>
                 <span class="mpl-ptab-tag">Most Common</span>
                 <h3>The Bottleneck Builder</h3>
-                <p class="mpl-persona-meta">$800K–$3M &nbsp;·&nbsp; 5–15 employees &nbsp;·&nbsp; Professional Services</p>
+                <p class="mpl-persona-meta">$1M–$3M &nbsp;·&nbsp; 8–15+ employees &nbsp;·&nbsp; Professional Services</p>
               </div>
               <div class="mpl-persona-content">
                 <p>Your business depends entirely on you. You can't take a vacation. You miss family moments. You're exhausted—and secretly scared a key person walks out the door and takes everything with them.</p>
@@ -223,7 +222,7 @@ mpl.get('/', (c) => {
               <div class="mpl-persona-label">
                 <span class="mpl-persona-num">02</span>
                 <h3>The Scaling Operator</h3>
-                <p class="mpl-persona-meta">$2M–$8M &nbsp;·&nbsp; 15–50 employees &nbsp;·&nbsp; Service Delivery</p>
+                <p class="mpl-persona-meta">$2M–$5M &nbsp;·&nbsp; 15–50+ employees &nbsp;·&nbsp; Service Delivery</p>
               </div>
               <div class="mpl-persona-content">
                 <p>You're growing—but operational chaos and financial fog are eating your margins. Competitors are deploying AI to undercut your pricing. A PE firm reached out last quarter. You're not ready.</p>
@@ -240,7 +239,7 @@ mpl.get('/', (c) => {
               <div class="mpl-persona-label">
                 <span class="mpl-persona-num">03</span>
                 <h3>The Creative Sovereign</h3>
-                <p class="mpl-persona-meta">$1.5M–$6M &nbsp;·&nbsp; 8–30 employees &nbsp;·&nbsp; Creative/Knowledge Services</p>
+                <p class="mpl-persona-meta">$1.5M–$5M &nbsp;·&nbsp; 8–30+ employees &nbsp;·&nbsp; Creative/Knowledge Services</p>
               </div>
               <div class="mpl-persona-content">
                 <p>You've built something with real craft and identity. Revenue is inconsistent. You're underpriced. And the fear that AI will replace what you do keeps you up at night—even though you haven't tested that assumption.</p>
@@ -262,7 +261,7 @@ mpl.get('/', (c) => {
             <div class="mpl-fit-col mpl-fit-col--yes">
               <h4>This IS for you if…</h4>
               <ul>
-                <li>You own or lead a $500K–$10M service business</li>
+                <li>You own or lead a $1M–$5M service business</li>
                 <li>You're serious about transformation—not just tactics</li>
                 <li>You're willing to do the inner work AND the strategic work</li>
                 <li>You want measurable outcomes, not motivational fluff</li>
@@ -384,15 +383,6 @@ mpl.get('/', (c) => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── WHO THIS IS FOR IMAGE BREAK ── */}
-      <section class="mpl-image-break">
-        <div class="mpl-image-break-overlay" aria-hidden="true"></div>
-        <div class="container" style="position:relative; z-index:1; text-align:center;">
-          <span class="eyebrow" style="color:var(--color-gold-light);">The Shift</span>
-          <h2 style="color:#fff; max-width:680px; margin:0.75rem auto 0;">From reactive owner to principle-centered leader. From tool chaos to trusted AI leverage.</h2>
         </div>
       </section>
 

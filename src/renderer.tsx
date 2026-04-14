@@ -24,7 +24,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
         <title>{pageTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link href="/static/style.css" rel="stylesheet" />
         
         {/* Google Analytics */}
@@ -64,79 +64,25 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               />
             </a>
             <ul class="nav-links">
+              <li><a href="/" class={activeNav === 'home' ? 'active' : ''}>Home</a></li>
               <li><a href="/how-it-works" class={activeNav === 'how' ? 'active' : ''}>How It Works</a></li>
-              <li><a href="/strategy-intensives" class={activeNav === 'intensives' ? 'active' : ''}>Strategy Intensives</a></li>
-              <li><a href="/ai-enablement" class={activeNav === 'ai' ? 'active' : ''}>AI Enablement</a></li>
-              <li><a href="/my-profit-life" class={activeNav === 'mpl' ? 'active' : ''}>My Profit Life</a></li>
-              <li class="nav-dropdown">
-                <button class={`nav-drop-btn${['cfo','exit','staffing'].includes(activeNav||'') ? ' active' : ''}`} aria-expanded="false" aria-haspopup="true">
-                  Other Services <svg class="drop-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <div class="nav-drop-menu" role="menu">
-                  <a href="/virtual-cfo" class={activeNav === 'cfo' ? 'active' : ''} role="menuitem">
-                    <span class="drop-label">Virtual CFO</span>
-                    <span class="drop-sub">Strategic financial partnership</span>
-                  </a>
-                  <a href="/exit-planning" class={activeNav === 'exit' ? 'active' : ''} role="menuitem">
-                    <span class="drop-label">Exit Planning</span>
-                    <span class="drop-sub">21-step sell-ready process</span>
-                  </a>
-                  <a href="/virtual-staffing" class={activeNav === 'staffing' ? 'active' : ''} role="menuitem">
-                    <span class="drop-label">Virtual Staffing</span>
-                    <span class="drop-sub">Managed remote workforce solutions</span>
-                  </a>
-                </div>
-              </li>
-              <li class="nav-dropdown">
-                <button class={`nav-drop-btn${['about','resources','capacity','baseline'].includes(activeNav||'') ? ' active' : ''}`} aria-expanded="false" aria-haspopup="true">
-                  More <svg class="drop-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <div class="nav-drop-menu" role="menu">
-                  <a href="/about" class={activeNav === 'about' ? 'active' : ''} role="menuitem">
-                    <span class="drop-label">About</span>
-                    <span class="drop-sub">Who we are and how we work</span>
-                  </a>
-                  <a href="/resources" class={activeNav === 'resources' ? 'active' : ''} role="menuitem">
-                    <span class="drop-label">Resources</span>
-                    <span class="drop-sub">Guides, tools, and insights</span>
-                  </a>
-                  <a href="/capacity-clarity" class={activeNav === 'capacity' ? 'active' : ''} role="menuitem">
-                    <span class="drop-label">Capacity Clarity</span>
-                    <span class="drop-sub">Free yourself from founder bottlenecks</span>
-                  </a>
-                  <a href="/business-baseline" class={activeNav === 'baseline' ? 'active' : ''} role="menuitem">
-                    <span class="drop-label">The Business Baseline</span>
-                    <span class="drop-sub">Your half-day growth diagnostic</span>
-                  </a>
-                  <a href="/contact" role="menuitem">
-                    <span class="drop-label">Contact</span>
-                    <span class="drop-sub">Get in touch with our team</span>
-                  </a>
-                </div>
-              </li>
+              <li><a href="/who-its-for" class={activeNav === 'who' ? 'active' : ''}>Who It's For</a></li>
+              <li><a href="/services" class={activeNav === 'services' ? 'active' : ''}>Our Solutions</a></li>
+              <li><a href="/about" class={activeNav === 'about' ? 'active' : ''}>About</a></li>
+              <li><a href="/contact" class={activeNav === 'contact' ? 'active' : ''}>Contact</a></li>
             </ul>
-            <a href="/growth-diagnostic" class="btn btn-primary btn-sm nav-cta">Book a Diagnostic</a>
+            <a href="/strategy-call" class="btn btn-primary btn-sm nav-cta">Book the AI Implementation Strategy Call</a>
             <button class="nav-hamburger" id="hamburger" aria-label="Open navigation">
               <span></span><span></span><span></span>
             </button>
           </div>
           <div class="nav-mobile" id="nav-mobile">
             <a href="/">Home</a>
+            <a href="/who-its-for">Who It's For</a>
             <a href="/how-it-works">How It Works</a>
-            <a href="/strategy-intensives">Strategy Intensives</a>
-            <a href="/ai-enablement">AI Enablement</a>
-            <a href="/my-profit-life">My Profit Life</a>
-            <div class="mobile-section-label">Other Services</div>
-            <a href="/virtual-cfo" style="padding-left:1.5rem;">Virtual CFO</a>
-            <a href="/exit-planning" style="padding-left:1.5rem;">Exit Planning</a>
-            <a href="/virtual-staffing" style="padding-left:1.5rem;">Virtual Staffing</a>
-            <div class="mobile-section-label">More</div>
-            <a href="/about" style="padding-left:1.5rem;">About</a>
-            <a href="/resources" style="padding-left:1.5rem;">Resources</a>
-            <a href="/capacity-clarity" style="padding-left:1.5rem;">Capacity Clarity</a>
-            <a href="/business-baseline" style="padding-left:1.5rem;">The Business Baseline</a>
-            <a href="/contact" style="padding-left:1.5rem;">Contact</a>
-            <a href="/growth-diagnostic" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book a Growth Diagnostic</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/strategy-call" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book the AI Implementation Strategy Call</a>
           </div>
         </nav>
 
@@ -156,6 +102,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                   height="38"
                 />
                 <p>We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration.</p>
+                <p style="font-style: italic; opacity: 0.8; font-size: 0.9rem;">Strategic. Practical. Built to identify the right next move.</p>
                 <div class="cred-bar">
                   <div class="cert-logo-bar">
                     <img src="/static/images/badge-cepa.png"          alt="CEPA Certified"           loading="lazy" />
@@ -166,31 +113,19 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                 </div>
               </div>
               <div class="footer-col">
-                <h5>Services</h5>
+                <h5>Information</h5>
                 <ul>
-                  <li><a href="/strategy-intensives">Strategy Intensives</a></li>
-                  <li><a href="/ai-enablement">AI Enablement</a></li>
-                  <li><a href="/my-profit-life">My Profit Life</a></li>
-                  <li><a href="/virtual-cfo">Virtual CFO</a></li>
-                  <li><a href="/exit-planning">Exit Planning</a></li>
-                  <li><a href="/virtual-staffing">Virtual Staffing</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h5>Company</h5>
-                <ul>
-                  <li><a href="/about">About</a></li>
+                  <li><a href="/who-its-for">Who It's For</a></li>
                   <li><a href="/how-it-works">How It Works</a></li>
+                  <li><a href="/about">About</a></li>
                   <li><a href="/resources">Resources</a></li>
-                  <li><a href="/contact">Contact</a></li>
                 </ul>
               </div>
               <div class="footer-col">
-                <h5>Get Started</h5>
+                <h5>Next Step</h5>
                 <ul>
-                  <li><a href="/growth-diagnostic">Free Growth Diagnostic</a></li>
-                  <li><a href="/ai-assessment">AI Readiness Assessment</a></li>
-                  <li><a href="/growth-constraint-quiz">Growth Constraint Quiz</a></li>
+                  <li><a href="/strategy-call">AI Strategy Call</a></li>
+                  <li><a href="/contact">Contact Us</a></li>
                   <li><a href="/privacy-policy">Privacy Policy</a></li>
                   <li><a href="/terms-conditions">Terms of Service</a></li>
                 </ul>

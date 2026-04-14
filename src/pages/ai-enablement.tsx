@@ -122,7 +122,7 @@ aiEnablement.get('/', (c) => {
             </div>
             <div>
               <span class="eyebrow">Who This Is For</span>
-              <h3 class="mb-3">Service-based businesses with $1M–$10M in revenue.</h3>
+              <h3 class="mb-3">Service-based businesses with $1M–$5M in revenue.</h3>
               <p>You have a team. You have existing tools. You want leverage, not disruption. You are not looking for a technology overhaul — you are looking for 2–3 specific places where AI can meaningfully reduce cost or improve speed this quarter.</p>
               <div class="highlight-box mt-3">
                 <h4 class="mb-2">What This Is Not</h4>

@@ -16,8 +16,8 @@ home.get('/', (c) => {
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">The AI Implementation Partner</span>
-          <h1>AI already failed in your business. We find out why — and show you the right implementation path.</h1>
-          <p class="lead">For owner-led B2B service firms doing $1M–$5M, we identify the real constraint blocking AI adoption — whether it is workflow, owner dependency, team readiness, role clarity, or economics — and outline the next implementation move that will create the most leverage.</p>
+          <h1>You want AI to give your business leverage... but it’s not that simple. We find out why AI isn’t being adopted and show you the right implementation path.</h1>
+          <p class="lead">For owner-led service firms. We identify the real constraint blocking AI adoption — whether it is workflow, owner dependency, team readiness, role clarity, or economics — and outline the next implementation move that will create the most leverage.</p>
           <div class="hero-actions">
             <a href="/strategy-call" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If Your Business Is a Fit</a>
@@ -31,10 +31,10 @@ home.get('/', (c) => {
         <div class="container">
           <div class="trust-bar-inner">
             <div class="cert-logo-bar">
-              <img src="/static/images/badge-cepa.png"          alt="CEPA — Certified Exit Planning Advisor"  loading="lazy" />
-              <img src="/static/images/badge-aasbc.png"         alt="AASBC Member"                           loading="lazy" />
-              <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"                loading="lazy" />
-              <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor"               loading="lazy" />
+              <img src="/static/images/badge-cepa.png" alt="CEPA — Certified Exit Planning Advisor" loading="lazy" />
+              <img src="/static/images/badge-aasbc.png" alt="AASBC Member" loading="lazy" />
+              <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified" loading="lazy" />
+              <img src="/static/images/badge-fathom.png" alt="Fathom Certified Advisor" loading="lazy" />
             </div>
           </div>
         </div>

@@ -12,13 +12,13 @@ intensive.get('/', (c) => {
         </picture>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
-          <span class="eyebrow" style="color:var(--color-gold-light);">The AI Implementation Partner — Path 01</span>
+          <span class="eyebrow" style="color:var(--color-gold-light);">The Foundation Layer — Track 01</span>
           <h1 style="color:#fff;">Financial Clarity</h1>
           <p class="lead" style="color:rgba(255,255,255,0.9);">
-            A surgical diagnostic of your company’s financial health. We identify exactly why profit is leaking and where your unit economics are broken.
+            The essential foundation for Growth-Leveraged AI. We identify exactly where profit may be leaking and where your unit economics are broken.
           </p>
           <div class="hero-actions" style="margin-top:2rem;">
-            <a href="/strategy-call" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
           </div>
         </div>
       </section>
@@ -110,12 +110,12 @@ intensive.get('/', (c) => {
       {/* ── FINAL CTA ── */}
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
-          <h2 style="color:#fff;">Prescription comes after diagnosis.</h2>
+          <h2 style="color:#fff;">Ready to find your friction?</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">
-            Intensives are targeted solutions. We verify if this is your primary constraint during the AI Implementation Strategy Call.
+            Book a free 20-minute fit call. We will look at your operations and tell you honestly where your biggest leaks are.
           </p>
           <div style="margin-top: 2.5rem;">
-            <a href="/strategy-call" class="btn btn-primary btn-lg">Book Your Strategy Assessment</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
           </div>
         </div>
       </section>

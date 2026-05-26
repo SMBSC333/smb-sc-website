@@ -5,104 +5,113 @@ const whoItsFor = new Hono()
 whoItsFor.get('/', (c) => {
   return c.render(
     <div>
-      {/* ── HERO SECTION ── */}
       <section class="page-hero-v2 bg-navy-deep">
         <div class="container">
           <div class="hero-content-v2">
             <span class="eyebrow" style="color: var(--color-gold);">Target Profile</span>
-            <h1 style="color: #fff;">Built for owner-led B2B service firms where AI has already been tried — but leverage never showed up.</h1>
+            <h1 style="color: #fff;">This is built for owner-led firms that have already tried AI.</h1>
             <p class="hero-lead">
-              We work best with businesses that already have a team, already use software, and already attempted AI in some form, but still feel too much running through the owner.
+              If you&rsquo;re in this position, the 90-Day Sprint is the right next move to build your Growth-Leveraged AI.
             </p>
             <div class="hero-cta-group">
-              <a href="/strategy-call" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── THE FIT COMPARISON ── */}
+      {/* ── SECTION 1: YOUR PROFILE ── */}
+      <section class="section bg-white">
+        <div class="container">
+          <div class="grid-2" style="align-items: center; gap: 4rem;">
+            <div>
+              <span class="eyebrow">The Match</span>
+              <h2>Your Profile</h2>
+              <ul class="feature-list mt-4">
+                <li><strong>Owner-Led B2B Service Firm:</strong> Doing $1M&ndash;$5M in annual revenue.</li>
+                <li><strong>Team Size:</strong> Usually 8&ndash;30 employees.</li>
+                <li><strong>Owner Dependency:</strong> You are still central to sales, delivery, or approvals.</li>
+                <li><strong>AI Attempted:</strong> You&rsquo;ve already bought tools or tested them, but adoption stalled.</li>
+              </ul>
+            </div>
+            <div class="card card-navy p-5">
+               <h4 style="color: var(--color-gold-light);">The Stalled Reality</h4>
+               <p style="color: rgba(255,255,255,0.85);">You bought the tools. You tested prompts. Maybe you even tried a course. But real ROI hasn't materialized and the promised leverage never showed up.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 2: THE REAL PROBLEM ── */}
+      <section class="section bg-soft">
+        <div class="container text-center">
+          <span class="eyebrow">The Diagnosis</span>
+          <h2>Your Real Problem</h2>
+          <div class="gold-line gold-line-center"></div>
+          <div class="grid-2 mt-5 text-left" style="gap:4rem;">
+             <div>
+                <h4 class="mb-3">It&rsquo;s Not:</h4>
+                <ul class="pain-list">
+                   <li>That AI can't help you (it can).</li>
+                   <li>That you need more tool recommendations.</li>
+                   <li>That you need another "consultant" who sells theories.</li>
+                </ul>
+             </div>
+             <div>
+                <h4 class="mb-3">It Is:</h4>
+                <ul class="pain-list">
+                   <li>A business foundations issue (workflows, owner dependency).</li>
+                   <li>Without the right foundations, <strong>AI just amplifies the noise.</strong></li>
+                   <li>You need a diagnostic to find the real constraint.</li>
+                </ul>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 3: THE RIGHT FIT ── */}
       <section class="section bg-white">
         <div class="container">
           <div class="section-header center">
             <span class="eyebrow">The Filter</span>
-            <h2>Is your business the right fit for this engagement?</h2>
+            <h2>Is it a Match?</h2>
           </div>
 
           <div class="fit-container">
-            {/* BEST FIT */}
+            {/* MATCH */}
             <div class="fit-box best">
-              <h3>Best Fit</h3>
+              <h3>We&rsquo;re a match if:</h3>
               <ul class="check-list-v2">
-                <li>$1M–$5M in annual revenue</li>
-                <li>Usually 8–30+ employees</li>
-                <li>Founder still central to sales, delivery, approvals, or decisions</li>
-                <li>Team-based service delivery</li>
-                <li>AI already attempted</li>
-                <li>Capacity, margin, or execution still feel strained</li>
-                <li>Too many tools, too little adoption</li>
-                <li>Need leverage, not more clutter</li>
+                <li>You're ready to invest time (not just money) in the solution.</li>
+                <li>You want implementation, not advice.</li>
+                <li>You're open to rethinking workflows, not just bolting on tools.</li>
+                <li>You want to own the solution after 90 days.</li>
               </ul>
             </div>
 
-            {/* NOT A FIT */}
+            {/* NOT A MATCH */}
             <div class="fit-box not-fit">
-              <h3>Not the right fit if</h3>
+              <h3>We&rsquo;re not a match if:</h3>
               <ul class="fail-list">
-                <li>You are only AI-curious</li>
-                <li>You want generic AI education</li>
-                <li>You want software recommendations without diagnosis</li>
-                <li>You are too early-stage for structured implementation</li>
-                <li>You want inspiration instead of operational clarity</li>
+                <li>You want a silver bullet (no such thing).</li>
+                <li>You want ongoing dependency on a consultant.</li>
+                <li>You're not ready to commit to 90 days of focus.</li>
+                <li>You want free advice before deciding.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── INDUSTRY MATRIX ── */}
+      {/* ── SECTION 4: THE NEXT STEP ── */}
       <section class="section bg-soft">
-        <div class="container">
-          <div class="section-header center">
-            <span class="eyebrow">Industries</span>
-            <h2>Established Expertise in Specialized Service Firms</h2>
+        <div class="container text-center">
+          <span class="eyebrow">Clarity First</span>
+          <h2>One call. One conversation. One clear answer.</h2>
+          <p class="lead" style="max-width: 700px; margin: 1.5rem auto;">Book a free 20-minute fit call. We&rsquo;ll spend 20 minutes understanding your situation, identifying if there&rsquo;s a clear constraint we can solve, and confirming this is the right fit.</p>
+          <div class="mt-4">
+             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
           </div>
-
-          <div class="industry-grid">
-            <div class="industry-card">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"></rect><path d="M7 2v20"></path><path d="M17 2v20"></path><path d="M2 12h20"></path><path d="M2 7h5"></path><path d="M2 17h5"></path><path d="M17 17h5"></path><path d="M17 7h5"></path></svg>
-              <span>Agencies</span>
-            </div>
-            <div class="industry-card">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-              <span>Consultancies</span>
-            </div>
-            <div class="industry-card">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="16" y1="11" x2="22" y2="11"></line></svg>
-              <span>Recruiting / Staffing</span>
-            </div>
-            <div class="industry-card">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              <span>Accounting / Bookkeeping</span>
-            </div>
-            <div class="industry-card">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
-              <span>MSPs / IT Services</span>
-            </div>
-            <div class="industry-card">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-              <span>Outsourced Services</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA BAND ── */}
-      <section class="cta-band">
-        <div class="container">
-          <h2>Does this sound like your business?</h2>
-          <p class="lead">If you meet these criteria, we should talk. Total clarity in 45 minutes.</p>
-          <a href="/strategy-call" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
         </div>
       </section>
     </div>,

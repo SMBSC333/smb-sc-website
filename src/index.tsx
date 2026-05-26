@@ -2,30 +2,20 @@ import { Hono } from 'hono'
 import { renderer } from './renderer'
 import home from './pages/home'
 import howItWorks from './pages/how-it-works'
-import intensives from './pages/strategy-intensives'
-import aiEnablement from './pages/ai-enablement'
-import mpl from './pages/my-profit-life'
-import virtualCfo from './pages/virtual-cfo'
-import exitPlanning from './pages/exit-planning'
 import about from './pages/about'
 import resources from './pages/resources'
 import contact from './pages/contact'
-import virtualStaffing from './pages/virtual-staffing'
 import landingPages from './pages/landing-pages'
 import privacy from './pages/privacy-policy'
 import terms from './pages/terms-conditions'
-import capacityClarity from './pages/capacity-clarity'
-import businessBaseline from './pages/business-baseline'
-import aiReadinessDeepDive from './pages/ai-readiness-deep-dive'
 import whoItsFor from './pages/who-its-for'
 import strategyCall from './pages/strategy-call'
 import services from './pages/services'
+import why4997 from './pages/why-4997'
 import financialClarity from './pages/financial-clarity-intensive.tsx'
 import growthSystems from './pages/growth-systems-intensive.tsx'
 import ownerDependency from './pages/owner-dependency-intensive.tsx'
 import aiOperations from './pages/ai-operations-intensive.tsx'
-
-import execSummaryHtml from '../public/executive-summary.html?raw'
 
 const app = new Hono()
 
@@ -36,16 +26,11 @@ app.route('/', home)
 app.route('/how-it-works', howItWorks)
 app.route('/who-its-for', whoItsFor)
 app.route('/services', services)
-app.route('/strategy-intensives', intensives)
-app.route('/ai-enablement', aiEnablement)
-app.route('/my-profit-life', mpl)
-app.route('/virtual-cfo', virtualCfo)
-app.route('/exit-planning', exitPlanning)
+app.route('/why-4997', why4997)
 app.route('/about', about)
 app.route('/resources', resources)
 app.route('/contact', contact)
 app.route('/strategy-call', strategyCall)
-app.route('/virtual-staffing', virtualStaffing)
 
 // Strategy Intensive Tracks
 app.route('/financial-clarity-intensive', financialClarity)
@@ -60,29 +45,31 @@ app.route('/', landingPages)
 app.route('/privacy-policy', privacy)
 app.route('/terms-conditions', terms)
 
-// Capacity Clarity landing page
-app.route('/capacity-clarity', capacityClarity)
-
-// Business Baseline landing page
-app.route('/business-baseline', businessBaseline)
-
-// AI Readiness Deep Dive landing page
-app.route('/ai-readiness-deep-dive', aiReadinessDeepDive)
-
 // Admin CMS redirect — /admin → /admin/ (Decap CMS needs trailing slash)
 app.get('/admin', (c) => c.redirect('/admin/', 301))
 
 // 2026 Strategy Call redirects
-app.get('/growth-diagnostic', (c) => c.redirect('/', 301))
-app.get('/ai-assessment', (c) => c.redirect('/', 301))
+app.get('/growth-diagnostic', (c) => c.redirect('/strategy-call', 301))
+app.get('/ai-assessment', (c) => c.redirect('/strategy-call', 301))
 
 // Legacy redirects — catch common old URLs
-app.get('/executive-summary', (c) => c.html(execSummaryHtml))
-app.get('/bookkeeping', (c) => c.redirect('/services#finance'))
-app.get('/team-development', (c) => c.redirect('/services#capacity'))
+app.get('/bookkeeping', (c) => c.redirect('/financial-clarity-intensive'))
+app.get('/team-development', (c) => c.redirect('/owner-dependency-intensive'))
 app.get('/3-level-business-growth-strategy', (c) => c.redirect('/how-it-works'))
-app.get('/profitability-brainstorming-session', (c) => c.redirect('/'))
+app.get('/profitability-brainstorming-session', (c) => c.redirect('/strategy-call'))
 app.get('/value-builder-score-questionnaire', (c) => c.redirect('https://smbstrategyconsultants.com/value-builder-score-questionnaire', 302))
 app.get('/pre-score-questionnaire', (c) => c.redirect('https://smbstrategyconsultants.com/pre-score-questionnaire', 302))
+
+// Removed pages redirects
+app.get('/strategy-intensives', (c) => c.redirect('/services', 301))
+app.get('/ai-enablement', (c) => c.redirect('/ai-operations-intensive', 301))
+app.get('/my-profit-life', (c) => c.redirect('/strategy-call', 301))
+app.get('/virtual-staffing', (c) => c.redirect('/strategy-call', 301))
+app.get('/virtual-cfo', (c) => c.redirect('/financial-clarity-intensive', 301))
+app.get('/exit-planning', (c) => c.redirect('/strategy-call', 301))
+app.get('/capacity-clarity', (c) => c.redirect('/owner-dependency-intensive', 301))
+app.get('/business-baseline', (c) => c.redirect('/financial-clarity-intensive', 301))
+app.get('/ai-readiness-deep-dive', (c) => c.redirect('/ai-operations-intensive', 301))
+app.get('/executive-summary', (c) => c.redirect('/strategy-call', 301))
 
 export default app

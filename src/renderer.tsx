@@ -59,30 +59,28 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                 src="/static/images/logo-horizontal-transparent.png"
                 alt="SMB Strategy Consultants"
                 class="nav-logo-img"
-                width="220"
-                height="44"
+                width="260"
+                height="52"
               />
             </a>
             <ul class="nav-links">
-              <li><a href="/" class={activeNav === 'home' ? 'active' : ''}>Home</a></li>
               <li><a href="/how-it-works" class={activeNav === 'how' ? 'active' : ''}>How It Works</a></li>
               <li><a href="/who-its-for" class={activeNav === 'who' ? 'active' : ''}>Who It's For</a></li>
               <li><a href="/services" class={activeNav === 'services' ? 'active' : ''}>Our Solutions</a></li>
               <li><a href="/about" class={activeNav === 'about' ? 'active' : ''}>About</a></li>
               <li><a href="/contact" class={activeNav === 'contact' ? 'active' : ''}>Contact</a></li>
             </ul>
-            <a href="/strategy-call" class="btn btn-primary btn-sm nav-cta">Book the AI Implementation Strategy Call</a>
+            <a href="/strategy-call" class="btn btn-primary btn-sm nav-cta">Book a Free 20-Min Fit Call</a>
             <button class="nav-hamburger" id="hamburger" aria-label="Open navigation">
               <span></span><span></span><span></span>
             </button>
           </div>
           <div class="nav-mobile" id="nav-mobile">
-            <a href="/">Home</a>
             <a href="/who-its-for">Who It's For</a>
             <a href="/how-it-works">How It Works</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
-            <a href="/strategy-call" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book the AI Implementation Strategy Call</a>
+            <a href="/strategy-call" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book a Free 20-Min Fit Call</a>
           </div>
         </nav>
 

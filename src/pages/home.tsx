@@ -15,14 +15,14 @@ home.get('/', (c) => {
         </picture>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
-          <span class="eyebrow hero-eyebrow">The AI Implementation Partner</span>
-          <h1>You want AI to give your business leverage... but it’s not that simple. We find out why AI isn’t being adopted and show you the right implementation path.</h1>
-          <p class="lead">For owner-led service firms. We identify the real constraint blocking AI adoption — whether it is workflow, owner dependency, team readiness, role clarity, or economics — and outline the next implementation move that will create the most leverage.</p>
+          <span class="eyebrow hero-eyebrow">For Owner-Led Service Firms</span>
+          <h1>Your business is losing $37,000 a year to friction you can&rsquo;t see.</h1>
+          <p class="lead">AI already failed in your business. We find out why. For owner-led B2B service firms doing $1M&ndash;$5M, we identify the real constraint and build your <strong>Growth-Leveraged AI</strong> implementation path.</p>
           <div class="hero-actions">
-            <a href="/strategy-call" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If Your Business Is a Fit</a>
           </div>
-          <p class="hero-microcopy">Strategic. Practical. Built to identify the right next move.</p>
+          <p class="hero-microcopy">Implementation, not advice.</p>
         </div>
       </section>
 
@@ -40,7 +40,65 @@ home.get('/', (c) => {
         </div>
       </div>
 
-      {/* ── SECTION 2: THE HARD TRUTH ── */}
+      {/* ── SECTION 2: PROBLEM RECOGNITION (The Hidden Cost) ── */}
+      <section class="section bg-soft">
+        <div class="container">
+          <div class="section-header center mb-5">
+            <span class="eyebrow">The Hidden Cost</span>
+            <h2>Where your profit is actually leaking.</h2>
+            <div class="gold-line gold-line-center"></div>
+            <p class="lead">This is not theory. This is the cost of workflows that should be automated but aren&rsquo;t.</p>
+            <p>Most owner-led service firms have 5&ndash;7 operational friction points active at any time. Without the right foundations, AI only makes these problems visible&mdash;it doesn't fix them.</p>
+          </div>
+          <div class="grid-4">
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.25rem;">Unworked Leads</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); flex-grow: 1;">Inquiries go cold after 48 hours without automated follow-up.</p>
+              <p style="font-size:1.1rem; font-weight:700; color:var(--color-gold-dark); margin-top:1.5rem; border-top: 1px solid rgba(0,0,0,0.05); pt-3;">$9K &ndash; $18K / yr</p>
+            </div>
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.25rem;">Manual Reporting</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); flex-grow: 1;">Owners spend 2&ndash;4 hours per week building dashboards by hand.</p>
+              <p style="font-size:1.1rem; font-weight:700; color:var(--color-gold-dark); margin-top:1.5rem; border-top: 1px solid rgba(0,0,0,0.05); pt-3;">$4.8K &ndash; $7.2K / yr</p>
+            </div>
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.25rem;">Scheduling Friction</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); flex-grow: 1;">Back-and-forth coordination delays starts and strains client experience.</p>
+              <p style="font-size:1.1rem; font-weight:700; color:var(--color-gold-dark); margin-top:1.5rem; border-top: 1px solid rgba(0,0,0,0.05); pt-3;">$2.4K &ndash; $4.8K / yr</p>
+            </div>
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.25rem;">Bookkeeping Lag</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); flex-grow: 1;">Decisions based on stale P&L data that's always 2&ndash;3 weeks behind.</p>
+              <p style="font-size:1.1rem; font-weight:700; color:var(--color-gold-dark); margin-top:1.5rem; border-top: 1px solid rgba(0,0,0,0.05); pt-3;">$3.1K &ndash; $5.5K / yr</p>
+            </div>
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.25rem;">Proposal Delays</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); flex-grow: 1;">Quotes take too long, losing deals to faster competitors.</p>
+              <p style="font-size:1.1rem; font-weight:700; color:var(--color-gold-dark); margin-top:1.5rem; border-top: 1px solid rgba(0,0,0,0.05); pt-3;">$4.2K &ndash; $9K / yr</p>
+            </div>
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.25rem;">Onboarding Gaps</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); flex-grow: 1;">New client starts are slow or depend entirely on the owner.</p>
+              <p style="font-size:1.1rem; font-weight:700; color:var(--color-gold-dark); margin-top:1.5rem; border-top: 1px solid rgba(0,0,0,0.05); pt-3;">$5.6K &ndash; $10.4K / yr</p>
+            </div>
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.25rem;">Data Silos</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); flex-grow: 1;">Disconnected tools that prevent real visibility into what's actually working.</p>
+              <p style="font-size:1.1rem; font-weight:700; color:var(--color-gold-dark); margin-top:1.5rem; border-top: 1px solid rgba(0,0,0,0.05); pt-3;">$3.2K &ndash; $6.1K / yr</p>
+            </div>
+            <div class="card card-navy d-flex flex-column justify-content-center align-items-center text-center">
+              <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-gold-light); margin-bottom:0.75rem;">Typical Annual Friction Cost</p>
+              <p style="font-size:2.2rem; font-weight:700; color:#fff; line-height:1.1;">$32K &ndash; $61K</p>
+              <p style="font-size:0.85rem; color:rgba(255,255,255,0.65); margin-top:0.75rem;">Per owner-led service firm, $1M&ndash;$5M revenue</p>
+            </div>
+          </div>
+          <div class="btn-center" style="margin-top:3rem;">
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Find Out Where Your Friction Lives</a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 3: THE HARD TRUTH ── */}
       <section class="section bg-white pb-0">
         <div class="container">
           <div class="split-section">
@@ -49,9 +107,9 @@ home.get('/', (c) => {
               <h2>You already tried AI. That is not the issue.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>You bought the tools. You tested prompts. You sat through demos. Maybe your team even used them for a week or two.</p>
-                <p><strong>But adoption stalled.</strong> The owner is still the bottleneck. Workflows still feel messy. Capacity did not improve. And the promised leverage never showed up.</p>
-                <p class="lead mt-4">In most firms, AI does not fail because of the software. It fails because the business underneath it is not ready.</p>
+                <p>You bought the tools. You tested prompts. You sat through demos.</p>
+                <p><strong>But adoption stalled.</strong></p>
+                <p>In most firms, AI does not fail because of the software. It fails because the business underneath it is not ready. <strong>Without the right foundations, AI just amplifies the noise.</strong> Growth-Leveraged AI requires building the right systems first.</p>
               </div>
             </div>
             <div class="split-img-container">
@@ -61,7 +119,7 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── SECTION 3: OUR IDENTITY ── */}
+      {/* ── SECTION 4: OUR IDENTITY ── */}
       <section class="section bg-white pt-5">
         <div class="container">
           <div class="split-section reversed">
@@ -74,38 +132,48 @@ home.get('/', (c) => {
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
                 <p>We do not start with software recommendations. We do not lead with generic AI strategy. We do not hand you a templated playbook.</p>
-                <p><strong>We identify the real constraint</strong> blocking AI from creating value in your business and show you the right implementation path based on what your business actually needs.</p>
-                <a href="#contact" class="btn btn-primary btn-sm mt-4">Book the AI Implementation Strategy Call</a>
+                <p><strong>We identify the real constraint</strong> blocking AI from creating value in your business and build the <strong>Growth-Leveraged AI</strong> implementation path that keeps you ahead of the competition.</p>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book a Free 20-Min Fit Call</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── SECTION 4: DIFFERENTIATORS ── */}
+      {/* ── SECTION 5: THE SOLUTION PATH ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
-            <span class="eyebrow">Why We Differ</span>
-            <h2>Diagnosis before Prescription</h2>
+            <span class="eyebrow">The Solution Path</span>
+            <h2>Implementation, not advice.</h2>
             <div class="gold-line gold-line-center"></div>
+            <p class="lead">We spend 90 days diagnosing the real constraint, building the right workflows, and handing you a business that runs itself &mdash; not theories, not templates, not another software recommendation. Real implementation. Real results.</p>
           </div>
           <div class="grid-3" style="gap:2.5rem;">
             <div class="card card-white p-5">
-              <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-              <h4 class="mb-3">Diagnose before prescribe</h4>
-              <p>We identify whether the issue is workflow, owner dependency, role clarity, team readiness, economics, or AI fit.</p>
+              <div class="card-number">01</div>
+              <h4 class="mb-3">Month 1: Diagnose & Quick Wins</h4>
+              <p>We audit your current state and identify the top 1-3 AI-ready constraints. We deliver immediate quick wins so you see real ROI within the first 30 days.</p>
             </div>
             <div class="card card-white p-5">
-              <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg></div>
-              <h4 class="mb-3">Financial-first thinking</h4>
-              <p>Every recommendation is filtered through margin, capacity, delivery efficiency, and operational return.</p>
+              <div class="card-number">02</div>
+              <h4 class="mb-3">Month 2: Build & Install</h4>
+              <p>We design and install 2-3 tailored AI workflows (Leads, Reporting, or Proposals) documented as SOPs so your team can operate without you.</p>
             </div>
             <div class="card card-white p-5">
-              <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
-              <h4 class="mb-3">Practical implementation</h4>
-              <p>We focus on solutions your team can actually adopt and use.</p>
+              <div class="card-number">03</div>
+              <h4 class="mb-3">Month 3: Train & Hand Off</h4>
+              <p>We train your team on the new systems and deliver the full operating package. You leave with a business that runs itself&mdash;ahead of the competition.</p>
             </div>
+          </div>
+          
+          <div class="text-center mt-5" style="background: var(--color-navy-deep); color: #fff; padding: 4rem; border-radius: var(--radius-xl); border: 1px solid var(--color-gold);">
+             <span class="eyebrow" style="color: var(--color-gold-light);">The Key Promise</span>
+             <h3 style="color: #fff; font-size: 2.5rem; margin-bottom: 1rem;">2.5x Average Year-One ROI</h3>
+             <p class="lead" style="color: rgba(255,255,255,0.85);">90 days. Full hand-off. A business that is operationally competitive.</p>
+             <div class="mt-4">
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
+             </div>
           </div>
         </div>
       </section>
@@ -145,91 +213,62 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── SECTION 4: THE RESULT (SHOWCASE) ── */}
-      <section id="solutions" class="showcase-section">
+      {/* ── SECTION 6: THE PATH TO SCALE (Value Ladder) ── */}
+      <section id="solutions" class="section bg-soft">
         <div class="container">
-          <div class="showcase-header">
-            <span class="eyebrow">The Result</span>
-            <h2>The right solution depends on the real constraint.</h2>
-            <p>Not every business needs the same next step. We diagnose first, then prescribe the right path.</p>
+          <div class="section-header center mb-5">
+            <span class="eyebrow">The Path to Scale</span>
+            <h2>The Value Ladder</h2>
+            <p class="lead">We build in sequences. Each step installs a new layer of capacity and leverage.</p>
           </div>
 
-          <div class="outcome-grid">
-            {/* 1. AI Clarity */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                </svg>
+          <div style="max-width: 900px; margin: 0 auto;">
+            <div class="ladder" style="border: 1px solid var(--color-bg-border); border-radius: var(--radius-xl); overflow: hidden; background: #fff; box-shadow: var(--shadow-md);">
+              <div class="ls" style="display: flex; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid var(--color-bg-border);">
+                <div style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; color: var(--color-text-muted); width: 50px;">00</div>
+                <div style="flex: 1;">
+                   <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">Free 20-Min Fit Call</div>
+                   <div style="font-size: 0.85rem; color: var(--color-text-muted);">Identify the real constraint blocking your growth.</div>
+                </div>
+                <div style="font-weight: 700; color: var(--color-gold-dark); font-size: 1.1rem;">Free</div>
               </div>
-              <h3>AI Clarity Roadmap & Implementation</h3>
-            </div>
-
-            {/* 2. Strategy Intensives */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="22" y1="12" x2="18" y2="12"></line>
-                  <line x1="6" y1="12" x2="2" y2="12"></line>
-                  <line x1="12" y1="6" x2="12" y2="2"></line>
-                  <line x1="12" y1="22" x2="12" y2="18"></line>
-                </svg>
+              <div class="ls" style="display: flex; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid var(--color-bg-border);">
+                <div style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; color: var(--color-text-muted); width: 50px;">01</div>
+                <div style="flex: 1;">
+                   <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">AI Constraint Diagnostic Report</div>
+                   <div style="font-size: 0.85rem; color: var(--color-text-muted);">A surgical audit of your workflows and technical readiness.</div>
+                </div>
+                <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">$1,497</div>
               </div>
-              <h3>Strategy Intensives</h3>
-            </div>
-
-            {/* 3. Financial Foundations */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="18" y1="20" x2="18" y2="10"></line>
-                  <line x1="12" y1="20" x2="12" y2="4"></line>
-                  <line x1="6" y1="20" x2="6" y2="14"></line>
-                </svg>
+              <div class="ls hl" style="display: flex; align-items: center; padding: 2rem; border-bottom: 1px solid var(--color-bg-border); background: var(--color-bg-soft); position: relative;">
+                <div style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; color: var(--color-gold-dark); width: 50px;">02</div>
+                <div style="flex: 1;">
+                   <div style="font-weight: 800; color: var(--color-navy); font-size: 1.25rem;">90-Day AI Implementation Sprint <span class="intensive-tag" style="margin-left: 0.5rem; vertical-align: middle;">Primary</span></div>
+                   <div style="font-size: 0.95rem; color: var(--color-navy); margin-top: 0.25rem;">Full installation of your Growth-Leveraged foundations.</div>
+                </div>
+                <div style="font-weight: 800; color: var(--color-navy); font-size: 1.2rem;">$4,997/mo</div>
               </div>
-              <h3>Financial Foundations / Virtual CFO</h3>
-            </div>
-
-            {/* 4. Team Structure */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
+              <div class="ls" style="display: flex; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid var(--color-bg-border);">
+                <div style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; color: var(--color-text-muted); width: 50px;">03</div>
+                <div style="flex: 1;">
+                   <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">AI Systems Retainer</div>
+                   <div style="font-size: 0.85rem; color: var(--color-text-muted);">Ongoing optimization and agent maintenance.</div>
+                </div>
+                <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">$3,497/mo</div>
               </div>
-              <h3>Capacity and Team Structure</h3>
-            </div>
-
-            {/* 5. Exit Readiness */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                </svg>
+              <div class="ls" style="display: flex; align-items: center; padding: 1.5rem 2rem;">
+                <div style="font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; color: var(--color-text-muted); width: 50px;">04</div>
+                <div style="flex: 1;">
+                   <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">Full AI Transformation Project</div>
+                   <div style="font-size: 0.85rem; color: var(--color-text-muted);">Custom architecture for enterprise-level scale.</div>
+                </div>
+                <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem;">$28K&ndash;$65K</div>
               </div>
-              <h3>Exit Readiness / Value Building</h3>
             </div>
-
-            {/* 6. Leadership Support */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-              </div>
-              <h3>Leadership and Operating Support</h3>
+            
+            <div class="btn-center" style="margin-top: 3.5rem;">
+               <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Start at Level 00 &mdash; Free Fit Call</a>
             </div>
-          </div>
-
-          <div class="btn-center">
-            <a href="#contact" class="btn btn-primary">Begin Your Strategy Assessment</a>
           </div>
         </div>
       </section>
@@ -282,10 +321,10 @@ home.get('/', (c) => {
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
           <span class="eyebrow" style="color:var(--color-gold);">The Next Move</span>
-          <h2 style="color:#fff;">You do not need more AI advice. You need the right implementation path.</h2>
-          <p class="lead" style="color:rgba(255,255,255,0.85); max-width: 800px; margin: 1.5rem auto;">If AI has already been tried and still has not produced traction, the next move is not another tool. It is clarity on what is actually blocking leverage — and the right next step to fix it.</p>
+          <h2 style="color:#fff;">Ready to find your friction?</h2>
+          <p class="lead" style="color:rgba(255,255,255,0.85); max-width: 800px; margin: 1.5rem auto;">Book a free 20-minute fit call. We will look at your operations and tell you honestly whether the Sprint is right for you &mdash; and where your biggest leaks are.</p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
-            <a href="/strategy-call" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If Your Business Is a Fit</a>
           </div>
         </div>

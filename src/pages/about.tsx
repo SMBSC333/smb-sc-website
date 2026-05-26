@@ -21,8 +21,32 @@ about.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── SECTION 1: OUR PHILOSOPHY ── */}
+      {/* ── SECTION 1: THE STRATEGIST ── */}
       <section class="section bg-white">
+        <div class="container">
+          <div class="grid-2" style="align-items: center; gap: 4rem;">
+            <div class="founder-image-wrap">
+              <img src="/static/images/corbin-headshot-outdoor.jpg" alt="Corbin Cook" class="img-responsive rounded shadow" />
+            </div>
+            <div>
+              <span class="eyebrow">The Strategist</span>
+              <h2>Meet Corbin Cook</h2>
+              <p class="lead" style="color: var(--color-gold); font-weight: 600;">Corbin Cook helps owners move from reactive growth to structured, Growth-Leveraged AI.</p>
+              <div class="mt-4 mb-4" style="font-size: 1.1rem; line-height: 1.7; color: var(--color-text);">
+                <p>His work sits at the intersection of financial clarity, operational diagnosis, and building the foundations needed to keep clients ahead of the competition. Without the right foundations, AI just amplifies the noise.</p>
+                <p>The goal is not more advice. The goal is a better decision, the right sequence, and a business that depends less on the owner.</p>
+              </div>
+              <div class="cert-logos-small mt-5">
+                <img src="/static/images/badge-cepa.png" alt="CEPA" style="height:48px; margin-right: 1.5rem;" />
+                <img src="/static/images/badge-value-builder.png" alt="Value Builder" style="height:48px; margin-right: 1.5rem;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 2: OUR PHILOSOPHY ── */}
+      <section class="section bg-soft">
         <div class="container">
           <div class="grid-2" style="align-items: start; gap: 4rem;">
             <div>
@@ -47,8 +71,8 @@ about.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── SECTION 2: WHO WE WORK WITH ── */}
-      <section class="section bg-soft">
+      {/* ── SECTION 3: WHO WE WORK WITH ── */}
+      <section class="section bg-white">
         <div class="container text-center">
           <span class="eyebrow">Audience Fit</span>
           <h2>Who We Work With</h2>

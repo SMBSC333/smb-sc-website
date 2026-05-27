@@ -133,10 +133,13 @@ services.get('/', (c) => {
                 <li><strong>The knowledge</strong> to evolve the system yourself.</li>
               </ul>
             </div>
-            <div class="card card-navy p-5">
-               <h3 style="color: #fff; margin-bottom: 1.5rem;">Implementation, not advice.</h3>
-               <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Most consultants sell theories. We build systems. By day 90, your business is operationally competitive and ahead of the competition.</p>
-               <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-block text-center" style="width:100%;">Book a Free 20-Min Fit Call</a>
+            <div class="card card-navy" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+               <div style="padding: 3rem; flex-grow: 1;">
+                 <h3 style="color: #fff; margin-bottom: 1.5rem;">Implementation, not advice.</h3>
+                 <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Most consultants sell theories. We build systems. By day 90, your business is operationally competitive and ahead of the competition.</p>
+                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-block text-center" style="width:100%;">Book a Free 20-Min Fit Call</a>
+               </div>
+               <img src="/static/images/intensive-ai-operations.png" alt="AI Operations Visualization" style="width: 100%; height: 300px; object-fit: cover; display: block;" />
             </div>
           </div>
         </div>

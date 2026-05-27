@@ -28,15 +28,18 @@ whoItsFor.get('/', (c) => {
               <span class="eyebrow">The Match</span>
               <h2>Your Profile</h2>
               <ul class="feature-list mt-4">
-                <li><strong>Owner-Led B2B Service Firm:</strong> Doing $1M&ndash;$5M in annual revenue.</li>
+                <li><strong>Owner-Led B2B Service Firm:</strong> Ready to modernize and scale operations.</li>
                 <li><strong>Team Size:</strong> Usually 8&ndash;30 employees.</li>
                 <li><strong>Owner Dependency:</strong> You are still central to sales, delivery, or approvals.</li>
                 <li><strong>AI Attempted:</strong> You&rsquo;ve already bought tools or tested them, but adoption stalled.</li>
               </ul>
             </div>
-            <div class="card card-navy p-5">
-               <h4 style="color: var(--color-gold-light);">The Stalled Reality</h4>
-               <p style="color: rgba(255,255,255,0.85);">You bought the tools. You tested prompts. Maybe you even tried a course. But real ROI hasn't materialized and the promised leverage never showed up.</p>
+            <div class="card card-navy" style="padding: 0; overflow: hidden;">
+               <img src="/static/images/section-overwhelmed-owner.jpg" alt="Overwhelmed business owner" style="width: 100%; height: 240px; object-fit: cover; display: block;" />
+               <div style="padding: 3rem;">
+                 <h4 style="color: var(--color-gold-light);">The Stalled Reality</h4>
+                 <p style="color: rgba(255,255,255,0.85);">You bought the tools. You tested prompts. Maybe you even tried a course. But real ROI hasn't materialized and the promised leverage never showed up.</p>
+               </div>
             </div>
           </div>
         </div>

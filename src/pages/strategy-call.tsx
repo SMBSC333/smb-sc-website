@@ -31,7 +31,7 @@ strategyCall.get('/', (c) => {
                 <h4 class="mb-3">Ideal Fit Criteria:</h4>
                 <p style="font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.8;">We specialize in owner-led B2B service firms ready to move from reactive growth to structured leverage.</p>
                 <ul class="intensive-includes" style="font-size: 0.85rem;">
-                  <li>Revenue: $1M – $5M</li>
+                  <li>Focus: Scaling operations and AI readiness</li>
                   <li>Team: 8–30+ employees</li>
                   <li>Problem: AI already attempted but failed to adopt</li>
                   <li>Goal: Operational leverage and competitive advantage</li>

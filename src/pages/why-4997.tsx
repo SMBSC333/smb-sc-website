@@ -141,80 +141,80 @@ why4997.get('/', (c) => {
            </div>
 
            <div class="grid-3 mt-5" style="gap: 2.5rem;">
-              {/* Tier 1: $1M - $3M */}
+              {/* Tier 1: Small Firm */}
               <div class="card card-accent p-5 d-flex flex-column" style="border-top: 4px solid var(--color-navy); min-height: 450px;">
                  <span class="eyebrow" style="font-size: 0.7rem; letter-spacing: 0.1em; margin-bottom: 1.5rem; display: block;">Tier 01</span>
-                 <h4 class="mb-4" style="font-size: 1.4rem;">$1M &ndash; $3M Revenue</h4>
+                 <h4 class="mb-4" style="font-size: 1.4rem;">Small Firm (8-15 Employees)</h4>
                  
                  <div class="mb-5" style="flex-grow: 1;">
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                       <span class="text-sm" style="color: var(--color-text-muted);">Est. Annual Friction</span>
+                       <span class="text-sm" style="color: var(--color-text-muted); margin-right: 1rem;">Est. Annual Friction</span>
                        <span style="font-weight: 700; font-size: 1.1rem;">$37,000</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                       <span class="text-sm" style="color: var(--color-text-muted);">Sprint Investment</span>
+                       <span class="text-sm" style="color: var(--color-text-muted); margin-right: 1rem;">Sprint Investment</span>
                        <span style="font-weight: 700; font-size: 1.1rem;">$14,991</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center pt-4" style="border-top: 1px dashed rgba(0,0,0,0.1);">
-                       <span class="text-sm" style="color: var(--color-navy); font-weight: 600;">Net Year 1 Gain</span>
+                       <span class="text-sm" style="color: var(--color-navy); font-weight: 600; margin-right: 1rem;">Net Year 1 Gain</span>
                        <span style="font-weight: 800; font-size: 1.25rem; color: var(--color-navy);">+$22,009</span>
                     </div>
                  </div>
 
                  <div style="padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center;">
-                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted);">Est. Year 1 ROI</span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-right: 1rem;">Est. Year 1 ROI</span>
                     <span style="font-size: 1.8rem; font-weight: 800; color: var(--color-navy);">2.5x</span>
                  </div>
               </div>
 
-              {/* Tier 2: $3M - $5M */}
+              {/* Tier 2: Mid-Size Firm */}
               <div class="card card-navy p-5 d-flex flex-column" style="border-top: 4px solid var(--color-gold); min-height: 450px; box-shadow: var(--shadow-lg);">
                  <span class="eyebrow" style="font-size: 0.7rem; color: var(--color-gold-light); letter-spacing: 0.1em; margin-bottom: 1.5rem; display: block;">Tier 02 (Core Focus)</span>
-                 <h4 class="mb-4" style="color: #fff; font-size: 1.4rem;">$3M &ndash; $5M Revenue</h4>
+                 <h4 class="mb-4" style="color: #fff; font-size: 1.4rem;">Mid-Size Firm (15-30 Employees)</h4>
                  
                  <div class="mb-5" style="flex-grow: 1;">
                     <div class="d-flex justify-content-between align-items-center mb-4" style="color: rgba(255,255,255,0.85);">
-                       <span class="text-sm">Est. Annual Friction</span>
+                       <span class="text-sm" style="margin-right: 1rem;">Est. Annual Friction</span>
                        <span style="font-weight: 700; color: #fff; font-size: 1.1rem;">$85,000</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-4" style="color: rgba(255,255,255,0.85);">
-                       <span class="text-sm">Sprint Investment</span>
+                       <span class="text-sm" style="margin-right: 1rem;">Sprint Investment</span>
                        <span style="font-weight: 700; color: #fff; font-size: 1.1rem;">$14,991</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center pt-4" style="border-top: 1px dashed rgba(255,255,255,0.2);">
-                       <span class="text-sm" style="color: var(--color-gold-light); font-weight: 600;">Net Year 1 Gain</span>
+                       <span class="text-sm" style="color: var(--color-gold-light); font-weight: 600; margin-right: 1rem;">Net Year 1 Gain</span>
                        <span style="font-weight: 800; font-size: 1.25rem; color: var(--color-gold-light);">+$70,009</span>
                     </div>
                  </div>
 
                  <div style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15); display: flex; justify-content: space-between; align-items: center;">
-                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold-light);">Est. Year 1 ROI</span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold-light); margin-right: 1rem;">Est. Year 1 ROI</span>
                     <span style="font-size: 1.8rem; font-weight: 800; color: var(--color-gold-light);">5.6x</span>
                  </div>
               </div>
 
-              {/* Tier 3: $5M - $10M */}
+              {/* Tier 3: Enterprise Scale */}
               <div class="card card-accent p-5 d-flex flex-column" style="border-top: 4px solid var(--color-navy); min-height: 450px;">
                  <span class="eyebrow" style="font-size: 0.7rem; letter-spacing: 0.1em; margin-bottom: 1.5rem; display: block;">Tier 03</span>
-                 <h4 class="mb-4" style="font-size: 1.4rem;">$5M &ndash; $10M Revenue</h4>
+                 <h4 class="mb-4" style="font-size: 1.4rem;">Enterprise Scale (30+ Employees)</h4>
                  
                  <div class="mb-5" style="flex-grow: 1;">
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                       <span class="text-sm" style="color: var(--color-text-muted);">Est. Annual Friction</span>
+                       <span class="text-sm" style="color: var(--color-text-muted); margin-right: 1rem;">Est. Annual Friction</span>
                        <span style="font-weight: 700; font-size: 1.1rem;">$180,000</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                       <span class="text-sm" style="color: var(--color-text-muted);">Est. Investment</span>
+                       <span class="text-sm" style="color: var(--color-text-muted); margin-right: 1rem;">Est. Investment</span>
                        <span style="font-weight: 700; font-size: 1.1rem;">$35,000*</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center pt-4" style="border-top: 1px dashed rgba(0,0,0,0.1);">
-                       <span class="text-sm" style="color: var(--color-navy); font-weight: 600;">Net Year 1 Gain</span>
+                       <span class="text-sm" style="color: var(--color-navy); font-weight: 600; margin-right: 1rem;">Net Year 1 Gain</span>
                        <span style="font-weight: 800; font-size: 1.25rem; color: var(--color-navy);">+$145,000</span>
                     </div>
                  </div>
 
                  <div style="padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center;">
-                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted);">Est. Year 1 ROI</span>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-right: 1rem;">Est. Year 1 ROI</span>
                     <span style="font-size: 1.8rem; font-weight: 800; color: var(--color-navy);">5.1x</span>
                  </div>
               </div>

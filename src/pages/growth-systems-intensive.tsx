@@ -32,7 +32,7 @@ intensive.get('/', (c) => {
               <h2>You've hit a ceiling that "more hustle" won't fix.</h2>
               <div class="gold-line"></div>
               <p class="lead">
-                Most businesses stall between $1M and $3M because their acquisition engine is inconsistent and their pricing is too low for the scale of operations they need.
+                Most businesses stall after their initial growth phase because their acquisition engine is inconsistent and their pricing is too low for the scale of operations they need.
               </p>
               <p class="body-v2">
                 The Growth Systems Intensive is about surgical refinement of your market positioning. We find the high-leverage services you should be doubling down on and install the scripts and systems to sell them at premium rates.

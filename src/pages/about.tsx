@@ -31,14 +31,15 @@ about.get('/', (c) => {
             <div>
               <span class="eyebrow">The Strategist</span>
               <h2>Meet Corbin Cook</h2>
-              <p class="lead" style="color: var(--color-gold); font-weight: 600;">Corbin Cook helps owners move from reactive growth to structured, Growth-Leveraged AI.</p>
+              <p class="lead" style="color: var(--color-gold); font-weight: 600;">Strategic leverage requires more than just a spreadsheet.</p>
               <div class="mt-4 mb-4" style="font-size: 1.1rem; line-height: 1.7; color: var(--color-text);">
-                <p>His work sits at the intersection of financial clarity, operational diagnosis, and building the foundations needed to keep clients ahead of the competition. Without the right foundations, AI just amplifies the noise.</p>
-                <p>The goal is not more advice. The goal is a better decision, the right sequence, and a business that depends less on the owner.</p>
+                <p>Corbin Cook’s background is built on a multi-disciplinary foundation. While he spent years as a <strong>Fractional CFO</strong> providing the financial clarity small businesses need to survive, his work has always spanned the full business stack—integrating deep financial experience with hands-on <strong>Marketing, Strategy, and Operations.</strong></p>
+                <p>His operational experience isn't theoretical; he has spent years diagnosing broken workflows, optimizing headcount, and building the production lines that allow service firms to scale without collapsing. On the marketing side, he focuses on the data-logic that drives acquisition—ensuring that growth isn't just a "hustle," but a predictable engine backed by unit economics.</p>
+                <p>He realized that a business only wins when its numbers, its workflows, and its market positioning are all moving in the same direction. Today, he uses that cross-functional expertise to help firms leverage <strong>AI as the ultimate competitive edge.</strong></p>
               </div>
-              <div class="cert-logos-small mt-5">
-                <img src="/static/images/badge-cepa.png" alt="CEPA" style="height:48px; margin-right: 1.5rem;" />
-                <img src="/static/images/badge-value-builder.png" alt="Value Builder" style="height:48px; margin-right: 1.5rem;" />
+              <div class="cert-logos-small mt-5" style="display: flex; align-items: center; gap: 1.5rem;">
+                <img src="/static/images/badge-cepa.png" alt="CEPA" style="height:48px;" />
+                <img src="/static/images/badge-aasbc.png" alt="AASBC" style="height:48px;" />
               </div>
             </div>
           </div>
@@ -80,7 +81,7 @@ about.get('/', (c) => {
           <div class="grid-4 mt-5">
              <div class="card card-white">
                 <h4 style="color:var(--color-gold-dark);">Revenue</h4>
-                <p class="text-sm">Owner-led B2B service firms, $1M&ndash;$5M revenue.</p>
+                <p class="text-sm">High-growth service firms ready to modernize and scale.</p>
              </div>
              <div class="card card-white">
                 <h4 style="color:var(--color-gold-dark);">Dependency</h4>

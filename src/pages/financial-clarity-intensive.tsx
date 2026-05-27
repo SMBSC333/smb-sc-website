@@ -32,7 +32,7 @@ intensive.get('/', (c) => {
               <h2>Revenue is growing, but margin is shrinking.</h2>
               <div class="gold-line"></div>
               <p class="lead">
-                Most $1M+ businesses have a "visibility" problem, not a sales problem. You are making money, but you don't know exactly which products, clients, or workflows are driving profit versus just creating noise.
+                Most scaling businesses have a "visibility" problem, not a sales problem. You are making money, but you don't know exactly which products, clients, or workflows are driving profit versus just creating noise.
               </p>
               <p class="body-v2">
                 The Financial Clarity Intensive is designed to find the leaks. We move past bookkeeping to strategic analysis—mapping your unit economics so you can scale with confidence.

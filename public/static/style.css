@@ -1445,7 +1445,15 @@ strong { color: var(--color-heading); font-weight: 600; }
   margin-bottom: 3rem;
 }
 .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.6); margin-top: 1rem; line-height: 1.65; }
-.footer-logo-img { height: 38px; width: auto; margin-bottom: 1rem; }
+.footer-logo-img { 
+  height: 64px; 
+  width: auto; 
+  background: #ffffff; 
+  padding: 8px 16px; 
+  border-radius: var(--radius); 
+  margin-bottom: 0.5rem; 
+  display: inline-block;
+}
 .footer-col h5 {
   font-family: var(--font-body);
   font-size: 0.72rem;
@@ -1501,6 +1509,7 @@ strong { color: var(--color-heading); font-weight: 600; }
   object-fit: contain;
   display: block;
   opacity: 0.85;
+  mix-blend-mode: multiply;
   filter: grayscale(15%);
   transition: opacity 0.2s, filter 0.2s;
 }
@@ -1514,12 +1523,18 @@ strong { color: var(--color-heading); font-weight: 600; }
   gap: 1.25rem;
 }
 .cred-bar .cert-logo-bar img {
-  height: 38px;
-  filter: grayscale(100%) brightness(1.8);
-  opacity: 0.75;
+  height: 34px;
+  background: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  filter: none;
+  opacity: 1;
+  mix-blend-mode: normal;
 }
 .cred-bar .cert-logo-bar img:hover {
-  filter: grayscale(0%) brightness(1);
+  filter: none;
+  transform: translateY(-2px);
+}
   opacity: 1;
 }
 @media (max-width: 900px) {

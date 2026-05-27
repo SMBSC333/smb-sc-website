@@ -60,7 +60,7 @@ terms.get('/', (c) => {
                 <li>Upload, post, or transmit content that is defamatory, obscene, fraudulent, infringing, or otherwise unlawful.</li>
               </ul>
               <h3>C. Account Security</h3>
-              <p>If you are given access to any account-based area of the Site or related portals, you are responsible for maintaining the confidentiality of your credentials. Notify us immediately at <a href="mailto:hello@smbstrategyconsultants.com">hello@smbstrategyconsultants.com</a> if you suspect unauthorized use.</p>
+              <p>If you are given access to any account-based area of the Site or related portals, you are responsible for maintaining the confidentiality of your credentials. Notify us immediately at <a href="mailto:info@smbstrategyconsultants.com">info@smbstrategyconsultants.com</a> if you suspect unauthorized use.</p>
             </div>
 
             {/* 2 */}
@@ -180,7 +180,7 @@ terms.get('/', (c) => {
               <h3>A. Governing Law</h3>
               <p>These Terms shall be governed by and construed in accordance with the laws of the State of Georgia, without regard to its conflict of law provisions.</p>
               <h3>B. Informal Resolution</h3>
-              <p>Before initiating any formal dispute, you agree to contact us at <a href="mailto:hello@smbstrategyconsultants.com">hello@smbstrategyconsultants.com</a> to attempt to resolve the issue informally. We will make a good-faith effort to resolve the matter within 30 days.</p>
+              <p>Before initiating any formal dispute, you agree to contact us at <a href="mailto:info@smbstrategyconsultants.com">info@smbstrategyconsultants.com</a> to attempt to resolve the issue informally. We will make a good-faith effort to resolve the matter within 30 days.</p>
               <h3>C. Binding Arbitration</h3>
               <p>If a dispute cannot be resolved informally, it shall be finally settled by binding arbitration administered by the American Arbitration Association (AAA) under its Commercial Arbitration Rules. The arbitration shall take place in Atlanta, Georgia. The arbitrator's decision shall be final and binding and may be entered as a judgment in any court of competent jurisdiction.</p>
               <h3>D. Class Action Waiver</h3>
@@ -204,7 +204,7 @@ terms.get('/', (c) => {
                 <p><strong>SMB Strategy Consultants, LLC</strong><br/>
                 303 Perimeter Center N. Ste. 300<br/>
                 Dunwoody, GA 30346<br/>
-                Email: <a href="mailto:hello@smbstrategyconsultants.com">hello@smbstrategyconsultants.com</a><br/>
+                Email: <a href="mailto:info@smbstrategyconsultants.com">info@smbstrategyconsultants.com</a><br/>
                 Hours: Monday–Friday, 9am–4pm ET</p>
               </div>
             </div>

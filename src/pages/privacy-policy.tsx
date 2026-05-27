@@ -51,7 +51,7 @@ privacy.get('/', (c) => {
             <p><strong>SMB Strategy Consultants, LLC</strong><br/>
             303 Perimeter Center N. Ste. 300<br/>
             Dunwoody, GA 30346<br/>
-            Email: operations@smbstrategyconsultants.com</p>
+            Email: info@smbstrategyconsultants.com</p>
           </div>
         </div>
       </section>

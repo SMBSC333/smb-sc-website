@@ -99,7 +99,7 @@ howItWorks.get('/', (c) => {
             <span class="eyebrow">Strategic Logic</span>
             <h2>Foundations First. AI Second.</h2>
             <div class="gold-line gold-line-center"></div>
-            <p class="lead" style="max-width: 800px; margin: 1.5rem auto;">We don&rsquo;t bolt software to broken systems. We solve for the four foundational constraints that make AI actually work.</p>
+            <p class="lead" style="max-width: 800px; margin: 1.5rem auto;">We don&rsquo;t bolt software to broken systems. We solve for the five foundational constraints that make AI actually work.</p>
           </div>
 
           <div class="grid-2 mt-5">
@@ -152,6 +152,21 @@ howItWorks.get('/', (c) => {
               </div>
               <h4>AI Operations</h4>
               <p class="text-sm">We install custom agents to handle high-variance manual tasks, reclaiming 40% capacity.</p>
+            </div>
+
+            {/* 5. Operational Systems */}
+            <div class="option-card">
+              <div class="option-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h4>Operational Systems</h4>
+              <p class="text-sm">We map every role's step-by-step process, install the operating rhythm, and use that clarity as the foundation for AI deployment that actually sticks.</p>
             </div>
           </div>
 

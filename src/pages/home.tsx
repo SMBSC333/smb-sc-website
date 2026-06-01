@@ -277,6 +277,60 @@ home.get('/', (c) => {
         </div>
       </section>
 
+      {/* ── SECTION 8: BUSINESS CHECK ENGINE ── */}
+      <section id="check-engine" class="section bg-soft">
+        <div class="container">
+          <div class="section-header center mb-5">
+            <span class="eyebrow">The Scorecard</span>
+            <h2>Your business has an economic check engine light. Most owners never look at it.</h2>
+            <div class="gold-line gold-line-center"></div>
+            <p class="lead mt-4" style="max-width:720px; margin-left:auto; margin-right:auto;">
+              Every business is operating in a set of economic and operational conditions right now — conditions that are either working for you or against you. Green means the environment supports your next move. Yellow means proceed with caution. Red means the conditions are creating drag, regardless of how hard you push.
+            </p>
+          </div>
+
+          <div class="check-engine-embed-wrap">
+            <iframe
+              src="https://smb-engine-light-ab7bf77b.viktor.space"
+              title="SMB Business Check Engine Scorecard"
+              class="check-engine-iframe"
+              loading="lazy"
+              allow="fullscreen"
+            ></iframe>
+          </div>
+
+          <div class="check-engine-copy mt-5">
+            <div class="grid-3" style="gap:2rem;">
+              <div class="card card-white p-5">
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                </div>
+                <h4 class="mb-3">Real-Time Conditions</h4>
+                <p>The scorecard reflects the current environment — economic pressure, market conditions, and operational signals — not what happened last quarter.</p>
+              </div>
+              <div class="card card-white p-5">
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <h4 class="mb-3">Green, Yellow, or Red</h4>
+                <p>Each indicator tells you whether that dimension of your business environment is clear, cautionary, or working against you. No interpretation required.</p>
+              </div>
+              <div class="card card-white p-5">
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <h4 class="mb-3">Know the Right Next Move</h4>
+                <p>Yellow or red conditions are not a stop sign — they are a signal. They tell you exactly where to focus so that effort produces leverage instead of friction.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-center mt-5">
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">See What Your Engine Light Is Telling You &rarr;</a>
+          </div>
+        </div>
+      </section>
+
       {/* ── FINAL CTA SECTION ── */}
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">

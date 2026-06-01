@@ -11,6 +11,7 @@
 
 ### Service 1: AI Clarity Roadmap & Implementation
 - **Description:** A paid engagement for businesses that need more than ideas. We identify the root constraint, build the right roadmap, and help implement the solution in the right sequence so AI creates measurable operational leverage.
+- **Custom Internal Solutions:** As part of our implementation, we build lightweight, custom internal apps to solve specific areas of agitation where off-the-shelf tools aren't enough.
 
 ### Service 2: Strategy Intensives
 - **Description:** Focused strategic engagements for businesses facing a specific operational, financial, or growth constraint.

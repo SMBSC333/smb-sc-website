@@ -53,7 +53,7 @@
 - **Headline:** The right solution depends on the real constraint.
 - **Intro:** Not every business needs the same next step. We diagnose first, then prescribe the right path.
 - **List:**
-  - AI Clarity Roadmap & Implementation
+  - AI Clarity Roadmap & Implementation (including custom internal tools if needed)
   - Strategy Intensives
   - Financial Foundations / Virtual CFO
   - Capacity and Team Structure

@@ -126,10 +126,10 @@ Main public navigation:
 **Section 2: Month 2 — Build & Install**
 - **Headline:** Weeks 5-8: Design and Deploy Tailored AI Workflows
 - **Body:**
-  We design 2-3 tailored AI workflows for your specific business (Leads, Reporting, Proposals, Onboarding, etc.).
+  We execute the roadmap in sequence. For areas of agitation where standard software falls short, we build custom internal tools to bridge the gap and create unique leverage.
   Every process is documented as an SOP. Every workflow is tested with your team.
   No black boxes. No dependencies on us for ongoing management.
-- **Deliverables:** 2-3 deployed workflows. Full SOPs. Team checklist for daily use.
+- **Deliverables:** 2-3 deployed workflows (and custom internal tools if needed). Full SOPs. Team checklist for daily use.
 
 **Section 3: Month 3 — Train & Hand Off**
 - **Headline:** Weeks 9-12: Train Your Team and Deliver Ownership
@@ -211,6 +211,7 @@ Main public navigation:
 
 - **Build Phase (Month 2):**
   - Workflow design (2-3 tailored AI-powered processes)
+  - Custom Internal Solutions: Building tools to solve specific agitation where standard software fails
   - System integration and setup
   - Testing with your team
   - SOP documentation for every workflow

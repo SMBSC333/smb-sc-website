@@ -11,7 +11,7 @@
 - **Step 1 — Strategy Call:** We assess the business live, identify the likely constraint, and use a structured evaluation process to surface the real blocker.
 - **Step 2 — Constraint Clarity:** We determine whether the issue is workflow, owner dependency, role clarity, team readiness, economics, AI fit, or a broader operational issue.
 - **Step 3 — Prescribed Solution:** Based on what we find, we recommend the right next engagement.
-- **Step 4 — Roadmap & Implementation:** If the fit is right, we build the roadmap and help implement the solution in the right sequence.
+- **Step 4 — Build & Implementation:** We execute the roadmap in sequence. For areas of agitation where standard software falls short, we build custom internal tools to bridge the gap and create unique leverage.
 
 ## Next-step options section
 - **Headline:** Possible next steps after the Strategy Call

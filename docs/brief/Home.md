@@ -32,7 +32,7 @@
   We do not lead with generic AI strategy.
   We do not hand you a templated playbook.
 
-  We identify the real constraint blocking AI from creating value in your business and show you the right implementation path based on what your business actually needs.
+  We identify the real constraint blocking AI from creating value in your business and show you the right implementation path based on what your business actually needs. When that means building a custom internal tool to solve a unique point of agitation, we build it.
 
 ## Section 4: Differentiators
 - **Card 1 headline:** Diagnose before prescribe
@@ -40,7 +40,7 @@
 - **Card 2 headline:** Financial-first thinking
 - **Card 2 body:** Every recommendation is filtered through margin, capacity, delivery efficiency, and operational return.
 - **Card 3 headline:** Practical implementation
-- **Card 3 body:** We focus on solutions your team can actually adopt and use.
+- **Card 3 body:** We focus on solutions your team can actually adopt. If standard software fails to solve a unique friction point, we build the lightweight, custom internal tools needed to bridge the gap.
 
 ## Section 5: How it works summary
 - **Headline:** One strategy call. Clear next move.

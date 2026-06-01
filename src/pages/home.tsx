@@ -73,7 +73,7 @@ home.get('/', (c) => {
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
                 <p>We do not start with software recommendations. We do not lead with generic AI strategy. We do not hand you a templated playbook.</p>
-                <p><strong>We identify the real constraint</strong> blocking AI from creating value in your business and show you the right implementation path based on what your business actually needs.</p>
+                <p><strong>We identify the real constraint</strong> blocking AI from creating value in your business and show you the right implementation path based on what your business actually needs. When that means building a custom internal tool to solve a unique point of agitation, we build it.</p>
                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book a Free 20-Min Fit Call</a>
               </div>
             </div>
@@ -103,7 +103,7 @@ home.get('/', (c) => {
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
               <h4 class="mb-3">Practical implementation</h4>
-              <p>We focus on solutions your team can actually adopt and use.</p>
+              <p>We focus on solutions your team can actually adopt. If standard software fails to solve a unique friction point, we build the lightweight, custom internal tools needed to bridge the gap.</p>
             </div>
           </div>
         </div>

@@ -51,6 +51,7 @@ services.get('/', (c) => {
               <h3>Build Phase</h3>
               <ul class="intensive-includes mb-4" style="list-style: none; padding: 0;">
                 <li>Workflow design (2-3 tailored AI processes)</li>
+                <li>Custom Internal Solutions: Building tools to solve specific agitation where standard software fails</li>
                 <li>System integration and setup</li>
                 <li>Testing with your team</li>
                 <li>SOP documentation for every workflow</li>

@@ -41,8 +41,8 @@ howItWorks.get('/', (c) => {
             <div class="process-step-v">
               <div class="step-dot">2</div>
               <h3>Weeks 5-8: Design and Deploy Tailored AI Workflows</h3>
-              <p>We design 2-3 tailored AI workflows for your specific business (Leads, Reporting, Proposals, or Onboarding). Every process is documented as an SOP and tested with your team.</p>
-              <p class="text-sm mt-2" style="color:var(--color-gold-dark);">Deliverables: 2-3 deployed workflows. Full SOPs. Team checklist for daily use.</p>
+              <p>We execute the roadmap in sequence. For areas of agitation where standard software falls short, we build custom internal tools to bridge the gap and create unique leverage.</p>
+              <p class="text-sm mt-2" style="color:var(--color-gold-dark);">Deliverables: 2-3 deployed workflows (and custom internal tools if needed). Full SOPs. Team checklist for daily use.</p>
             </div>
             
             {/* Step 3 */}

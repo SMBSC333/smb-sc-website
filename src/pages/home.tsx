@@ -162,7 +162,7 @@ home.get('/', (c) => {
                   <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
                 </svg>
               </div>
-              <h3>AI Clarity Roadmap & Implementation</h3>
+              <h3>AI Clarity Roadmap & Implementation (including custom internal tools if needed)</h3>
             </div>
 
             {/* 2. Strategy Intensives */}

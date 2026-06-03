@@ -22,6 +22,17 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={pageDesc} />
         <title>{pageTitle}</title>
+
+        {/* Search Atlas dynamic optimization */}
+        <script
+          nowprocket=""
+          nitro-exclude=""
+          type="text/javascript"
+          id="sa-dynamic-optimization"
+          data-uuid="9af74d27-d23b-46ee-88a8-7db6325c4c74"
+          src="data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vcGlwZWxpbmVkYXNoc2VvLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gIjlhZjc0ZDI3LWQyM2ItNDZlZS04OGE4LTdkYjYzMjVjNGM3NCI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=="
+        ></script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />

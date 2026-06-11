@@ -16,6 +16,7 @@ import financialClarity from './pages/financial-clarity-intensive.tsx'
 import growthSystems from './pages/growth-systems-intensive.tsx'
 import ownerDependency from './pages/owner-dependency-intensive.tsx'
 import aiOperations from './pages/ai-operations-intensive.tsx'
+import blog from './pages/blog'
 
 const app = new Hono()
 
@@ -31,6 +32,9 @@ app.route('/about', about)
 app.route('/resources', resources)
 app.route('/contact', contact)
 app.route('/strategy-call', strategyCall)
+
+// Blog
+app.route('/blog', blog)
 
 // Strategy Intensive Tracks
 app.route('/financial-clarity-intensive', financialClarity)

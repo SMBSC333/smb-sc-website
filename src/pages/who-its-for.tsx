@@ -9,12 +9,12 @@ whoItsFor.get('/', (c) => {
         <div class="container">
           <div class="hero-content-v2">
             <span class="eyebrow" style="color: var(--color-gold);">Target Profile</span>
-            <h1 style="color: #fff;">This is built for owner-led firms that have already tried AI.</h1>
+            <h1 style="color: #fff;">Built for owner-led service firms and the advisors who serve them.</h1>
             <p class="hero-lead">
-              If you&rsquo;re in this position, the 90-Day Sprint is the right next move to build your Growth-Leveraged AI.
+              If you're an owner who has tried AI and stalled, or a CPA or bookkeeper looking to give clients a financial clarity edge, you're in the right place.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -40,6 +40,14 @@ whoItsFor.get('/', (c) => {
                  <h4 style="color: var(--color-gold-light);">The Stalled Reality</h4>
                  <p style="color: rgba(255,255,255,0.85);">You bought the tools. You tested prompts. Maybe you even tried a course. But real ROI hasn't materialized and the promised leverage never showed up.</p>
                </div>
+            </div>
+          </div>
+
+          <div class="grid-2" style="align-items: center; gap: 4rem; margin-top: 4rem;">
+            <div>
+              <span class="eyebrow">The Match</span>
+              <h2>CPA / Bookkeeper Profile</h2>
+              <p class="mt-4">You serve SMB clients who ask about AI and financial clarity. You want a white-label tool you can put in front of clients without building it yourself. CFO Clarity Layer is your entry point.</p>
             </div>
           </div>
         </div>
@@ -89,6 +97,7 @@ whoItsFor.get('/', (c) => {
                 <li>You want implementation, not advice.</li>
                 <li>You're open to rethinking workflows, not just bolting on tools.</li>
                 <li>You want to own the solution after 90 days.</li>
+                <li>You're a CPA or bookkeeper interested in the CFO Clarity Layer firm license.</li>
               </ul>
             </div>
 
@@ -111,9 +120,9 @@ whoItsFor.get('/', (c) => {
         <div class="container text-center">
           <span class="eyebrow">Clarity First</span>
           <h2>One call. One conversation. One clear answer.</h2>
-          <p class="lead" style="max-width: 700px; margin: 1.5rem auto;">Book a free 20-minute fit call. We&rsquo;ll spend 20 minutes understanding your situation, identifying if there&rsquo;s a clear constraint we can solve, and confirming this is the right fit.</p>
+          <p class="lead" style="max-width: 700px; margin: 1.5rem auto;">Book a free 30-minute strategy call. We&rsquo;ll spend 30 minutes understanding your situation, identifying if there&rsquo;s a clear constraint we can solve, and confirming this is the right fit.</p>
           <div class="mt-4">
-             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
           </div>
         </div>
       </section>

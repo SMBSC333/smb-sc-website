@@ -14,7 +14,7 @@ howItWorks.get('/', (c) => {
               This is not a retainer. It's not consulting. It's a 90-day implementation system designed to identify your constraint, build the solution, and hand you operational control.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@ howItWorks.get('/', (c) => {
       <section class="section bg-white">
         <div class="container">
           <div class="section-header center">
-            <span class="eyebrow">The 90-Day Sprint</span>
+            <span class="eyebrow">The AI Implementation Engagement</span>
             <h2>Three months to operational clarity</h2>
           </div>
           
@@ -175,7 +175,7 @@ howItWorks.get('/', (c) => {
                 <strong>Diagnosis Before Prescription.</strong> We identify your primary constraint during the Fit Call before recommending any implementation path.
              </p>
              <div class="mt-4">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book a Free 20-Min Fit Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free Strategy Call</a>
              </div>
           </div>
         </div>
@@ -185,8 +185,8 @@ howItWorks.get('/', (c) => {
       <section class="cta-band bg-soft">
         <div class="container">
           <h2>Ready to find your friction?</h2>
-          <p class="lead">Book a free 20-minute fit call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
+          <p class="lead">Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
         </div>
       </section>
     </div>,

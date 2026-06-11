@@ -15,7 +15,7 @@ why4997.get('/', (c) => {
               Implementation, not advice. We don't sell theories; we install the systems that stop the leaks and build your <strong>Growth-Leveraged AI</strong> foundations.
             </p>
             <div class="hero-cta-group mt-5">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -290,9 +290,9 @@ why4997.get('/', (c) => {
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
           <h2 style="color:#fff;">Ready to run the math on your business?</h2>
-          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">Book a free 20-minute fit call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
+          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
           <div style="margin-top: 2.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
           </div>
         </div>
       </section>

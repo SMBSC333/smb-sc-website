@@ -858,6 +858,12 @@ strong { color: var(--color-heading); font-weight: 600; }
   font-size: 1.25rem;
   margin: 0;
 }
+.outcome-card p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
 .btn-center {
   display: flex;
   justify-content: center;

@@ -8,8 +8,8 @@ strategyCall.get('/', (c) => {
       <section class="page-hero bg-dark" style="padding-bottom: 5rem;">
         <div class="container text-center">
           <span class="eyebrow" style="color:var(--color-gold);">Strategic Entry Point</span>
-          <h1 class="mb-5">Book Your Free 20-Minute Fit Call.</h1>
-          <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">In 20 minutes, we will identify your business's primary growth constraint and determine if the 90-Day Implementation Sprint is the right next move for your scale.</p>
+          <h1 class="mb-5">Book Your Free 30-Minute Strategy Call.</h1>
+          <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">In 30 minutes, we will identify your primary constraint, walk through where AI can create the most leverage in your business, and determine if the AI Sequencing Blueprint is the right next move.</p>
         </div>
       </section>
 
@@ -31,24 +31,24 @@ strategyCall.get('/', (c) => {
                 <h4 class="mb-3">Ideal Fit Criteria:</h4>
                 <p style="font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.8;">We specialize in owner-led B2B service firms ready to move from reactive growth to structured leverage.</p>
                 <ul class="intensive-includes" style="font-size: 0.85rem;">
-                  <li>Focus: Scaling operations and AI readiness</li>
-                  <li>Team: 8–30+ employees</li>
-                  <li>Problem: AI already attempted but failed to adopt</li>
-                  <li>Goal: Operational leverage and competitive advantage</li>
+                  <li>Revenue: $500K–$3M in annual revenue (owner-led service firm)</li>
+                  <li>Problem: AI attempted but stalled, or you know AI is coming and want to move first</li>
+                  <li>Goal: Capacity, margin protection, or reduced owner dependency</li>
+                  <li>Also fits: CPAs and bookkeepers exploring a white-label financial clarity tool for clients</li>
                 </ul>
               </div>
             </div>
             
             <div id="booking-container" class="card card-accent" style="padding:3.5rem; position: sticky; top: 120px; box-shadow: var(--shadow-lg);">
               <h3 class="mb-3 text-center">Secure Your Time</h3>
-              <p class="text-center mb-5" style="font-size:1rem; color:var(--color-text-muted);">Select a 20-minute window for your initial diagnostic.</p>
+              <p class="text-center mb-5" style="font-size:1rem; color:var(--color-text-muted);">Select a 30-minute window for your strategy call.</p>
               
               {/* Motion Booking Widget */}
               <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(193, 155, 118, 0.2); border-radius:12px; min-height: 600px; overflow: hidden; position: relative; box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);">
                 <iframe 
                   src="https://app.usemotion.com/meet/corbin/AIPlanFitCall?embed=true" 
                   style="width: 100%; height: 650px; border: none;"
-                  title="Book 20-Min Fit Call"
+                  title="Book 30-Min Strategy Call"
                 ></iframe>
               </div>
               
@@ -77,8 +77,8 @@ strategyCall.get('/', (c) => {
       </section>
     </div>,
     { 
-      title: 'Free 20-Min Fit Call', 
-      description: 'Book your 20-minute fit assessment to identify operational friction and evaluate your readiness for Growth-Leveraged AI.',
+      title: 'Free 30-Min Strategy Call', 
+      description: 'Book your 30-minute strategy call to identify operational friction and evaluate your readiness for Growth-Leveraged AI.',
       activeNav: 'contact' 
     }
   )

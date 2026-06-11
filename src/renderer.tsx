@@ -81,7 +81,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               <li><a href="/about" class={activeNav === 'about' ? 'active' : ''}>About</a></li>
               <li><a href="/contact" class={activeNav === 'contact' ? 'active' : ''}>Contact</a></li>
             </ul>
-            <a href="/strategy-call" class="btn btn-primary btn-sm nav-cta">Book a Free 20-Min Fit Call</a>
+            <a href="/strategy-call" class="btn btn-primary btn-sm nav-cta">Book Your Free Strategy Call</a>
             <button class="nav-hamburger" id="hamburger" aria-label="Open navigation">
               <span></span><span></span><span></span>
             </button>
@@ -91,7 +91,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
             <a href="/how-it-works">How It Works</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
-            <a href="/strategy-call" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book a Free 20-Min Fit Call</a>
+            <a href="/strategy-call" style="color:var(--color-gold-dark); font-weight:600; margin-top:0.5rem;">Book Your Free Strategy Call</a>
           </div>
         </nav>
 

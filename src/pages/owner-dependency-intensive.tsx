@@ -18,7 +18,7 @@ intensive.get('/', (c) => {
             Exit your own business, operationally. We remove the founder as the primary bottleneck and install the foundations for Growth-Leveraged AI.
           </p>
           <div class="hero-actions" style="margin-top:2rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
           </div>
         </div>
       </section>
@@ -112,10 +112,10 @@ intensive.get('/', (c) => {
         <div class="container text-center">
           <h2 style="color:#fff;">Ready to reclaim your capacity?</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">
-            Book a free 20-minute fit call. We will look at your operations and identify the bottlenecks keeping you stuck in the weeds.
+            Book a free 30-minute strategy call. We will look at your operations and identify the bottlenecks keeping you stuck in the weeds.
           </p>
           <div style="margin-top: 2.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
           </div>
         </div>
       </section>

@@ -15,7 +15,7 @@ about.get('/', (c) => {
               We are SMB Strategy Consultants. We help owner-led businesses become operationally competitive in the AI era.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -66,6 +66,7 @@ about.get('/', (c) => {
                   <li style="color: rgba(255,255,255,0.85);">Workflows that run without you in the room.</li>
                   <li style="color: rgba(255,255,255,0.85);">Team trained and confident on new systems.</li>
                   <li style="color: rgba(255,255,255,0.85);">Documentation that allows you to evolve.</li>
+                  <li style="color: rgba(255,255,255,0.85);">A financial clarity layer your business (or your clients) can run with no manual effort.</li>
                </ul>
             </div>
           </div>
@@ -103,8 +104,8 @@ about.get('/', (c) => {
       <section class="cta-band">
         <div class="container">
           <h2>Ready to find your friction?</h2>
-          <p class="lead">Book a free 20-minute fit call with Corbin to identify your biggest leaks.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
+          <p class="lead">Book a free 30-minute strategy call with Corbin to identify your biggest leaks.</p>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
         </div>
       </section>
     </div>,

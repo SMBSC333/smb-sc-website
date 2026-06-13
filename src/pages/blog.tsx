@@ -63,7 +63,7 @@ blog.get('/', (c) => {
         <div class="container">
           <div class="hero-content-v2">
             <span class="eyebrow" style="color: var(--color-gold);">Insights</span>
-            <h1 style="color: #fff;">Blog</h1>
+            <h1 style="color: #fff;">Insights</h1>
             <p class="hero-lead">
               Practical strategies for owner-led service firms navigating AI, operations, and growth.
             </p>
@@ -93,7 +93,7 @@ blog.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'Blog', activeNav: 'blog' }
+    { title: 'Insights', activeNav: 'blog' }
   )
 })
 
@@ -114,7 +114,7 @@ blog.get('/:slug', (c) => {
       <section class="page-hero bg-dark" style="padding-bottom: 3rem;">
         <div class="container" style="max-width: 800px;">
           <div style="margin-bottom: 1rem;">
-            <a href="/blog" style="color: var(--color-gold); text-decoration: none; font-size: 0.9rem;">&larr; Back to Blog</a>
+            <a href="/blog" style="color: var(--color-gold); text-decoration: none; font-size: 0.9rem;">&larr; Back to Insights</a>
           </div>
           <h1 class="mb-3" style="font-size: 2.4rem; line-height: 1.2;">{post.meta.title}</h1>
           <div style="display: flex; gap: 1.5rem; align-items: center; color: rgba(255,255,255,0.7); font-size: 0.9rem;">

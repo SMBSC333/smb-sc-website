@@ -100,7 +100,7 @@ services.get('/', (c) => {
               <div class="ls hl" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border); background: var(--color-bg-soft);">
                 <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-gold-dark); width: 40px;">02</div>
                 <div style="flex: 1; font-weight: 700; color: var(--color-navy);">AI Implementation Engagement <span class="intensive-tag" style="margin-left: 0.5rem; margin-bottom: 0;">Primary</span></div>
-                <div style="font-weight: 700; color: var(--color-navy);">$5,000/mo &times; 3</div>
+                <div style="font-weight: 700; color: var(--color-navy);">$2,000 setup + $7,500/mo &times; 3</div>
               </div>
               <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
                 <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">03</div>
@@ -153,11 +153,11 @@ services.get('/', (c) => {
           <h2>Clear Pricing. High ROI.</h2>
           <div class="gold-line gold-line-center"></div>
           <p class="lead" style="max-width: 700px; margin: 0 auto 2rem;">
-            Investment starts at $5,000/month. Scope and structure are confirmed on the Strategy Call based on your constraint diagnosis. 
+            Investment starts at $7,500/month + $2,000 setup. Scope and structure are confirmed on the Strategy Call based on your constraint diagnosis. 
           </p>
           <div class="mt-4 mb-5">
              <p style="color: var(--color-text-muted); font-size: 0.95rem;">
-                Looking for the ROI breakdown? <a href="/why-4997" style="color: var(--color-gold-dark); font-weight: 600; text-decoration: underline;">See the ROI math behind our standard $4,997/mo pricing &rarr;</a>
+                Looking for the ROI breakdown? <a href="/why-4997" style="color: var(--color-gold-dark); font-weight: 600; text-decoration: underline;">See the ROI math behind our standard $7,500/mo pricing &rarr;</a>
              </p>
           </div>
           <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>

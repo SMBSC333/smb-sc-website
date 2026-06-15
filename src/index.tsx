@@ -17,6 +17,13 @@ import growthSystems from './pages/growth-systems-intensive.tsx'
 import ownerDependency from './pages/owner-dependency-intensive.tsx'
 import aiOperations from './pages/ai-operations-intensive.tsx'
 import blog from './pages/blog'
+import aiImplementationConsultant from './pages/ai-implementation-consultant'
+import whyAiFails from './pages/why-ai-fails'
+import aiReadinessAssessment from './pages/ai-readiness-assessment'
+import implementationStories from './pages/implementation-stories'
+import aiImplementationChecklist from './pages/ai-implementation-checklist'
+import aiConsultantAtlanta from './pages/ai-consultant-atlanta'
+import aiForServiceBusinesses from './pages/ai-implementation-for-service-businesses'
 
 const app = new Hono()
 
@@ -35,6 +42,15 @@ app.route('/strategy-call', strategyCall)
 
 // Blog
 app.route('/blog', blog)
+
+// SEO content pages
+app.route('/ai-implementation-consultant', aiImplementationConsultant)
+app.route('/why-ai-fails', whyAiFails)
+app.route('/ai-readiness-assessment', aiReadinessAssessment)
+app.route('/implementation-stories', implementationStories)
+app.route('/ai-implementation-checklist', aiImplementationChecklist)
+app.route('/ai-consultant-atlanta', aiConsultantAtlanta)
+app.route('/ai-implementation-for-service-businesses', aiForServiceBusinesses)
 
 // Strategy Intensive Tracks
 app.route('/financial-clarity-intensive', financialClarity)

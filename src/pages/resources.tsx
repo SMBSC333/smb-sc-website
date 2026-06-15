@@ -31,7 +31,7 @@ resources.get('/', (c) => {
                   <h3>The Hidden Cost of Manual Workflows</h3>
                   <p class="lead">Most owner-led service firms are losing an average of $37,000 per year to operational friction they can&rsquo;t see. This guide breaks down the seven most common leaks and how to plug them with AI foundations.</p>
                   <div class="mt-4">
-                     <a href="#" class="btn btn-navy">Download the Guide (PDF)</a>
+                     <a href="/ai-implementation-checklist" class="btn btn-navy">Read the Implementation Checklist</a>
                   </div>
                </div>
                <div style="background: var(--color-navy-deep); height: 300px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
@@ -62,14 +62,14 @@ resources.get('/', (c) => {
             <div class="card card-white">
               <h4 style="color: var(--color-navy);">AI Readiness Checklist</h4>
               <p class="text-sm">A step-by-step technical audit of your current data cleanliness and tech stack before you deploy AI.</p>
-              <a href="#" class="btn btn-outline btn-sm mt-3">Get Checklist</a>
+              <a href="/ai-readiness-assessment" class="btn btn-outline btn-sm mt-3">Take the Assessment</a>
             </div>
 
             {/* Case Studies */}
             <div class="card card-white">
               <h4 style="color: var(--color-navy);">Implementation Stories</h4>
               <p class="text-sm">How other B2B service firms reclaimed 40% capacity through the 90-Day Implementation Sprint.</p>
-              <a href="#" class="btn btn-outline btn-sm mt-3">Read Stories</a>
+              <a href="/implementation-stories" class="btn btn-outline btn-sm mt-3">Read Stories</a>
             </div>
           </div>
 

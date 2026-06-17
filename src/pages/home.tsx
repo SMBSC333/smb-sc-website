@@ -17,9 +17,9 @@ home.get('/', (c) => {
         <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">The AI Implementation Partner</span>
           <h1>Your business has enough tools. It needs more leverage.</h1>
-          <p class="lead">For owner-led service firms. We identify the real constraint blocking AI adoption — whether it is workflow, owner dependency, team readiness, role clarity, or economics — and outline the next implementation move that will create the most leverage.</p>
+          <p class="lead">In a margin-compressed environment, the businesses that win are not the ones with the most tools — they are the ones who have installed the right leverage. We identify the real constraint and sequence the right implementation moves.</p>
           <div class="hero-actions">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If Your Business Is a Fit</a>
           </div>
         </div>
@@ -74,7 +74,7 @@ home.get('/', (c) => {
               <div class="body-v2">
                 <p>We do not start with software recommendations. We do not lead with generic AI strategy. We do not hand you a templated playbook.</p>
                 <p><strong>We identify the real constraint</strong> blocking AI from creating value in your business and show you the right implementation path based on what your business actually needs. When that means building a custom internal tool to solve a unique point of agitation, we build it.</p>
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book a Free 20-Min Fit Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free Strategy Call</a>
               </div>
             </div>
           </div>
@@ -121,8 +121,8 @@ home.get('/', (c) => {
             <div class="grid-4">
               <div class="step-item">
                 <div class="step-num">01</div>
-                <h5>Assess</h5>
-                <p>We assess the real blocker live.</p>
+                <h5>Diagnose</h5>
+                <p>Live constraint assessment on the call. No homework required.</p>
               </div>
               <div class="step-item">
                 <div class="step-num">02</div>
@@ -154,7 +154,7 @@ home.get('/', (c) => {
           </div>
 
           <div class="outcome-grid">
-            {/* 1. AI Clarity */}
+            {/* 1. AI Implementation Engagement */}
             <div class="outcome-card">
               <div class="outcome-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -162,24 +162,11 @@ home.get('/', (c) => {
                   <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
                 </svg>
               </div>
-              <h3>AI Clarity Roadmap & Implementation (including custom internal tools if needed)</h3>
+              <h3>AI Implementation Engagement</h3>
+              <p>Constraint diagnosis, sequencing blueprint, and 90-day hands-on build. For owner-led service firms.</p>
             </div>
 
-            {/* 2. Strategy Intensives */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="22" y1="12" x2="18" y2="12"></line>
-                  <line x1="6" y1="12" x2="2" y2="12"></line>
-                  <line x1="12" y1="6" x2="12" y2="2"></line>
-                  <line x1="12" y1="22" x2="12" y2="18"></line>
-                </svg>
-              </div>
-              <h3>Strategy Intensives</h3>
-            </div>
-
-            {/* 3. Financial Foundations */}
+            {/* 2. CFO Clarity Layer */}
             <div class="outcome-card">
               <div class="outcome-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -188,34 +175,11 @@ home.get('/', (c) => {
                   <line x1="6" y1="20" x2="6" y2="14"></line>
                 </svg>
               </div>
-              <h3>Financial Foundations / Virtual CFO</h3>
+              <h3>CFO Clarity Layer</h3>
+              <p>Real-time financial clarity for SMB owners and their CPAs and bookkeepers. Know your numbers, protect your margin.</p>
             </div>
 
-            {/* 4. Team Structure */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <h3>Capacity and Team Structure</h3>
-            </div>
-
-            {/* 5. Exit Readiness */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                </svg>
-              </div>
-              <h3>Exit Readiness / Value Building</h3>
-            </div>
-
-            {/* 6. Leadership Support */}
+            {/* 3. Financial Course */}
             <div class="outcome-card">
               <div class="outcome-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -223,12 +187,13 @@ home.get('/', (c) => {
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <h3>Leadership and Operating Support</h3>
+              <h3>Financial Course</h3>
+              <p>The foundational financial framework for owner-led firms. Entry point to the full system.</p>
             </div>
           </div>
 
           <div class="btn-center">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book a Free 20-Min Fit Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free Strategy Call</a>
           </div>
         </div>
       </section>
@@ -277,6 +242,60 @@ home.get('/', (c) => {
         </div>
       </section>
 
+      {/* ── SECTION 8: BUSINESS CHECK ENGINE ── */}
+      <section id="check-engine" class="section bg-soft">
+        <div class="container">
+          <div class="section-header center mb-5">
+            <span class="eyebrow">The Scorecard</span>
+            <h2>Your business has an economic check engine light. Most owners never look at it.</h2>
+            <div class="gold-line gold-line-center"></div>
+            <p class="lead mt-4" style="max-width:720px; margin-left:auto; margin-right:auto;">
+              Every business is operating in a set of economic and operational conditions right now — conditions that are either working for you or against you. Green means the environment supports your next move. Yellow means proceed with caution. Red means the conditions are creating drag, regardless of how hard you push.
+            </p>
+          </div>
+
+          <div class="check-engine-embed-wrap">
+            <iframe
+              src="https://smb-engine-light-ab7bf77b.viktor.space"
+              title="SMB Business Check Engine Scorecard"
+              class="check-engine-iframe"
+              loading="lazy"
+              allow="fullscreen"
+            ></iframe>
+          </div>
+
+          <div class="check-engine-copy mt-5">
+            <div class="grid-3" style="gap:2rem;">
+              <div class="card card-white p-5">
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                </div>
+                <h4 class="mb-3">Real-Time Conditions</h4>
+                <p>The scorecard reflects the current environment — economic pressure, market conditions, and operational signals — not what happened last quarter.</p>
+              </div>
+              <div class="card card-white p-5">
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <h4 class="mb-3">Green, Yellow, or Red</h4>
+                <p>Each indicator tells you whether that dimension of your business environment is clear, cautionary, or working against you. No interpretation required.</p>
+              </div>
+              <div class="card card-white p-5">
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <h4 class="mb-3">Know the Right Next Move</h4>
+                <p>Yellow or red conditions are not a stop sign — they are a signal. They tell you exactly where to focus so that effort produces leverage instead of friction.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-center mt-5">
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">See What Your Engine Light Is Telling You &rarr;</a>
+          </div>
+        </div>
+      </section>
+
       {/* ── FINAL CTA SECTION ── */}
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
@@ -284,7 +303,7 @@ home.get('/', (c) => {
           <h2 style="color:#fff;">You do not need more AI advice. You need the right implementation path.</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width: 800px; margin: 1.5rem auto;">If AI has already been tried and still has not produced traction, the next move is not another tool. It is clarity on what is actually blocking leverage — and the right next step to fix it.</p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If Your Business Is a Fit</a>
           </div>
         </div>

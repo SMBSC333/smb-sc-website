@@ -10,12 +10,12 @@ why4997.get('/', (c) => {
         <div class="container">
           <div class="hero-content-v2 text-center" style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
             <span class="eyebrow" style="color: var(--color-gold);">The Economics of Scale</span>
-            <h1 style="color: #fff;">Why $4,997/month is an easy investment when you're losing $37,000/year.</h1>
+            <h1 style="color: #fff;">Why $7,500/month is an easy investment when you're losing $37,000/year.</h1>
             <p class="hero-lead" style="color: rgba(255,255,255,0.85);">
               Implementation, not advice. We don't sell theories; we install the systems that stop the leaks and build your <strong>Growth-Leveraged AI</strong> foundations.
             </p>
             <div class="hero-cta-group mt-5">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -106,9 +106,9 @@ why4997.get('/', (c) => {
                    <tr style="border-bottom: 1px solid var(--color-bg-border);">
                       <td style="padding: 2rem; font-weight: 600;">
                          Sprint Investment
-                         <div style="font-size: 0.8rem; font-weight: 400; color: var(--color-text-muted); margin-top: 0.25rem;">($4,997/mo &times; 3 months)</div>
+                         <div style="font-size: 0.8rem; font-weight: 400; color: var(--color-text-muted); margin-top: 0.25rem;">($2,000 setup + $7,500/mo &times; 3 months)</div>
                       </td>
-                      <td style="padding: 2rem; color: #cc0000; font-weight: 700; font-size: 1.1rem;">-$14,991</td>
+                      <td style="padding: 2rem; color: #cc0000; font-weight: 700; font-size: 1.1rem;">-$24,500</td>
                       <td style="padding: 2rem; font-weight: 700; font-size: 1.1rem;">$0</td>
                    </tr>
                    <tr style="background: var(--color-bg-soft);">
@@ -153,7 +153,7 @@ why4997.get('/', (c) => {
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-4">
                        <span class="text-sm" style="color: var(--color-text-muted); margin-right: 1rem;">Sprint Investment</span>
-                       <span style="font-weight: 700; font-size: 1.1rem;">$14,991</span>
+                       <span style="font-weight: 700; font-size: 1.1rem;">$24,500</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center pt-4" style="border-top: 1px dashed rgba(0,0,0,0.1);">
                        <span class="text-sm" style="color: var(--color-navy); font-weight: 600; margin-right: 1rem;">Net Year 1 Gain</span>
@@ -179,7 +179,7 @@ why4997.get('/', (c) => {
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-4" style="color: rgba(255,255,255,0.85);">
                        <span class="text-sm" style="margin-right: 1rem;">Sprint Investment</span>
-                       <span style="font-weight: 700; color: #fff; font-size: 1.1rem;">$14,991</span>
+                       <span style="font-weight: 700; color: #fff; font-size: 1.1rem;">$24,500</span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center pt-4" style="border-top: 1px dashed rgba(255,255,255,0.2);">
                        <span class="text-sm" style="color: var(--color-gold-light); font-weight: 600; margin-right: 1rem;">Net Year 1 Gain</span>
@@ -280,7 +280,7 @@ why4997.get('/', (c) => {
               <div class="text-center">
                  <div style="font-size: 2.5rem; color: var(--color-gold-dark); font-weight: 800; margin-bottom: 1rem;">2.5x</div>
                  <h5 style="color: var(--color-navy);">Year-One ROI</h5>
-                 <p class="text-sm">Measurable return on your $14,991 implementation investment.</p>
+                 <p class="text-sm">Measurable return on your $24,500 implementation investment.</p>
               </div>
            </div>
         </div>
@@ -290,15 +290,15 @@ why4997.get('/', (c) => {
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
           <h2 style="color:#fff;">Ready to run the math on your business?</h2>
-          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">Book a free 20-minute fit call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
+          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
           <div style="margin-top: 2.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
           </div>
         </div>
       </section>
     </div>,
     { 
-      title: 'Why $4,997/mo — SMB Strategy Consultants', 
+      title: 'Why $7,500/mo — SMB Strategy Consultants', 
       description: 'Understanding the ROI math behind the 90-Day AI Implementation Sprint and the cost of operational friction.',
       activeNav: 'services' 
     }

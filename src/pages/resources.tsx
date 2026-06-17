@@ -15,7 +15,7 @@ resources.get('/', (c) => {
               Use these tools to identify your friction points and start building the systems that keep you ahead of the competition.
             </p>
             <div class="hero-cta-group mt-5">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ resources.get('/', (c) => {
                   <h3>The Hidden Cost of Manual Workflows</h3>
                   <p class="lead">Most owner-led service firms are losing an average of $37,000 per year to operational friction they can&rsquo;t see. This guide breaks down the seven most common leaks and how to plug them with AI foundations.</p>
                   <div class="mt-4">
-                     <a href="#" class="btn btn-navy">Download the Guide (PDF)</a>
+                     <a href="/ai-implementation-checklist" class="btn btn-navy">Read the Implementation Checklist</a>
                   </div>
                </div>
                <div style="background: var(--color-navy-deep); height: 300px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
@@ -62,24 +62,24 @@ resources.get('/', (c) => {
             <div class="card card-white">
               <h4 style="color: var(--color-navy);">AI Readiness Checklist</h4>
               <p class="text-sm">A step-by-step technical audit of your current data cleanliness and tech stack before you deploy AI.</p>
-              <a href="#" class="btn btn-outline btn-sm mt-3">Get Checklist</a>
+              <a href="/ai-readiness-assessment" class="btn btn-outline btn-sm mt-3">Take the Assessment</a>
             </div>
 
             {/* Case Studies */}
             <div class="card card-white">
               <h4 style="color: var(--color-navy);">Implementation Stories</h4>
               <p class="text-sm">How other B2B service firms reclaimed 40% capacity through the 90-Day Implementation Sprint.</p>
-              <a href="#" class="btn btn-outline btn-sm mt-3">Read Stories</a>
+              <a href="/implementation-stories" class="btn btn-outline btn-sm mt-3">Read Stories</a>
             </div>
           </div>
 
           {/* IMPORTANT LINE CALLOUT */}
           <div class="logic-callout mt-6 bg-navy-deep text-white p-5 text-center" style="border-radius: var(--radius-lg);">
              <p style="font-size: 1.25rem; margin-bottom: 0;">
-                <strong>Do not build on messy foundations.</strong> Start with the Free 20-Min Fit Call to find the right sequence for your business.
+                <strong>Do not build on messy foundations.</strong> Start with the Free 30-Min Strategy Call to find the right sequence for your business.
              </p>
              <div class="mt-4">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Schedule the Free 20-Min Fit Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Schedule the Free 30-Min Strategy Call</a>
              </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ resources.get('/', (c) => {
         <div class="container">
           <h2>Ready to move from theory to implementation?</h2>
           <p class="lead">One constraint identified. One clear next move.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
         </div>
       </section>
     </div>,

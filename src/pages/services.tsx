@@ -10,12 +10,12 @@ services.get('/', (c) => {
         <div class="container">
           <div class="hero-content-v2">
             <span class="eyebrow" style="color: var(--color-gold);">One Integrated Offer</span>
-            <h1 style="color: #fff;">The 90-Day AI Implementation Sprint</h1>
+            <h1 style="color: #fff;">The AI Implementation Engagement</h1>
             <p class="hero-lead">
-              One integrated offer. Three phases. Complete hand-off. We build the foundations for Growth-Leveraged AI.
+              We diagnose the real constraint first. Then we build the right implementation path. Three phases, complete hand-off, and you own the system at the end.
             </p>
             <div class="hero-actions" style="margin-top:2.5rem; display: flex; gap: 1rem; align-items: center;">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -89,28 +89,28 @@ services.get('/', (c) => {
             <div class="ladder" style="border: 1px solid var(--color-bg-border); border-radius: var(--radius-lg); overflow: hidden; background: #fff;">
               <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
                 <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">00</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">Free 20-Min Fit Call</div>
+                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">Free Strategy Call</div>
                 <div style="font-weight: 700; color: var(--color-gold-dark);">Free</div>
               </div>
               <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
                 <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">01</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">AI Constraint Diagnostic Report</div>
+                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">AI Sequencing Blueprint Session</div>
                 <div style="font-weight: 700; color: var(--color-navy);">$1,497</div>
               </div>
               <div class="ls hl" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border); background: var(--color-bg-soft);">
                 <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-gold-dark); width: 40px;">02</div>
-                <div style="flex: 1; font-weight: 700; color: var(--color-navy);">90-Day AI Implementation Sprint <span class="intensive-tag" style="margin-left: 0.5rem; margin-bottom: 0;">Primary</span></div>
-                <div style="font-weight: 700; color: var(--color-navy);">$4,997/mo &times; 3</div>
+                <div style="flex: 1; font-weight: 700; color: var(--color-navy);">AI Implementation Engagement <span class="intensive-tag" style="margin-left: 0.5rem; margin-bottom: 0;">Primary</span></div>
+                <div style="font-weight: 700; color: var(--color-navy);">$2,000 setup + $7,500/mo &times; 3</div>
               </div>
               <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
                 <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">03</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">AI Systems Retainer</div>
-                <div style="font-weight: 700; color: var(--color-navy);">$3,497/mo</div>
+                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">CFO Clarity Layer</div>
+                <div style="font-weight: 700; color: var(--color-navy);">Recurring SaaS / Firm License</div>
               </div>
               <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
                 <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">04</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">Full AI Transformation Project</div>
-                <div style="font-weight: 700; color: var(--color-navy);">$28K&ndash;$65K</div>
+                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">Enterprise AI Transformation</div>
+                <div style="font-weight: 700; color: var(--color-navy);">Custom</div>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ services.get('/', (c) => {
                <div style="padding: 3rem; flex-grow: 1;">
                  <h3 style="color: #fff; margin-bottom: 1.5rem;">Implementation, not advice.</h3>
                  <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Most consultants sell theories. We build systems. By day 90, your business is operationally competitive and ahead of the competition.</p>
-                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-block text-center" style="width:100%;">Book a Free 20-Min Fit Call</a>
+                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-block text-center" style="width:100%;">Book Your Free Strategy Call</a>
                </div>
                <img src="/static/images/intensive-ai-operations.png" alt="AI Operations Visualization" style="width: 100%; height: 300px; object-fit: cover; display: block;" />
             </div>
@@ -153,14 +153,14 @@ services.get('/', (c) => {
           <h2>Clear Pricing. High ROI.</h2>
           <div class="gold-line gold-line-center"></div>
           <p class="lead" style="max-width: 700px; margin: 0 auto 2rem;">
-            Investment is determined by the scope of the solution recommended after the Strategy Call. 
+            Investment starts at $7,500/month + $2,000 setup. Scope and structure are confirmed on the Strategy Call based on your constraint diagnosis. 
           </p>
           <div class="mt-4 mb-5">
              <p style="color: var(--color-text-muted); font-size: 0.95rem;">
-                Looking for the ROI breakdown? <a href="/why-4997" style="color: var(--color-gold-dark); font-weight: 600; text-decoration: underline;">See the ROI math behind our standard $4,997/mo pricing &rarr;</a>
+                Looking for the ROI breakdown? <a href="/why-4997" style="color: var(--color-gold-dark); font-weight: 600; text-decoration: underline;">See the ROI math behind our standard $7,500/mo pricing &rarr;</a>
              </p>
           </div>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call for Custom Scope</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
         </div>
       </section>
 
@@ -168,8 +168,8 @@ services.get('/', (c) => {
       <section class="cta-band bg-navy">
         <div class="container">
           <h2>Ready to identify the real blocker?</h2>
-          <p class="lead">Book a free 20-minute fit call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free 20-Min Fit Call</a>
+          <p class="lead">Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
         </div>
       </section>
     </div>,

@@ -2923,3 +2923,26 @@ strong { color: var(--color-heading); font-weight: 600; }
   .featured-start-card { padding: 2rem; }
   .featured-start-card h3 { font-size: 1.6rem; }
 }
+
+/* ── CHECK ENGINE SECTION ── */
+.check-engine-embed-wrap {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.14);
+  background: #fff;
+  margin-top: 2rem;
+}
+
+.check-engine-iframe {
+  width: 100%;
+  height: 680px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .check-engine-iframe {
+    height: 520px;
+  }
+}

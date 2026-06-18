@@ -82,7 +82,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               <li><a href="/blog" class={activeNav === 'blog' ? 'active' : ''}>Insights</a></li>
               <li><a href="/contact" class={activeNav === 'contact' ? 'active' : ''}>Contact</a></li>
             </ul>
-            <a href="/strategy-call" class="btn btn-primary btn-sm nav-cta">Book Your Free Strategy Call</a>
+            <a href="/strategy-call" class="btn btn-primary btn-sm nav-cta">Free Strategy Call</a>
             <button class="nav-hamburger" id="hamburger" aria-label="Open navigation">
               <span></span><span></span><span></span>
             </button>
@@ -105,23 +105,17 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
           <div class="container">
             <div class="footer-grid">
               <div class="footer-brand">
-                <img
-                  src="/static/images/logo-horizontal-transparent.png"
-                  alt="SMB Strategy Consultants"
-                  class="footer-logo-img"
-                  width="180"
-                  height="38"
-                />
+                <a href="/" class="footer-logo-card" aria-label="SMB Strategy Consultants — Home">
+                  <img
+                    src="/static/images/logo-horizontal-transparent.png"
+                    alt="SMB Strategy Consultants"
+                    class="footer-logo-img"
+                    width="200"
+                    height="42"
+                  />
+                </a>
                 <p>We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration.</p>
                 <p style="font-style: italic; opacity: 0.8; font-size: 0.9rem;">Strategic. Practical. Built to identify the right next move.</p>
-                <div class="cred-bar">
-                  <div class="cert-logo-bar">
-                    <img src="/static/images/badge-cepa.png"          alt="CEPA Certified"           loading="lazy" />
-                    <img src="/static/images/badge-aasbc.png"         alt="AASBC Member"             loading="lazy" />
-                    <img src="/static/images/badge-value-builder.png" alt="Value Builder Certified"  loading="lazy" />
-                    <img src="/static/images/badge-fathom.png"        alt="Fathom Certified Advisor" loading="lazy" />
-                  </div>
-                </div>
               </div>
               <div class="footer-col">
                 <h5>Information</h5>

@@ -258,7 +258,7 @@ home.get('/', (c) => {
             <div class="check-engine-icon-wrap">
               <div class="check-engine-glow-ring">
                 <img
-                  src="/static/images/check-engine-icon.png"
+                  src="/static/images/check-engine-icon-transparent.png"
                   alt="Business Check Engine Light"
                   class="check-engine-hero-icon"
                   width="120"
@@ -266,7 +266,7 @@ home.get('/', (c) => {
                 />
               </div>
               <div class="check-engine-status-badge">
-                <img src="/static/images/check-engine-icon.png" alt="" class="check-engine-badge-icon" width="16" height="16" aria-hidden="true" />
+                <img src="/static/images/check-engine-icon-transparent.png" alt="" class="check-engine-badge-icon" width="16" height="16" aria-hidden="true" />
                 <span>Q2 2026 — Engine Status: <strong>YELLOW</strong></span>
               </div>
             </div>

@@ -2946,7 +2946,7 @@ strong { color: var(--color-heading); font-weight: 600; }
   width: 120px;
   height: 120px;
   object-fit: contain;
-  filter: drop-shadow(0 0 12px rgba(196, 155, 33, 0.5));
+  filter: brightness(0) drop-shadow(0 0 12px rgba(196, 155, 33, 0.5));
 }
 
 .check-engine-status-badge {
@@ -2968,6 +2968,7 @@ strong { color: var(--color-heading); font-weight: 600; }
   width: 16px;
   height: 16px;
   object-fit: contain;
+  filter: brightness(0);
   opacity: 0.85;
 }
 

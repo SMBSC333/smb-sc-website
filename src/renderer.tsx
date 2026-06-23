@@ -11,7 +11,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
   const pageDesc = description || 'We help ambitious business owners win in an AI-transformed world. Decision clarity, system installation, and practical AI integration for service-based businesses.'
 
   // Environment variables for tracking (Support both Vite dev and Runtime context)
-  const gaId = import.meta.env?.VITE_GA_ID || c.env?.VITE_GA_ID
+  const gaId = import.meta.env?.VITE_GA_ID || c.env?.VITE_GA_ID || 'G-QK65KC9324'
   const phKey = import.meta.env?.VITE_POSTHOG_KEY || c.env?.VITE_POSTHOG_KEY
   const phHost = import.meta.env?.VITE_POSTHOG_HOST || c.env?.VITE_POSTHOG_HOST || 'https://us.i.posthog.com'
 

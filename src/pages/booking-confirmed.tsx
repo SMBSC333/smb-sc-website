@@ -5,10 +5,18 @@ const bookingConfirmed = new Hono()
 bookingConfirmed.get('/', (c) => {
   return c.render(
     <div>
-      {/* Meta Pixel Lead event — fires browser-side pixel + CAPI server-side for deduplication */}
+      {/* Conversion events — Meta Pixel Lead + GA4 book_strategy_call */}
       <script dangerouslySetInnerHTML={{ __html: `
         (function() {
           var eventId = 'Lead_' + Date.now();
+
+          // GA4 book_strategy_call key event
+          if (typeof gtag === 'function') {
+            gtag('event', 'book_strategy_call', {
+              event_category: 'conversion',
+              event_label: 'booking_confirmed_page',
+            });
+          }
 
           // 1. Browser-side pixel (with event_id for deduplication)
           if (typeof fbq === 'function') {

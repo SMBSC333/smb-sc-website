@@ -5,11 +5,34 @@ const bookingConfirmed = new Hono()
 bookingConfirmed.get('/', (c) => {
   return c.render(
     <div>
-      {/* Meta Pixel Lead event — fires when visitor lands on booking confirmation */}
+      {/* Meta Pixel Lead event — fires browser-side pixel + CAPI server-side for deduplication */}
       <script dangerouslySetInnerHTML={{ __html: `
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead');
-        }
+        (function() {
+          var eventId = 'Lead_' + Date.now();
+
+          // 1. Browser-side pixel (with event_id for deduplication)
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead', {}, { eventID: eventId });
+          }
+
+          // 2. Server-side CAPI (deduplicates with browser event via matching eventID)
+          try {
+            var fbc = document.cookie.match(/_fbc=([^;]+)/);
+            var fbp = document.cookie.match(/_fbp=([^;]+)/);
+            fetch('/api/capi', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                event_name: 'Lead',
+                event_source_url: window.location.href,
+                event_id: eventId,
+                fbc: fbc ? fbc[1] : undefined,
+                fbp: fbp ? fbp[1] : undefined,
+              }),
+              keepalive: true,
+            }).catch(function() {});
+          } catch(e) {}
+        })();
       `}} />
 
       <section class="page-hero bg-dark" style="padding-bottom: 5rem;">

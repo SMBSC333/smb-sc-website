@@ -25,6 +25,7 @@ import aiImplementationChecklist from './pages/ai-implementation-checklist'
 import aiConsultantAtlanta from './pages/ai-consultant-atlanta'
 import aiForServiceBusinesses from './pages/ai-implementation-for-service-businesses'
 import bookingConfirmed from './pages/booking-confirmed'
+import apiCapi from './pages/api-capi'
 
 const app = new Hono()
 
@@ -41,6 +42,7 @@ app.route('/resources', resources)
 app.route('/contact', contact)
 app.route('/strategy-call', strategyCall)
 app.route('/booking-confirmed', bookingConfirmed)
+app.route('/api/capi', apiCapi)
 
 // Blog
 app.route('/blog', blog)

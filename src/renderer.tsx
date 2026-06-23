@@ -22,6 +22,10 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={pageDesc} />
         <title>{pageTitle}</title>
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="canonical" href={`https://smbstrategyconsultants.com${new URL(c.req.url).pathname}`} />
 
         {/* Search Atlas dynamic optimization */}

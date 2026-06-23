@@ -24,6 +24,7 @@ import implementationStories from './pages/implementation-stories'
 import aiImplementationChecklist from './pages/ai-implementation-checklist'
 import aiConsultantAtlanta from './pages/ai-consultant-atlanta'
 import aiForServiceBusinesses from './pages/ai-implementation-for-service-businesses'
+import bookingConfirmed from './pages/booking-confirmed'
 
 const app = new Hono()
 
@@ -39,6 +40,7 @@ app.route('/about', about)
 app.route('/resources', resources)
 app.route('/contact', contact)
 app.route('/strategy-call', strategyCall)
+app.route('/booking-confirmed', bookingConfirmed)
 
 // Blog
 app.route('/blog', blog)

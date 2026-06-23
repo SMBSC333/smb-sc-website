@@ -1,0 +1,34 @@
+# SMB Strategy Consultants
+> We help ambitious business owners win in an AI-transformed world. AI implementation, financial clarity, and practical strategy for owner-led service firms.
+
+SMB Strategy Consultants (SMBSC) is an AI implementation and business strategy firm based in Atlanta, GA. Founded by Corbin Cook. We work with owner-led service businesses — typically $500K–$5M revenue — who want to implement AI practically, clarify their financial position, and break owner dependency. Core offer is the AI Implementation Strategy engagement ($4,997). We diagnose the constraint first, then install the right system.
+
+## Pages
+
+- /: Home — overview of the firm, primary CTA to book a free strategy call
+- /services: All Solutions — full menu of strategy intensives
+- /how-it-works: How It Works — the constraint-first methodology
+- /who-its-for: Who It's For — ideal client profile, owner-led service businesses
+- /about: About — Corbin Cook's background and firm philosophy
+- /strategy-call: Free Strategy Call — book a no-cost AI implementation strategy call
+- /financial-clarity-intensive: Financial Clarity Intensive — financial systems and clarity for SMB owners
+- /growth-systems-intensive: Growth Systems Intensive — scalable sales and marketing systems
+- /owner-dependency-intensive: Owner Dependency Intensive — remove the owner bottleneck
+- /ai-operations-intensive: AI Operations Intensive — practical AI implementation for service businesses
+- /blog: Insights — articles on AI, business strategy, and growth for SMB owners
+- /blog/show-rate-predicts-close-rate: Article — show rate as a leading sales indicator
+- /blog/why-ai-implementation-fails-small-business: Article — why AI fails in SMBs and how to avoid it
+- /blog/owner-dependency-ai-implementation: Article — breaking owner dependency through AI
+- /ai-implementation-consultant: AI Implementation Consultant — what an AI implementation consultant does
+- /why-ai-fails: Why AI Fails — common failure modes and SMBSC's diagnostic approach
+- /ai-readiness-assessment: AI Readiness Assessment — self-assessment tool for SMB owners
+- /implementation-stories: Implementation Stories — client case studies and results
+- /ai-implementation-checklist: AI Implementation Checklist — step-by-step checklist resource
+- /ai-consultant-atlanta: AI Consultant Atlanta — local Atlanta AI consulting services
+- /ai-implementation-for-service-businesses: AI Implementation for Service Businesses — sector-specific AI guide
+- /resources: Resources — tools, guides, and assessments for SMB owners
+- /contact: Contact — reach the SMBSC team
+- /privacy-policy: Privacy Policy
+- /terms-conditions: Terms of Service
+- /why-4997: Why $4,997 — transparent pricing rationale
+- /growth-constraint-quiz: Growth Constraint Quiz — diagnostic quiz to identify the primary business constraint

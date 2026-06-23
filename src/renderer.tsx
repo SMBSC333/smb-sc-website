@@ -22,6 +22,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={pageDesc} />
         <title>{pageTitle}</title>
+        <link rel="canonical" href={`https://smbstrategyconsultants.com${new URL(c.req.url).pathname}`} />
 
         {/* Search Atlas dynamic optimization */}
         <script
@@ -57,6 +58,24 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
             !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}var c=window;try{r=c.localStorage.getItem("_pg") catch(t){}var s=t;for(s.init=function(i,s,a){var g=new t;return g.init(i,s,a),g},s.capture=function(){},s.identify=function(){},s.set_config=function(){},s.register=function(){},s.register_once=function(){},s.unregister=function(){},s.opt_out_capturing=function(){},s.opt_in_capturing=function(){},s.set_config=function(){},s.onFeatureFlags=function(){},s.identify=function(){},s.alias=function(){},s.getFeatureFlag=function(){},s.getFeatureFlagPayload=function(){},s.isFeatureEnabled=function(){},s.reloadFeatureFlags=function(){},s.updateEarlyAccessFeatureEnrollment=function(){},s.getEarlyAccessFeatures=function(){},s.onSessionId=function(){},s.get_session_id=function(){},s.get_session_replay_url=function(){},s.reset=function(){},s.setPersonProperties=function(){},s.setPersonPropertiesForFlags=function(){},s.setGroupPropertiesForFlags=function(){},s.group=function(){},s.resetGroups=function(){},s.setPersonProperties=function(){},s.setPersonPropertiesForFlags=function(){},s.setGroupPropertiesForFlags=function(){},s.group=function(){},s.resetGroups=function(){},n=t.createElement("script"),n.type="text/javascript",n.async=!0,n.src=s,p=t.getElementsByTagName("script")[0],p.parentNode.insertBefore(n,p)}if(!window.posthog){var e=window.posthog=[];e.methods=["capture","identify","alias","people.set","people.set_once","set_config","register","register_once","unregister","opt_out_capturing","opt_in_capturing","add_opt_in_check","add_opt_out_check","has_opt_in_capturing","has_opt_out_capturing","clear_opt_in_out_capturing","debug","get_property","set_config","onFeatureFlags","identify","alias","getFeatureFlag","getFeatureFlagPayload","isFeatureEnabled","reloadFeatureFlags","updateEarlyAccessFeatureEnrollment","getEarlyAccessFeatures","onSessionId","get_session_id","get_session_replay_url","reset","setPersonProperties","setPersonPropertiesForFlags","setGroupPropertiesForFlags","group","resetGroups"],e.factory=function(t){return function(){var o=Array.prototype.slice.call(arguments);return o.unshift(t),e.push(o),e}},e.init=function(t,o,n){var p=e;for(void 0!==n?p=e[n]=[]:n="posthog",p.people=p.people||[],p.toString=function(t){var o="posthog";return"posthog"!==n&&(o+="."+n),t&&(o+=" (stub)"),o},p.people.toString=function(){return p.toString(1)+".people (stub)"},o=0;o<e.methods.length;o++)p[e.methods[o]]=e.factory(e.methods[o]);var r=t.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://us.i.posthog.com/static/array.js",a=t.getElementsByTagName("script")[0],a.parentNode.insertBefore(r,a)},e.init("${phKey}",{api_host:"${phHost}"})}}(document,window.posthog||[]);
           `}} />
         )}
+
+        {/* Meta Pixel */}
+        <script dangerouslySetInnerHTML={{ __html: `
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '727020719747724');
+  fbq('track', 'PageView');
+`}} />
+        <noscript>
+          <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=727020719747724&ev=PageView&noscript=1" />
+        </noscript>
 
         {/* Netlify Identity Widget — required for Decap CMS login */}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

@@ -196,7 +196,7 @@ landingPages.get('/growth-constraint-quiz', (c) => {
         renderQuestion();
       `}} />
     </div>,
-    { title: 'Growth Constraint Quiz — Find Your Growth Ceiling', activeNav: '' }
+    { title: 'Growth Constraint Quiz', description: 'Take the free growth constraint quiz and discover what is really blocking leverage in your service business.', activeNav: '' }
   )
 })
 

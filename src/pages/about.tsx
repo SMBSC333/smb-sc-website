@@ -110,7 +110,7 @@ about.get('/', (c) => {
       </section>
     </div>,
     { 
-      title: 'About — SMB Strategy Consultants', 
+      title: 'About', 
       description: 'Meet Corbin Cook. We help owner-led service firms move from reactive growth to structured leverage through financial clarity and AI implementation.',
       activeNav: 'about' 
     }

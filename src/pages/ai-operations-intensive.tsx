@@ -120,7 +120,7 @@ intensive.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'AI-Enabled Operations Intensive | SMB Strategy Consultants', activeNav: 'intensives' }
+    { title: 'AI-Enabled Operations Intensive', description: 'Install custom AI agents to automate high-variance manual tasks. Reclaim 40%+ capacity in your service business.', activeNav: 'intensives' }
   )
 })
 

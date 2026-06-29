@@ -190,7 +190,7 @@ howItWorks.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'How It Works', activeNav: 'how' }
+    { title: 'How the 90-Day AI Sprint Works', description: 'Three phases: diagnose, build, hand off. Our 90-day AI implementation sprint finds the real constraint and installs workflows your team owns.', activeNav: 'how' }
   )
 })
 

@@ -120,7 +120,7 @@ intensive.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'Financial Clarity Intensive | SMB Strategy Consultants', activeNav: 'intensives' }
+    { title: 'Financial Clarity Intensive', description: 'Fix profit leaks and unit economics before deploying AI. Financial clarity for owner-led service firms ready to scale.', activeNav: 'intensives' }
   )
 })
 

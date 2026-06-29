@@ -322,7 +322,7 @@ home.get('/', (c) => {
       </section>
 
     </div>,
-    { title: 'AI-Enabled Business Growth for SMBs' }
+    { title: 'AI-Enabled Business Growth for SMBs', description: 'We help owner-led service businesses ($1M–$5M) implement AI that sticks. Constraint diagnosis, workflow automation, and 90-day implementation sprints.' }
   )
 })
 

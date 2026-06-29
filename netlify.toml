@@ -11,6 +11,31 @@
   to = "/admin/"
   status = 301
 
+# WordPress sitemap leftovers — 410 Gone signals removal to Googlebot
+[[redirects]]
+  from = "/sitemap_index.xml"
+  to = "/sitemap.xml"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/page-sitemap.xml"
+  to = "/sitemap.xml"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/post-sitemap.xml"
+  to = "/sitemap.xml"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/wp-sitemap.xml"
+  to = "/sitemap.xml"
+  status = 410
+  force = true
+
 # Edge function handles all dynamic routes
 # excludedPath ensures static assets + admin are served directly by Netlify CDN
 # IMPORTANT: Added /.netlify/* to excludedPath to allow Identity/Functions to work

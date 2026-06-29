@@ -298,7 +298,7 @@ why4997.get('/', (c) => {
       </section>
     </div>,
     { 
-      title: 'Why $7,500/mo — SMB Strategy Consultants', 
+      title: 'Why $7,500/mo', 
       description: 'Understanding the ROI math behind the 90-Day AI Implementation Sprint and the cost of operational friction.',
       activeNav: 'services' 
     }

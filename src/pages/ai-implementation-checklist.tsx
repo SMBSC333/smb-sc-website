@@ -192,8 +192,8 @@ aiImplementationChecklist.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'AI Implementation Checklist for Service Businesses — 23-Point Pre-Implementation Audit',
-      description: 'The 23-point AI implementation checklist for owner-led service firms. Covers workflow documentation, owner dependency, role clarity, team readiness, and economics before deploying any AI tool.',
+      title: '23-Point AI Implementation Checklist',
+      description: 'The 23-point AI implementation checklist for owner-led service firms. Covers workflows, owner dependency, role clarity, and team readiness.',
       activeNav: 'resources'
     }
   )

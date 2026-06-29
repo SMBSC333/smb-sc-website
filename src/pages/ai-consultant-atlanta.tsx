@@ -132,8 +132,8 @@ aiConsultantAtlanta.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'AI Implementation Consultant — Atlanta, GA',
-      description: 'SMB Strategy Consultants is an Atlanta-based AI implementation consulting firm serving owner-led B2B service businesses across the Atlanta metro. We diagnose the real constraint and build the implementation that sticks.',
+      title: 'AI Consultant Atlanta, GA',
+      description: 'Atlanta-based AI implementation consulting for owner-led B2B service businesses. We diagnose the real constraint and build what sticks.',
       activeNav: ''
     }
   )

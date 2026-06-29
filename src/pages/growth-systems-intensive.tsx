@@ -1,127 +1,135 @@
 import { Hono } from 'hono'
 
-const intensive = new Hono()
+const growthSystemsIntensive = new Hono()
 
-intensive.get('/', (c) => {
+growthSystemsIntensive.get('/', (c) => {
   return c.render(
     <div>
+
       {/* ── HERO ── */}
-      <section class="hero hero-photo section-lg">
-        <picture class="hero-bg-picture" aria-hidden="true">
-          <img src="/static/images/intensive-growth-systems.png" alt="Growth Systems" class="hero-bg-img" fetchpriority="high" />
-        </picture>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="container hero-content">
-          <span class="eyebrow" style="color:var(--color-gold-light);">Competitive Advantage — Track 02</span>
-          <h1 style="color:#fff;">Growth Systems</h1>
-          <p class="lead" style="color:rgba(255,255,255,0.9);">
-            Building the foundations to stay ahead of the competition. We identify where your client acquisition may be leaking and install the systems for sustainable scale.
-          </p>
-          <div class="hero-actions" style="margin-top:2rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+      <section class="page-hero-v2 bg-navy-deep">
+        <div class="container">
+          <div class="hero-content-v2">
+            <span class="eyebrow" style="color: var(--color-gold);">Focused Sprint</span>
+            <h1 style="color: #fff;">You're losing deals to slower follow-up — and building the same proposals from scratch every time.</h1>
+            <p class="hero-lead">
+              The Growth Systems Intensive builds a repeatable, AI-assisted lead-to-close workflow in weeks. Faster follow-up, consistent proposals, a pipeline the owner doesn't have to manage manually.
+            </p>
+            <div class="hero-cta-group">
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── THE PROBLEM ── */}
+      {/* ── THE CONSTRAINT ── */}
       <section class="section bg-white">
         <div class="container">
-          <div class="grid-2" style="align-items: center;">
+          <div class="grid-2" style="align-items: center; gap: 4rem;">
             <div>
               <span class="eyebrow">The Constraint</span>
-              <h2>You've hit a ceiling that "more hustle" won't fix.</h2>
-              <div class="gold-line"></div>
-              <p class="lead">
-                Most businesses stall after their initial growth phase because their acquisition engine is inconsistent and their pricing is too low for the scale of operations they need.
+              <h2>Leads come in. Half of them go cold before anyone follows up.</h2>
+              <div class="gold-line mb-4"></div>
+              <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
+                In most owner-led service firms, lead follow-up depends on the owner's bandwidth. When the owner is delivering, leads wait. When leads wait, deals go to whoever responded faster.
               </p>
-              <p class="body-v2">
-                The Growth Systems Intensive is about surgical refinement of your market positioning. We find the high-leverage services you should be doubling down on and install the scripts and systems to sell them at premium rates.
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                The proposal problem compounds it. Every proposal is built from scratch because the underlying pricing logic, scope language, and delivery promises are still in the owner's head — not in a system anyone else can use.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                This intensive documents the logic, builds the workflow, and gets AI-assisted follow-up running — so leads get responded to in minutes, not days.
               </p>
             </div>
-            <div class="card card-accent" style="padding: 2.5rem; background: var(--color-navy); color: #fff;">
-              <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">Symptom Check</h4>
+            <div class="card card-navy p-5">
+              <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">Symptom check — if any of these are true, this is for you</h4>
               <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
-                <li style="color: rgba(255,255,255,0.85);">Growth has plateaued despite consistent effort.</li>
-                <li style="color: rgba(255,255,255,0.85);">Referrals are your only reliable lead source.</li>
-                <li style="color: rgba(255,255,255,0.85);">You're "busy" but not growing in profit or revenue.</li>
-                <li style="color: rgba(255,255,255,0.85);">Low-value clients are taking up 80% of your team's capacity.</li>
+                <li style="color: rgba(255,255,255,0.85);">Follow-up timing depends entirely on the owner's availability.</li>
+                <li style="color: rgba(255,255,255,0.85);">Every proposal takes hours because nothing is templated from your actual workflow.</li>
+                <li style="color: rgba(255,255,255,0.85);">Leads who don't hear back within 48 hours go elsewhere.</li>
+                <li style="color: rgba(255,255,255,0.85);">Your team can't run the sales process without you in the room.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── MODULAR BREAKDOWN ── */}
+      {/* ── WHAT GETS BUILT ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
-            <span class="eyebrow">The Installation</span>
-            <h2>Building the growth engine.</h2>
+            <span class="eyebrow">What Gets Built</span>
+            <h2>Lead to close — documented and automated</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
-          <div class="grid-3">
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">01</span>
-              <h4>Scalability Audit</h4>
-              <p class="text-sm">We identify which service lines can scale to 10x current volume without breaking your operations or quality standards.</p>
+          <div class="grid-3" style="gap: 2rem;">
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">01</span>
+              <h4>Lead Response Automation</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">Automated first contact within minutes of inquiry. Qualified leads get routed correctly without requiring the owner to review every one that comes in.</p>
             </div>
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">02</span>
-              <h4>Pricing Power Matrix</h4>
-              <p class="text-sm">Refining your offer architecture. We move you from variable cost-based pricing to value-based outcomes that command higher margins.</p>
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">02</span>
+              <h4>Proposal System</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">Proposal logic documented, templated, and built into an AI-assisted system that produces a full draft in minutes — not hours. Based on your actual pricing and delivery model.</p>
             </div>
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">03</span>
-              <h4>Acquisition Cadence</h4>
-              <p class="text-sm">Installation of a predictable lead generation system that doesn't rely on the founder's personal network or daily manual effort.</p>
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">03</span>
+              <h4>Follow-Up Sequence</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">A documented, AI-assisted multi-step follow-up workflow that runs whether or not the owner is available. Leads stay warm. Deals stay moving.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── DELIVERABLES ── */}
-      <section class="section">
+      {/* ── OUTCOME ── */}
+      <section class="section bg-navy-deep">
         <div class="container">
-          <div class="intensive-detail-box outcome-box" style="padding: 3rem; border-radius: var(--radius-xl);">
-            <span class="eyebrow" style="color: var(--color-gold-light);">The Outcome</span>
-            <h2 style="color: #fff; margin-bottom: 2rem;">Growth Activation Roadmap</h2>
-            <div class="grid-2">
-              <div>
-                <h4 style="color: var(--color-gold-light); font-size: 0.75rem; letter-spacing: 0.15em;">Immediate Assets</h4>
-                <ul class="intensive-includes">
-                  <li><strong>The Scalability Audit:</strong> Identifying which parts of your engine break at 2x revenue.</li>
-                  <li><strong>Target Acquisition Map:</strong> Your highest-ROI client profiles.</li>
-                  <li><strong>Sales Tracking Engine:</strong> Clear metrics for every stage of the funnel.</li>
-                </ul>
+          <div class="grid-2" style="gap: 4rem; align-items: center;">
+            <div>
+              <span class="eyebrow" style="color:var(--color-gold);">The Outcome</span>
+              <h2 style="color:#fff; margin-top:0.75rem;">A sales pipeline your team runs without you in every deal.</h2>
+              <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+                By the end of the intensive, lead response is automated, proposals are built from a documented system, and follow-up runs without owner involvement. Your team has the tools and SOPs to manage the pipeline.
+              </p>
+              <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.8; margin-top:1rem;">
+                You stay informed. You close deals when needed. But the process doesn't stop when you're not watching.
+              </p>
+              <div class="mt-5">
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
               </div>
-              <div>
-                <h4 style="color: var(--color-gold-light); font-size: 0.75rem; letter-spacing: 0.15em;">Strategic Impact</h4>
-                <ul class="intensive-includes">
-                  <li>Escape from random acts of marketing.</li>
-                  <li>A predictable acquisition engine that you control.</li>
-                  <li>Improved pricing power and win rates.</li>
-                </ul>
-              </div>
+            </div>
+            <div>
+              <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
+                <li style="color:rgba(255,255,255,0.85);">Lead response automation deployed and tested</li>
+                <li style="color:rgba(255,255,255,0.85);">Proposal system built from your actual pricing logic</li>
+                <li style="color:rgba(255,255,255,0.85);">Follow-up sequence documented and automated</li>
+                <li style="color:rgba(255,255,255,0.85);">Team trained on each workflow with SOPs</li>
+                <li style="color:rgba(255,255,255,0.85);">CRM configuration reviewed and cleaned if needed</li>
+                <li style="color:rgba(255,255,255,0.85);">30-day live support after deployment</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── FINAL CTA ── */}
-      <section class="cta-band bg-navy section-lg">
+      {/* ── CTA ── */}
+      <section class="section bg-soft">
         <div class="container text-center">
-          <h2 style="color:#fff;">Ready to identify your top growth lever?</h2>
-          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">
-            Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your business is ready for scale.
-          </p>
-          <div style="margin-top: 2.5rem;">
+          <h2>One diagnostic call confirms the constraint and the fit.</h2>
+          <p class="lead" style="max-width:640px; margin:1.5rem auto;">30 minutes. We look at your current lead-to-close workflow and tell you honestly where the biggest leaks are.</p>
+          <div class="mt-4">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
           </div>
         </div>
       </section>
+
     </div>,
-    { title: 'Growth Systems Intensive', description: 'Rebuild your acquisition engine so you can scale without adding chaos. Growth systems for owner-led B2B service firms.', activeNav: 'intensives' }
+    {
+      title: 'Growth Systems Intensive — SMB Strategy Consultants',
+      description: 'Build a repeatable AI-assisted lead-to-close workflow. Faster follow-up, consistent proposals, a pipeline your team runs without you.',
+      activeNav: 'services'
+    }
   )
 })
 
-export default intensive
+export default growthSystemsIntensive

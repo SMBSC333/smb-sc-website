@@ -1,127 +1,133 @@
 import { Hono } from 'hono'
 
-const intensive = new Hono()
+const financialClarityIntensive = new Hono()
 
-intensive.get('/', (c) => {
+financialClarityIntensive.get('/', (c) => {
   return c.render(
     <div>
+
       {/* ── HERO ── */}
-      <section class="hero hero-photo section-lg">
-        <picture class="hero-bg-picture" aria-hidden="true">
-          <img src="/static/images/intensive-financial-clarity.png" alt="Financial Clarity" class="hero-bg-img" fetchpriority="high" />
-        </picture>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="container hero-content">
-          <span class="eyebrow" style="color:var(--color-gold-light);">The Foundation Layer — Track 01</span>
-          <h1 style="color:#fff;">Financial Clarity</h1>
-          <p class="lead" style="color:rgba(255,255,255,0.9);">
-            The essential foundation for Growth-Leveraged AI. We identify exactly where profit may be leaking and where your unit economics are broken.
-          </p>
-          <div class="hero-actions" style="margin-top:2rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+      <section class="page-hero-v2 bg-navy-deep">
+        <div class="container">
+          <div class="hero-content-v2">
+            <span class="eyebrow" style="color: var(--color-gold);">Focused Sprint</span>
+            <h1 style="color: #fff;">You're making decisions on numbers that are already 3 weeks old.</h1>
+            <p class="hero-lead">
+              The Financial Clarity Intensive deploys a real-time financial layer in weeks — not months. You stop running your business on monthly P&amp;L reports and start making decisions on current data.
+            </p>
+            <div class="hero-cta-group">
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── THE PROBLEM ── */}
+      {/* ── THE CONSTRAINT ── */}
       <section class="section bg-white">
         <div class="container">
-          <div class="grid-2" style="align-items: center;">
+          <div class="grid-2" style="align-items: center; gap: 4rem;">
             <div>
               <span class="eyebrow">The Constraint</span>
-              <h2>Revenue is growing, but margin is shrinking.</h2>
-              <div class="gold-line"></div>
-              <p class="lead">
-                Most scaling businesses have a "visibility" problem, not a sales problem. You are making money, but you don't know exactly which products, clients, or workflows are driving profit versus just creating noise.
+              <h2>Revenue is growing. Margin isn't keeping up.</h2>
+              <div class="gold-line mb-4"></div>
+              <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
+                Most scaling service businesses have a visibility problem — not a sales problem. You're generating revenue. You're delivering. But you can't tell with confidence which service lines are profitable, which clients are worth keeping, or where the margin is leaking.
               </p>
-              <p class="body-v2">
-                The Financial Clarity Intensive is designed to find the leaks. We move past bookkeeping to strategic analysis—mapping your unit economics so you can scale with confidence.
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                The Financial Clarity Intensive fixes the data layer first — before anything else gets optimized. You can't fix what you can't see. And you can't make confident decisions on numbers that are always three weeks behind.
               </p>
             </div>
-            <div class="card card-accent" style="padding: 2.5rem; background: var(--color-navy); color: #fff;">
-              <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">Symptom Check</h4>
+            <div class="card card-navy p-5">
+              <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">Symptom check — if any of these are true, this is for you</h4>
               <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
-                <li style="color: rgba(255,255,255,0.85);">You hit revenue targets but bank balances remain flat.</li>
-                <li style="color: rgba(255,255,255,0.85);">You're afraid to increase prices because you don't know your true margins.</li>
+                <li style="color: rgba(255,255,255,0.85);">You hit revenue targets but bank balances stay flat.</li>
+                <li style="color: rgba(255,255,255,0.85);">You're afraid to raise prices because you don't know your true margins.</li>
                 <li style="color: rgba(255,255,255,0.85);">Cash flow feels like a roller coaster despite consistent sales.</li>
-                <li style="color: rgba(255,255,255,0.85);">You lack accurate forecasts for the next 6–12 months.</li>
+                <li style="color: rgba(255,255,255,0.85);">Decisions are based on monthly reports that are always 3–4 weeks behind.</li>
+                <li style="color: rgba(255,255,255,0.85);">You don't know which service line or client is actually carrying the business.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── MODULAR BREAKDOWN ── */}
+      {/* ── WHAT GETS BUILT ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
-            <span class="eyebrow">Installation Phase</span>
-            <h2>What we audit and install.</h2>
+            <span class="eyebrow">What Gets Built</span>
+            <h2>The financial layer that runs automatically</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
-          <div class="grid-3">
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">01</span>
+          <div class="grid-3" style="gap: 2rem;">
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">01</span>
               <h4>Unit Economics Audit</h4>
-              <p class="text-sm">We break down the cost-to-deliver for every service line. You'll see exactly which clients are profitable and which are costing you more than they pay.</p>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">We break down the cost-to-deliver for every service line and client type. You see exactly where margin is being made and where it's being lost — with specifics, not ranges.</p>
             </div>
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">02</span>
-              <h4>Cash flow Architecture</h4>
-              <p class="text-sm">Mapping your cash conversion cycle. We identify delays in billing, collections, and vendor payments that are strangling your liquidity.</p>
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">02</span>
+              <h4>Cash Flow Architecture</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">We map your cash conversion cycle — billing timing, collection delays, vendor payment patterns — and identify the specific structural issues creating cash flow volatility.</p>
             </div>
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">03</span>
-              <h4>The Profit Scorecard</h4>
-              <p class="text-sm">Installation of a high-level strategic dashboard. No more messy spreadsheets—just the 3–5 numbers that actually drive your growth.</p>
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">03</span>
+              <h4>Real-Time Financial Dashboard</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">Connected directly to your QuickBooks. The numbers your business actually needs — revenue, margin, cash position, leading indicators — updated automatically, not monthly.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── DELIVERABLES ── */}
-      <section class="section">
+      {/* ── OUTCOME ── */}
+      <section class="section bg-navy-deep">
         <div class="container">
-          <div class="intensive-detail-box outcome-box" style="padding: 3rem; border-radius: var(--radius-xl);">
-            <span class="eyebrow" style="color: var(--color-gold-light);">The Outcome</span>
-            <h2 style="color: #fff; margin-bottom: 2rem;">The Financial Blueprint</h2>
-            <div class="grid-2">
-              <div>
-                <h4 style="color: var(--color-gold-light); font-size: 0.75rem; letter-spacing: 0.15em;">Immediate Assets</h4>
-                <ul class="intensive-includes">
-                  <li><strong>Margin Analysis Report:</strong> Know where your profit is leaking.</li>
-                  <li><strong>Product Mix Optimizer:</strong> Tool to price future jobs accurately for maximum yield.</li>
-                  <li><strong>Liquidity Dashboard:</strong> Steps to stabilize cash flow and build a 6-month reserve.</li>
-                </ul>
+          <div class="grid-2" style="gap: 4rem; align-items: center;">
+            <div>
+              <span class="eyebrow" style="color:var(--color-gold);">The Outcome</span>
+              <h2 style="color:#fff; margin-top:0.75rem;">You leave with a running financial clarity system — not a report.</h2>
+              <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+                This is not a one-time analysis. By the end of the intensive, you have a deployed, automated financial layer that pulls from your books in real time and surfaces the specific numbers that drive your decisions.
+              </p>
+              <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.8; margin-top:1rem;">
+                You own it. Your team can use it. You stop building monthly reports by hand and start reviewing a live dashboard every morning.
+              </p>
+              <div class="mt-5">
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
               </div>
-              <div>
-                <h4 style="color: var(--color-gold-light); font-size: 0.75rem; letter-spacing: 0.15em;">Strategic Impact</h4>
-                <ul class="intensive-includes">
-                  <li>Waste is eliminated through data-backed decisions.</li>
-                  <li>Confidence to scale without fear of a "growth crunch."</li>
-                  <li>A clear path to doubling profitability per project.</li>
-                </ul>
-              </div>
+            </div>
+            <div>
+              <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
+                <li style="color:rgba(255,255,255,0.85);">Margin analysis by service line and client type</li>
+                <li style="color:rgba(255,255,255,0.85);">Cash flow cycle mapped and restructured</li>
+                <li style="color:rgba(255,255,255,0.85);">Real-time QBO-connected dashboard deployed</li>
+                <li style="color:rgba(255,255,255,0.85);">5 key financial indicators tracked automatically</li>
+                <li style="color:rgba(255,255,255,0.85);">Documentation and team onboarding included</li>
+                <li style="color:rgba(255,255,255,0.85);">30-day live support after deployment</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── FINAL CTA ── */}
-      <section class="cta-band bg-navy section-lg">
+      {/* ── CTA ── */}
+      <section class="section bg-soft">
         <div class="container text-center">
-          <h2 style="color:#fff;">Ready to find your friction?</h2>
-          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">
-            Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leaks are.
-          </p>
-          <div style="margin-top: 2.5rem;">
+          <h2>One diagnostic call confirms the constraint and the fit.</h2>
+          <p class="lead" style="max-width:640px; margin:1.5rem auto;">30 minutes. We look at your current financial infrastructure and tell you honestly whether this intensive is the right first move.</p>
+          <div class="mt-4">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
           </div>
         </div>
       </section>
+
     </div>,
-    { title: 'Financial Clarity Intensive', description: 'Fix profit leaks and unit economics before deploying AI. Financial clarity for owner-led service firms ready to scale.', activeNav: 'intensives' }
+    {
+      title: 'Financial Clarity Intensive — SMB Strategy Consultants',
+      description: 'Stop making business decisions on 3-week-old data. Deploy a real-time financial clarity layer in weeks. Unit economics, cash flow, and live QBO dashboard.',
+      activeNav: 'services'
+    }
   )
 })
 
-export default intensive
+export default financialClarityIntensive

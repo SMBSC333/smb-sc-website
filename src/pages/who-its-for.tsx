@@ -128,7 +128,7 @@ whoItsFor.get('/', (c) => {
 
     </div>,
     {
-      title: "Who It's For — SMB Strategy Consultants",
+      title: "Who It's For",
       description: "We work with owner-led service firms ($500K–$3M) where AI has already stalled and the owner is still the bottleneck. Also CPAs and bookkeepers looking for a white-label financial clarity tool.",
       activeNav: 'who'
     }

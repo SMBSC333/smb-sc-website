@@ -259,7 +259,7 @@ home.get('/', (c) => {
 
     </div>,
     {
-      title: 'AI Implementation for Owner-Led Service Firms — SMB Strategy Consultants',
+      title: 'AI Implementation for Owner-Led Service Firms',
       description: 'You tried AI. It didn\'t stick. We find the real constraint — live, in 30 minutes — and give you one clear next move. Owner-led service firms, $500K–$3M.'
     }
   )

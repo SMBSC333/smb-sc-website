@@ -123,7 +123,7 @@ financialClarityIntensive.get('/', (c) => {
 
     </div>,
     {
-      title: 'Financial Clarity Intensive — SMB Strategy Consultants',
+      title: 'Financial Clarity Intensive',
       description: 'Stop making business decisions on 3-week-old data. Deploy a real-time financial clarity layer in weeks. Unit economics, cash flow, and live QBO dashboard.',
       activeNav: 'services'
     }

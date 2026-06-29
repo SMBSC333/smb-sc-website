@@ -166,7 +166,7 @@ whyAiFails.get('/', (c) => {
 
     </div>,
     {
-      title: 'Why AI Fails in Owner-Led Service Businesses — SMB Strategy Consultants',
+      title: 'Why AI Fails in Owner-Led Service Businesses',
       description: 'AI fails not because of the tools but because of workflow gaps, owner dependency, and wrong sequencing. Here is the real diagnosis and what actually fixes it.',
       activeNav: ''
     }

@@ -162,7 +162,7 @@ howItWorks.get('/', (c) => {
 
     </div>,
     {
-      title: 'How It Works — SMB Strategy Consultants',
+      title: 'How It Works',
       description: 'Three phases: diagnose the constraint, build the system, hand off ownership. Starts with a free 30-minute diagnostic call. Ends with a working system your team owns in 90 days.',
       activeNav: 'how'
     }

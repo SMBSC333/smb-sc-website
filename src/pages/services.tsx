@@ -161,7 +161,7 @@ services.get('/', (c) => {
 
     </div>,
     {
-      title: 'Services — SMB Strategy Consultants',
+      title: 'Services',
       description: 'AI implementation, financial clarity, and focused intensives for owner-led service firms. Diagnosis first. Working system in 90 days. You own it when we leave.',
       activeNav: 'services'
     }

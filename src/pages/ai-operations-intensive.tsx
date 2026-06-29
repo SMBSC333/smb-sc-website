@@ -125,7 +125,7 @@ aiOperationsIntensive.get('/', (c) => {
 
     </div>,
     {
-      title: 'AI Operations Intensive — SMB Strategy Consultants',
+      title: 'AI Operations Intensive',
       description: 'Three AI workflows deployed and adopted in 30 days. Specific to your business, trained into your team, running before we leave.',
       activeNav: 'services'
     }

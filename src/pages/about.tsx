@@ -115,7 +115,7 @@ about.get('/', (c) => {
 
     </div>,
     {
-      title: 'About — SMB Strategy Consultants',
+      title: 'About',
       description: 'Meet Corbin Cook. We start with the constraint — not the tool. Owner-led service firms that have tried AI and stalled find the real blocker and a working 90-day implementation.',
       activeNav: 'about'
     }

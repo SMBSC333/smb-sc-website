@@ -125,7 +125,7 @@ ownerDependencyIntensive.get('/', (c) => {
 
     </div>,
     {
-      title: 'Owner Dependency Intensive — SMB Strategy Consultants',
+      title: 'Owner Dependency Intensive',
       description: 'Remove yourself as the bottleneck. Document the judgment calls only you make. Build the delegation infrastructure so your team runs without you.',
       activeNav: 'services'
     }

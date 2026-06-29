@@ -125,7 +125,7 @@ growthSystemsIntensive.get('/', (c) => {
 
     </div>,
     {
-      title: 'Growth Systems Intensive — SMB Strategy Consultants',
+      title: 'Growth Systems Intensive',
       description: 'Build a repeatable AI-assisted lead-to-close workflow. Faster follow-up, consistent proposals, a pipeline your team runs without you.',
       activeNav: 'services'
     }

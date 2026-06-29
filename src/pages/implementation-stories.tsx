@@ -127,7 +127,7 @@ implementationStories.get('/', (c) => {
 
     </div>,
     {
-      title: 'Implementation Stories — SMB Strategy Consultants',
+      title: 'Implementation Stories',
       description: 'Real AI implementation outcomes from owner-led service firms. The constraint is always findable. Here is what changed when it was found.',
       activeNav: ''
     }

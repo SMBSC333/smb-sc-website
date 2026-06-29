@@ -62,7 +62,7 @@ contact.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'Contact — SMB Strategy Consultants', activeNav: 'contact' }
+    { title: 'Contact Us', description: 'Get in touch with SMB Strategy Consultants. We help owner-led service firms implement AI and build operational leverage.', activeNav: 'contact' }
   )
 })
 

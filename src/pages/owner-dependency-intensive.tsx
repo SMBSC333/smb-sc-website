@@ -120,7 +120,7 @@ intensive.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'Owner Dependency Intensive | SMB Strategy Consultants', activeNav: 'intensives' }
+    { title: 'Owner Dependency Intensive', description: 'Remove the founder as the operational bottleneck. Install team-led rhythms so your business runs without you in every workflow.', activeNav: 'intensives' }
   )
 })
 

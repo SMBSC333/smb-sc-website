@@ -120,7 +120,7 @@ intensive.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'Growth Systems Intensive | SMB Strategy Consultants', activeNav: 'intensives' }
+    { title: 'Growth Systems Intensive', description: 'Rebuild your acquisition engine so you can scale without adding chaos. Growth systems for owner-led B2B service firms.', activeNav: 'intensives' }
   )
 })
 

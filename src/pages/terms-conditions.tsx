@@ -214,7 +214,7 @@ terms.get('/', (c) => {
       </section>
 
     </div>,
-    { title: 'Terms & Conditions — SMB Strategy Consultants' }
+    { title: 'Terms & Conditions' }
   )
 })
 

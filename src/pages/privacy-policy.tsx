@@ -56,7 +56,7 @@ privacy.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'Privacy Policy — SMB Strategy Consultants', activeNav: '' }
+    { title: 'Privacy Policy', activeNav: '' }
   )
 })
 

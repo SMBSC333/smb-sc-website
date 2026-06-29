@@ -77,8 +77,8 @@ strategyCall.get('/', (c) => {
       </section>
     </div>,
     { 
-      title: 'Free 30-Min Strategy Call', 
-      description: 'Book your 30-minute strategy call to identify operational friction and evaluate your readiness for Growth-Leveraged AI.',
+      title: 'Free AI Strategy Call for SMB Owners', 
+      description: 'Free 30-min call for service business owners. We identify your top operational constraint and show exactly where AI creates the most leverage.',
       activeNav: 'contact' 
     }
   )

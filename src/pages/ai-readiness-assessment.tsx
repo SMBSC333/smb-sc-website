@@ -170,8 +170,8 @@ aiReadinessAssessment.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'AI Readiness Assessment for Owner-Led Service Firms',
-      description: 'Before buying another AI tool, find out if your business is actually ready to use one. This free assessment identifies the specific constraint blocking AI adoption in your firm in under 10 minutes.',
+      title: 'Free AI Readiness Assessment',
+      description: 'Is your business actually ready for AI? This free assessment identifies the specific constraint blocking adoption in your firm. Takes under 10 minutes.',
       activeNav: 'resources'
     }
   )

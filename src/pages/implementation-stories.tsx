@@ -119,8 +119,8 @@ implementationStories.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'AI Implementation Stories — Owner-Led Service Firms',
-      description: 'Real outcomes from B2B service firms that went through structured AI implementation engagements. Marketing agencies, MSPs, and consulting firms that removed owner dependency and reclaimed capacity.',
+      title: 'AI Implementation Stories',
+      description: 'Real outcomes from B2B service firms that completed structured AI implementation. Agencies, MSPs, and consulting firms that cut owner dependency.',
       activeNav: 'resources'
     }
   )

@@ -174,7 +174,7 @@ services.get('/', (c) => {
       </section>
     </div>,
     { 
-      title: "The 90-Day AI Implementation Sprint — SMB Strategy Consultants", 
+      title: "The 90-Day AI Implementation Sprint", 
       description: "One integrated offer. Three phases. Complete hand-off. Build the foundations for Growth-Leveraged AI in 90 days.",
       activeNav: 'services' 
     }

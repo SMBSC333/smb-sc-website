@@ -168,8 +168,8 @@ aiImplementationConsultant.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'AI Implementation Consultant for Owner-Led Service Firms',
-      description: 'SMB Strategy Consultants is the AI implementation consulting firm owner-led B2B service businesses hire after AI has already failed. We diagnose the real constraint and build the implementation that sticks.',
+      title: 'AI Consultant for Service Firms',
+      description: 'The AI implementation firm owner-led service businesses hire after AI has failed. We find the real constraint and build the implementation that sticks.',
       activeNav: 'services'
     }
   )

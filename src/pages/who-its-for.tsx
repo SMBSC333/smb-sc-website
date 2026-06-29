@@ -127,7 +127,7 @@ whoItsFor.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: "Who It's For", activeNav: 'who' }
+    { title: "Who It's For", description: "We work with owner-led B2B service firms ($1M–$5M) where AI has stalled or the owner is still the bottleneck. See if you're a fit.", activeNav: 'who' }
   )
 })
 

@@ -148,8 +148,8 @@ whyAiFails.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'Why AI Fails in Owner-Led Businesses — and What Actually Fixes It',
-      description: 'AI implementation fails in most small businesses not because of the tools, but because of undiagnosed workflow, role clarity, owner dependency, and team readiness constraints. Here is what actually fixes it.',
+      title: 'Why AI Fails in Small Businesses',
+      description: 'AI fails in small businesses not because of tools, but because of undiagnosed workflow, owner dependency, and team readiness issues. Here is what fixes it.',
       activeNav: ''
     }
   )

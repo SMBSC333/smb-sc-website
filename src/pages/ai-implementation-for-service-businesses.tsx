@@ -160,8 +160,8 @@ aiForServiceBusinesses.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'AI Implementation for Service Businesses — Built for B2B Service Firms',
-      description: 'AI implementation for B2B service businesses is different from product companies. Owner-led service firms have specific constraints: undocumented workflows, owner dependency, and judgment-heavy delivery. We build for that context.',
+      title: 'AI Implementation for Service Businesses',
+      description: 'AI implementation designed for owner-led B2B service firms. We diagnose workflow constraints, reduce owner dependency, and build systems your team runs.',
       activeNav: 'services'
     }
   )

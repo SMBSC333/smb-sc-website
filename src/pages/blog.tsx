@@ -93,7 +93,7 @@ blog.get('/', (c) => {
         </div>
       </section>
     </div>,
-    { title: 'Insights', activeNav: 'blog' }
+    { title: 'Insights', description: 'Articles on AI implementation, owner dependency, and operational leverage for service business owners.', activeNav: 'blog' }
   )
 })
 

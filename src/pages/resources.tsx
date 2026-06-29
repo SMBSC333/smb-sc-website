@@ -95,7 +95,7 @@ resources.get('/', (c) => {
       </section>
     </div>,
     { 
-      title: 'Resources — SMB Strategy Consultants', 
+      title: 'Resources', 
       activeNav: 'resources',
       description: 'Practical tools, insights, and diagnostic resources for small business owners building for leverage and AI adoption.'
     }

@@ -5,178 +5,165 @@ const services = new Hono()
 services.get('/', (c) => {
   return c.render(
     <div>
-      {/* ── HERO SECTION ── */}
+
+      {/* ── HERO ── */}
       <section class="page-hero-v2 bg-navy-deep">
         <div class="container">
           <div class="hero-content-v2">
-            <span class="eyebrow" style="color: var(--color-gold);">One Integrated Offer</span>
-            <h1 style="color: #fff;">The AI Implementation Engagement</h1>
+            <span class="eyebrow" style="color: var(--color-gold);">What We Do — Specifically</span>
+            <h1 style="color: #fff;">Not advice. Not a playbook.<br/>A working system in 90 days.</h1>
             <p class="hero-lead">
-              We diagnose the real constraint first. Then we build the right implementation path. Three phases, complete hand-off, and you own the system at the end.
+              We diagnose the specific constraint blocking AI from working in your business. Then we build the implementation around it — workflows, tools, documentation, team training. At the end of 90 days, you own it and we step back.
             </p>
-            <div class="hero-actions" style="margin-top:2.5rem; display: flex; gap: 1rem; align-items: center;">
+            <div class="hero-cta-group">
               <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="/how-it-works" class="btn btn-ghost-light btn-lg">See How It Works</a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── WHAT'S INCLUDED ── */}
+      {/* ── SERVICE 1: AI IMPLEMENTATION ── */}
       <section class="section bg-white">
         <div class="container">
-          <div class="section-header center mb-5">
-            <span class="eyebrow">The Scope</span>
-            <h2>What&rsquo;s Included in the Sprint</h2>
-            <div class="gold-line gold-line-center"></div>
-          </div>
-
-          <div class="grid-3">
-            
-            {/* PHASE 1: DIAGNOSTIC */}
-            <div class="card card-white p-5 border-light">
-              <span class="eyebrow" style="color: var(--color-gold-dark);">Month 01</span>
-              <h3>Diagnostic Phase</h3>
-              <ul class="intensive-includes mb-4" style="list-style: none; padding: 0;">
-                <li>Current-state workflow audit</li>
-                <li>Team readiness assessment</li>
-                <li>Constraint identification (top 1-3 friction points)</li>
-                <li>Quick-win implementation (1-3 immediate ROI wins)</li>
-                <li>Month 2-3 roadmap and scope definition</li>
-              </ul>
-            </div>
-
-            {/* PHASE 2: BUILD */}
-            <div class="card card-white p-5 border-light">
-              <span class="eyebrow" style="color: var(--color-gold-dark);">Month 02</span>
-              <h3>Build Phase</h3>
-              <ul class="intensive-includes mb-4" style="list-style: none; padding: 0;">
-                <li>Workflow design (2-3 tailored AI processes)</li>
-                <li>Custom Internal Solutions: Building tools to solve specific agitation where standard software fails</li>
-                <li>System integration and setup</li>
-                <li>Testing with your team</li>
-                <li>SOP documentation for every workflow</li>
-                <li>Implementation support and troubleshooting</li>
-              </ul>
-            </div>
-
-            {/* PHASE 3: HAND-OFF */}
-            <div class="card card-white p-5 border-light">
-              <span class="eyebrow" style="color: var(--color-gold-dark);">Month 03</span>
-              <h3>Hand-Off Phase</h3>
-              <ul class="intensive-includes mb-4" style="list-style: none; padding: 0;">
-                <li>Comprehensive team training</li>
-                <li>Complete operating documentation package</li>
-                <li>Full SOPs, checklists, and playbooks</li>
-                <li>30-day post-launch support window</li>
-                <li>One final optimization pass</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── THE VALUE LADDER ── */}
-      <section class="section bg-soft">
-        <div class="container">
-          <div class="mt-2" style="max-width: 800px; margin-left: auto; margin-right: auto;">
-            <div class="section-header center mb-4">
-              <span class="eyebrow">The Path to Scale</span>
-              <h2>The Value Ladder</h2>
-              <p>We build in sequences. Each step installs a new layer of capacity and leverage.</p>
-            </div>
-            
-            <div class="ladder" style="border: 1px solid var(--color-bg-border); border-radius: var(--radius-lg); overflow: hidden; background: #fff;">
-              <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
-                <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">00</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">Free Strategy Call</div>
-                <div style="font-weight: 700; color: var(--color-gold-dark);">Free</div>
-              </div>
-              <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
-                <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">01</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">AI Sequencing Blueprint Session</div>
-                <div style="font-weight: 700; color: var(--color-navy);">$1,497</div>
-              </div>
-              <div class="ls hl" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border); background: var(--color-bg-soft);">
-                <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-gold-dark); width: 40px;">02</div>
-                <div style="flex: 1; font-weight: 700; color: var(--color-navy);">AI Implementation Engagement <span class="intensive-tag" style="margin-left: 0.5rem; margin-bottom: 0;">Primary</span></div>
-                <div style="font-weight: 700; color: var(--color-navy);">$2,000 setup + $7,500/mo &times; 3</div>
-              </div>
-              <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
-                <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">03</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">CFO Clarity Layer</div>
-                <div style="font-weight: 700; color: var(--color-navy);">Recurring SaaS / Firm License</div>
-              </div>
-              <div class="ls" style="display: flex; align-items: center; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--color-bg-border);">
-                <div style="font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; color: var(--color-text-muted); width: 40px;">04</div>
-                <div style="flex: 1; font-weight: 600; color: var(--color-navy);">Enterprise AI Transformation</div>
-                <div style="font-weight: 700; color: var(--color-navy);">Custom</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHAT YOU OWN ── */}
-      <section class="section bg-white">
-        <div class="container">
-          <div class="grid-2" style="align-items: center; gap: 4rem;">
-            <div>
-              <span class="eyebrow">The Result</span>
-              <h2>What You Own After 90 Days</h2>
-              <div class="gold-line"></div>
-              <p class="lead">We don't sell retainers that stretch for years. We deliver implementation and hand you the keys.</p>
+          <div class="split-section">
+            <div class="split-content">
+              <span class="eyebrow">Core Engagement</span>
+              <h2>AI Implementation Sprint</h2>
+              <p class="lead" style="color:var(--color-gold-dark); margin:1rem 0;">For owner-led service firms where AI has stalled — or hasn't been tried the right way yet.</p>
+              <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
+                This is a full 90-day implementation engagement. Three phases: diagnose the constraint, build the solution, hand off ownership. We don't leave you with a strategy deck. We leave you with a running system.
+              </p>
               <ul class="feature-list mt-4">
-                <li><strong>Operating systems</strong> that run without us in the loop.</li>
-                <li><strong>Team trained and confident</strong> on new AI-enabled workflows.</li>
-                <li><strong>Full documentation</strong> for every process we install.</li>
-                <li><strong>Measurable baseline improvement</strong> in margin or capacity.</li>
-                <li><strong>The knowledge</strong> to evolve the system yourself.</li>
+                <li><strong>Month 1 — Diagnostic:</strong> Live constraint assessment. We identify the specific workflow, dependency, or sequencing issue that caused past failures.</li>
+                <li><strong>Month 2 — Build:</strong> Custom workflows, automations, integrations, and SOPs built to your actual business — not a generic template.</li>
+                <li><strong>Month 3 — Hand-Off:</strong> Team training, documentation, and 30-day live support. You own the system. We step back.</li>
               </ul>
+              <div class="mt-5">
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
+              </div>
             </div>
-            <div class="card card-navy" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-               <div style="padding: 3rem; flex-grow: 1;">
-                 <h3 style="color: #fff; margin-bottom: 1.5rem;">Implementation, not advice.</h3>
-                 <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Most consultants sell theories. We build systems. By day 90, your business is operationally competitive and ahead of the competition.</p>
-                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-block text-center" style="width:100%;">Book Your Free Strategy Call</a>
-               </div>
-               <img src="/static/images/intensive-ai-operations.png" alt="AI Operations Visualization" style="width: 100%; height: 300px; object-fit: cover; display: block;" />
+            <div style="display:flex; flex-direction:column; gap:1.5rem;">
+              <div class="card card-navy p-5">
+                <h4 style="color:var(--color-gold-light); margin-bottom:1rem;">What you get at the end</h4>
+                <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
+                  <li style="color:rgba(255,255,255,0.85);">Owner working hours reduced — specific number, not a promise.</li>
+                  <li style="color:rgba(255,255,255,0.85);">Documented workflows your team runs without you.</li>
+                  <li style="color:rgba(255,255,255,0.85);">AI integrations that are actually adopted — not just set up.</li>
+                  <li style="color:rgba(255,255,255,0.85);">SOPs your team can train new hires from without you in the room.</li>
+                  <li style="color:rgba(255,255,255,0.85);">2.5x year-one ROI as the baseline target.</li>
+                </ul>
+              </div>
+              <div class="card card-accent p-4">
+                <p style="font-size:0.85rem; line-height:1.7; color:var(--color-text-muted); margin:0;">
+                  <strong>Who this is for:</strong> Owner-led B2B service firms, $500K–$3M revenue, 5–30 employees, where you are still the primary bottleneck in delivery, sales, or approvals.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── INVESTMENT ── */}
+      {/* ── SERVICE 2: CFO CLARITY ── */}
       <section class="section bg-soft">
-        <div class="container text-center">
-          <span class="eyebrow">Investment</span>
-          <h2>Clear Pricing. High ROI.</h2>
-          <div class="gold-line gold-line-center"></div>
-          <p class="lead" style="max-width: 700px; margin: 0 auto 2rem;">
-            Investment starts at $7,500/month + $2,000 setup. Scope and structure are confirmed on the Strategy Call based on your constraint diagnosis. 
-          </p>
-          <div class="mt-4 mb-5">
-             <p style="color: var(--color-text-muted); font-size: 0.95rem;">
-                Looking for the ROI breakdown? <a href="/why-4997" style="color: var(--color-gold-dark); font-weight: 600; text-decoration: underline;">See the ROI math behind our standard $7,500/mo pricing &rarr;</a>
-             </p>
+        <div class="container">
+          <div class="split-section reversed">
+            <div style="display:flex; flex-direction:column; gap:1.5rem;">
+              <div class="card card-navy p-5">
+                <h4 style="color:var(--color-gold-light); margin-bottom:1rem;">What CPAs and bookkeepers get</h4>
+                <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
+                  <li style="color:rgba(255,255,255,0.85);">White-label financial clarity tool to put in front of SMB clients.</li>
+                  <li style="color:rgba(255,255,255,0.85);">Automated financial dashboards — no manual report building.</li>
+                  <li style="color:rgba(255,255,255,0.85);">Real-time data from QBO, no monthly reconciliation lag.</li>
+                  <li style="color:rgba(255,255,255,0.85);">Differentiator that positions you as the advisory firm — not just the compliance firm.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="split-content">
+              <span class="eyebrow">Financial Clarity</span>
+              <h2>CFO Clarity Layer</h2>
+              <p class="lead" style="color:var(--color-gold-dark); margin:1rem 0;">For SMB owners who are always running on stale numbers — and for the CPAs and bookkeepers who want to give clients a better tool.</p>
+              <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
+                Most owner-led service firms make decisions on P&amp;L data that's 2–4 weeks behind. By the time you see it, the situation has already moved. The CFO Clarity Layer connects directly to your books and gives you real-time financial signal — not a monthly report you have to interpret.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text); margin-top:1rem;">
+                For CPAs and bookkeepers: this is a white-label tool you can put in front of your SMB clients without building it yourself. It becomes the thing that makes you the advisory firm — not just the compliance firm.
+              </p>
+              <div class="mt-5">
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Talk About the CFO Clarity Layer</a>
+              </div>
+            </div>
           </div>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
         </div>
       </section>
 
-      {/* ── FINAL CTA BAND ── */}
-      <section class="cta-band bg-navy">
+      {/* ── INTENSIVES ── */}
+      <section class="section bg-white">
         <div class="container">
-          <h2>Ready to identify the real blocker?</h2>
-          <p class="lead">Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+          <div class="section-header center mb-6">
+            <span class="eyebrow">Focused Sprints</span>
+            <h2>Intensive engagements for one specific problem</h2>
+            <div class="gold-line gold-line-center"></div>
+            <p class="lead mt-4" style="max-width:700px; margin:0 auto;">Not every business needs a full 90-day implementation. If you have a single high-cost constraint that needs to move now, an intensive gets you there in weeks, not months.</p>
+          </div>
+          <div class="grid-4" style="gap:2rem;">
+            <div class="card card-white p-5" style="border-top:3px solid var(--color-gold);">
+              <h4 class="mb-2">Financial Clarity Intensive</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.7;">Real-time financial dashboard deployed in weeks. Stop making decisions on stale data.</p>
+              <a href="/financial-clarity-intensive" style="display:block; margin-top:1.5rem; color:var(--color-gold-dark); font-weight:600; font-size:0.9rem;">See details &rarr;</a>
+            </div>
+            <div class="card card-white p-5" style="border-top:3px solid var(--color-gold);">
+              <h4 class="mb-2">Growth Systems Intensive</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.7;">Build a repeatable, AI-assisted lead-to-close workflow. Stop losing deals to slower follow-up.</p>
+              <a href="/growth-systems-intensive" style="display:block; margin-top:1.5rem; color:var(--color-gold-dark); font-weight:600; font-size:0.9rem;">See details &rarr;</a>
+            </div>
+            <div class="card card-white p-5" style="border-top:3px solid var(--color-gold);">
+              <h4 class="mb-2">Owner Dependency Intensive</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.7;">Remove yourself as the bottleneck. Document the judgment calls only you currently make.</p>
+              <a href="/owner-dependency-intensive" style="display:block; margin-top:1.5rem; color:var(--color-gold-dark); font-weight:600; font-size:0.9rem;">See details &rarr;</a>
+            </div>
+            <div class="card card-white p-5" style="border-top:3px solid var(--color-gold);">
+              <h4 class="mb-2">AI Operations Intensive</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.7;">Three AI workflows deployed and adopted in 30 days. Specific to your business — not a template.</p>
+              <a href="/ai-operations-intensive" style="display:block; margin-top:1.5rem; color:var(--color-gold-dark); font-weight:600; font-size:0.9rem;">See details &rarr;</a>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* ── FAILURE STAKES ── */}
+      <section class="section bg-navy-deep">
+        <div class="container text-center">
+          <span class="eyebrow" style="color:var(--color-gold);">The Cost of Waiting</span>
+          <h2 style="color:#fff; max-width:700px; margin:0 auto 1.5rem;">Every month the constraint stays unfixed is a month you're paying for it.</h2>
+          <p style="color:rgba(255,255,255,0.75); max-width:660px; margin:0 auto 2rem; font-size:1.05rem; line-height:1.75;">
+            Unworked leads, manual reporting hours, scheduling friction, stale financial decisions — it adds up to $32K–$61K a year in recoverable friction. The diagnostic call is free. The math usually makes the decision obvious.
+          </p>
+          <div style="display:flex; gap:3rem; justify-content:center; flex-wrap:wrap; margin-bottom:2.5rem;">
+            <div style="text-align:center;">
+              <div style="font-size:2rem; font-weight:700; color:var(--color-gold);">$37K</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">average annual friction cost<br/>in owner-led service firms</div>
+            </div>
+            <div style="width:1px; background:rgba(255,255,255,0.15);"></div>
+            <div style="text-align:center;">
+              <div style="font-size:2rem; font-weight:700; color:var(--color-gold);">2.5x</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">year-one ROI target<br/>on implementation investment</div>
+            </div>
+            <div style="width:1px; background:rgba(255,255,255,0.15);"></div>
+            <div style="text-align:center;">
+              <div style="font-size:2rem; font-weight:700; color:var(--color-gold);">90 days</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">to a working system<br/>your team owns</div>
+            </div>
+          </div>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+        </div>
+      </section>
+
     </div>,
-    { 
-      title: "The 90-Day AI Implementation Sprint", 
-      description: "One integrated offer. Three phases. Complete hand-off. Build the foundations for Growth-Leveraged AI in 90 days.",
-      activeNav: 'services' 
+    {
+      title: 'Services',
+      description: 'AI implementation, financial clarity, and focused intensives for owner-led service firms. Diagnosis first. Working system in 90 days. You own it when we leave.',
+      activeNav: 'services'
     }
   )
 })

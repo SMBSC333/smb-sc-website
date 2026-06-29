@@ -1,127 +1,135 @@
 import { Hono } from 'hono'
 
-const intensive = new Hono()
+const aiOperationsIntensive = new Hono()
 
-intensive.get('/', (c) => {
+aiOperationsIntensive.get('/', (c) => {
   return c.render(
     <div>
+
       {/* ── HERO ── */}
-      <section class="hero hero-photo section-lg">
-        <picture class="hero-bg-picture" aria-hidden="true">
-          <img src="/static/images/intensive-ai-operations.png" alt="AI Operations" class="hero-bg-img" fetchpriority="high" />
-        </picture>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="container hero-content">
-          <span class="eyebrow" style="color:var(--color-gold-light);">Strategic Installation — Track 04</span>
-          <h1 style="color:#fff;">AI-Enabled Operations</h1>
-          <p class="lead" style="color:rgba(255,255,255,0.9);">
-            Practical installation of Growth-Leveraged AI. We map your team's constraints and install custom AI agents to reclaim 40%+ operational capacity.
-          </p>
-          <div class="hero-actions" style="margin-top:2rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+      <section class="page-hero-v2 bg-navy-deep">
+        <div class="container">
+          <div class="hero-content-v2">
+            <span class="eyebrow" style="color: var(--color-gold);">Focused Sprint</span>
+            <h1 style="color: #fff;">Three AI workflows deployed and adopted.<br/>In 30 days. Specific to your business.</h1>
+            <p class="hero-lead">
+              Not a generic automation template. Not a tool recommendation and a handshake. Three AI workflows built to your actual operations, trained into your team, and running by day 30.
+            </p>
+            <div class="hero-cta-group">
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── THE PROBLEM ── */}
+      {/* ── THE CONSTRAINT ── */}
       <section class="section bg-white">
         <div class="container">
-          <div class="grid-2" style="align-items: center;">
+          <div class="grid-2" style="align-items: center; gap: 4rem;">
             <div>
-              <span class="eyebrow">The Opportunity</span>
-              <h2>Your team is doing work that shouldn't belong to humans.</h2>
-              <div class="gold-line"></div>
-              <p class="lead">
-                The biggest drain on service-based businesses is "administrative friction"—the manual data entry, the repetitive email follow-ups, and the basic research that eats up your highest-paid talent's time.
+              <span class="eyebrow">The Constraint</span>
+              <h2>You know what should be automated. You can't get to the build.</h2>
+              <div class="gold-line mb-4"></div>
+              <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
+                Most service business owners can name three or four things that should be running on automation. The bottleneck isn't knowledge — it's time, and the gap between "I want to build this" and "it's deployed and my team uses it."
               </p>
-              <p class="body-v2">
-                The AI-Enabled Operations Intensive isn't about teaching your team to "use ChatGPT." It's about building and installing autonomous agents that live in your workflows and handle the heavy lifting while your team focuses on high-level decision making.
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                The AI Operations Intensive closes that gap. We run a constraint-first diagnostic to identify the three highest-leverage workflows for your specific business, then we build and deploy them — with team training and SOPs included.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                You don't get three tools set up. You get three workflows running.
               </p>
             </div>
-            <div class="card card-accent" style="padding: 2.5rem; background: var(--color-navy); color: #fff;">
-              <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">Symptom Check</h4>
+            <div class="card card-navy p-5">
+              <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">Symptom check — if any of these are true, this is for you</h4>
               <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
-                <li style="color: rgba(255,255,255,0.85);">Your team feels "overwhelmed" despite having the right head count.</li>
-                <li style="color: rgba(255,255,255,0.85);">You have data in multiple places that never talks to each other.</li>
-                <li style="color: rgba(255,255,255,0.85);">Content creation, client reporting, or invoicing takes days, not minutes.</li>
-                <li style="color: rgba(255,255,255,0.85);">You've tried AI tools but they haven't "stuck" in a meaningful way.</li>
+                <li style="color: rgba(255,255,255,0.85);">You have AI tools you're not fully using because no one built the workflow.</li>
+                <li style="color: rgba(255,255,255,0.85);">You know what should be automated but never have time to build it.</li>
+                <li style="color: rgba(255,255,255,0.85);">Previous AI implementations got set up but never fully adopted.</li>
+                <li style="color: rgba(255,255,255,0.85);">Your team knows they should be using AI but doesn't know where to start.</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── MODULAR BREAKDOWN ── */}
+      {/* ── WHAT GETS BUILT ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
-            <span class="eyebrow">The Installation</span>
-            <h2>Moving from Tooling to Agents.</h2>
+            <span class="eyebrow">What Gets Built</span>
+            <h2>Three workflows. Deployed. Adopted.</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
-          <div class="grid-3">
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">01</span>
-              <h4>Constraint Mapping</h4>
-              <p class="text-sm">We process your team's actual workday to find the repetitive, low-variance tasks that are ideal for AI replacement or augmentation.</p>
+          <div class="grid-3" style="gap: 2rem;">
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">01</span>
+              <h4>Constraint Diagnosis</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">We identify which three workflows will produce the highest leverage for your specific business — not a generic list, a prioritized selection based on your actual operations and the friction costing you the most right now.</p>
             </div>
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">02</span>
-              <h4>Agent Installation</h4>
-              <p class="text-sm">We don't just recommend—we build. We install custom AI agents (built on your existing tech stack) to handle specific back-office or client-facing workflows.</p>
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">02</span>
+              <h4>Build and Deploy</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">We build the three workflows to your actual business operations. If standard tools can implement them, we build on those. If a friction point requires a custom integration, we build that too.</p>
             </div>
-            <div class="card card-white">
-              <span class="card-number" style="color: var(--color-gold-dark); opacity: 1;">03</span>
-              <h4>Team Adoption Sprints</h4>
-              <p class="text-sm">Practical training sessions to ensure your team knows how to prompt, supervise, and improve the AI systems we've installed.</p>
+            <div class="card card-white p-5">
+              <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:700; color:var(--color-gold-dark); display:block; margin-bottom:1rem;">03</span>
+              <h4>Team Training and SOPs</h4>
+              <p style="font-size:0.95rem; line-height:1.75; color:var(--color-text-muted); margin-top:0.75rem;">Every workflow comes with documented SOPs and live team training. The definition of "deployed" here is "your team uses it without asking you how." We don't hand off until that's true.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── DELIVERABLES ── */}
-      <section class="section">
+      {/* ── OUTCOME ── */}
+      <section class="section bg-navy-deep">
         <div class="container">
-          <div class="intensive-detail-box outcome-box" style="padding: 3rem; border-radius: var(--radius-xl);">
-            <span class="eyebrow" style="color: var(--color-gold-light);">The Outcome</span>
-            <h2 style="color: #fff; margin-bottom: 2rem;">The AI-Enabled Infrastructure</h2>
-            <div class="grid-2">
-              <div>
-                <h4 style="color: var(--color-gold-light); font-size: 0.75rem; letter-spacing: 0.15em;">Immediate Assets</h4>
-                <ul class="intensive-includes">
-                  <li><strong>The Efficiency Map:</strong> Visualizing exactly where time was reclaimed.</li>
-                  <li><strong>3 Custom AI Agents:</strong> Built and deployed in your primary workspace.</li>
-                  <li><strong>AI Usage Governance:</strong> Clear policies for safety and security.</li>
-                </ul>
+          <div class="grid-2" style="gap: 4rem; align-items: center;">
+            <div>
+              <span class="eyebrow" style="color:var(--color-gold);">The Outcome</span>
+              <h2 style="color:#fff; margin-top:0.75rem;">Three running workflows. Owned by your team. Not dependent on us.</h2>
+              <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.8; margin-top:1.5rem;">
+                By day 30, you have three AI workflows deployed and running, documented in SOPs, and trained into your team. The tools are set up correctly. The processes are documented. Ownership is with your team — not with us.
+              </p>
+              <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.8; margin-top:1rem;">
+                The goal is adoption, not access. If the workflows aren't being used by the team by day 30, we extend the support window until they are.
+              </p>
+              <div class="mt-5">
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
               </div>
-              <div>
-                <h4 style="color: var(--color-gold-light); font-size: 0.75rem; letter-spacing: 0.15em;">Strategic Impact</h4>
-                <ul class="intensive-includes">
-                  <li>40%+ increase in per-person operational capacity.</li>
-                  <li>Faster response times for clients and internal tasks.</li>
-                  <li>Future-proofing the business against AI disruption.</li>
-                </ul>
-              </div>
+            </div>
+            <div>
+              <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
+                <li style="color:rgba(255,255,255,0.85);">Three highest-leverage workflows identified via constraint diagnosis</li>
+                <li style="color:rgba(255,255,255,0.85);">All three built to your actual operations — not templates adapted to you</li>
+                <li style="color:rgba(255,255,255,0.85);">Team trained with live sessions on each workflow</li>
+                <li style="color:rgba(255,255,255,0.85);">SOPs documented and stored where your team can find them</li>
+                <li style="color:rgba(255,255,255,0.85);">Adoption confirmed — not just access granted</li>
+                <li style="color:rgba(255,255,255,0.85);">30-day live support after deployment</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── FINAL CTA ── */}
-      <section class="cta-band bg-navy section-lg">
+      {/* ── CTA ── */}
+      <section class="section bg-soft">
         <div class="container text-center">
-          <h2 style="color:#fff;">Ready to build your AI infrastructure?</h2>
-          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">
-            Book a free 30-minute strategy call. We will look at your operations and tell you honestly where AI can create the most leverage in your business.
-          </p>
-          <div style="margin-top: 2.5rem;">
+          <h2>One diagnostic call identifies which three workflows to build first.</h2>
+          <p class="lead" style="max-width:640px; margin:1.5rem auto;">30 minutes. We review your current operations and tell you honestly where AI will produce the most leverage the fastest.</p>
+          <div class="mt-4">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
           </div>
         </div>
       </section>
+
     </div>,
-    { title: 'AI-Enabled Operations Intensive', description: 'Install custom AI agents to automate high-variance manual tasks. Reclaim 40%+ capacity in your service business.', activeNav: 'intensives' }
+    {
+      title: 'AI Operations Intensive',
+      description: 'Three AI workflows deployed and adopted in 30 days. Specific to your business, trained into your team, running before we leave.',
+      activeNav: 'services'
+    }
   )
 })
 
-export default intensive
+export default aiOperationsIntensive

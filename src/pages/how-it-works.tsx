@@ -5,13 +5,15 @@ const howItWorks = new Hono()
 howItWorks.get('/', (c) => {
   return c.render(
     <div>
+
+      {/* ── HERO ── */}
       <section class="page-hero-v2 bg-navy-deep">
         <div class="container">
           <div class="hero-content-v2">
-            <span class="eyebrow" style="color: var(--color-gold);">Implementation System</span>
-            <h1 style="color: #fff;">The 90-Day AI Implementation Sprint: From Diagnosis to Hand-Off</h1>
+            <span class="eyebrow" style="color: var(--color-gold);">The Process</span>
+            <h1 style="color: #fff;">One call. One constraint identified.<br/>One clear next move.</h1>
             <p class="hero-lead">
-              This is not a retainer. It's not consulting. It's a 90-day implementation system designed to identify your constraint, build the solution, and hand you operational control.
+              We don't start with a proposal, a scope of work, or a tool recommendation. We start with a 30-minute diagnostic. Everything else follows from what we find there.
             </p>
             <div class="hero-cta-group">
               <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
@@ -20,177 +22,150 @@ howItWorks.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── THE 90-DAY SPRINT MILESTONES ── */}
+      {/* ── WHY SEQUENCE MATTERS ── */}
+      <section class="section bg-white">
+        <div class="container" style="max-width:860px;">
+          <div class="section-header center mb-5">
+            <span class="eyebrow">Before the Steps</span>
+            <h2>Why sequencing is the whole game</h2>
+            <div class="gold-line gold-line-center"></div>
+          </div>
+          <div style="font-size:1.05rem; line-height:1.85; color:var(--color-text);">
+            <p>Most AI implementations fail because they were built in the wrong order. The tool was real. The intent was real. But somewhere upstream — in a workflow, a handoff, a judgment call only the owner makes — there was a gap that no tool can cross.</p>
+            <p class="mt-3">You can deploy the best AI automation money can buy on top of an undocumented process and the adoption will fail every time. Not because of the tool. Because the foundation wasn't there first.</p>
+            <p class="mt-3"><strong>Sequencing is the work.</strong> Before anything gets built or recommended, we identify what the actual first step is for your specific business. That's what changes the outcome.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PHASE 1 ── */}
+      <section class="section bg-soft">
+        <div class="container">
+          <div class="grid-2" style="align-items:start; gap:4rem;">
+            <div>
+              <div class="step-num" style="font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">01</div>
+              <span class="eyebrow">Phase One</span>
+              <h2 class="mt-2">The Diagnostic Call</h2>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem; color:var(--color-text);">
+                This is a live 30-minute constraint assessment. Not a sales call. Not a discovery call. A diagnostic.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                We cover three areas: what AI implementations you've already tried and what happened, where the owner is still required in the business, and what the financial picture looks like at the operational level.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                You leave with a diagnosis — whether or not we work together. If there's a clear fit, we describe what an engagement looks like. If there isn't, we tell you what the actual next move is.
+              </p>
+              <div class="mt-4">
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book the Diagnostic Call</a>
+              </div>
+            </div>
+            <div class="card card-navy p-5">
+              <h4 style="color:var(--color-gold-light); margin-bottom:1.5rem;">What we're looking for on the call</h4>
+              <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:1.25rem;">
+                <li style="display:flex; gap:1rem; align-items:start;">
+                  <span style="color:var(--color-gold); font-weight:700; flex-shrink:0; font-family:var(--font-heading);">1</span>
+                  <span style="color:rgba(255,255,255,0.85); font-size:0.95rem; line-height:1.65;">The specific constraint — workflow gap, owner dependency, team readiness, or sequencing failure</span>
+                </li>
+                <li style="display:flex; gap:1rem; align-items:start;">
+                  <span style="color:var(--color-gold); font-weight:700; flex-shrink:0; font-family:var(--font-heading);">2</span>
+                  <span style="color:rgba(255,255,255,0.85); font-size:0.95rem; line-height:1.65;">Whether foundations exist for AI to connect to — or whether those need to be built first</span>
+                </li>
+                <li style="display:flex; gap:1rem; align-items:start;">
+                  <span style="color:var(--color-gold); font-weight:700; flex-shrink:0; font-family:var(--font-heading);">3</span>
+                  <span style="color:rgba(255,255,255,0.85); font-size:0.95rem; line-height:1.65;">The economic case — whether the friction cost justifies the implementation investment</span>
+                </li>
+                <li style="display:flex; gap:1rem; align-items:start;">
+                  <span style="color:var(--color-gold); font-weight:700; flex-shrink:0; font-family:var(--font-heading);">4</span>
+                  <span style="color:rgba(255,255,255,0.85); font-size:0.95rem; line-height:1.65;">The right first move — not a list of ideas, one ranked next action</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PHASE 2 ── */}
       <section class="section bg-white">
         <div class="container">
-          <div class="section-header center">
-            <span class="eyebrow">The AI Implementation Engagement</span>
-            <h2>Three months to operational clarity</h2>
-          </div>
-          
-          <div class="process-vertical">
-            {/* Step 1 */}
-            <div class="process-step-v">
-              <div class="step-dot">1</div>
-              <h3>Weeks 1-4: Identify the Real Constraint</h3>
-              <p>We audit your current state: workflows, automation gaps, team readiness, owner dependencies, and economic viability. We identify your top 1-3 AI-ready constraints and deliver quick wins for immediate ROI.</p>
-              <p class="text-sm mt-2" style="color:var(--color-gold-dark);">Deliverables: Diagnostic report. Quick-win implementation. Roadmap for months 2-3.</p>
+          <div class="grid-2" style="align-items:start; gap:4rem;">
+            <div class="card card-accent p-5">
+              <h4 class="mb-3">What gets built in Phase 2</h4>
+              <ul class="feature-list">
+                <li>Core workflow documentation — the processes that were in your head, written down</li>
+                <li>AI integrations sequenced in the right order for your specific constraint</li>
+                <li>Custom internal tools if standard software can't solve a unique friction point</li>
+                <li>SOPs your team can follow without asking you for every edge case</li>
+                <li>Financial clarity layer if the numbers are a constraint on decision-making</li>
+              </ul>
             </div>
-            
-            {/* Step 2 */}
-            <div class="process-step-v">
-              <div class="step-dot">2</div>
-              <h3>Weeks 5-8: Design and Deploy Tailored AI Workflows</h3>
-              <p>We execute the roadmap in sequence. For areas of agitation where standard software falls short, we build custom internal tools to bridge the gap and create unique leverage.</p>
-              <p class="text-sm mt-2" style="color:var(--color-gold-dark);">Deliverables: 2-3 deployed workflows (and custom internal tools if needed). Full SOPs. Team checklist for daily use.</p>
-            </div>
-            
-            {/* Step 3 */}
-            <div class="process-step-v">
-              <div class="step-dot">3</div>
-              <h3>Weeks 9-12: Train Your Team and Deliver Ownership</h3>
-              <p>Comprehensive training for your team on new systems, prompts, and daily workflows. We deliver the full operating documentation package to ensure smooth adoption.</p>
-              <p class="text-sm mt-2" style="color:var(--color-gold-dark);">Deliverables: Trained team. Complete documentation. Operating manual. 30-day support window.</p>
-            </div>
-            
-            {/* Step 4 */}
-            <div class="process-step-v">
-              <div class="step-dot">4</div>
-              <h3>Growth-Leveraged AI</h3>
-              <p>You leave with foundations that keep you ahead of the competition. Without these foundations, AI just amplifies the noise. With them, it creates scale.</p>
+            <div>
+              <div class="step-num" style="font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">02</div>
+              <span class="eyebrow">Phase Two</span>
+              <h2 class="mt-2">The Build</h2>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem; color:var(--color-text);">
+                Month two is where the work happens. We build the specific system your diagnostic revealed — not a generic template adapted to you, but a solution built around your actual business.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                If the constraint is a workflow that's entirely in your head, we document it first. If it's a handoff that breaks at a specific point, we rebuild that point. If standard software can't cross the gap, we build the lightweight custom tool that does.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                You are involved in this phase — but you are not doing the work. We do the build. You do the review.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── WHY THIS WORKS ── */}
+      {/* ── PHASE 3 ── */}
       <section class="section bg-soft">
         <div class="container">
-          <div class="section-header center">
-            <span class="eyebrow">The Difference</span>
-            <h2>Why This Works</h2>
-          </div>
-
-          <div class="grid-4">
-             <div class="card card-white">
-                <h4 style="color:var(--color-gold-dark);">Fast</h4>
-                <p class="text-sm">Results in 90 days, not 6-12 months of perpetual consulting. We move at the speed of your growth.</p>
-             </div>
-             <div class="card card-white">
-                <h4 style="color:var(--color-gold-dark);">Practical</h4>
-                <p class="text-sm">Built on your actual workflows, not generic best practices. We solve your real problems.</p>
-             </div>
-             <div class="card card-white">
-                <h4 style="color:var(--color-gold-dark);">Owned</h4>
-                <p class="text-sm">You run it after day 90. No ongoing dependency on us for daily operations.</p>
-             </div>
-             <div class="card card-white">
-                <h4 style="color:var(--color-gold-dark);">Measurable</h4>
-                <p class="text-sm">2.5x average year-one ROI ($37k friction saved vs. $14,991 invested in implementation).</p>
-             </div>
+          <div class="grid-2" style="align-items:start; gap:4rem;">
+            <div>
+              <div class="step-num" style="font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">03</div>
+              <span class="eyebrow">Phase Three</span>
+              <h2 class="mt-2">The Hand-Off</h2>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem; color:var(--color-text);">
+                Month three is about transfer. Your team gets trained on every system we built. Documentation is finalized so new hires can be onboarded from it. We run a 30-day live support window.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                The definition of success here is specific: <strong>your team runs the system without us, and you own it completely.</strong> If that's not happening by day 90, we don't call it done.
+              </p>
+              <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
+                We don't sell retainers after this. The goal is that you don't need one.
+              </p>
+            </div>
+            <div class="card card-navy p-5">
+              <h4 style="color:var(--color-gold-light); margin-bottom:1.5rem;">What you own at day 90</h4>
+              <ul class="intensive-includes" style="--icon-color: var(--color-gold-light);">
+                <li style="color:rgba(255,255,255,0.85);">Documented workflows your team follows without asking you</li>
+                <li style="color:rgba(255,255,255,0.85);">AI integrations that are adopted, not just set up</li>
+                <li style="color:rgba(255,255,255,0.85);">SOP library new hires can be trained from</li>
+                <li style="color:rgba(255,255,255,0.85);">Custom tools you own outright — no license dependency on us</li>
+                <li style="color:rgba(255,255,255,0.85);">Measurable owner hours freed — not a percentage, an actual number</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── THE STRATEGIC FOUNDATIONS ── */}
-      <section class="section bg-soft">
-        <div class="container">
-          <div class="section-header center">
-            <span class="eyebrow">Strategic Logic</span>
-            <h2>Foundations First. AI Second.</h2>
-            <div class="gold-line gold-line-center"></div>
-            <p class="lead" style="max-width: 800px; margin: 1.5rem auto;">We don&rsquo;t bolt software to broken systems. We solve for the five foundational constraints that make AI actually work.</p>
-          </div>
-
-          <div class="grid-2 mt-5">
-            {/* 1. Financial Clarity */}
-            <div class="option-card">
-              <div class="option-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                  <polyline points="17 6 23 6 23 12"></polyline>
-                </svg>
-              </div>
-              <h4>Financial Clarity</h4>
-              <p class="text-sm">We find the profit leaks and fix unit economics so your AI ROI is measurable, not guessed.</p>
-            </div>
-
-            {/* 2. Growth Systems */}
-            <div class="option-card">
-              <div class="option-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                </svg>
-              </div>
-              <h4>Growth Systems</h4>
-              <p class="text-sm">We rebuild acquisition engines so you can scale without adding operational chaos.</p>
-            </div>
-
-            {/* 3. Owner Dependency */}
-            <div class="option-card">
-              <div class="option-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <h4>Owner Dependency</h4>
-              <p class="text-sm">We remove the founder as the bottleneck, installing the team-led rhythm needed for adoption.</p>
-            </div>
-
-            {/* 4. AI Operations */}
-            <div class="option-card">
-              <div class="option-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                  <rect x="9" y="9" width="6" height="6"></rect>
-                  <line x1="9" y1="1" x2="9" y2="4"></line>
-                  <line x1="15" y1="1" x2="15" y2="4"></line>
-                  <line x1="20" y1="9" x2="23" y2="9"></line>
-                  <line x1="1" y1="9" x2="4" y2="9"></line>
-                </svg>
-              </div>
-              <h4>AI Operations</h4>
-              <p class="text-sm">We install custom agents to handle high-variance manual tasks, reclaiming 40% capacity.</p>
-            </div>
-
-            {/* 5. Operational Systems */}
-            <div class="option-card">
-              <div class="option-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                  <polyline points="10 9 9 9 8 9"></polyline>
-                </svg>
-              </div>
-              <h4>Operational Systems</h4>
-              <p class="text-sm">We map every role's step-by-step process, install the operating rhythm, and use that clarity as the foundation for AI deployment that actually sticks.</p>
-            </div>
-          </div>
-
-          <div class="logic-callout mt-6 bg-navy-deep text-white p-5 text-center" style="border-radius: var(--radius-lg);">
-             <p style="font-size: 1.25rem; margin-bottom: 0;">
-                <strong>Diagnosis Before Prescription.</strong> We identify your primary constraint during the Fit Call before recommending any implementation path.
-             </p>
-             <div class="mt-4">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free Strategy Call</a>
-             </div>
-          </div>
+      {/* ── FINAL CTA ── */}
+      <section class="cta-band bg-navy section-lg">
+        <div class="container text-center">
+          <span class="eyebrow" style="color:var(--color-gold);">Step One</span>
+          <h2 style="color:#fff;">The diagnostic call is free.<br/>The clarity it produces is immediate.</h2>
+          <p class="lead" style="color:rgba(255,255,255,0.8); max-width:640px; margin:1.5rem auto 2.5rem;">
+            30 minutes. No pitch, no proposal, no obligation. You leave with a specific diagnosis and one clear next move — regardless of whether we work together.
+          </p>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Diagnostic Call &rarr;</a>
         </div>
       </section>
 
-      {/* ── FINAL CTA BAND ── */}
-      <section class="cta-band bg-soft">
-        <div class="container">
-          <h2>Ready to find your friction?</h2>
-          <p class="lead">Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leaks are.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
-        </div>
-      </section>
     </div>,
-    { title: 'How the 90-Day AI Sprint Works', description: 'Three phases: diagnose, build, hand off. Our 90-day AI implementation sprint finds the real constraint and installs workflows your team owns.', activeNav: 'how' }
+    {
+      title: 'How It Works',
+      description: 'Three phases: diagnose the constraint, build the system, hand off ownership. Starts with a free 30-minute diagnostic call. Ends with a working system your team owns in 90 days.',
+      activeNav: 'how'
+    }
   )
 })
 

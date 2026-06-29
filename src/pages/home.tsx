@@ -6,7 +6,7 @@ home.get('/', (c) => {
   return c.render(
     <div>
 
-      {/* ── HERO — Photo background, dark navy overlay ── */}
+      {/* ── HERO ── */}
       <section class="hero hero-photo section-lg">
         <picture class="hero-bg-picture" aria-hidden="true">
           <source type="image/webp" srcset="/static/images/smb-sc-hero-768.webp 768w, /static/images/smb-sc-hero-1024.webp 1024w, /static/images/smb-sc-hero-1440.webp 1440w, /static/images/smb-sc-hero-1920.webp 1920w" sizes="100vw" />
@@ -15,17 +15,35 @@ home.get('/', (c) => {
         </picture>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
-          <span class="eyebrow hero-eyebrow">The AI Implementation Partner</span>
-          <h1>Your business has enough tools. It needs more leverage.</h1>
-          <p class="lead">In a margin-compressed environment, the businesses that win are not the ones with the most tools — they are the ones who have installed the right leverage. We identify the real constraint and sequence the right implementation moves.</p>
+          <span class="eyebrow hero-eyebrow">AI Implementation for Owner-Led Service Firms</span>
+          <h1>You tried AI. It didn't stick.<br/>We find out why — and fix it.</h1>
+          <p class="lead">Most AI failures aren't a software problem. They're a workflow, sequencing, or owner-dependency problem. We diagnose the real constraint — live, in 30 minutes — and give you one clear next move.</p>
           <div class="hero-actions">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
-            <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If Your Business Is a Fit</a>
+            <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
           </div>
         </div>
       </section>
 
-      {/* ── TRUST BAR — certification badges ── */}
+      {/* ── FAILURE STRIP — make the right visitor feel seen ── */}
+      <section class="section-sm bg-white">
+        <div class="container">
+          <p class="text-center" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--color-text-muted); margin-bottom:1.5rem;">If any of these sound familiar, you're in the right place</p>
+          <div class="grid-3" style="gap:1.5rem; max-width:900px; margin:0 auto;">
+            <div style="padding:1.25rem 1.5rem; background:var(--color-bg-soft); border-radius:var(--radius-md); border-left:3px solid var(--color-gold);">
+              <p style="margin:0; font-size:0.95rem; line-height:1.6; color:var(--color-text);">"We set up the tools. The team used them for two weeks. Then everything drifted back."</p>
+            </div>
+            <div style="padding:1.25rem 1.5rem; background:var(--color-bg-soft); border-radius:var(--radius-md); border-left:3px solid var(--color-gold);">
+              <p style="margin:0; font-size:0.95rem; line-height:1.6; color:var(--color-text);">"I'm still the bottleneck. Every approval, every exception still runs through me."</p>
+            </div>
+            <div style="padding:1.25rem 1.5rem; background:var(--color-bg-soft); border-radius:var(--radius-md); border-left:3px solid var(--color-gold);">
+              <p style="margin:0; font-size:0.95rem; line-height:1.6; color:var(--color-text);">"We've spent money on AI twice. I can't tell if the problem is us or the technology."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── TRUST BAR ── */}
       <div class="trust-bar">
         <div class="container">
           <div class="trust-bar-inner">
@@ -39,41 +57,42 @@ home.get('/', (c) => {
         </div>
       </div>
 
-      {/* ── SECTION 2: THE HARD TRUTH ── */}
+      {/* ── THE PROBLEM (external + internal) ── */}
       <section class="section bg-white pb-0">
         <div class="container">
           <div class="split-section">
             <div class="split-content">
-              <span class="eyebrow">The Hard Truth</span>
-              <h2>You already tried AI. That is not the issue.</h2>
+              <span class="eyebrow">The Real Problem</span>
+              <h2>It's not the tools. It's never the tools.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>You bought the tools. You tested prompts. You sat through demos. Maybe your team even used them for a week or two.</p>
-                <p><strong>But adoption stalled.</strong> The owner is still the bottleneck. Workflows still feel messy. Capacity did not improve. And the promised leverage never showed up.</p>
-                <p class="lead mt-4">In most firms, AI does not fail because of the software. It fails because the business underneath it is not ready.</p>
+                <p>You bought the tools. You tested the prompts. You sat through demos and maybe ran a pilot. For a moment it looked like it was going to work.</p>
+                <p><strong>Then it stopped.</strong> The owner is still the bottleneck. Workflows are still messy. The AI just sits there, another subscription you're not fully using.</p>
+                <p class="mt-3" style="font-size:1.05rem; line-height:1.75;">The frustration is not that AI failed. The frustration is that you believed it would work — and you can't figure out what you did wrong.</p>
+                <p class="mt-3 lead">You didn't do anything wrong. The constraint was upstream from where you deployed the tool. That's a diagnosable problem. It has a specific fix.</p>
               </div>
             </div>
             <div class="split-img-container">
-              <img src="/static/images/truth-stalled.png" alt="Abstract Knowledge Graph Hub Visualization" loading="lazy" />
+              <img src="/static/images/truth-stalled.png" alt="AI implementation stalled" loading="lazy" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── SECTION 3: OUR IDENTITY ── */}
+      {/* ── THE GUIDE (empathy + authority) ── */}
       <section class="section bg-white pt-5">
         <div class="container">
           <div class="split-section reversed">
             <div class="split-img-container">
-              <img src="/static/images/identity-advisory.png" alt="Trusted Strategic Advisory" loading="lazy" />
+              <img src="/static/images/identity-advisory.png" alt="SMB Strategy Consultants — your implementation guide" loading="lazy" />
             </div>
             <div class="split-content">
-              <span class="eyebrow">Our Identity</span>
-              <h2>We are the firm owners hire after AI has already failed.</h2>
+              <span class="eyebrow">We've Been Here Before</span>
+              <h2>We're the firm owners call after AI has already failed once.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>We do not start with software recommendations. We do not lead with generic AI strategy. We do not hand you a templated playbook.</p>
-                <p><strong>We identify the real constraint</strong> blocking AI from creating value in your business and show you the right implementation path based on what your business actually needs. When that means building a custom internal tool to solve a unique point of agitation, we build it.</p>
+                <p>We don't show up with a tool recommendation. We don't hand you a generic playbook. We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong></p>
+                <p>Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — and we hand you full ownership in 90 days.</p>
                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free Strategy Call</a>
               </div>
             </div>
@@ -81,248 +100,168 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── SECTION 4: DIFFERENTIATORS ── */}
+      {/* ── THE PLAN (3 steps) ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
-            <span class="eyebrow">Why We Differ</span>
-            <h2>Diagnosis before Prescription</h2>
+            <span class="eyebrow">How It Works</span>
+            <h2>Three steps. One clear path forward.</h2>
+            <div class="gold-line gold-line-center"></div>
+          </div>
+          <div class="process-timeline">
+            <div class="grid-3" style="gap:2rem; max-width:860px; margin:0 auto;">
+              <div class="step-item" style="text-align:center;">
+                <div class="step-num">01</div>
+                <h5>Diagnose the constraint</h5>
+                <p>We identify the specific upstream blocker — whether it's workflow, owner dependency, team readiness, or sequencing — live on a 30-minute call. No homework required.</p>
+              </div>
+              <div class="step-item" style="text-align:center;">
+                <div class="step-num">02</div>
+                <h5>Build around it</h5>
+                <p>We prescribe the right implementation path for your business. If standard software covers it, we sequence that. If the constraint needs a custom tool, we build it in a 90-day sprint.</p>
+              </div>
+              <div class="step-item" style="text-align:center;">
+                <div class="step-num">03</div>
+                <h5>Hand you ownership</h5>
+                <p>You leave with a documented system your team runs without you — trained, tested, and built for the reality of your business. Not a consultant dependency. Actual ownership.</p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-center mt-5">
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Start With a Free Call &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIFFERENTIATORS ── */}
+      <section class="section bg-white">
+        <div class="container">
+          <div class="section-header center mb-5">
+            <span class="eyebrow">Why We're Different</span>
+            <h2>Diagnosis before prescription. Every time.</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
           <div class="grid-3" style="gap:2.5rem;">
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-              <h4 class="mb-3">Diagnose before prescribe</h4>
-              <p>We identify whether the issue is workflow, owner dependency, role clarity, team readiness, economics, or AI fit.</p>
+              <h4 class="mb-3">Constraint-first thinking</h4>
+              <p>Most consultants give you advice. We identify whether your block is workflow, owner dependency, team readiness, or economics — before recommending anything. A prescription without a diagnosis is malpractice.</p>
             </div>
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg></div>
-              <h4 class="mb-3">Financial-first thinking</h4>
-              <p>Every recommendation is filtered through margin, capacity, delivery efficiency, and operational return.</p>
+              <h4 class="mb-3">Financial-first decisions</h4>
+              <p>Every recommendation runs through margin, capacity, and operational return. We don't recommend tools you can't justify. If we can't show you the economic case, we don't make the recommendation.</p>
             </div>
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
-              <h4 class="mb-3">Practical implementation</h4>
-              <p>We focus on solutions your team can actually adopt. If standard software fails to solve a unique friction point, we build the lightweight, custom internal tools needed to bridge the gap.</p>
+              <h4 class="mb-3">Implementation, not advice</h4>
+              <p>We build it. We document it. We train your team on it. In 90 days you own a working system — not a strategy deck and a bill. If standard software can't solve a unique friction point, we build the custom internal tool that does.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── SECTION 5: HOW IT WORKS ── */}
-      <section class="section bg-white">
-        <div class="container">
-          <div class="section-header center mb-5">
-            <span class="eyebrow">The Path</span>
-            <h2>One strategy call. Clear next move.</h2>
-            <div class="gold-line gold-line-center"></div>
-          </div>
-          <div class="process-timeline">
-            <div class="grid-4">
-              <div class="step-item">
-                <div class="step-num">01</div>
-                <h5>Diagnose</h5>
-                <p>Live constraint assessment on the call. No homework required.</p>
-              </div>
-              <div class="step-item">
-                <div class="step-num">02</div>
-                <h5>Identify</h5>
-                <p>We identify what is actually preventing adoption or ROI.</p>
-              </div>
-              <div class="step-item">
-                <div class="step-num">03</div>
-                <h5>Prescribe</h5>
-                <p>We prescribe the right next solution.</p>
-              </div>
-              <div class="step-item">
-                <div class="step-num">04</div>
-                <h5>Implement</h5>
-                <p>If fit is right, we move into roadmap and implementation.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SECTION 6: THE RESULT (SHOWCASE) ── */}
-      <section id="solutions" class="showcase-section">
-        <div class="container">
-          <div class="showcase-header">
-            <span class="eyebrow">The Result</span>
-            <h2>The right solution depends on the real constraint.</h2>
-            <p>Not every business needs the same next step. We diagnose first, then prescribe the right path.</p>
-          </div>
-
-          <div class="outcome-grid">
-            {/* 1. AI Implementation Engagement */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                </svg>
-              </div>
-              <h3>AI Implementation Engagement</h3>
-              <p>Constraint diagnosis, sequencing blueprint, and 90-day hands-on build. For owner-led service firms.</p>
-            </div>
-
-            {/* 2. CFO Clarity Layer */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="18" y1="20" x2="18" y2="10"></line>
-                  <line x1="12" y1="20" x2="12" y2="4"></line>
-                  <line x1="6" y1="20" x2="6" y2="14"></line>
-                </svg>
-              </div>
-              <h3>CFO Clarity Layer</h3>
-              <p>Real-time financial clarity for SMB owners and their CPAs and bookkeepers. Know your numbers, protect your margin.</p>
-            </div>
-
-            {/* 3. Financial Course */}
-            <div class="outcome-card">
-              <div class="outcome-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-              </div>
-              <h3>Financial Course</h3>
-              <p>The foundational financial framework for owner-led firms. Entry point to the full system.</p>
-            </div>
-          </div>
-
-          <div class="btn-center">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free Strategy Call</a>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SECTION 7: PROOF (THE CLARITY MATRIX) ── */}
+      {/* ── PROOF ── */}
       <section id="proof" class="proof-section">
         <div class="container">
           <div class="section-header center">
-            <h2>What owners want most is clarity.</h2>
-            <p>Reliable results come from solving the right problem, not just adding more tools.</p>
+            <h2>The constraint is always findable.<br/>The fix is always specific.</h2>
+            <p>What changes when the right problem gets solved.</p>
           </div>
-
           <div class="proof-grid">
-            {/* 1. Marketing / Data */}
             <div class="proof-card">
-              <p class="proof-quote">
-                "The issue was not the marketing spend; it was the data-logic underneath it. Shifting to a <strong>data-led approach</strong> built consumer trust before the first call."
-              </p>
-              <div class="proof-attribution">Multi-Site Advisory Client</div>
-            </div>
-
-            {/* 2. Operations / Headcount */}
-            <div class="proof-card">
-              <p class="proof-quote">
-                "We thought we needed more headcount. They showed us the bottleneck was the legacy workflow. We now handle <strong>10x the volume</strong> via an AI-powered production line."
-              </p>
+              <p class="proof-quote">"We thought we needed more headcount. They showed us the bottleneck was the legacy workflow. We now handle <strong>10x the volume</strong> with the same team."</p>
               <div class="proof-attribution">Professional Services Firm</div>
             </div>
-
-            {/* 3. Strategy / Real Blocker */}
             <div class="proof-card">
-              <p class="proof-quote">
-                "They helped us see the real blocker in the first 90 minutes. We stopped building features and started building the <strong>behavioral logic</strong> that actually drives revenue."
-              </p>
+              <p class="proof-quote">"The issue was not the marketing spend — it was the data logic underneath it. Shifting to a <strong>data-led approach</strong> built consumer trust before the first call."</p>
+              <div class="proof-attribution">Multi-Site Advisory Client</div>
+            </div>
+            <div class="proof-card">
+              <p class="proof-quote">"They helped us see the real blocker in the first 90 minutes. We stopped building features and started building the <strong>behavioral logic</strong> that actually drives revenue."</p>
               <div class="proof-attribution">Software Engineering Lead</div>
             </div>
-
-            {/* 4. Efficiency / Our Example */}
             <div class="proof-card">
-              <p class="proof-quote">
-                "Leveraging this framework cut execution time by <span class="highlight">70%</span>. It cleared the fog, making room for <strong>more crucial decisions</strong> that move the needle."
-              </p>
+              <p class="proof-quote">"Leveraging this framework cut execution time by <span class="highlight">70%</span>. It cleared the fog, making room for <strong>decisions that actually move the needle.</strong>"</p>
               <div class="proof-attribution">Strategic Lead</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── SECTION 8: BUSINESS CHECK ENGINE ── */}
+      {/* ── CHECK ENGINE ── */}
       <section id="check-engine" class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
             <span class="eyebrow">The Scorecard</span>
-            <h2>Your business has an economic check engine light. Most owners never look at it.</h2>
+            <h2>Your business has an economic check engine light.<br/>Most owners never look at it.</h2>
             <div class="gold-line gold-line-center"></div>
             <p class="lead mt-4" style="max-width:720px; margin-left:auto; margin-right:auto;">
-              Every business is operating in a set of economic and operational conditions right now — conditions that are either working for you or against you. Green means the environment supports your next move. Yellow means proceed with caution. Red means the conditions are creating drag, regardless of how hard you push.
+              Every business is operating in economic and operational conditions right now — conditions that are either working for you or against you. Green means your environment supports the next move. Yellow means proceed with eyes open. Red means the conditions are creating drag, regardless of how hard you push.
             </p>
           </div>
-
           <div class="check-engine-feature-block">
             <div class="check-engine-icon-wrap">
               <div class="check-engine-glow-ring">
-                <img
-                  src="/static/images/check-engine-icon-transparent.png"
-                  alt="Business Check Engine Light"
-                  class="check-engine-hero-icon"
-                  width="120"
-                  height="120"
-                />
+                <img src="/static/images/check-engine-icon-transparent.png" alt="Business Check Engine Light" class="check-engine-hero-icon" width="120" height="120" />
               </div>
               <div class="check-engine-status-badge">
                 <img src="/static/images/check-engine-icon-transparent.png" alt="" class="check-engine-badge-icon" width="16" height="16" aria-hidden="true" />
                 <span>Q2 2026 — Engine Status: <strong>YELLOW</strong></span>
               </div>
             </div>
-
             <div class="check-engine-hook">
               <h3>Right now, economic conditions are either working for your business or against it.</h3>
               <p class="lead mt-3">Most owners are pushing harder without knowing whether the environment supports the move. The Profit Engine Scorecard reads 35 macro indicators — NFIB, FRED, ISM, NY Fed — and outputs a single signal: <strong>Green. Yellow. Red.</strong></p>
               <p class="mt-3" style="color:var(--color-text-muted);">Yellow or red is not a reason to stop. It is a reason to call. We help you navigate the conditions working against you and identify exactly where leverage still exists.</p>
             </div>
-
             <div class="check-engine-cards grid-3 mt-5" style="gap:2rem;">
               <div class="card card-white p-5">
-                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
-                </div>
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg></div>
                 <h4 class="mb-3">Real-Time Conditions</h4>
-                <p>35 macro indicators updated each quarter — economic pressure, market conditions, and operational signals — not what happened last year.</p>
+                <p>35 macro indicators updated each quarter — economic pressure, market conditions, operational signals — not last year's data.</p>
               </div>
               <div class="card card-white p-5">
-                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                </div>
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
                 <h4 class="mb-3">One Signal. No Guessing.</h4>
                 <p>Green, yellow, or red. Each indicator tells you whether that dimension of your business environment is clear, cautionary, or working against you.</p>
               </div>
               <div class="card card-white p-5">
-                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                </div>
+                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
                 <h4 class="mb-3">Know the Right Next Move</h4>
                 <p>Yellow or red is not a stop sign — it is a signal. It tells you where to focus so effort produces leverage instead of friction.</p>
               </div>
             </div>
           </div>
-
           <div class="btn-center mt-5">
             <a href="https://smb-engine-light-ab7bf77b.viktor.space" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Check My Engine Light &rarr;</a>
           </div>
         </div>
       </section>
 
-      {/* ── FINAL CTA SECTION ── */}
+      {/* ── SUCCESS VISION / FINAL CTA ── */}
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
-          <span class="eyebrow" style="color:var(--color-gold);">The Next Move</span>
-          <h2 style="color:#fff;">You do not need more AI advice. You need the right implementation path.</h2>
-          <p class="lead" style="color:rgba(255,255,255,0.85); max-width: 800px; margin: 1.5rem auto;">If AI has already been tried and still has not produced traction, the next move is not another tool. It is clarity on what is actually blocking leverage — and the right next step to fix it.</p>
+          <span class="eyebrow" style="color:var(--color-gold);">What's on the Other Side</span>
+          <h2 style="color:#fff; max-width:780px; margin:0 auto 1.5rem;">Workflows that run without you. Decisions based on real numbers. AI that actually stuck.</h2>
+          <p class="lead" style="color:rgba(255,255,255,0.85); max-width:720px; margin:0 auto 2.5rem;">
+            That's the outcome. You own a documented, running system. Your team handles it. You're no longer the single point of failure in your own business — and you know your numbers clearly enough to move with confidence.
+          </p>
+          <p style="color:rgba(255,255,255,0.65); max-width:620px; margin:0 auto 2.5rem; font-size:1rem;">
+            It starts with one call. 30 minutes to find the constraint that's blocking all of it.
+          </p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
-            <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If Your Business Is a Fit</a>
+            <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
           </div>
         </div>
       </section>
 
     </div>,
-    { title: 'AI-Enabled Business Growth for SMBs', description: 'We help owner-led service businesses ($1M–$5M) implement AI that sticks. Constraint diagnosis, workflow automation, and 90-day implementation sprints.' }
+    {
+      title: 'AI Implementation for Owner-Led Service Firms',
+      description: 'You tried AI. It didn\'t stick. We find the real constraint — live, in 30 minutes — and give you one clear next move. Owner-led service firms, $500K–$3M.'
+    }
   )
 })
 

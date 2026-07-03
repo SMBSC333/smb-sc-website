@@ -32,7 +32,7 @@ aiConsultantAtlanta.get('/', (c) => {
                 The Atlanta market is one of the fastest-growing B2B service corridors in the Southeast. Owner-led agencies, MSPs, consultancies, and professional service firms across Buckhead, Midtown, the Perimeter, and the broader metro are navigating the same AI adoption pressure &mdash; and hitting the same implementation walls.
               </p>
               <p style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.7;">
-                We work with Atlanta-area service businesses both in person and remotely. Our engagements are structured for owner-led service firms with 8&ndash;30 employees &mdash; the segment where AI leverage is highest and implementation support is hardest to find.
+                We work with Atlanta-area service businesses both in person and remotely. Our engagements are structured for owner-led service firms &mdash; the segment where AI leverage is highest and implementation support is hardest to find.
               </p>
             </div>
             <div class="card card-navy" style="padding: 2.5rem;">

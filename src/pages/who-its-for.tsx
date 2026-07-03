@@ -40,7 +40,7 @@ whoItsFor.get('/', (c) => {
               </p>
               <ul class="feature-list mt-4">
                 <li>Owner-led B2B service firm</li>
-                <li>5–30 employees, owner still central to delivery or sales</li>
+                <li>Owner still central to delivery, sales, or approvals</li>
                 <li>Already spent money on AI tools or implementation</li>
                 <li>Adoption stalled or results were temporary</li>
                 <li>Ready to understand what actually went wrong and fix it</li>

@@ -110,7 +110,7 @@ aiImplementationConsultant.get('/', (c) => {
                 </li>
                 <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--color-bg-border); display: flex; align-items: flex-start; gap: 0.75rem;">
                   <span style="color: var(--color-gold-dark); font-weight: 700; flex-shrink: 0;">+</span>
-                  <span>8&ndash;30 employees, owner still central to delivery or approvals</span>
+                  <span>Owner still central to delivery, sales, or approvals</span>
                 </li>
                 <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--color-bg-border); display: flex; align-items: flex-start; gap: 0.75rem;">
                   <span style="color: var(--color-gold-dark); font-weight: 700; flex-shrink: 0;">+</span>

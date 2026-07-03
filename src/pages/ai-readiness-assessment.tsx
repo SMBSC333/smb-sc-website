@@ -116,7 +116,7 @@ aiReadinessAssessment.get('/', (c) => {
             </div>
             <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: var(--color-bg-soft); border-radius: var(--radius-md);">
               <span style="color: var(--color-gold-dark); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">+</span>
-              <span style="color: var(--color-text);">You own or run a B2B service firm doing $1M&ndash;$5M in annual revenue</span>
+              <span style="color: var(--color-text);">You own or run an owner-led B2B service firm</span>
             </div>
             <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: var(--color-bg-soft); border-radius: var(--radius-md);">
               <span style="color: var(--color-gold-dark); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;">+</span>

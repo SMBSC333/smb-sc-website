@@ -89,7 +89,7 @@ aiImplementationConsultant.get('/', (c) => {
               <span class="eyebrow">The Engagement</span>
               <h2>The 90-Day AI Implementation Sprint</h2>
               <p class="mt-4" style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.7;">
-                Three phases. Diagnostic, Build, and Hand-Off. One integrated offer built for B2B service firms doing $1M&ndash;$5M in annual revenue who need the work done, not another thing to manage.
+                Three phases. Diagnostic, Build, and Hand-Off. One integrated offer built for owner-led B2B service firms who need the work done, not another thing to manage.
               </p>
               <ul class="feature-list mt-4">
                 <li>Month 1: Constraint diagnosis and quick-win implementation</li>
@@ -106,7 +106,7 @@ aiImplementationConsultant.get('/', (c) => {
               <ul style="list-style: none; padding: 0; margin-top: 1.5rem;">
                 <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--color-bg-border); display: flex; align-items: flex-start; gap: 0.75rem;">
                   <span style="color: var(--color-gold-dark); font-weight: 700; flex-shrink: 0;">+</span>
-                  <span>Owner-led B2B service firm, $1M&ndash;$5M revenue</span>
+                  <span>Owner-led B2B service firm</span>
                 </li>
                 <li style="padding: 0.6rem 0; border-bottom: 1px solid var(--color-bg-border); display: flex; align-items: flex-start; gap: 0.75rem;">
                   <span style="color: var(--color-gold-dark); font-weight: 700; flex-shrink: 0;">+</span>

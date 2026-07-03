@@ -31,7 +31,7 @@ strategyCall.get('/', (c) => {
                 <h4 class="mb-3">Ideal Fit Criteria:</h4>
                 <p style="font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.8;">We specialize in owner-led B2B service firms ready to move from reactive growth to structured leverage.</p>
                 <ul class="intensive-includes" style="font-size: 0.85rem;">
-                  <li>Revenue: $500K–$3M in annual revenue (owner-led service firm)</li>
+                  <li>You run an owner-led B2B service firm</li>
                   <li>Problem: AI attempted but stalled, or you know AI is coming and want to move first</li>
                   <li>Goal: Capacity, margin protection, or reduced owner dependency</li>
                   <li>Also fits: CPAs and bookkeepers exploring a white-label financial clarity tool for clients</li>

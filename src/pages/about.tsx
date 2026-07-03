@@ -93,8 +93,8 @@ about.get('/', (c) => {
               <p class="text-sm">Approvals, judgment calls, and exceptions still run through you. The business doesn't run well without you in the room.</p>
             </div>
             <div class="card card-white">
-              <h4 style="color:var(--color-gold-dark);">$500K–$3M revenue</h4>
-              <p class="text-sm">Owner-led service firm. Professional services, consulting, trades, healthcare — businesses where your knowledge is the product.</p>
+              <h4 style="color:var(--color-gold-dark);">Owner-led service firm</h4>
+              <p class="text-sm">Professional services, consulting, trades, healthcare — businesses where your knowledge is the product.</p>
             </div>
             <div class="card card-white">
               <h4 style="color:var(--color-gold-dark);">Ready to build</h4>

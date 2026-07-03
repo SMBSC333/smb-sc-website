@@ -56,7 +56,7 @@ services.get('/', (c) => {
               </div>
               <div class="card card-accent p-4">
                 <p style="font-size:0.85rem; line-height:1.7; color:var(--color-text-muted); margin:0;">
-                  <strong>Who this is for:</strong> Owner-led B2B service firms, $500K–$3M revenue, 5–30 employees, where you are still the primary bottleneck in delivery, sales, or approvals.
+                  <strong>Who this is for:</strong> Owner-led B2B service firms with 5–30 employees, where you are still the primary bottleneck in delivery, sales, or approvals.
                 </p>
               </div>
             </div>

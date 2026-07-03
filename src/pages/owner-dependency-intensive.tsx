@@ -31,7 +31,7 @@ ownerDependencyIntensive.get('/', (c) => {
               <h2>The business is profitable. But it only runs when you're in it.</h2>
               <div class="gold-line mb-4"></div>
               <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
-                Owner dependency is the single most common constraint in service businesses at $500K–$3M. You built the business. You know how decisions should be made. Your team is good — but every exception, edge case, and approval still comes back to you.
+                Owner dependency is the single most common constraint in owner-led service businesses. You built the business. You know how decisions should be made. Your team is good — but every exception, edge case, and approval still comes back to you.
               </p>
               <p style="font-size:1.05rem; line-height:1.8; margin-top:1rem; color:var(--color-text);">
                 That's not a team problem. It's a documentation problem. The knowledge is in your head in a form that can't be delegated, because it was never written down in a way anyone else can follow.

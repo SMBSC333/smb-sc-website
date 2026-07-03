@@ -39,7 +39,7 @@ whoItsFor.get('/', (c) => {
                 <strong>You didn't do anything wrong.</strong> The failure wasn't the tool. It was a constraint one level upstream — a workflow that was never documented, a judgment call only you make, a handoff that required your presence every time. AI can't cross that gap. It has to be fixed first.
               </p>
               <ul class="feature-list mt-4">
-                <li>Revenue $500K–$3M, owner-led B2B service firm</li>
+                <li>Owner-led B2B service firm</li>
                 <li>5–30 employees, owner still central to delivery or sales</li>
                 <li>Already spent money on AI tools or implementation</li>
                 <li>Adoption stalled or results were temporary</li>
@@ -129,7 +129,7 @@ whoItsFor.get('/', (c) => {
     </div>,
     {
       title: "Who It's For",
-      description: "We work with owner-led service firms ($500K–$3M) where AI has already stalled and the owner is still the bottleneck. Also CPAs and bookkeepers looking for a white-label financial clarity tool.",
+      description: "We work with owner-led service firms where AI has already stalled and the owner is still the bottleneck. Also CPAs and bookkeepers looking for a white-label financial clarity tool.",
       activeNav: 'who'
     }
   )

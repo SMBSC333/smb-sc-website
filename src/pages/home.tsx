@@ -15,30 +15,12 @@ home.get('/', (c) => {
         </picture>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
-          <span class="eyebrow hero-eyebrow">AI Implementation for Owner-Led Service Firms</span>
-          <h1>You tried AI. It didn't stick.<br/>We find out why — and fix it.</h1>
-          <p class="lead">Most AI failures aren't a software problem. They're a workflow, sequencing, or owner-dependency problem. We diagnose the real constraint — live, in 30 minutes — and give you one clear next move.</p>
+          <span class="eyebrow hero-eyebrow">AI Leverage for Owner-Led Service Firms</span>
+          <h1>The businesses winning right now aren't working harder.<br/>They're leveraging AI in ways their competitors aren't.</h1>
+          <p class="lead">We build custom AI systems that plug into the tools your team already uses — so you do more with the people you have, grow faster, and hit your financial goals without adding headcount.</p>
           <div class="hero-actions">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FAILURE STRIP — make the right visitor feel seen ── */}
-      <section class="section-sm bg-white">
-        <div class="container">
-          <p class="text-center" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--color-text-muted); margin-bottom:1.5rem;">If any of these sound familiar, you're in the right place</p>
-          <div class="grid-3" style="gap:1.5rem; max-width:900px; margin:0 auto;">
-            <div style="padding:1.25rem 1.5rem; background:var(--color-bg-soft); border-radius:var(--radius-md); border-left:3px solid var(--color-gold);">
-              <p style="margin:0; font-size:0.95rem; line-height:1.6; color:var(--color-text);">"We set up the tools. The team used them for two weeks. Then everything drifted back."</p>
-            </div>
-            <div style="padding:1.25rem 1.5rem; background:var(--color-bg-soft); border-radius:var(--radius-md); border-left:3px solid var(--color-gold);">
-              <p style="margin:0; font-size:0.95rem; line-height:1.6; color:var(--color-text);">"I'm still the bottleneck. Every approval, every exception still runs through me."</p>
-            </div>
-            <div style="padding:1.25rem 1.5rem; background:var(--color-bg-soft); border-radius:var(--radius-md); border-left:3px solid var(--color-gold);">
-              <p style="margin:0; font-size:0.95rem; line-height:1.6; color:var(--color-text);">"We've spent money on AI twice. I can't tell if the problem is us or the technology."</p>
-            </div>
           </div>
         </div>
       </section>
@@ -57,19 +39,19 @@ home.get('/', (c) => {
         </div>
       </div>
 
-      {/* ── AI LEVERAGE BY INDUSTRY: Lead Magnet ── */}
+      {/* ── AI LEVERAGE LEAD MAGNET — center of the page ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="split-section">
             <div class="split-content">
-              <span class="eyebrow">AI by Industry</span>
-              <h2>Your competitors are already using AI to move faster. See how your industry is doing it.</h2>
+              <span class="eyebrow">AI Leverage by Industry</span>
+              <h2>Your competitors are already using AI to outproduce you with a smaller team. See exactly how.</h2>
               <div class="gold-line mb-4"></div>
               <p class="lead" style="margin-bottom:1.25rem;">
-                AI adoption is not happening equally across every industry. In some sectors, early movers have already locked in structural advantages — lower overhead, faster response, systems that run without the owner.
+                AI leverage is not generic. What works in HVAC is different from what works in accounting or law. The businesses gaining ground right now have figured out the specific moves for their industry — the tools, the workflows, the integrations that actually compound.
               </p>
               <p style="color:var(--color-text); line-height:1.75; margin-bottom:1.5rem;">
-                We document exactly how AI is being deployed across 12 service industries — what's working, what the leaders do differently, and where the next window of leverage is before it closes.
+                We've documented exactly what's happening across 12 service industries — who's moving, how they're doing it, and where the next open window is before it closes.
               </p>
               <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.4rem 1.5rem; max-width:420px;">
                 <div class="industry-bullet">Accounting</div>
@@ -86,9 +68,9 @@ home.get('/', (c) => {
 
             <div class="split-form-container">
               <div class="report-form-card">
-                <h3 style="font-size:1.3rem; font-weight:800; color:var(--color-navy); margin-bottom:0.4rem;">Get Your Free Industry AI Report</h3>
+                <h3 style="font-size:1.3rem; font-weight:800; color:var(--color-navy); margin-bottom:0.4rem;">Get Your Free AI Leverage Report</h3>
                 <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:1.25rem; line-height:1.6;">
-                  Select your industry and we'll send the report built for your sector — what's working, what's coming, and where to move first.
+                  Select your industry and get the report built for your sector — where the leverage is, what the early movers are doing, and where to start.
                 </p>
                 <form action="/.netlify/functions/capture-report-lead" method="POST" class="report-form">
                   <div class="form-group">
@@ -117,7 +99,7 @@ home.get('/', (c) => {
                       <option value="Property Management">Property Management</option>
                     </select>
                   </div>
-                  <button type="submit" class="btn btn-primary btn-block">Download My Report &rarr;</button>
+                  <button type="submit" class="btn btn-primary btn-block">Get My Industry Report &rarr;</button>
                   <p style="font-size:0.72rem; color:var(--color-text-muted); text-align:center; margin-top:0.6rem;">No spam. Unsubscribe anytime.</p>
                 </form>
               </div>
@@ -126,42 +108,42 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── THE PROBLEM (external + internal) ── */}
+      {/* ── THE LEVERAGE THESIS ── */}
       <section class="section bg-white pb-0">
         <div class="container">
           <div class="split-section">
             <div class="split-content">
-              <span class="eyebrow">The Real Problem</span>
-              <h2>It's not the tools. It's never the tools.</h2>
+              <span class="eyebrow">The Leverage Problem</span>
+              <h2>You don't need more people. You need the work to multiply.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>You bought the tools. You tested the prompts. You sat through demos and maybe ran a pilot. For a moment it looked like it was going to work.</p>
-                <p><strong>Then it stopped.</strong> The owner is still the bottleneck. Workflows are still messy. The AI just sits there, another subscription you're not fully using.</p>
-                <p class="mt-3" style="font-size:1.05rem; line-height:1.75;">The frustration is not that AI failed. The frustration is that you believed it would work — and you can't figure out what you did wrong.</p>
-                <p class="mt-3 lead">You didn't do anything wrong. The constraint was upstream from where you deployed the tool. That's a diagnosable problem. It has a specific fix.</p>
+                <p>Margins in service businesses are under more pressure than they've been in a decade. The answer isn't hiring faster — the math on that doesn't work anymore. The answer is leverage: getting more output from the same team by building AI into how the work actually gets done.</p>
+                <p><strong>That's not about buying tools.</strong> It's about building custom systems that connect to the software your team already uses, handle the repetitive work that drains your best people, and create capacity your business can grow into without adding payroll.</p>
+                <p class="mt-3 lead">The businesses that figure this out first in their market are going to be nearly impossible to compete with in five years. The window is open right now.</p>
               </div>
             </div>
             <div class="split-img-container">
-              <img src="/static/images/truth-stalled.png" alt="AI implementation stalled" loading="lazy" />
+              <img src="/static/images/truth-stalled.png" alt="AI leverage for service businesses" loading="lazy" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── THE GUIDE (empathy + authority) ── */}
+      {/* ── THE GUIDE ── */}
       <section class="section bg-white pt-5">
         <div class="container">
           <div class="split-section reversed">
             <div class="split-img-container">
-              <img src="/static/images/identity-advisory.png" alt="SMB Strategy Consultants — your implementation guide" loading="lazy" />
+              <img src="/static/images/identity-advisory.png" alt="SMB Strategy Consultants — AI implementation" loading="lazy" />
             </div>
             <div class="split-content">
-              <span class="eyebrow">We've Been Here Before</span>
-              <h2>We're the firm owners call after AI has already failed once.</h2>
+              <span class="eyebrow">What We Actually Do</span>
+              <h2>We build the system. You own it.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>We don't show up with a tool recommendation. We don't hand you a generic playbook. We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong></p>
-                <p>Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — and we hand you full ownership in 90 days.</p>
+                <p>We don't hand you a playbook and wish you luck. We diagnose the specific workflow in your business where AI creates the most leverage — then we build the custom tool that does that job.</p>
+                <p>It plugs into the software your team already uses. It's built around how your people actually work. And in 90 days, you own a running system — not a consultant dependency.</p>
+                <p>Every recommendation is filtered through margin, capacity, and operational return. If standard software solves it, we tell you which one and how to sequence it. If the constraint needs something custom, we build it.</p>
                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free Strategy Call</a>
               </div>
             </div>
@@ -174,25 +156,25 @@ home.get('/', (c) => {
         <div class="container">
           <div class="section-header center mb-5">
             <span class="eyebrow">How It Works</span>
-            <h2>Three steps. One clear path forward.</h2>
+            <h2>Find the lever. Build the system. Hand you the wheel.</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
           <div class="process-timeline">
             <div class="grid-3" style="gap:2rem; max-width:860px; margin:0 auto;">
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">01</div>
-                <h5>Diagnose the constraint</h5>
-                <p>We identify the specific upstream blocker — whether it's workflow, owner dependency, team readiness, or sequencing — live on a 30-minute call. No homework required.</p>
+                <h5>Find the leverage point</h5>
+                <p>A 30-minute diagnostic call identifies the specific workflow where AI creates the most measurable return — capacity, speed, cost, or margin. No homework required.</p>
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">02</div>
-                <h5>Build around it</h5>
-                <p>We prescribe the right implementation path for your business. If standard software covers it, we sequence that. If the constraint needs a custom tool, we build it in a 90-day sprint.</p>
+                <h5>Build the right system</h5>
+                <p>We build a custom AI tool that integrates with the software your team already uses — not a generic SaaS subscription, a system built for your business and your people.</p>
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">03</div>
-                <h5>Hand you ownership</h5>
-                <p>You leave with a documented system your team runs without you — trained, tested, and built for the reality of your business. Not a consultant dependency. Actual ownership.</p>
+                <h5>You own it in 90 days</h5>
+                <p>Trained, documented, and running in your business. Your team operates it without you. You have leverage — actual leverage — not another tool collecting dust.</p>
               </div>
             </div>
           </div>
@@ -207,24 +189,24 @@ home.get('/', (c) => {
         <div class="container">
           <div class="section-header center mb-5">
             <span class="eyebrow">Why We're Different</span>
-            <h2>Diagnosis before prescription. Every time.</h2>
+            <h2>Custom-built. Integrated. Yours.</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
           <div class="grid-3" style="gap:2.5rem;">
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-              <h4 class="mb-3">Constraint-first thinking</h4>
-              <p>Most consultants give you advice. We identify whether your block is workflow, owner dependency, team readiness, or economics — before recommending anything. A prescription without a diagnosis is malpractice.</p>
+              <h4 class="mb-3">Built for your business, not the market</h4>
+              <p>Generic AI tools are built for everyone. We build custom systems for one business — yours. The workflows, the integrations, the edge cases your team actually deals with every day.</p>
             </div>
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg></div>
-              <h4 class="mb-3">Financial-first decisions</h4>
-              <p>Every recommendation runs through margin, capacity, and operational return. We don't recommend tools you can't justify. If we can't show you the economic case, we don't make the recommendation.</p>
+              <h4 class="mb-3">Margin-first, always</h4>
+              <p>Every system we build runs through one filter: does this generate a measurable return? Capacity, speed, cost reduction, or revenue — if we can't show you the economic case, we don't build it.</p>
             </div>
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
-              <h4 class="mb-3">Implementation, not advice</h4>
-              <p>We build it. We document it. We train your team on it. In 90 days you own a working system — not a strategy deck and a bill. If standard software can't solve a unique friction point, we build the custom internal tool that does.</p>
+              <h4 class="mb-3">Integrated, not layered on top</h4>
+              <p>The system lives inside the tools your team already uses. No new software to learn. No workarounds. It runs in the background and does the work — which is the only way a team actually adopts it.</p>
             </div>
           </div>
         </div>
@@ -234,8 +216,8 @@ home.get('/', (c) => {
       <section id="proof" class="proof-section">
         <div class="container">
           <div class="section-header center">
-            <h2>The constraint is always findable.<br/>The fix is always specific.</h2>
-            <p>What changes when the right problem gets solved.</p>
+            <h2>The leverage is always findable.<br/>The system is always buildable.</h2>
+            <p>What changes when the right constraint gets solved.</p>
           </div>
           <div class="proof-grid">
             <div class="proof-card">
@@ -308,16 +290,16 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── SUCCESS VISION / FINAL CTA ── */}
+      {/* ── FINAL CTA ── */}
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
           <span class="eyebrow" style="color:var(--color-gold);">What's on the Other Side</span>
-          <h2 style="color:#fff; max-width:780px; margin:0 auto 1.5rem;">Workflows that run without you. Decisions based on real numbers. AI that actually stuck.</h2>
+          <h2 style="color:#fff; max-width:780px; margin:0 auto 1.5rem;">More output. Same team. A business that runs without you being the bottleneck.</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width:720px; margin:0 auto 2.5rem;">
-            That's the outcome. You own a documented, running system. Your team handles it. You're no longer the single point of failure in your own business — and you know your numbers clearly enough to move with confidence.
+            That's the outcome. A custom AI system built into how your team works — generating the capacity you need to grow, without adding the payroll you can't afford. You know your numbers. Your people run the system. You focus on the decisions only you can make.
           </p>
           <p style="color:rgba(255,255,255,0.65); max-width:620px; margin:0 auto 2.5rem; font-size:1rem;">
-            It starts with one call. 30 minutes to find the constraint that's blocking all of it.
+            It starts with one call. 30 minutes to find the leverage point.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
@@ -328,8 +310,8 @@ home.get('/', (c) => {
 
     </div>,
     {
-      title: 'AI Implementation for Owner-Led Service Firms',
-      description: 'You tried AI. It didn\'t stick. We find the real constraint — live, in 30 minutes — and give you one clear next move. Built for owner-led service firms.'
+      title: 'AI Leverage for Owner-Led Service Firms — SMB Strategy Consultants',
+      description: 'We build custom AI systems that plug into the tools your team already uses — so you do more with the people you have, grow faster, and hit your financial goals without adding headcount.'
     }
   )
 })

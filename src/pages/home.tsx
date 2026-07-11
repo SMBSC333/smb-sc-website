@@ -129,6 +129,42 @@ home.get('/', (c) => {
         </div>
       </section>
 
+      {/* ── WHERE AI FELL SHORT — CONSTRAINT BRIDGE ── */}
+      <section class="section bg-navy">
+        <div class="container">
+          <div class="section-header center mb-5">
+            <span class="eyebrow" style="color:var(--color-gold);">Where AI Fell Short — and Why</span>
+            <h2 style="color:#fff; max-width:780px; margin:0 auto;">For a lot of businesses, AI's implementation fell short — not because of the technology, but because of constraints already inside the business.</h2>
+            <div class="gold-line gold-line-center mt-4"></div>
+          </div>
+          <p class="lead" style="color:rgba(255,255,255,0.85); text-align:center; max-width:740px; margin:0 auto 3rem;">
+            AI multiplies what's already there. Put it on top of an unclear process, no financial visibility, or a team that hasn't bought in — and it multiplies the friction. Fix the constraint first, and AI delivers exactly what you expected: better margins, more output, the same team doing more.
+          </p>
+          <div class="grid-3" style="gap:2rem; margin-bottom:3rem;">
+            <div class="card p-5" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:12px;">
+              <div style="color:var(--color-gold); font-size:1.4rem; font-weight:800; margin-bottom:0.75rem;">Process</div>
+              <h4 style="color:#fff; margin-bottom:0.75rem;">Unclear workflows block the leverage</h4>
+              <p style="color:rgba(255,255,255,0.75); line-height:1.75;">AI runs on your existing process. If that process lives in someone's head, changes by person, or has no defined steps — the tool can't compound it. Document the workflow first, and AI turns it into a multiplier.</p>
+            </div>
+            <div class="card p-5" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:12px;">
+              <div style="color:var(--color-gold); font-size:1.4rem; font-weight:800; margin-bottom:0.75rem;">Financials</div>
+              <h4 style="color:#fff; margin-bottom:0.75rem;">No clarity means no direction</h4>
+              <p style="color:rgba(255,255,255,0.75); line-height:1.75;">If you don't know your real margins or where the money is going, adding AI just moves faster toward the wrong outcome. Financial clarity is what points the leverage at results that actually compound on the bottom line.</p>
+            </div>
+            <div class="card p-5" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:12px;">
+              <div style="color:var(--color-gold); font-size:1.4rem; font-weight:800; margin-bottom:0.75rem;">Integration</div>
+              <h4 style="color:#fff; margin-bottom:0.75rem;">Bolted on never sticks</h4>
+              <p style="color:rgba(255,255,255,0.75); line-height:1.75;">Buying an AI tool your team has to remember to check is just more software overhead. Leverage comes from building AI into the systems your team runs every day — so the output improves without changing the routine.</p>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.08); border-left:4px solid var(--color-gold); border-radius:8px; padding:2rem 2.5rem; max-width:720px; margin:0 auto; text-align:left;">
+            <p style="color:#fff; font-size:1.05rem; line-height:1.8; margin:0;">
+              <strong style="color:var(--color-gold);">This is where we start.</strong> Before building anything, we run a constraint diagnosis — a direct conversation to find what's actually blocking the leverage in your business. If the fundamentals need addressing first, we tell you exactly what and in what order. Then we build the system that makes the leverage real.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── THE GUIDE ── */}
       <section class="section bg-white pt-5">
         <div class="container">

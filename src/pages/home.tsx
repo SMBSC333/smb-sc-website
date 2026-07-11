@@ -19,7 +19,7 @@ home.get('/', (c) => {
           <h1>The businesses winning right now aren't working harder.<br/>They're leveraging AI in ways their competitors aren't.</h1>
           <p class="lead">We build custom AI systems that plug into the tools your team already uses — so you do more with the people you have, grow faster, and hit your financial goals without adding headcount.</p>
           <div class="hero-actions">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Get Your AI Sequencing Blueprint &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free 30-Min Strategy Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
           </div>
         </div>
@@ -184,7 +184,7 @@ home.get('/', (c) => {
                 <p>We don't hand you a playbook and wish you luck. We diagnose the specific workflow in your business where AI creates the most leverage — then we build the custom tool that does that job.</p>
                 <p>It plugs into the software your team already uses. It's built around how your people actually work. And in 90 days, you own a running system — not a consultant dependency.</p>
                 <p>Every recommendation is filtered through margin, capacity, and operational return. If standard software solves it, we tell you which one and how to sequence it. If the constraint needs something custom, we build it.</p>
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your AI Sequencing Blueprint Session</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free 30-Min Strategy Call</a>
               </div>
             </div>
           </div>
@@ -196,30 +196,35 @@ home.get('/', (c) => {
         <div class="container">
           <div class="section-header center mb-5">
             <span class="eyebrow">How It Works</span>
-            <h2>Find the lever. Build the system. Hand you the wheel.</h2>
+            <h2>From report to running system — four steps.</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
           <div class="process-timeline">
-            <div class="grid-3" style="gap:2rem; max-width:860px; margin:0 auto;">
+            <div class="grid-4" style="gap:1.75rem; max-width:1000px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr);">
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">01</div>
-                <h5>Find the leverage point</h5>
-                <p>Your AI Sequencing Blueprint session starts by identifying what constraints need to be addressed in your business first — then sequences the AI leverage opportunities in the right order. No homework required.</p>
+                <h5>Download your AI Leverage Report</h5>
+                <p>Get the industry-specific report above. See exactly what businesses like yours are doing to outproduce their competitors with a smaller team.</p>
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">02</div>
-                <h5>Build the right system</h5>
-                <p>We build a custom AI tool that integrates with the software your team already uses — not a generic SaaS subscription, a system built for your business and your people.</p>
+                <h5>Free 30-min strategy call</h5>
+                <p>We review the report together, get a clear picture of your business, and identify where the biggest leverage opportunity sits. No pitch — just clarity.</p>
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">03</div>
-                <h5>You own it in 90 days</h5>
-                <p>Trained, documented, and running in your business. Your team operates it without you. You have leverage — actual leverage — not another tool collecting dust.</p>
+                <h5>AI Sequencing Blueprint session</h5>
+                <p>A focused 90-minute session: constraint diagnosis, team evaluation, systems and process review. You leave with a designed Blueprint — the right moves, in the right order, for your business.</p>
+              </div>
+              <div class="step-item" style="text-align:center;">
+                <div class="step-num">04</div>
+                <h5>90-day engagement</h5>
+                <p>If you're ready to build, we execute the Blueprint. Custom AI systems, integrated into your existing tools, running in your business. You own it completely.</p>
               </div>
             </div>
           </div>
           <div class="btn-center mt-5">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your AI Sequencing Blueprint &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free 30-Min Strategy Call &rarr;</a>
           </div>
         </div>
       </section>
@@ -339,10 +344,10 @@ home.get('/', (c) => {
             That's the outcome. A custom AI system built into how your team works — generating the capacity you need to grow, without adding the payroll you can't afford. You know your numbers. Your people run the system. You focus on the decisions only you can make.
           </p>
           <p style="color:rgba(255,255,255,0.65); max-width:620px; margin:0 auto 2.5rem; font-size:1rem;">
-            It starts with one session. Your AI Sequencing Blueprint — we identify the constraints, then sequence the leverage.
+            It starts with a free 30-minute call. We review your AI Leverage Report, understand your business, and tell you exactly where the leverage is.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your AI Sequencing Blueprint &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free 30-Min Strategy Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
           </div>
         </div>

@@ -3000,3 +3000,95 @@ strong { color: var(--color-heading); font-weight: 600; }
     font-size: 1.3rem;
   }
 }
+
+/* ── AI INDUSTRY REPORT LEAD MAGNET ─────────────────────── */
+
+.split-form-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.report-form-card {
+  background: #fff;
+  border-radius: var(--radius-lg, 12px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09), 0 1px 4px rgba(0,0,0,0.06);
+  padding: 2rem 2rem 1.75rem;
+  width: 100%;
+  max-width: 420px;
+  border-top: 4px solid var(--color-gold);
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.report-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.report-form label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-text-muted);
+}
+
+.report-form input,
+.report-form select {
+  width: 100%;
+  padding: 0.65rem 0.875rem;
+  border: 1.5px solid var(--color-bg-border, #ddd);
+  border-radius: var(--radius-sm, 6px);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: #fff;
+  transition: border-color 0.15s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.report-form input:focus,
+.report-form select:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(196,155,33,0.12);
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.industry-bullet {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.industry-bullet::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .split-form-container {
+    margin-top: 2rem;
+  }
+  .report-form-card {
+    padding: 1.5rem;
+  }
+}

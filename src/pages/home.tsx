@@ -57,6 +57,75 @@ home.get('/', (c) => {
         </div>
       </div>
 
+      {/* ── AI LEVERAGE BY INDUSTRY: Lead Magnet ── */}
+      <section class="section bg-soft">
+        <div class="container">
+          <div class="split-section">
+            <div class="split-content">
+              <span class="eyebrow">AI by Industry</span>
+              <h2>Your competitors are already using AI to move faster. See how your industry is doing it.</h2>
+              <div class="gold-line mb-4"></div>
+              <p class="lead" style="margin-bottom:1.25rem;">
+                AI adoption is not happening equally across every industry. In some sectors, early movers have already locked in structural advantages — lower overhead, faster response, systems that run without the owner.
+              </p>
+              <p style="color:var(--color-text); line-height:1.75; margin-bottom:1.5rem;">
+                We document exactly how AI is being deployed across 12 service industries — what's working, what the leaders do differently, and where the next window of leverage is before it closes.
+              </p>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.4rem 1.5rem; max-width:420px;">
+                <div class="industry-bullet">Accounting</div>
+                <div class="industry-bullet">Law Firms</div>
+                <div class="industry-bullet">HVAC</div>
+                <div class="industry-bullet">Plumbing</div>
+                <div class="industry-bullet">IT / MSPs</div>
+                <div class="industry-bullet">Pest Control</div>
+                <div class="industry-bullet">Marketing Agencies</div>
+                <div class="industry-bullet">Property Mgmt</div>
+                <div class="industry-bullet" style="grid-column:1/-1; color:var(--color-text-muted); font-size:0.82rem;">+ Architecture, Electrical, Engineering, Landscaping</div>
+              </div>
+            </div>
+
+            <div class="split-form-container">
+              <div class="report-form-card">
+                <h3 style="font-size:1.3rem; font-weight:800; color:var(--color-navy); margin-bottom:0.4rem;">Get Your Free Industry AI Report</h3>
+                <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:1.25rem; line-height:1.6;">
+                  Select your industry and we'll send the report built for your sector — what's working, what's coming, and where to move first.
+                </p>
+                <form action="/.netlify/functions/capture-report-lead" method="POST" class="report-form">
+                  <div class="form-group">
+                    <label for="hp-firstName">First Name</label>
+                    <input type="text" id="hp-firstName" name="firstName" placeholder="Your first name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="hp-email">Email <span style="color:#c0392b;">*</span></label>
+                    <input type="email" id="hp-email" name="email" required placeholder="your@email.com" />
+                  </div>
+                  <div class="form-group">
+                    <label for="hp-industry">Your Industry <span style="color:#c0392b;">*</span></label>
+                    <select id="hp-industry" name="industry" required>
+                      <option value="">Select your industry</option>
+                      <option value="Accounting">Accounting</option>
+                      <option value="Architecture">Architecture</option>
+                      <option value="Electrical">Electrical</option>
+                      <option value="Engineering">Engineering</option>
+                      <option value="HVAC">HVAC</option>
+                      <option value="IT / MSPs">IT / MSPs</option>
+                      <option value="Landscaping">Landscaping</option>
+                      <option value="Law Firms">Law Firms</option>
+                      <option value="Marketing Agencies">Marketing Agencies</option>
+                      <option value="Pest Control">Pest Control</option>
+                      <option value="Plumbing">Plumbing</option>
+                      <option value="Property Management">Property Management</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Download My Report &rarr;</button>
+                  <p style="font-size:0.72rem; color:var(--color-text-muted); text-align:center; margin-top:0.6rem;">No spam. Unsubscribe anytime.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── THE PROBLEM (external + internal) ── */}
       <section class="section bg-white pb-0">
         <div class="container">

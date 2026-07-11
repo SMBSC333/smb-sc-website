@@ -24,6 +24,8 @@ import implementationStories from './pages/implementation-stories'
 import aiImplementationChecklist from './pages/ai-implementation-checklist'
 import aiConsultantAtlanta from './pages/ai-consultant-atlanta'
 import aiForServiceBusinesses from './pages/ai-implementation-for-service-businesses'
+import getYourReport from './pages/get-your-report'
+import aiReportThankYou from './pages/ai-report-thankyou'
 
 const app = new Hono()
 
@@ -57,6 +59,10 @@ app.route('/financial-clarity-intensive', financialClarity)
 app.route('/growth-systems-intensive', growthSystems)
 app.route('/owner-dependency-intensive', ownerDependency)
 app.route('/ai-operations-intensive', aiOperations)
+
+// AI Industry Report funnel
+app.route('/get-your-report', getYourReport)
+app.route('/ai-report/thank-you', aiReportThankYou)
 
 // Landing pages
 app.route('/', landingPages)

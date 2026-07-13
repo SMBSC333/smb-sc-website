@@ -69,7 +69,7 @@ about.get('/', (c) => {
                 <li style="color: rgba(255,255,255,0.85);">A team that knows exactly what to do without asking.</li>
                 <li style="color: rgba(255,255,255,0.85);">Documentation your business can evolve from — not dependent on us.</li>
                 <li style="color: rgba(255,255,255,0.85);">A financial clarity layer that runs automatically, not manually.</li>
-                <li style="color: rgba(255,255,255,0.85);">2.5x year-one ROI as the baseline — not the ceiling.</li>
+                <li style="color: rgba(255,255,255,0.85);">A leverage point specific to your industry — not a generic playbook.</li>
               </ul>
             </div>
           </div>

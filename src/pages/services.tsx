@@ -51,7 +51,7 @@ services.get('/', (c) => {
                   <li style="color:rgba(255,255,255,0.85);">Documented workflows your team runs without you.</li>
                   <li style="color:rgba(255,255,255,0.85);">AI integrations that are actually adopted — not just set up.</li>
                   <li style="color:rgba(255,255,255,0.85);">SOPs your team can train new hires from without you in the room.</li>
-                  <li style="color:rgba(255,255,255,0.85);">2.5x year-one ROI as the baseline target.</li>
+                  <li style="color:rgba(255,255,255,0.85);">A leverage point specific to your industry — not a generic AI playbook.</li>
                 </ul>
               </div>
               <div class="card card-accent p-4">
@@ -146,8 +146,8 @@ services.get('/', (c) => {
             </div>
             <div style="width:1px; background:rgba(255,255,255,0.15);"></div>
             <div style="text-align:center;">
-              <div style="font-size:2rem; font-weight:700; color:var(--color-gold);">2.5x</div>
-              <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">year-one ROI target<br/>on implementation investment</div>
+              <div style="font-size:2rem; font-weight:700; color:var(--color-gold);">1 constraint</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">diagnosed and fixed<br/>not a bundle of generic AI tools</div>
             </div>
             <div style="width:1px; background:rgba(255,255,255,0.15);"></div>
             <div style="text-align:center;">

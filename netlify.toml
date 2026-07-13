@@ -11,6 +11,12 @@
   to = "/admin/"
   status = 301
 
+# Old ROI-math page renamed — redirect any stray traffic to new slug
+[[redirects]]
+  from = "/why-4997"
+  to = "/ai-leverage-points"
+  status = 301
+
 # WordPress sitemap leftovers — 410 Gone signals removal to Googlebot
 [[redirects]]
   from = "/sitemap_index.xml"

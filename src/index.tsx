@@ -11,7 +11,7 @@ import terms from './pages/terms-conditions'
 import whoItsFor from './pages/who-its-for'
 import strategyCall from './pages/strategy-call'
 import services from './pages/services'
-import why4997 from './pages/why-4997'
+import aiLeveragePoints from './pages/ai-leverage-points'
 import financialClarity from './pages/financial-clarity-intensive.tsx'
 import growthSystems from './pages/growth-systems-intensive.tsx'
 import ownerDependency from './pages/owner-dependency-intensive.tsx'
@@ -36,7 +36,7 @@ app.route('/', home)
 app.route('/how-it-works', howItWorks)
 app.route('/who-its-for', whoItsFor)
 app.route('/services', services)
-app.route('/why-4997', why4997)
+app.route('/ai-leverage-points', aiLeveragePoints)
 app.route('/about', about)
 app.route('/resources', resources)
 app.route('/contact', contact)

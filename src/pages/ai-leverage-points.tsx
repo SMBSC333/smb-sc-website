@@ -1,8 +1,8 @@
 import { Hono } from 'hono'
 
-const why4997 = new Hono()
+const aiLeveragePoints = new Hono()
 
-why4997.get('/', (c) => {
+aiLeveragePoints.get('/', (c) => {
   return c.render(
     <div>
       {/* ── HERO SECTION ── */}
@@ -155,4 +155,4 @@ why4997.get('/', (c) => {
   )
 })
 
-export default why4997
+export default aiLeveragePoints

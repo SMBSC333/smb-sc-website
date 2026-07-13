@@ -194,7 +194,7 @@ home.get('/', (c) => {
               <p class="text-sm" style="color:var(--color-text-muted);">Automated investor intake means no lead waits 47 hours for a call — first response wins the deal.</p>
             </div>
           </div>
-          <p class="text-center text-sm" style="color:var(--color-text-muted); margin-top:0.5rem;">Scroll for more &rarr; — or see the full breakdown on <a href="/why-4997">where AI creates leverage by industry</a>.</p>
+          <p class="text-center text-sm" style="color:var(--color-text-muted); margin-top:0.5rem;">Scroll for more &rarr; — or see the full breakdown on <a href="/ai-leverage-points">where AI creates leverage by industry</a>.</p>
         </div>
       </section>
 

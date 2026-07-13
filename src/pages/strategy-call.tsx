@@ -23,7 +23,7 @@ strategyCall.get('/', (c) => {
               <ul class="feature-list mt-5">
                 <li><strong>Friction Identification:</strong> We isolate where your business may be losing money (Leads, Reporting, or Workflow).</li>
                 <li><strong>Foundation Audit:</strong> A sanity check on whether your current data and process are ready for Growth-Leveraged AI.</li>
-                <li><strong>Sprint Fit:</strong> We'll determine if our 90-day implementation model will create measurable ROI for your scale.</li>
+                <li><strong>Sprint Fit:</strong> We'll determine if our sprint-based implementation model — 90-day sprints for larger builds, faster for smaller ones — will create measurable ROI for your scale.</li>
                 <li><strong>Zero-Risk Exit:</strong> If we aren't a fit, we'll point you toward the exact resource or provider you need next to stay ahead of the competition.</li>
               </ul>
               

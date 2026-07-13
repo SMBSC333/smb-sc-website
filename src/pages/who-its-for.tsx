@@ -95,7 +95,7 @@ whoItsFor.get('/', (c) => {
               <h3>We're a match if:</h3>
               <ul class="check-list-v2">
                 <li>You want implementation — something built — not advice and a playbook</li>
-                <li>You're willing to invest 90 days of focused work, not just money</li>
+                <li>You're willing to invest focused work, not just money — larger builds run in 90-day sprints</li>
                 <li>You're open to rethinking how workflows are structured, not just layering tools on top</li>
                 <li>You want to own the system when we're done — not be dependent on a consultant to run it</li>
                 <li>You're a CPA or bookkeeper who wants a white-label financial clarity tool for SMB clients</li>

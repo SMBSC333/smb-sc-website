@@ -11,9 +11,9 @@ services.get('/', (c) => {
         <div class="container">
           <div class="hero-content-v2">
             <span class="eyebrow" style="color: var(--color-gold);">What We Do — Specifically</span>
-            <h1 style="color: #fff;">Not advice. Not a playbook.<br/>A working system in 90 days.</h1>
+            <h1 style="color: #fff;">Not advice. Not a playbook.<br/>A working system you actually own.</h1>
             <p class="hero-lead">
-              We diagnose the specific constraint blocking AI from working in your business. Then we build the implementation around it — workflows, tools, documentation, team training. At the end of 90 days, you own it and we step back.
+              We diagnose the specific constraint blocking AI from working in your business. Then we build the implementation around it — workflows, tools, documentation, team training. Larger builds run in 90-day sprints to a milestone as part of our broader methodology; some engagements move faster, some come out of the box. Either way, you own it and we step back.
             </p>
             <div class="hero-cta-group">
               <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
@@ -32,12 +32,12 @@ services.get('/', (c) => {
               <h2>AI Implementation Sprint</h2>
               <p class="lead" style="color:var(--color-gold-dark); margin:1rem 0;">For owner-led service firms where AI has stalled — or hasn't been tried the right way yet.</p>
               <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
-                This is a full 90-day implementation engagement. Three phases: diagnose the constraint, build the solution, hand off ownership. We don't leave you with a strategy deck. We leave you with a running system.
+                This is a full implementation engagement, sequenced in phases: diagnose the constraint, build the solution, hand off ownership. Larger builds run in 90-day sprints to a milestone as part of our broader methodology — some move faster, some come out of the box. We don't leave you with a strategy deck. We leave you with a running system.
               </p>
               <ul class="feature-list mt-4">
-                <li><strong>Month 1 — Diagnostic:</strong> Live constraint assessment. We identify the specific workflow, dependency, or sequencing issue that caused past failures.</li>
-                <li><strong>Month 2 — Build:</strong> Custom workflows, automations, integrations, and SOPs built to your actual business — not a generic template.</li>
-                <li><strong>Month 3 — Hand-Off:</strong> Team training, documentation, and 30-day live support. You own the system. We step back.</li>
+                <li><strong>Phase 1 — Diagnostic:</strong> Live constraint assessment. We identify the specific workflow, dependency, or sequencing issue that caused past failures.</li>
+                <li><strong>Phase 2 — Build:</strong> Custom workflows, automations, integrations, and SOPs built to your actual business — not a generic template.</li>
+                <li><strong>Phase 3 — Hand-Off:</strong> Team training, documentation, and live support. You own the system. We step back.</li>
               </ul>
               <div class="mt-5">
                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
@@ -104,7 +104,7 @@ services.get('/', (c) => {
             <span class="eyebrow">Focused Sprints</span>
             <h2>Intensive engagements for one specific problem</h2>
             <div class="gold-line gold-line-center"></div>
-            <p class="lead mt-4" style="max-width:700px; margin:0 auto;">Not every business needs a full 90-day implementation. If you have a single high-cost constraint that needs to move now, an intensive gets you there in weeks, not months.</p>
+            <p class="lead mt-4" style="max-width:700px; margin:0 auto;">Not every business needs a full sprint-based implementation. If you have a single high-cost constraint that needs to move now, an intensive gets you there in weeks, not months.</p>
           </div>
           <div class="grid-4" style="gap:2rem;">
             <div class="card card-white p-5" style="border-top:3px solid var(--color-gold);">
@@ -151,8 +151,8 @@ services.get('/', (c) => {
             </div>
             <div style="width:1px; background:rgba(255,255,255,0.15);"></div>
             <div style="text-align:center;">
-              <div style="font-size:2rem; font-weight:700; color:var(--color-gold);">90 days</div>
-              <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">to a working system<br/>your team owns</div>
+              <div style="font-size:2rem; font-weight:700; color:var(--color-gold);">90-day sprints</div>
+              <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">how we sequence larger builds<br/>to a working system you own</div>
             </div>
           </div>
           <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
@@ -162,7 +162,7 @@ services.get('/', (c) => {
     </div>,
     {
       title: 'Services',
-      description: 'AI implementation, financial clarity, and focused intensives for owner-led service firms. Diagnosis first. Working system in 90 days. You own it when we leave.',
+      description: 'AI implementation, financial clarity, and focused intensives for owner-led service firms. Diagnosis first. Larger builds run in 90-day sprints to a milestone. You own it when we leave.',
       activeNav: 'services'
     }
   )

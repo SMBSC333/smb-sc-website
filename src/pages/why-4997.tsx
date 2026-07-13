@@ -227,9 +227,9 @@ why4997.get('/', (c) => {
         <div class="container">
            <div class="section-header center mb-5">
               <span class="eyebrow">The Speed Factor</span>
-              <h2>90 Days. Not a Year.</h2>
+              <h2>Sprints. Not a Year-Long Retainer.</h2>
               <div class="gold-line gold-line-center"></div>
-              <p class="lead">Most consultants sell retainers that stretch for 6-12 months. We deliver in 90 days and hand you the keys.</p>
+              <p class="lead">Most consultants sell retainers that stretch for 6-12 months. We sequence larger builds in 90-day sprints to a milestone — some move faster, some come out of the box — and hand you the keys instead of another invoice.</p>
            </div>
            
            <div class="grid-2 mt-5" style="gap: 3rem;">
@@ -244,12 +244,12 @@ why4997.get('/', (c) => {
                  </ul>
               </div>
               <div class="card card-navy p-5" style="border: 1px solid var(--color-gold);">
-                 <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">The 90-Day AI Sprint Path</h4>
+                 <h4 style="color: var(--color-gold-light); margin-bottom: 1.5rem;">Our Sprint Path (typical larger build)</h4>
                  <ul class="intensive-includes" style="--icon-color: var(--color-gold-light); list-style: none; padding: 0;">
-                    <li style="margin-bottom: 1rem; color: #fff;">Day 30: Diagnosis + First Quick Wins Deployed</li>
-                    <li style="margin-bottom: 1rem; color: #fff;">Day 60: 2-3 Tailored AI Workflows Installed</li>
-                    <li style="margin-bottom: 1rem; color: #fff;">Day 90: Team Trained + Documentation Delivered</li>
-                    <li style="margin-bottom: 1rem; color: #fff;">Day 91: Full Operational Control (No Retainer)</li>
+                    <li style="margin-bottom: 1rem; color: #fff;">Sprint start: Diagnosis + First Quick Wins Deployed</li>
+                    <li style="margin-bottom: 1rem; color: #fff;">Mid-sprint: 2-3 Tailored AI Workflows Installed</li>
+                    <li style="margin-bottom: 1rem; color: #fff;">Milestone: Team Trained + Documentation Delivered</li>
+                    <li style="margin-bottom: 1rem; color: #fff;">Day after: Full Operational Control (No Retainer)</li>
                     <li style="font-weight: 700; color: var(--color-gold-light);">Result: Growth-Leveraged AI Ownership.</li>
                  </ul>
               </div>

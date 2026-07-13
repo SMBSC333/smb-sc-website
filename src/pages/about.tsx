@@ -57,8 +57,8 @@ about.get('/', (c) => {
               <div class="mt-4" style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text);">
                 <p><strong>The pattern:</strong> Owner tries AI. Adoption stalls. Owner assumes the problem is their team or the tool. They try again. The same thing happens.</p>
                 <p class="mt-3">The actual failure is almost always upstream — a workflow with an undocumented judgment call, an owner approval that AI can't pass through, a handoff that depends on institutional knowledge no one wrote down. The tool hits the constraint and stops working.</p>
-                <p class="mt-3"><strong>Our method:</strong> Find the specific constraint. Build the right solution in the right sequence. Hand you ownership in 90 days. You leave with a working system — not a strategy deck and a recurring consulting bill.</p>
-                <p class="mt-3"><strong>Our commitment:</strong> We build it, document it, and train your team on it. After 90 days, the system runs without us. That's the only outcome we call a success.</p>
+                <p class="mt-3"><strong>Our method:</strong> Find the specific constraint. Build the right solution in the right sequence. Hand you ownership — larger builds run in 90-day sprints to a milestone, some move faster. You leave with a working system — not a strategy deck and a recurring consulting bill.</p>
+                <p class="mt-3"><strong>Our commitment:</strong> We build it, document it, and train your team on it. The system runs without us. That's the only outcome we call a success.</p>
               </div>
             </div>
             <div class="card card-navy p-5">
@@ -116,7 +116,7 @@ about.get('/', (c) => {
     </div>,
     {
       title: 'About',
-      description: 'Meet Corbin Cook. We start with the constraint — not the tool. Owner-led service firms that have tried AI and stalled find the real blocker and a working 90-day implementation.',
+      description: 'Meet Corbin Cook. We start with the constraint — not the tool. Owner-led service firms that have tried AI and stalled find the real blocker and a working implementation, sequenced in 90-day sprints for larger builds.',
       activeNav: 'about'
     }
   )

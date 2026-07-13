@@ -161,6 +161,43 @@ home.get('/', (c) => {
         </div>
       </section>
 
+      {/* ── LEVERAGE POINTS SCROLL STRIP ── */}
+      <section class="section-sm bg-soft">
+        <div class="container">
+          <div class="section-header center mb-4">
+            <span class="eyebrow">Where We're Finding Leverage</span>
+            <h2 style="font-size:1.6rem;">A few examples, industry by industry</h2>
+          </div>
+          <div style="display:flex; gap:1.25rem; overflow-x:auto; padding:0.5rem 0.25rem 1.25rem; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
+            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
+              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Architecture Firms</h5>
+              <p class="text-sm" style="color:var(--color-text-muted);">Spec writing and code cross-referencing automated — cuts spec time 50–60% per project.</p>
+            </div>
+            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
+              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Engineering Firms</h5>
+              <p class="text-sm" style="color:var(--color-text-muted);">Technical reports and memos drafted from raw data — cuts report writing time 50–70%.</p>
+            </div>
+            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
+              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Property Management</h5>
+              <p class="text-sm" style="color:var(--color-text-muted);">AI leasing assistant qualifies and schedules tours automatically — fills vacancies 30–40% faster.</p>
+            </div>
+            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
+              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Landscapers</h5>
+              <p class="text-sm" style="color:var(--color-text-muted);">Route optimization cuts drive time 20–30% — same crew, more stops a week.</p>
+            </div>
+            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
+              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Pest Control Companies</h5>
+              <p class="text-sm" style="color:var(--color-text-muted);">Automated renewal reminders cut recurring plan churn 40–60%.</p>
+            </div>
+            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
+              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Real Estate Investment Brokerages</h5>
+              <p class="text-sm" style="color:var(--color-text-muted);">Automated investor intake means no lead waits 47 hours for a call — first response wins the deal.</p>
+            </div>
+          </div>
+          <p class="text-center text-sm" style="color:var(--color-text-muted); margin-top:0.5rem;">Scroll for more &rarr; — or see the full breakdown on <a href="/why-4997">where AI creates leverage by industry</a>.</p>
+        </div>
+      </section>
+
       {/* ── FEATURED SIGNAL ── */}
       <section class="section bg-white" style="padding-top:3rem; padding-bottom:3rem;">
         <div class="container">

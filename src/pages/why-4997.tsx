@@ -33,34 +33,39 @@ why4997.get('/', (c) => {
 
           <div class="grid-3 mt-5" style="gap: 2rem;">
             <div class="card card-accent d-flex flex-column">
-              <h4 class="mb-2" style="font-size: 1.15rem;">Marketing &amp; Media Agencies</h4>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> client reporting eats the account team's week.</p>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated reporting that gives the team days back a month — and makes the agency look sharper to the client, not less involved.</p>
+              <h4 class="mb-2" style="font-size: 1.15rem;">HVAC Contractors</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> drive time and slow quoting cap how many jobs a crew can run.</p>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated dispatch and routing cuts drive time 25–35% — the same crew runs 2–3 more jobs a week.</p>
             </div>
             <div class="card card-accent d-flex flex-column">
-              <h4 class="mb-2" style="font-size: 1.15rem;">MSPs &amp; IT Service Firms</h4>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> ticket triage bottlenecks on your most senior tech.</p>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> AI-assisted triage and documentation so junior techs close routine tickets without escalating everything upstream.</p>
+              <h4 class="mb-2" style="font-size: 1.15rem;">Electrical Contractors</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> takeoffs and estimating eat 4–8 hours per bid.</p>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> AI-assisted estimating gets bids out same-day instead of three days later.</p>
             </div>
             <div class="card card-accent d-flex flex-column">
-              <h4 class="mb-2" style="font-size: 1.15rem;">Financial Advisory &amp; Accounting Firms</h4>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> manual reconciliation and client follow-up.</p>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated close-out workflows that shrink reporting lag from weeks to days.</p>
+              <h4 class="mb-2" style="font-size: 1.15rem;">Plumbing Contractors</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> the highest-ticket emergency calls go to whoever answers first.</p>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> 24/7 AI call answering and booking captures the midnight and weekend calls competitors miss.</p>
             </div>
             <div class="card card-accent d-flex flex-column">
-              <h4 class="mb-2" style="font-size: 1.15rem;">Coaching &amp; Consulting Firms</h4>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> lead follow-up and qualification eating the founder's calendar.</p>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated intake and qualification, so the founder only takes calls that are already vetted.</p>
+              <h4 class="mb-2" style="font-size: 1.15rem;">Marketing &amp; Creative Agencies</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> client reporting eats 6–10 hours per client, every month.</p>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated reporting pulls the data, writes the narrative, and formats the deck without a human touching it.</p>
             </div>
             <div class="card card-accent d-flex flex-column">
-              <h4 class="mb-2" style="font-size: 1.15rem;">Healthcare &amp; Wellness Practices</h4>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> no-shows and scheduling friction at the front desk.</p>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated reminders and rebooking that keep the calendar full without adding headcount.</p>
+              <h4 class="mb-2" style="font-size: 1.15rem;">IT Consulting &amp; MSPs</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> senior techs get buried in routine, repeatable tickets.</p>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> AI-powered L1 ticket automation resolves 40–60% of tickets without a human, freeing techs for billable work.</p>
             </div>
             <div class="card card-accent d-flex flex-column">
-              <h4 class="mb-2" style="font-size: 1.15rem;">HR &amp; Recruiting Firms</h4>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> candidate screening bottlenecks on the recruiting team.</p>
-              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated first-pass screening, so recruiters only interview candidates who are already qualified.</p>
+              <h4 class="mb-2" style="font-size: 1.15rem;">Accounting Firms &amp; CPAs</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> partners spend real time just chasing clients for missing documents.</p>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> automated document requests and follow-up cut that chase time by roughly 80%.</p>
+            </div>
+            <div class="card card-accent d-flex flex-column">
+              <h4 class="mb-2" style="font-size: 1.15rem;">Law Firms</h4>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The bottleneck:</strong> legal research and contract review consume associate hours on predictable work.</p>
+              <p style="font-size:0.9rem; color:var(--color-text-muted);"><strong>The leverage:</strong> AI-assisted research and redlining cut review time 50–80% on standard agreement types.</p>
             </div>
           </div>
 

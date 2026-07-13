@@ -241,6 +241,88 @@ strong { color: var(--color-heading); font-weight: 600; }
 .card-accent {
   border-top: 3px solid var(--color-gold);
 }
+
+/* ── Leverage Point Cards (homepage scroll strip) ─────────── */
+.leverage-strip {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding: 0.75rem 0.25rem 1.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gold) transparent;
+}
+.leverage-strip::-webkit-scrollbar {
+  height: 6px;
+}
+.leverage-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+.leverage-strip::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 999px;
+}
+.leverage-card {
+  position: relative;
+  min-width: 260px;
+  max-width: 260px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-bg-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  overflow: hidden;
+}
+.leverage-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+}
+.leverage-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  border-color: rgba(201,168,76,0.4);
+}
+.leverage-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--color-gold-pale);
+  color: var(--color-gold-dark);
+  margin-bottom: 1rem;
+}
+.leverage-card__stat {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-navy);
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-bg-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  margin-bottom: 0.85rem;
+}
+.leverage-card h5 {
+  font-size: 1.02rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+.leverage-card p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
 .card-navy {
   background: var(--color-navy);
   border-color: var(--color-navy-mid);

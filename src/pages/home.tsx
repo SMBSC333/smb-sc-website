@@ -168,30 +168,42 @@ home.get('/', (c) => {
             <span class="eyebrow">Where We're Finding Leverage</span>
             <h2 style="font-size:1.6rem;">A few examples, industry by industry</h2>
           </div>
-          <div style="display:flex; gap:1.25rem; overflow-x:auto; padding:0.5rem 0.25rem 1.25rem; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
-            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
-              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Architecture Firms</h5>
-              <p class="text-sm" style="color:var(--color-text-muted);">Spec writing and code cross-referencing automated — cuts spec time 50–60% per project.</p>
+          <div class="leverage-strip">
+            <div class="leverage-card">
+              <div class="leverage-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M9 13h1M14 9h1M14 13h1M9 21v-4h6v4"/></svg></div>
+              <div class="leverage-card__stat">−50–60% spec time</div>
+              <h5>Architecture Firms</h5>
+              <p>Spec writing and code cross-referencing, automated, per project.</p>
             </div>
-            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
-              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Engineering Firms</h5>
-              <p class="text-sm" style="color:var(--color-text-muted);">Technical reports and memos drafted from raw data — cuts report writing time 50–70%.</p>
+            <div class="leverage-card">
+              <div class="leverage-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 008.5 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H2.5a2 2 0 010-4h.09A1.65 1.65 0 004.6 8.5a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V2.5a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+              <div class="leverage-card__stat">−50–70% report time</div>
+              <h5>Engineering Firms</h5>
+              <p>Technical reports and memos drafted straight from raw data.</p>
             </div>
-            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
-              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Property Management</h5>
-              <p class="text-sm" style="color:var(--color-text-muted);">AI leasing assistant qualifies and schedules tours automatically — fills vacancies 30–40% faster.</p>
+            <div class="leverage-card">
+              <div class="leverage-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-6h4v6"/></svg></div>
+              <div class="leverage-card__stat">30–40% faster fill</div>
+              <h5>Property Management</h5>
+              <p>AI leasing assistant qualifies leads and books tours automatically.</p>
             </div>
-            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
-              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Landscapers</h5>
-              <p class="text-sm" style="color:var(--color-text-muted);">Route optimization cuts drive time 20–30% — same crew, more stops a week.</p>
+            <div class="leverage-card">
+              <div class="leverage-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-5.5 8-12a8 8 0 10-16 0c0 6.5 8 12 8 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+              <div class="leverage-card__stat">−20–30% drive time</div>
+              <h5>Landscapers</h5>
+              <p>Route optimization gets the same crew to more stops a week.</p>
             </div>
-            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
-              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Pest Control Companies</h5>
-              <p class="text-sm" style="color:var(--color-text-muted);">Automated renewal reminders cut recurring plan churn 40–60%.</p>
+            <div class="leverage-card">
+              <div class="leverage-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 7V4a3 3 0 016 0v3M6 10h12M6 10a6 6 0 0012 0M6 10l-3-2M18 10l3-2M6 14l-3 2M18 14l3 2M12 10v9"/></svg></div>
+              <div class="leverage-card__stat">−40–60% churn</div>
+              <h5>Pest Control</h5>
+              <p>Automated renewal reminders cut recurring plan cancellations.</p>
             </div>
-            <div class="card card-white p-4" style="min-width:240px; max-width:240px; flex-shrink:0; scroll-snap-align:start;">
-              <h5 class="mb-2" style="font-size:1rem; color:var(--color-navy);">Real Estate Investment Brokerages</h5>
-              <p class="text-sm" style="color:var(--color-text-muted);">Automated investor intake means no lead waits 47 hours for a call — first response wins the deal.</p>
+            <div class="leverage-card">
+              <div class="leverage-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg></div>
+              <div class="leverage-card__stat">First response wins</div>
+              <h5>Real Estate Investment</h5>
+              <p>Automated investor intake means no lead waits 47 hours for a call.</p>
             </div>
           </div>
           <p class="text-center text-sm" style="color:var(--color-text-muted); margin-top:0.5rem;">Scroll for more &rarr; — or see the full breakdown on <a href="/ai-leverage-points">where AI creates leverage by industry</a>.</p>

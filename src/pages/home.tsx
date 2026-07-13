@@ -17,7 +17,7 @@ home.get('/', (c) => {
         <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">AI Implementation for Owner-Led Service Firms</span>
           <h1>The businesses winning right now aren't working harder.<br/>They're using AI to do more with less.</h1>
-          <p class="lead">Same team, more output, no added headcount — that's the leverage. We diagnose the real constraint — live, in 30 minutes — and build the system that gets you there. You own it in 90 days.</p>
+          <p class="lead">Same team, more output, no added headcount — that's the leverage. We diagnose the real constraint — live, in 30 minutes — and build the system that gets you there. Then you own it.</p>
           <div class="hero-actions">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
@@ -92,7 +92,7 @@ home.get('/', (c) => {
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
                 <p>We don't show up with a tool recommendation. We don't hand you a generic playbook. We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong></p>
-                <p>Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — and we hand you full ownership in 90 days.</p>
+                <p>Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — larger builds run in 90-day sprints to a milestone, and you own it when it's done.</p>
                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free Strategy Call</a>
               </div>
             </div>
@@ -118,7 +118,7 @@ home.get('/', (c) => {
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">02</div>
                 <h5>Build around it</h5>
-                <p>We prescribe the right implementation path for your business. If standard software covers it, we sequence that. If the constraint needs a custom tool, we build it in a 90-day sprint.</p>
+                <p>We prescribe the right implementation path for your business. If standard software covers it, we sequence that. If the constraint needs a custom tool, we build it — larger builds run in 90-day sprints to a milestone; some engagements move faster.</p>
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">03</div>
@@ -155,7 +155,7 @@ home.get('/', (c) => {
             <div class="card card-white p-5">
               <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1.5rem;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
               <h4 class="mb-3">Implementation, not advice</h4>
-              <p>We build it. We document it. We train your team on it. In 90 days you own a working system — not a strategy deck and a bill. If standard software can't solve a unique friction point, we build the custom internal tool that does.</p>
+              <p>We build it. We document it. We train your team on it. You own a working system — not a strategy deck and a bill. Larger builds run in 90-day sprints to a milestone; some are faster, some come out of the box. If standard software can't solve a unique friction point, we build the custom internal tool that does.</p>
             </div>
           </div>
         </div>

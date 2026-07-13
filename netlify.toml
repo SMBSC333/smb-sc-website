@@ -16,6 +16,7 @@
   from = "/why-4997"
   to = "/ai-leverage-points"
   status = 301
+  force = true
 
 # WordPress sitemap leftovers — 410 Gone signals removal to Googlebot
 [[redirects]]

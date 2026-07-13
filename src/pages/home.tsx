@@ -16,8 +16,8 @@ home.get('/', (c) => {
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">AI Implementation for Owner-Led Service Firms</span>
-          <h1>You tried AI. It didn't stick.<br/>We find out why — and fix it.</h1>
-          <p class="lead">Most AI failures aren't a software problem. They're a workflow, sequencing, or owner-dependency problem. We diagnose the real constraint — live, in 30 minutes — and give you one clear next move.</p>
+          <h1>The businesses winning right now aren't working harder.<br/>They're using AI to do more with less.</h1>
+          <p class="lead">Same team, more output, no added headcount — that's the leverage. We diagnose the real constraint — live, in 30 minutes — and build the system that gets you there. You own it in 90 days.</p>
           <div class="hero-actions">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
@@ -294,7 +294,7 @@ home.get('/', (c) => {
     </div>,
     {
       title: 'AI Implementation for Owner-Led Service Firms',
-      description: 'You tried AI. It didn\'t stick. We find the real constraint — live, in 30 minutes — and give you one clear next move. Owner-led service firms, $500K–$3M.'
+      description: 'The businesses winning right now are using AI to do more with less — same team, more output, no added headcount. We find the real constraint — live, in 30 minutes — and build the system. Owner-led service firms, $500K–$3M.'
     }
   )
 })

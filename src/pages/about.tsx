@@ -156,8 +156,8 @@ about.get('/', (c) => {
       {/* ── CTA BAND ── */}
       <section class="cta-band">
         <div class="container">
-          <h2>The diagnostic call is free. The clarity is real.</h2>
-          <p class="lead">30 minutes. We identify the specific constraint. You leave with a clear next move — whether or not we work together.</p>
+          <h2>The AI Leverage Call is free. The clarity is real.</h2>
+          <p class="lead">30 minutes. We walk through your AI Leverage Report and how the constraint it surfaces plays out in your business. You leave with a clear next move — whether or not we work together.</p>
           <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
         </div>
       </section>

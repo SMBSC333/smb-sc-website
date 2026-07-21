@@ -24,38 +24,51 @@ export default async (req) => {
     return new Response("Method not allowed", { status: 405 });
   }
 
-  let firstName = "", email = "", industry = "";
+  let firstName = "", lastName = "", email = "", industry = "", companyName = "", phone = "";
 
   try {
     const contentType = req.headers.get("content-type") || "";
     if (contentType.includes("application/json")) {
       const body = await req.json();
       firstName = body.firstName || body.first_name || "";
+      lastName = body.lastName || body.last_name || "";
       email = body.email || "";
       industry = body.industry || "";
+      companyName = body.companyName || body.company_name || body.company || "";
+      phone = body.phone || "";
     } else {
       const formData = await req.formData();
       firstName = formData.get("firstName") || formData.get("first_name") || "";
+      lastName = formData.get("lastName") || formData.get("last_name") || "";
       email = formData.get("email") || "";
       industry = formData.get("industry") || "";
+      companyName = formData.get("companyName") || formData.get("company_name") || formData.get("company") || "";
+      phone = formData.get("phone") || "";
     }
   } catch (e) {
     return new Response("Invalid request body", { status: 400 });
   }
 
-  if (!email || !industry) {
-    return new Response("Missing required fields: email and industry", { status: 400 });
+  if (!email || !industry || !firstName || !lastName || !companyName) {
+    return new Response("Missing required fields: firstName, lastName, email, companyName, and industry", { status: 400 });
   }
 
   const industrySlug = INDUSTRY_SLUG_MAP[industry] || industry.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-  const industryTag = `industry: ${industry.toLowerCase()}`;
+  // IMPORTANT: use the slugified industry (matches GHL workflow trigger tags exactly),
+  // not the raw display-name lowercase — those diverge for multi-word industries
+  // (e.g. "IT / MSPs" -> "it-msps", "Landscaping" -> "landscapers", "Vascular Surgery Practices" -> "healthcare-vascular")
+  // and previously caused nurture workflows to never fire for those industries.
+  const industryTag = `industry: ${industrySlug}`;
 
   // Create GHL contact (fire-and-forget — never block the user redirect)
   try {
     if (GHL_API_KEY) {
       const payload = {
         firstName: firstName || undefined,
+        lastName: lastName || undefined,
         email,
+        companyName: companyName || undefined,
+        phone: phone || undefined,
         locationId: LOCATION_ID,
         source: "AI Industry Report",
         tags: ["ai-industry-report", industryTag]

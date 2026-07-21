@@ -39,12 +39,24 @@ getYourReport.get('/', (c) => {
                 </p>
                 <form action="/.netlify/functions/capture-report-lead" method="POST" class="report-form">
                   <div class="form-group">
-                    <label for="firstName-standalone">First Name</label>
-                    <input type="text" id="firstName-standalone" name="firstName" placeholder="Your first name" />
+                    <label for="firstName-standalone">First Name <span style="color:#c0392b;">*</span></label>
+                    <input type="text" id="firstName-standalone" name="firstName" required placeholder="Your first name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName-standalone">Last Name <span style="color:#c0392b;">*</span></label>
+                    <input type="text" id="lastName-standalone" name="lastName" required placeholder="Your last name" />
                   </div>
                   <div class="form-group">
                     <label for="email-standalone">Email <span style="color:#c0392b;">*</span></label>
                     <input type="email" id="email-standalone" name="email" required placeholder="your@email.com" />
+                  </div>
+                  <div class="form-group">
+                    <label for="companyName-standalone">Business Name <span style="color:#c0392b;">*</span></label>
+                    <input type="text" id="companyName-standalone" name="companyName" required placeholder="Your business name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone-standalone">Phone Number <span style="color:var(--color-text-muted); font-weight:400;">(optional)</span></label>
+                    <input type="tel" id="phone-standalone" name="phone" placeholder="(555) 555-5555" />
                   </div>
                   <div class="form-group">
                     <label for="industry-standalone">Your Industry <span style="color:#c0392b;">*</span></label>

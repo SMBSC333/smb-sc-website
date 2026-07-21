@@ -90,6 +90,26 @@ aiReportThankYou.get('/', (c) => {
           link.click();
           document.body.removeChild(link);
         })();
+
+        // Fire conversion events once per download, only after gtag.js has loaded
+        (function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+
+          // GA4 key event — report download / lead capture
+          gtag('event', 'generate_lead', {
+            event_category: 'ai_report_funnel',
+            event_label: '${industry}',
+            industry: '${industry}'
+          });
+
+          // Google Ads conversion — AI Report Download - Lead
+          gtag('event', 'conversion', {
+            'send_to': 'AW-824793200/hu6MCKff4tMcEPCwpYkD',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+        })();
       ` }} />
     </div>,
     {

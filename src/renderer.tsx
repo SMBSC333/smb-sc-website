@@ -43,7 +43,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link href="/static/style.css" rel="stylesheet" />
         
-        {/* Google Analytics */}
+        {/* Google Analytics + Google Ads (AW-824793200) — shared gtag.js loader */}
         {gaId && (
           <>
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
@@ -52,6 +52,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${gaId}');
+              gtag('config', 'AW-824793200');
             `}} />
           </>
         )}

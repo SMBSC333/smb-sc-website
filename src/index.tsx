@@ -26,6 +26,7 @@ import aiConsultantAtlanta from './pages/ai-consultant-atlanta'
 import aiForServiceBusinesses from './pages/ai-implementation-for-service-businesses'
 import getYourReport from './pages/get-your-report'
 import aiReportThankYou from './pages/ai-report-thankyou'
+import prebuiltAiTools from './pages/prebuilt-ai-tools'
 
 const app = new Hono()
 
@@ -36,6 +37,7 @@ app.route('/', home)
 app.route('/how-it-works', howItWorks)
 app.route('/who-its-for', whoItsFor)
 app.route('/services', services)
+app.route('/prebuilt-ai-tools', prebuiltAiTools)
 app.route('/ai-leverage-points', aiLeveragePoints)
 app.get('/why-4997', (c) => c.redirect('/ai-leverage-points', 301))
 app.route('/about', about)

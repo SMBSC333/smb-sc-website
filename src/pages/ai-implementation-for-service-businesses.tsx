@@ -15,7 +15,7 @@ aiForServiceBusinesses.get('/', (c) => {
               AI implementation for service businesses is not the same as AI implementation for product companies or enterprise. The constraints are different. The workflows are people-driven. The owner is usually the bottleneck. Here is how we handle that.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ aiForServiceBusinesses.get('/', (c) => {
               </p>
               <div class="mt-5">
                 <a href="/services" class="btn btn-outline btn-lg" style="margin-right: 1rem;">See the Full Engagement</a>
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Fit Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
               </div>
             </div>
             <div style="display: flex; flex-direction: column; gap: 1rem;">
@@ -153,7 +153,7 @@ aiForServiceBusinesses.get('/', (c) => {
             20-minute fit call. We review your current state and tell you plainly whether the engagement is a fit.
           </p>
           <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free Fit Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             <a href="/growth-constraint-quiz" class="btn btn-ghost-light btn-lg">Take the Assessment First</a>
           </div>
         </div>

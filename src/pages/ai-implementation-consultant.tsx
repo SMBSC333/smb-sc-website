@@ -26,13 +26,13 @@ aiImplementationConsultant.get('/', (c) => {
         <div class="container">
           <div class="grid-2" style="align-items: center; gap: 4rem;">
             <div>
-              <span class="eyebrow">Why AI Fails</span>
-              <h2>Most AI implementations fail before the technology is even the issue.</h2>
+              <span class="eyebrow">The AI Leverage Path</span>
+              <h2>Yes, most AI implementations haven't been effective — usually for two reasons.</h2>
               <p class="mt-4" style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.7;">
-                The tools aren&rsquo;t the problem. The missing foundations are. AI deployed on top of broken workflows doesn&rsquo;t fix the workflow &mdash; it amplifies the friction. Adoption dies. The investment sits unused. The owner absorbs the blame.
+                One: nobody diagnosed the actual constraint before picking a tool. Two: nobody owned the follow-through past week two, so adoption drifted back to the old way. AI deployed on top of an undiagnosed workflow doesn&rsquo;t fix the workflow &mdash; it amplifies the friction. Neither one is a technology problem, and both are fixable.
               </p>
               <p style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.7;">
-                We are the firm owners hire after AI has already failed. We identify the real constraint blocking adoption and build the implementation system that transforms it into measurable operational leverage.
+                We identify the real constraint blocking adoption and build the implementation system that transforms it into measurable operational leverage &mdash; and you own it when it's done.
               </p>
             </div>
             <div>

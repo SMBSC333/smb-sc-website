@@ -73,7 +73,7 @@ home.get('/', (c) => {
               </div>
             </div>
             <div class="split-img-container">
-              <img src="/static/images/leverage-fulcrum.jpg" alt="A small, well-placed effort lifting a much bigger load — the leverage principle" loading="lazy" />
+              <img src="/static/images/leverage-pulleys.jpg" alt="A coordinated system of pulleys working together — the leverage principle" loading="lazy" />
             </div>
           </div>
         </div>

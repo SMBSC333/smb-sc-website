@@ -2918,15 +2918,10 @@ strong { color: var(--color-heading); font-weight: 600; }
 
 /* ── Resources Page ────────────────────────────── */
 .featured-start-card {
-  background: var(--color-navy);
-  color: #fff;
-  padding: 3rem;
-  border-radius: 16px;
-  border-left: 5px solid var(--color-gold);
-  margin-bottom: 4rem;
+  color: var(--color-text);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(10, 25, 47, 0.15);
+  box-shadow: 0 20px 50px rgba(10, 25, 47, 0.06);
 }
 .featured-start-card .start-badge {
   display: inline-block;
@@ -2941,12 +2936,12 @@ strong { color: var(--color-heading); font-weight: 600; }
   margin-bottom: 1.5rem;
 }
 .featured-start-card h3 {
-  color: #fff;
+  color: var(--color-navy);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 .featured-start-card p {
-  color: rgba(255,255,255,0.85);
+  color: var(--color-text);
   font-size: 1.15rem;
   line-height: 1.6;
   max-width: 700px;

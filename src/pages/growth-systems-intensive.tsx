@@ -13,10 +13,10 @@ growthSystemsIntensive.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">Focused Sprint</span>
             <h1 style="color: #fff;">You're losing deals to slower follow-up — and building the same proposals from scratch every time.</h1>
             <p class="hero-lead">
-              The Growth Systems Intensive builds a repeatable, AI-assisted lead-to-close workflow in weeks. Faster follow-up, consistent proposals, a pipeline the owner doesn't have to manage manually.
+              The Growth Systems Intensive is AI Leverage applied to your pipeline — a repeatable, AI-assisted lead-to-close workflow built in weeks. Faster follow-up, consistent proposals, a pipeline the owner doesn't have to manage manually.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ growthSystemsIntensive.get('/', (c) => {
                 You stay informed. You close deals when needed. But the process doesn't stop when you're not watching.
               </p>
               <div class="mt-5">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free AI Leverage Call</a>
               </div>
             </div>
             <div>
@@ -118,7 +118,7 @@ growthSystemsIntensive.get('/', (c) => {
           <h2>One diagnostic call confirms the constraint and the fit.</h2>
           <p class="lead" style="max-width:640px; margin:1.5rem auto;">30 minutes. We look at your current lead-to-close workflow and tell you honestly where the biggest leaks are.</p>
           <div class="mt-4">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
           </div>
         </div>
       </section>

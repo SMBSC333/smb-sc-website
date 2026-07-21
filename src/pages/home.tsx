@@ -17,7 +17,7 @@ home.get('/', (c) => {
         <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">AI Implementation for Owner-Led Service Firms</span>
           <h1>The businesses winning right now aren't working harder.<br/>They're using AI to do more with less.</h1>
-          <p class="lead">Same team, more output, no added headcount — that's the leverage. We diagnose the real constraint — live, in 30 minutes — and build the system that gets you there. Then you own it.</p>
+          <p class="lead">Same team, more output, no added headcount — that's the leverage. Get your free AI Leverage Report, then a 30-minute call to walk through how it plays out in your business — and build the system that gets you there. Then you own it.</p>
           <div class="hero-actions">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
@@ -281,12 +281,12 @@ home.get('/', (c) => {
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">
           <span class="eyebrow" style="color:var(--color-gold);">What's on the Other Side</span>
-          <h2 style="color:#fff; max-width:780px; margin:0 auto 1.5rem;">Workflows that run without you. Decisions based on real numbers. AI that actually stuck.</h2>
+          <h2 style="color:#fff; max-width:780px; margin:0 auto 1.5rem;">Workflows that run without you. Decisions based on real numbers. AI that actually sticks.</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width:720px; margin:0 auto 2.5rem;">
             That's the outcome. You own a documented, running system. Your team handles it. You're no longer the single point of failure in your own business — and you know your numbers clearly enough to move with confidence.
           </p>
           <p style="color:rgba(255,255,255,0.65); max-width:620px; margin:0 auto 2.5rem; font-size:1rem;">
-            It starts with one call. 30 minutes to find the constraint that's blocking all of it.
+            It starts with one call. 30 minutes to review your AI Leverage Report and talk through how it plays out in your actual business.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
@@ -298,7 +298,7 @@ home.get('/', (c) => {
     </div>,
     {
       title: 'AI Implementation for Owner-Led Service Firms',
-      description: 'The businesses winning right now are using AI to do more with less — same team, more output, no added headcount. We find the real constraint — live, in 30 minutes — and build the system. Owner-led service firms, $500K–$3M.'
+      description: 'The businesses winning right now are using AI to do more with less — same team, more output, no added headcount. Get your free AI Leverage Report, then a 30-minute call to map how it applies to your business. Owner-led service firms, $500K–$3M.'
     }
   )
 })

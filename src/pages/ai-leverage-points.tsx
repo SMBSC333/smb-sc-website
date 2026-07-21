@@ -15,7 +15,7 @@ aiLeveragePoints.get('/', (c) => {
               Every business has a different constraint. Here's where we've found real leverage — industry by industry. This isn't the full playbook. It's enough to start thinking about where it applies to you.
             </p>
             <div class="hero-cta-group mt-5">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ aiLeveragePoints.get('/', (c) => {
           <h2 style="color:#fff;">Ready to find your constraint?</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width:800px; margin: 1.5rem auto;">Book a free 30-minute strategy call. We will look at your operations and tell you honestly where your biggest leverage point is.</p>
           <div style="margin-top: 2.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
           </div>
         </div>
       </section>

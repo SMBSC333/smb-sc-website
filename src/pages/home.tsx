@@ -87,12 +87,12 @@ home.get('/', (c) => {
               <img src="/static/images/identity-advisory.png" alt="SMB Strategy Consultants — your implementation guide" loading="lazy" />
             </div>
             <div class="split-content">
-              <span class="eyebrow">We've Been Here Before</span>
-              <h2>We're the firm owners call after AI has already failed once.</h2>
+              <span class="eyebrow">The AI Leverage Path</span>
+              <h2>Yes, most AI projects haven't been effective — usually for two reasons.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>We don't show up with a tool recommendation. We don't hand you a generic playbook. We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong></p>
-                <p>Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — larger builds run in 90-day sprints to a milestone, and you own it when it's done.</p>
+                <p><strong>One: nobody diagnosed the actual constraint</strong> before picking a tool. <strong>Two: nobody owned the follow-through</strong> past week two, so it drifted back to the old way. Neither one is a technology problem — and both are fixable.</p>
+                <p>We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong> Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — larger builds run in 90-day sprints to a milestone, and you own it when it's done.</p>
                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free Strategy Call</a>
               </div>
             </div>
@@ -128,7 +128,7 @@ home.get('/', (c) => {
             </div>
           </div>
           <div class="btn-center mt-5">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Start With a Free Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
           </div>
         </div>
       </section>

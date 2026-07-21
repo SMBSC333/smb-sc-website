@@ -12,7 +12,7 @@ aiImplementationChecklist.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">Free Checklist</span>
             <h1 style="color: #fff;">AI Implementation Checklist for Service Businesses</h1>
             <p class="hero-lead">
-              The 23-point pre-implementation audit that most firms skip &mdash; and why skipping it is the primary reason AI stalls within 90 days.
+              The 23-point pre-implementation audit that most firms skip &mdash; and why skipping it is the primary reason AI Leverage never materializes, with adoption stalling within 90 days.
             </p>
             <div class="hero-cta-group">
               <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Get a Custom Review &rarr;</a>
@@ -187,7 +187,7 @@ aiImplementationChecklist.get('/', (c) => {
           <p style="color: rgba(255,255,255,0.75); max-width: 580px; margin: 1.5rem auto; font-size: 1.1rem;">
             20 minutes. We review your checklist results, identify your primary constraint, and tell you whether the engagement is a fit for your situation.
           </p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-2">Book a Free Fit Call &rarr;</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-2">Book Your Free AI Leverage Call &rarr;</a>
         </div>
       </section>
     </div>,

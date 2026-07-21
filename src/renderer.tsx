@@ -102,6 +102,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
               <li><a href="/how-it-works" class={activeNav === 'how' ? 'active' : ''}>How It Works</a></li>
               <li><a href="/who-its-for" class={activeNav === 'who' ? 'active' : ''}>Who It's For</a></li>
               <li><a href="/services" class={activeNav === 'services' ? 'active' : ''}>Our Solutions</a></li>
+              <li><a href="/prebuilt-ai-tools" class={activeNav === 'tools' ? 'active' : ''}>AI Tools</a></li>
               <li><a href="/about" class={activeNav === 'about' ? 'active' : ''}>About</a></li>
               <li><a href="/blog" class={activeNav === 'blog' ? 'active' : ''}>Insights</a></li>
               <li><a href="/contact" class={activeNav === 'contact' ? 'active' : ''}>Contact</a></li>
@@ -114,6 +115,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
           <div class="nav-mobile" id="nav-mobile">
             <a href="/who-its-for">Who It's For</a>
             <a href="/how-it-works">How It Works</a>
+            <a href="/prebuilt-ai-tools">AI Tools</a>
             <a href="/about">About</a>
             <a href="/blog">Insights</a>
             <a href="/contact">Contact</a>
@@ -146,6 +148,7 @@ export const renderer = jsxRenderer(({ children, title, description, activeNav }
                 <ul>
                   <li><a href="/who-its-for">Who It's For</a></li>
                   <li><a href="/how-it-works">How It Works</a></li>
+                  <li><a href="/prebuilt-ai-tools">AI Tools</a></li>
                   <li><a href="/about">About</a></li>
                   <li><a href="/blog">Insights</a></li>
                   <li><a href="/resources">Resources</a></li>

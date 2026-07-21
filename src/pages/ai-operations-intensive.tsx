@@ -13,10 +13,10 @@ aiOperationsIntensive.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">Focused Sprint</span>
             <h1 style="color: #fff;">Three AI workflows deployed and adopted.<br/>In 30 days. Specific to your business.</h1>
             <p class="hero-lead">
-              Not a generic automation template. Not a tool recommendation and a handshake. Three AI workflows built to your actual operations, trained into your team, and running by day 30.
+              Not a generic automation template. Not a tool recommendation and a handshake. Three AI Leverage workflows built to your actual operations, trained into your team, and running by day 30.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ aiOperationsIntensive.get('/', (c) => {
                 The goal is adoption, not access. If the workflows aren't being used by the team by day 30, we extend the support window until they are.
               </p>
               <div class="mt-5">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free AI Leverage Call</a>
               </div>
             </div>
             <div>
@@ -118,7 +118,7 @@ aiOperationsIntensive.get('/', (c) => {
           <h2>One diagnostic call identifies which three workflows to build first.</h2>
           <p class="lead" style="max-width:640px; margin:1.5rem auto;">30 minutes. We review your current operations and tell you honestly where AI will produce the most leverage the fastest.</p>
           <div class="mt-4">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
           </div>
         </div>
       </section>

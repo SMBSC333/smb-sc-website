@@ -143,7 +143,7 @@ blog.get('/:slug', (c) => {
         <div class="container">
           <h2>Ready to identify your primary constraint?</h2>
           <p class="lead">Book a free 30-minute strategy call. We'll walk through your operations and tell you honestly where the biggest leverage lives.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free 30-Minute Strategy Call</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
         </div>
       </section>
     </div>,

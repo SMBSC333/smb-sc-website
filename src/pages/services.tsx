@@ -13,10 +13,10 @@ services.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">What We Do — Specifically</span>
             <h1 style="color: #fff;">Not advice. Not a playbook.<br/>A working system you actually own.</h1>
             <p class="hero-lead">
-              We diagnose the specific constraint blocking AI from working in your business. Then we build the implementation around it — workflows, tools, documentation, team training. Larger builds run in 90-day sprints to a milestone as part of our broader methodology; some engagements move faster, some come out of the box. Either way, you own it and we step back.
+              We diagnose the specific constraint blocking AI Leverage in your business — the gap between what AI could do for you and what it's actually doing today. Then we build the implementation around it — workflows, tools, documentation, team training. Larger builds run in 90-day sprints to a milestone as part of our broader methodology; some engagements move faster, some come out of the box. Either way, you own it and we step back.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
               <a href="/how-it-works" class="btn btn-ghost-light btn-lg">See How It Works</a>
             </div>
           </div>
@@ -40,7 +40,7 @@ services.get('/', (c) => {
                 <li><strong>Phase 3 — Hand-Off:</strong> Team training, documentation, and live support. You own the system. We step back.</li>
               </ul>
               <div class="mt-5">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free AI Leverage Call</a>
               </div>
             </div>
             <div style="display:flex; flex-direction:column; gap:1.5rem;">
@@ -155,7 +155,7 @@ services.get('/', (c) => {
               <div style="font-size:0.8rem; color:rgba(255,255,255,0.5); margin-top:0.3rem;">how we sequence larger builds<br/>to a working system you own</div>
             </div>
           </div>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
         </div>
       </section>
 

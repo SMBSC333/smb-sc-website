@@ -13,10 +13,10 @@ whoItsFor.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">Is This You?</span>
             <h1 style="color: #fff;">We work with a specific kind of owner.<br/>Here's how to know if that's you.</h1>
             <p class="hero-lead">
-              This isn't for every business. It's for owner-led service firms where AI has already been tried and stalled — or where the owner is still the bottleneck and knows it. If that's you, this page will feel like it was written directly about your situation.
+              This isn't for every business. It's for owner-led service firms who want AI Leverage — same team, more output, no added headcount — but where AI has already been tried and stalled, or where the owner is still the bottleneck and knows it. If that's you, this page will feel like it was written directly about your situation.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@ whoItsFor.get('/', (c) => {
           <h2>One call confirms the fit and finds the constraint.</h2>
           <p class="lead" style="max-width:680px; margin:1.5rem auto;">30 minutes. We review your current state, identify the specific constraint, and give you one clear next move. You leave with clarity regardless of whether we work together.</p>
           <div class="mt-5">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
           </div>
         </div>
       </section>

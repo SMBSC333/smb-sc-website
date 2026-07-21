@@ -15,7 +15,7 @@ aiImplementationConsultant.get('/', (c) => {
               You bought the tools. You tested the prompts. Adoption stalled anyway. We diagnose the real constraint &mdash; workflow, team readiness, owner dependency, or economics &mdash; and build the implementation that actually sticks.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -163,7 +163,7 @@ aiImplementationConsultant.get('/', (c) => {
           <p style="color: rgba(255,255,255,0.75); max-width: 600px; margin: 1.5rem auto; font-size: 1.1rem;">
             We review your current state, identify whether this engagement is a fit, and tell you plainly what we see. No pitch. No pressure. If we&rsquo;re the right firm for your constraint, we&rsquo;ll tell you exactly why.
           </p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-4">Book Your Free Fit Call &rarr;</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-4">Book Your Free AI Leverage Call &rarr;</a>
         </div>
       </section>
     </div>,

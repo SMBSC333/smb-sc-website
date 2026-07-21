@@ -15,7 +15,7 @@ resources.get('/', (c) => {
               Use these tools to identify your friction points and start building the systems that keep you ahead of the competition.
             </p>
             <div class="hero-cta-group mt-5">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ resources.get('/', (c) => {
                 <strong>Do not build on messy foundations.</strong> Start with the Free 30-Min Strategy Call to find the right sequence for your business.
              </p>
              <div class="mt-4">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Schedule the Free 30-Min Strategy Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free AI Leverage Call</a>
              </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ resources.get('/', (c) => {
         <div class="container">
           <h2>Ready to move from theory to implementation?</h2>
           <p class="lead">One constraint identified. One clear next move.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
         </div>
       </section>
     </div>,

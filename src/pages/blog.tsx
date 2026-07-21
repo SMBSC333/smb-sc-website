@@ -141,8 +141,8 @@ blog.get('/:slug', (c) => {
       {/* Bottom CTA */}
       <section class="cta-band bg-navy">
         <div class="container">
-          <h2>Ready to identify your primary constraint?</h2>
-          <p class="lead">Book a free 30-minute strategy call. We'll walk through your operations and tell you honestly where the biggest leverage lives.</p>
+          <h2>Ready to talk through your business?</h2>
+          <p class="lead">Book a free 30-minute AI Leverage Call. We'll walk through your operations and tell you honestly where the biggest leverage lives.</p>
           <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
         </div>
       </section>

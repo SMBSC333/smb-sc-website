@@ -13,10 +13,10 @@ financialClarityIntensive.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">Focused Sprint</span>
             <h1 style="color: #fff;">You're making decisions on numbers that are already 3 weeks old.</h1>
             <p class="hero-lead">
-              The Financial Clarity Intensive deploys a real-time financial layer in weeks — not months. You stop running your business on monthly P&amp;L reports and start making decisions on current data.
+              The Financial Clarity Intensive is AI Leverage applied to your numbers — a real-time financial layer deployed in weeks, not months. You stop running your business on monthly P&amp;L reports and start making decisions on current data.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ financialClarityIntensive.get('/', (c) => {
                 You own it. Your team can use it. You stop building monthly reports by hand and start reviewing a live dashboard every morning.
               </p>
               <div class="mt-5">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free AI Leverage Call</a>
               </div>
             </div>
             <div>
@@ -116,7 +116,7 @@ financialClarityIntensive.get('/', (c) => {
           <h2>One diagnostic call confirms the constraint and the fit.</h2>
           <p class="lead" style="max-width:640px; margin:1.5rem auto;">30 minutes. We look at your current financial infrastructure and tell you honestly whether this intensive is the right first move.</p>
           <div class="mt-4">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
           </div>
         </div>
       </section>

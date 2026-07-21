@@ -156,9 +156,9 @@ whyAiFails.get('/', (c) => {
       <section class="section bg-navy-deep">
         <div class="container text-center">
           <span class="eyebrow" style="color: var(--color-gold);">Tell Us What Happened</span>
-          <h2 style="color: #fff; max-width: 680px; margin: 1rem auto;">Describe your failure. We'll tell you which constraint it was.</h2>
+          <h2 style="color: #fff; max-width: 680px; margin: 1rem auto;">Tell us what happened. We'll give you a straight answer.</h2>
           <p style="color: rgba(255,255,255,0.75); max-width: 600px; margin: 1.5rem auto; font-size: 1.05rem; line-height:1.75;">
-            30 minutes. We review your current state, identify whether there's a diagnosable constraint, and give you one specific next move — whether or not we're the right fit to fix it.
+            30 minutes. We talk through what you tried, what happened, and what we'd recommend next — whether or not we're the right fit to help.
           </p>
           <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-4">Book Your Free AI Leverage Call &rarr;</a>
         </div>

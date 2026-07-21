@@ -27,7 +27,7 @@ landingPages.get('/growth-constraint-quiz', (c) => {
             <span class="eyebrow mb-3" style="display:block;">Your Primary Growth Constraint</span>
             <div id="result-content"></div>
             <div style="margin-top:2rem;">
-              <a href="/strategy-call" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+              <a href="/strategy-call" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
               <p style="font-size:0.8rem; color:var(--color-text-muted); margin-top:0.75rem;">Identify your full constraint analysis and a clear implementation roadmap. Free.</p>
             </div>
           </div>

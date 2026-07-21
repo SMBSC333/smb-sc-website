@@ -19,7 +19,7 @@ home.get('/', (c) => {
           <h1>The businesses winning right now aren't working harder.<br/>They're using AI to do more with less.</h1>
           <p class="lead">Same team, more output, no added headcount — that's the leverage. We diagnose the real constraint — live, in 30 minutes — and build the system that gets you there. Then you own it.</p>
           <div class="hero-actions">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
           </div>
         </div>
@@ -93,7 +93,7 @@ home.get('/', (c) => {
               <div class="body-v2">
                 <p><strong>One: nobody diagnosed the actual constraint</strong> before picking a tool. <strong>Two: nobody owned the follow-through</strong> past week two, so it drifted back to the old way. Neither one is a technology problem — and both are fixable.</p>
                 <p>We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong> Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — larger builds run in 90-day sprints to a milestone, and you own it when it's done.</p>
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free Strategy Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free AI Leverage Call</a>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ home.get('/', (c) => {
             </div>
           </div>
           <div class="btn-center mt-5">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
           </div>
         </div>
       </section>
@@ -289,7 +289,7 @@ home.get('/', (c) => {
             It starts with one call. 30 minutes to find the constraint that's blocking all of it.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
           </div>
         </div>

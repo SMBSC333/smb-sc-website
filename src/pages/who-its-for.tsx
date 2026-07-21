@@ -118,8 +118,8 @@ whoItsFor.get('/', (c) => {
       <section class="section bg-soft">
         <div class="container text-center">
           <span class="eyebrow">If You Saw Yourself Above</span>
-          <h2>One call confirms the fit and finds the constraint.</h2>
-          <p class="lead" style="max-width:680px; margin:1.5rem auto;">30 minutes. We review your current state, identify the specific constraint, and give you one clear next move. You leave with clarity regardless of whether we work together.</p>
+          <h2>One call, straight talk about whether this is a fit.</h2>
+          <p class="lead" style="max-width:680px; margin:1.5rem auto;">30 minutes. We talk through where your business is today and what a good next step looks like. You leave with clarity regardless of whether we work together.</p>
           <div class="mt-5">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
           </div>

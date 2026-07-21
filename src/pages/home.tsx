@@ -73,7 +73,7 @@ home.get('/', (c) => {
               </div>
             </div>
             <div class="split-img-container">
-              <img src="/static/images/truth-stalled.png" alt="AI implementation stalled" loading="lazy" />
+              <img src="/static/images/leverage-fulcrum.jpg" alt="A small, well-placed effort lifting a much bigger load — the leverage principle" loading="lazy" />
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ home.get('/', (c) => {
         <div class="container">
           <div class="split-section reversed">
             <div class="split-img-container">
-              <img src="/static/images/identity-advisory.png" alt="SMB Strategy Consultants — your implementation guide" loading="lazy" />
+              <img src="/static/images/corbin-guide-client.jpg" alt="Corbin Cook working through an AI Leverage plan with a client" loading="lazy" />
             </div>
             <div class="split-content">
               <span class="eyebrow">The AI Leverage Path</span>

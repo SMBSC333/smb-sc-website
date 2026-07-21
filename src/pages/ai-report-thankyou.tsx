@@ -72,7 +72,7 @@ aiReportThankYou.get('/', (c) => {
             class="btn btn-primary btn-lg"
             style="display:inline-block;"
           >
-            Book Your Free Strategy Call &rarr;
+            Book Your Free AI Leverage Call &rarr;
           </a>
           <p style="font-size:0.8rem; color:var(--color-text-muted); margin-top:1rem;">
             Free. 30 minutes. Owner-led service firms only.

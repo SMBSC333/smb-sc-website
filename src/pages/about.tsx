@@ -13,10 +13,10 @@ about.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">The Firm</span>
             <h1 style="color: #fff;">We don't start with software.<br/>We start with the constraint.</h1>
             <p class="hero-lead">
-              SMB Strategy Consultants exists for one specific kind of business — owner-led service firms where AI has already been tried and still hasn't produced traction. We find what's actually blocking it. Then we fix it.
+              SMB Strategy Consultants exists for one specific kind of business — owner-led service firms trying to find real AI Leverage, where AI has already been tried and still hasn't produced traction. We find what's actually blocking it. Then we fix it.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ about.get('/', (c) => {
         <div class="container">
           <h2>The diagnostic call is free. The clarity is real.</h2>
           <p class="lead">30 minutes. We identify the specific constraint. You leave with a clear next move — whether or not we work together.</p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
         </div>
       </section>
 

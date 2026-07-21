@@ -121,7 +121,7 @@ implementationStories.get('/', (c) => {
           <p class="lead" style="color:rgba(255,255,255,0.8); max-width:640px; margin:1.5rem auto 2.5rem;">
             Every story above started with a 30-minute diagnostic call. That's where the constraint gets found. Everything else follows from there.
           </p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Diagnostic Call &rarr;</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
         </div>
       </section>
 

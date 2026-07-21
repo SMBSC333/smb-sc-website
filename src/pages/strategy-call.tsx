@@ -8,7 +8,7 @@ strategyCall.get('/', (c) => {
       <section class="page-hero bg-dark" style="padding-bottom: 5rem;">
         <div class="container text-center">
           <span class="eyebrow" style="color:var(--color-gold);">Strategic Entry Point</span>
-          <h1 class="mb-5">Book Your Free 30-Minute Strategy Call.</h1>
+          <h1 class="mb-5">Book Your Free AI Leverage Call.</h1>
           <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">In 30 minutes, we will identify your primary constraint, walk through where AI can create the most leverage in your business, and determine if the AI Sequencing Blueprint is the right next move.</p>
         </div>
       </section>

@@ -15,7 +15,7 @@ aiConsultantAtlanta.get('/', (c) => {
               SMB Strategy Consultants is based in Atlanta and works with owner-led B2B service firms across the metro and beyond. If your AI implementation stalled, we diagnose the real constraint and build the system that sticks.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book a Free Fit Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ aiConsultantAtlanta.get('/', (c) => {
           <p style="color: rgba(255,255,255,0.75); max-width: 580px; margin: 1.5rem auto; font-size: 1.1rem;">
             We work with Atlanta-area firms in person and serve clients remotely across the U.S. If you&rsquo;re an owner-led service firm and AI implementation has stalled, the fit call is the right first step.
           </p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-2">Book a Free Fit Call &rarr;</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-2">Book Your Free AI Leverage Call &rarr;</a>
         </div>
       </section>
     </div>,

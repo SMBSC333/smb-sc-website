@@ -100,30 +100,35 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── THE PLAN (3 steps) ── */}
+      {/* ── THE PLAN (4 steps) ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
             <span class="eyebrow">How It Works</span>
-            <h2>Three steps. One clear path forward.</h2>
+            <h2>Four steps. One clear path forward.</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
           <div class="process-timeline">
-            <div class="grid-3" style="gap:2rem; max-width:860px; margin:0 auto;">
+            <div class="grid-4" style="gap:2rem; max-width:1100px; margin:0 auto;">
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">01</div>
-                <h5>Diagnose the constraint</h5>
-                <p>We identify the specific upstream blocker — whether it's workflow, owner dependency, team readiness, or sequencing — live on a 30-minute call. No homework required.</p>
+                <h5>Receive your AI Leverage Report</h5>
+                <p>Imagine your business with AI Leverage. A free, personalized look at where AI is creating real ROI in your industry.</p>
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">02</div>
-                <h5>Build around it</h5>
-                <p>We prescribe the right implementation path for your business. If standard software covers it, we sequence that. If the constraint needs a custom tool, we build it — larger builds run in 90-day sprints to a milestone; some engagements move faster.</p>
+                <h5>Schedule your free AI Leverage Call</h5>
+                <p>30 minutes with the SMB team to uncover the ROI of an AI implementation plan built for your business.</p>
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">03</div>
-                <h5>Hand you ownership</h5>
-                <p>You leave with a documented system your team runs without you — trained, tested, and built for the reality of your business. Not a consultant dependency. Actual ownership.</p>
+                <h5>AI Sequence Blueprint Session</h5>
+                <p>A working session with Corbin to map the exact sequence — what gets built first, and why, for your specific constraint.</p>
+              </div>
+              <div class="step-item" style="text-align:center;">
+                <div class="step-num">04</div>
+                <h5>Implement your first 90-Day Sprint</h5>
+                <p>We build the system, train your team, and hand you ownership — a working system, not a strategy deck.</p>
               </div>
             </div>
           </div>

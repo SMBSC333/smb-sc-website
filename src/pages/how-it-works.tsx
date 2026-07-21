@@ -43,7 +43,7 @@ howItWorks.get('/', (c) => {
         <div class="container">
           <div class="grid-2" style="align-items:start; gap:4rem;">
             <div>
-              <div class="step-num" style="font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">01</div>
+              <div class="step-num" style="width:auto; height:auto; background:transparent; border-radius:0; font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">01</div>
               <span class="eyebrow">Phase One</span>
               <h2 class="mt-2">The Diagnostic Call</h2>
               <p style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem; color:var(--color-text);">
@@ -99,7 +99,7 @@ howItWorks.get('/', (c) => {
               </ul>
             </div>
             <div>
-              <div class="step-num" style="font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">02</div>
+              <div class="step-num" style="width:auto; height:auto; background:transparent; border-radius:0; font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">02</div>
               <span class="eyebrow">Phase Two</span>
               <h2 class="mt-2">The Build</h2>
               <p style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem; color:var(--color-text);">
@@ -121,7 +121,7 @@ howItWorks.get('/', (c) => {
         <div class="container">
           <div class="grid-2" style="align-items:start; gap:4rem;">
             <div>
-              <div class="step-num" style="font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">03</div>
+              <div class="step-num" style="width:auto; height:auto; background:transparent; border-radius:0; font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">03</div>
               <span class="eyebrow">Phase Three</span>
               <h2 class="mt-2">The Hand-Off</h2>
               <p style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem; color:var(--color-text);">

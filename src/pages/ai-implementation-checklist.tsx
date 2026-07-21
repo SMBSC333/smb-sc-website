@@ -185,7 +185,7 @@ aiImplementationChecklist.get('/', (c) => {
           <span class="eyebrow" style="color: var(--color-gold);">Next Step</span>
           <h2 style="color: #fff; max-width: 680px; margin: 1rem auto;">Not sure what to fix first? That&rsquo;s what the fit call is for.</h2>
           <p style="color: rgba(255,255,255,0.75); max-width: 580px; margin: 1.5rem auto; font-size: 1.1rem;">
-            20 minutes. We review your checklist results, identify your primary constraint, and tell you whether the engagement is a fit for your situation.
+            20 minutes. We review your checklist results together, walk through how your primary constraint shows up in your business, and tell you whether the engagement is a fit for your situation.
           </p>
           <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-2">Book Your Free AI Leverage Call &rarr;</a>
         </div>

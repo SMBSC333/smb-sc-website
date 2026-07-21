@@ -16,7 +16,7 @@ prebuiltAiTools.get('/', (c) => {
               These are our most developed tools — built in-house, live, and running today. Not client projects, not mockups. A look at the kind of system you get when the constraint gets diagnosed and the build actually ships.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ prebuiltAiTools.get('/', (c) => {
           <div class="split-section">
             <div class="split-content">
               <span class="eyebrow">AI Leverage by Industry</span>
-              <h2>The AI Industry Report</h2>
+              <h2>The AI Leverage Report</h2>
               <p class="lead" style="color:var(--color-gold-dark); margin:1rem 0;">A personalized leverage report, built in a two-minute conversation.</p>
               <p style="font-size:1.05rem; line-height:1.8; color:var(--color-text);">
                 Talk to Shelby, our AI Strategy Advisor, about what your business does. She'll ask real questions, look at what you actually do, and put together a free report on where AI is creating leverage in your specific industry — competitors deploying it, where the efficiency gains are, and where it's worth your attention.
@@ -92,10 +92,10 @@ prebuiltAiTools.get('/', (c) => {
                 <li><strong>No form to fill out:</strong> A real conversation, not an intake questionnaire.</li>
                 <li><strong>Delivered in minutes:</strong> Straight to your inbox.</li>
               </ul>
-              <a href="https://smbaibuilder.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg mt-4">Get Your Free AI Industry Report &rarr;</a>
+              <a href="https://smbaibuilder.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg mt-4">Get Your Free AI Leverage Report &rarr;</a>
             </div>
             <div class="split-img-container">
-              <img src="/static/images/identity-advisory.png" alt="AI Industry Report" loading="lazy" />
+              <img src="/static/images/leverage-gears.jpg" alt="AI Leverage Report" loading="lazy" />
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ prebuiltAiTools.get('/', (c) => {
             Every one of these started the same way every client engagement does — by finding the specific constraint worth solving. 30 minutes to find yours.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:1.5rem;">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
           </div>
         </div>
       </section>
@@ -118,7 +118,7 @@ prebuiltAiTools.get('/', (c) => {
     </div>,
     {
       title: 'Prebuilt AI-Infused Tools',
-      description: 'Live, in-house AI tools built by SMB Strategy Consultants — the Profit Engine Scorecard, Rex Security Advisor, and the AI Industry Report. Not client projects. See the kind of system you get when the build actually ships.',
+      description: 'Live, in-house AI tools built by SMB Strategy Consultants — the Profit Engine Scorecard, Rex Security Advisor, and the AI Leverage Report. Not client projects. See the kind of system you get when the build actually ships.',
       activeNav: 'tools'
     }
   )

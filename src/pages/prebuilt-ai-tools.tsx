@@ -107,7 +107,7 @@ prebuiltAiTools.get('/', (c) => {
           <span class="eyebrow" style="color:var(--color-gold);">Like What You See</span>
           <h2 style="color:#fff; max-width:780px; margin:0 auto 1.5rem;">These are the tools. The real leverage is in what we build specifically for you.</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width:720px; margin:0 auto 2.5rem;">
-            Every one of these started the same way every client engagement does — by finding the specific constraint worth solving. 30 minutes to find yours.
+            Every one of these started with a straightforward conversation about the business first. 30 minutes and we'll do the same for yours.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:1.5rem;">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>

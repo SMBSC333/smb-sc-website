@@ -12,7 +12,7 @@ aiReadinessAssessment.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">Free Assessment</span>
             <h1 style="color: #fff;">AI Readiness Assessment for Owner-Led Service Firms</h1>
             <p class="hero-lead">
-              Before you buy another AI tool, find out if your business is actually ready to use one. This assessment identifies the specific constraint blocking adoption in your firm &mdash; in under 10 minutes.
+              Before you buy another AI tool, find out if your business is actually ready for AI Leverage. This assessment identifies the specific constraint blocking adoption in your firm &mdash; in under 10 minutes.
             </p>
             <div class="hero-cta-group">
               <a href="/growth-constraint-quiz" class="btn btn-primary btn-lg">Take the Assessment &rarr;</a>

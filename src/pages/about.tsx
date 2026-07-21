@@ -76,6 +76,55 @@ about.get('/', (c) => {
         </div>
       </section>
 
+      {/* ── CORE PRINCIPLES ── */}
+      <section class="section bg-white">
+        <div class="container text-center">
+          <span class="eyebrow">How We Build</span>
+          <h2>Our Core Principles for AI Integration</h2>
+          <div class="gold-line gold-line-center"></div>
+          <p class="lead mt-4" style="max-width:720px; margin:0 auto 3rem;">Seven principles govern every workflow we build — the difference between AI that sticks and AI that gets abandoned after one try.</p>
+          <div class="grid-4 mt-5">
+            <div class="card card-white">
+              <div class="step-num" style="width:40px;height:40px;font-size:0.9rem;margin:0 auto 1rem;">01</div>
+              <h4 style="color:var(--color-gold-dark);">Own the Workflow</h4>
+              <p class="text-sm">You define the trigger, the boundaries, and the outcome. The AI executes inside the constraints you set — never the reverse.</p>
+            </div>
+            <div class="card card-white">
+              <div class="step-num" style="width:40px;height:40px;font-size:0.9rem;margin:0 auto 1rem;">02</div>
+              <h4 style="color:var(--color-gold-dark);">Design Backward from the Outcome</h4>
+              <p class="text-sm">Know exactly what success looks like before you touch a model or a tool.</p>
+            </div>
+            <div class="card card-white">
+              <div class="step-num" style="width:40px;height:40px;font-size:0.9rem;margin:0 auto 1rem;">03</div>
+              <h4 style="color:var(--color-gold-dark);">Governance Before Scale</h4>
+              <p class="text-sm">Guardrails, approvals, and audit trails get built in before volume. Governance isn't a compliance afterthought — it's what makes scale safe.</p>
+            </div>
+            <div class="card card-white">
+              <div class="step-num" style="width:40px;height:40px;font-size:0.9rem;margin:0 auto 1rem;">04</div>
+              <h4 style="color:var(--color-gold-dark);">Build for the Business, Not the Demo</h4>
+              <p class="text-sm">Every workflow has to earn its keep in hours saved or dollars protected — not just look impressive in a meeting.</p>
+            </div>
+          </div>
+          <div class="grid-3 mt-4" style="max-width:900px; margin-left:auto; margin-right:auto;">
+            <div class="card card-white">
+              <div class="step-num" style="width:40px;height:40px;font-size:0.9rem;margin:0 auto 1rem;">05</div>
+              <h4 style="color:var(--color-gold-dark);">Context Before Automation</h4>
+              <p class="text-sm">The AI is only as good as what you feed it. Gather the real docs, history, and data before you write a single prompt.</p>
+            </div>
+            <div class="card card-white">
+              <div class="step-num" style="width:40px;height:40px;font-size:0.9rem;margin:0 auto 1rem;">06</div>
+              <h4 style="color:var(--color-gold-dark);">Humans + AI, Not Humans vs. AI</h4>
+              <p class="text-sm">The best workflows pair machine speed with human judgment exactly at the decision points that matter.</p>
+            </div>
+            <div class="card card-white">
+              <div class="step-num" style="width:40px;height:40px;font-size:0.9rem;margin:0 auto 1rem;">07</div>
+              <h4 style="color:var(--color-gold-dark);">Every Workflow Learns</h4>
+              <p class="text-sm">Build the feedback loop in from day one so the system gets better with use instead of going stale.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── WHO WE WORK WITH ── */}
       <section class="section bg-white">
         <div class="container text-center">

@@ -49,4 +49,4 @@
 [[edge_functions]]
   path = "/*"
   function = "index"
-  excludedPath = ["/static/*", "/admin", "/admin/*", "/*.html", "/*.ico", "/*.txt", "/*.xml", "/*.json", "/.netlify/*"]
+  excludedPath = ["/static/*", "/admin", "/admin/*", "/*.html", "/*.ico", "/*.txt", "/*.xml", "/*.json", "/.netlify/*", "/reports/*", "/*.pdf"]

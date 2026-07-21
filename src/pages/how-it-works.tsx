@@ -101,7 +101,7 @@ howItWorks.get('/', (c) => {
             <div class="card card-accent p-5">
               <h4 class="mb-3">What we're looking for on the call</h4>
               <ul class="feature-list">
-                <li>The specific constraint — workflow gap, owner dependency, team readiness, or sequencing failure</li>
+                <li>How the constraint surfaced in your AI Leverage Report shows up specifically in your business — workflow gap, owner dependency, team readiness, or sequencing failure</li>
                 <li>Whether foundations exist for AI to connect to — or whether those need to be built first</li>
                 <li>The economic case — whether the friction cost justifies the implementation investment</li>
                 <li>Whether an AI Sequence Blueprint Session is the right next move</li>

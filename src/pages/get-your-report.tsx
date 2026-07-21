@@ -89,7 +89,7 @@ getYourReport.get('/', (c) => {
       </section>
     </div>,
     {
-      title: 'Get Your Free AI Industry Report — SMB Strategy Consultants',
+      title: 'Get Your Free AI Leverage Report — SMB Strategy Consultants',
       description: 'See how AI is being used in your industry right now. Free report for 15 service-based industries. Download instantly.'
     }
   )

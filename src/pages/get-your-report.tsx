@@ -19,9 +19,9 @@ getYourReport.get('/', (c) => {
                 We've documented exactly how AI is being deployed in your industry right now — what's working, what the leaders are doing differently, and where the next window of leverage is before it closes.
               </p>
               <div style="margin:1.5rem 0;">
-                <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-text-muted); margin-bottom:0.75rem;">Available for 12 industries</p>
+                <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-text-muted); margin-bottom:0.75rem;">Available for 15 industries</p>
                 <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.4rem 1.5rem;">
-                  {['Accounting', 'Architecture', 'Electrical', 'Engineering', 'HVAC', 'IT / MSPs', 'Landscaping', 'Law Firms', 'Marketing Agencies', 'Pest Control', 'Plumbing', 'Property Management'].map(ind => (
+                  {['Accounting', 'Architecture', 'Electrical', 'Engineering', 'HVAC', 'IT / MSPs', 'Landscaping', 'Law Firms', 'Marketing Agencies', 'Pest Control', 'Plumbing', 'Property Management', 'Vascular Surgery', 'Bariatric & Surgical', 'B2B Professional Services'].map(ind => (
                     <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.9rem; color:var(--color-text);">
                       <span style="width:6px; height:6px; background:var(--color-gold); border-radius:50%; flex-shrink:0;"></span>
                       {ind}
@@ -62,6 +62,9 @@ getYourReport.get('/', (c) => {
                       <option value="Pest Control">Pest Control</option>
                       <option value="Plumbing">Plumbing</option>
                       <option value="Property Management">Property Management</option>
+                      <option value="Vascular Surgery Practices">Vascular Surgery Practices</option>
+                      <option value="Bariatric & Surgical Practices">Bariatric &amp; Surgical Practices</option>
+                      <option value="B2B Professional Services">B2B Professional Services</option>
                     </select>
                   </div>
                   <button type="submit" class="btn btn-primary btn-block">Download My Report &rarr;</button>
@@ -75,7 +78,7 @@ getYourReport.get('/', (c) => {
     </div>,
     {
       title: 'Get Your Free AI Industry Report — SMB Strategy Consultants',
-      description: 'See how AI is being used in your industry right now. Free report for 12 service-based industries. Download instantly.'
+      description: 'See how AI is being used in your industry right now. Free report for 15 service-based industries. Download instantly.'
     }
   )
 })

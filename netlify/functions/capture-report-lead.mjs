@@ -13,7 +13,10 @@ const INDUSTRY_SLUG_MAP = {
   "Marketing Agencies": "marketing-agencies",
   "Pest Control": "pest-control",
   "Plumbing": "plumbing",
-  "Property Management": "property-management"
+  "Property Management": "property-management",
+  "Vascular Surgery Practices": "healthcare-vascular",
+  "Bariatric & Surgical Practices": "surgical-bariatric",
+  "B2B Professional Services": "b2b-professional-services"
 };
 
 export default async (req) => {

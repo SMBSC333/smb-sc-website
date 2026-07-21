@@ -14,7 +14,10 @@ const INDUSTRY_DISPLAY: Record<string, string> = {
   'marketing-agencies': 'Marketing Agencies',
   'pest-control': 'Pest Control',
   'plumbing': 'Plumbing',
-  'property-management': 'Property Management'
+  'property-management': 'Property Management',
+  'healthcare-vascular': 'Vascular Surgery Practices',
+  'surgical-bariatric': 'Bariatric & Surgical Practices',
+  'b2b-professional-services': 'B2B Professional Services'
 }
 
 aiReportThankYou.get('/', (c) => {

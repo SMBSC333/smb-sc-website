@@ -16,7 +16,7 @@ howItWorks.get('/', (c) => {
               We don't start with a proposal, a scope of work, or a tool recommendation. We start by showing you where AI Leverage exists in your business — then we sequence everything that follows from there.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ howItWorks.get('/', (c) => {
           </p>
           <div class="hero-actions" style="justify-content:center;">
             <a href="/get-your-report" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-ghost-light btn-lg">Book Your Free Strategy Call &rarr;</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-ghost-light btn-lg">Book Your Free AI Leverage Call &rarr;</a>
           </div>
         </div>
       </section>

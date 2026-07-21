@@ -56,13 +56,12 @@ aiReportThankYou.get('/', (c) => {
         <div style="max-width:720px; margin:0 auto; text-align:center;">
           <span class="eyebrow">One More Thing</span>
           <h2 style="font-size:1.75rem; font-weight:800; color:var(--color-navy); margin:1rem 0;">
-            See exactly where the leverage is in your business — live, in 30 minutes
+            Want to talk through what this means for your business?
           </h2>
           <div class="gold-line gold-line-center" style="margin-bottom:1.5rem;"></div>
           <p style="font-size:1.05rem; color:var(--color-text); max-width:600px; margin:0 auto 1rem; line-height:1.75;">
-            The report shows you what's happening across your industry. The strategy call shows you
-            where the specific leverage point is in <em>your</em> business — the constraint that,
-            once diagnosed, changes what's possible.
+            The report shows you what's happening across your industry. The free 30-minute call is
+            where we go through it together and talk about how it applies to <em>your</em> business specifically.
           </p>
           <p style="font-size:1rem; color:var(--color-text-muted); max-width:560px; margin:0 auto 2rem;">
             30 minutes. No homework. One clear next move.

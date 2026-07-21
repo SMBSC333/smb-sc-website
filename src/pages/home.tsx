@@ -272,56 +272,6 @@ home.get('/', (c) => {
         </div>
       </section>
 
-      {/* ── CHECK ENGINE ── */}
-      <section id="check-engine" class="section bg-soft">
-        <div class="container">
-          <div class="section-header center mb-5">
-            <span class="eyebrow">The Scorecard</span>
-            <h2>Your business has an economic check engine light.<br/>Most owners never look at it.</h2>
-            <div class="gold-line gold-line-center"></div>
-            <p class="lead mt-4" style="max-width:720px; margin-left:auto; margin-right:auto;">
-              Every business is operating in economic and operational conditions right now — conditions that are either working for you or against you. Green means your environment supports the next move. Yellow means proceed with eyes open. Red means the conditions are creating drag, regardless of how hard you push.
-            </p>
-          </div>
-          <div class="check-engine-feature-block">
-            <div class="check-engine-icon-wrap">
-              <div class="check-engine-glow-ring">
-                <img src="/static/images/check-engine-icon-transparent.png" alt="Business Check Engine Light" class="check-engine-hero-icon" width="120" height="120" />
-              </div>
-              <div class="check-engine-status-badge">
-                <img src="/static/images/check-engine-icon-transparent.png" alt="" class="check-engine-badge-icon" width="16" height="16" aria-hidden="true" />
-                <span>Q2 2026 — Engine Status: <strong>YELLOW</strong></span>
-              </div>
-            </div>
-            <div class="check-engine-hook">
-              <h3>Right now, economic conditions are either working for your business or against it.</h3>
-              <p class="lead mt-3">Most owners are pushing harder without knowing whether the environment supports the move. The Profit Engine Scorecard reads 35 macro indicators — NFIB, FRED, ISM, NY Fed — and outputs a single signal: <strong>Green. Yellow. Red.</strong></p>
-              <p class="mt-3" style="color:var(--color-text-muted);">Yellow or red is not a reason to stop. It is a reason to call. We help you navigate the conditions working against you and identify exactly where leverage still exists.</p>
-            </div>
-            <div class="check-engine-cards grid-3 mt-5" style="gap:2rem;">
-              <div class="card card-white p-5">
-                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg></div>
-                <h4 class="mb-3">Real-Time Conditions</h4>
-                <p>35 macro indicators updated each quarter — economic pressure, market conditions, operational signals — not last year's data.</p>
-              </div>
-              <div class="card card-white p-5">
-                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
-                <h4 class="mb-3">One Signal. No Guessing.</h4>
-                <p>Green, yellow, or red. Each indicator tells you whether that dimension of your business environment is clear, cautionary, or working against you.</p>
-              </div>
-              <div class="card card-white p-5">
-                <div class="card-icon" style="color:var(--color-gold-dark); margin-bottom:1rem;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
-                <h4 class="mb-3">Know the Right Next Move</h4>
-                <p>Yellow or red is not a stop sign — it is a signal. It tells you where to focus so effort produces leverage instead of friction.</p>
-              </div>
-            </div>
-          </div>
-          <div class="btn-center mt-5">
-            <a href="https://smb-engine-light-ab7bf77b.viktor.space" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Check My Engine Light &rarr;</a>
-          </div>
-        </div>
-      </section>
-
       {/* ── SUCCESS VISION / FINAL CTA ── */}
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">

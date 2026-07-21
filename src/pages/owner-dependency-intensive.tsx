@@ -13,10 +13,10 @@ ownerDependencyIntensive.get('/', (c) => {
             <span class="eyebrow" style="color: var(--color-gold);">Focused Sprint</span>
             <h1 style="color: #fff;">Every decision still runs through you.<br/>That's the constraint.</h1>
             <p class="hero-lead">
-              The Owner Dependency Intensive documents the judgment calls only you currently make — and builds the systems so your team can make them correctly without you. In weeks, not quarters.
+              The Owner Dependency Intensive is how you get AI Leverage out of your own judgment — documenting the calls only you currently make, and building the systems so your team can make them correctly without you. In weeks, not quarters.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ ownerDependencyIntensive.get('/', (c) => {
                 The measure of success is simple and specific: owner hours reduced by a documented amount within 60 days of deployment. If we can't get there, we don't call it done.
               </p>
               <div class="mt-5">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Start With a Free Diagnostic Call</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary">Book Your Free AI Leverage Call</a>
               </div>
             </div>
             <div>
@@ -118,7 +118,7 @@ ownerDependencyIntensive.get('/', (c) => {
           <h2>One diagnostic call finds the specific dependency that's costing you the most.</h2>
           <p class="lead" style="max-width:640px; margin:1.5rem auto;">30 minutes. We review your current state and identify which owner dependencies have the highest leverage to remove first.</p>
           <div class="mt-4">
-            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free Strategy Call</a>
+            <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call</a>
           </div>
         </div>
       </section>

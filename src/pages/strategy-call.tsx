@@ -9,7 +9,7 @@ strategyCall.get('/', (c) => {
         <div class="container text-center">
           <span class="eyebrow" style="color:var(--color-gold);">Strategic Entry Point</span>
           <h1 class="mb-5">Book Your Free AI Leverage Call.</h1>
-          <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">In 30 minutes, we will identify your primary constraint, walk through where AI can create the most leverage in your business, and determine if the AI Sequencing Blueprint is the right next move.</p>
+          <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">In 30 minutes, we'll walk through your free AI Leverage Report together, map where that leverage plays out in your actual business, and determine if the AI Sequence Blueprint Session is the right next move.</p>
         </div>
       </section>
 
@@ -18,10 +18,10 @@ strategyCall.get('/', (c) => {
           <div class="grid-2" style="gap:5rem; align-items: start;">
             <div>
               <h2 class="mb-6">The high-value fit assessment.</h2>
-              <p class="mb-6" style="font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">This isn't a sales pitch. It is a surgical evaluation of where your business is today. We don't build on messy foundations—because without foundations, AI just amplifies the noise. We identify the constraints first.</p>
+              <p class="mb-6" style="font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">This isn't a sales pitch. It starts with your AI Leverage Report, not a blank page. We don't build on messy foundations—because without foundations, AI just amplifies the noise.</p>
               
               <ul class="feature-list mt-5">
-                <li><strong>Friction Identification:</strong> We isolate where your business may be losing money (Leads, Reporting, or Workflow).</li>
+                <li><strong>Report Walkthrough:</strong> We translate your AI Leverage Report into where your business may be losing money (Leads, Reporting, or Workflow).</li>
                 <li><strong>Foundation Audit:</strong> A sanity check on whether your current data and process are ready for Growth-Leveraged AI.</li>
                 <li><strong>Sprint Fit:</strong> We'll determine if our sprint-based implementation model — 90-day sprints for larger builds, faster for smaller ones — will create measurable ROI for your scale.</li>
                 <li><strong>Zero-Risk Exit:</strong> If we aren't a fit, we'll point you toward the exact resource or provider you need next to stay ahead of the competition.</li>
@@ -78,7 +78,7 @@ strategyCall.get('/', (c) => {
     </div>,
     { 
       title: 'Free AI Strategy Call for SMB Owners', 
-      description: 'Free 30-min call for service business owners. We identify your top operational constraint and show exactly where AI creates the most leverage.',
+      description: 'Free 30-min call for service business owners. We walk through your AI Leverage Report and show exactly where that leverage plays out in your business.',
       activeNav: 'contact' 
     }
   )

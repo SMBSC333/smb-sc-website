@@ -11,7 +11,7 @@ contact.get('/', (c) => {
           <h1>All roads lead to clarity.</h1>
           <p class="lead" style="max-width: 700px; margin: 0 auto;">We do not offer generic consultations. Every engagement begins with the AI Implementation Strategy Call to identify your real constraints.</p>
           <div class="mt-5">
-             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book the AI Implementation Strategy Call &rarr;</a>
+             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
           </div>
         </div>
       </section>

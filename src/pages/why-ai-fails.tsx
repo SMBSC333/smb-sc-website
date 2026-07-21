@@ -11,12 +11,12 @@ whyAiFails.get('/', (c) => {
         <div class="container">
           <div class="hero-content-v2">
             <span class="eyebrow" style="color: var(--color-gold);">The Real Diagnosis</span>
-            <h1 style="color: #fff;">You didn't fail at AI.<br/>You failed at sequencing.</h1>
+            <h1 style="color: #fff;">Yes, most AI projects haven't been effective.<br/>Usually for one specific reason.</h1>
             <p class="hero-lead">
-              The tools work. The failure is almost always one specific thing — one level upstream from where you deployed the technology. It's diagnosable. It has a fix. This page explains what it usually is.
+              The tools work. The AI Leverage was there to be had. The failure is almost always one specific thing — one level upstream from where you deployed the technology. It's diagnosable. It has a fix. This page explains what it usually is.
             </p>
             <div class="hero-cta-group">
-              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Get the Real Diagnosis &rarr;</a>
+              <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ whyAiFails.get('/', (c) => {
                 That's the work. It starts with finding the constraint. It ends with you owning a system that runs without us.
               </p>
               <div class="mt-5">
-                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Find My Constraint — Free Call &rarr;</a>
+                <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
               </div>
             </div>
             <div class="card card-navy" style="padding: 2.5rem;">
@@ -160,7 +160,7 @@ whyAiFails.get('/', (c) => {
           <p style="color: rgba(255,255,255,0.75); max-width: 600px; margin: 1.5rem auto; font-size: 1.05rem; line-height:1.75;">
             30 minutes. We review your current state, identify whether there's a diagnosable constraint, and give you one specific next move — whether or not we're the right fit to fix it.
           </p>
-          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-4">Book a Free Diagnostic Call &rarr;</a>
+          <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg mt-4">Book Your Free AI Leverage Call &rarr;</a>
         </div>
       </section>
 

@@ -62,14 +62,14 @@ home.get('/', (c) => {
         <div class="container">
           <div class="split-section">
             <div class="split-content">
-              <span class="eyebrow">The Real Problem</span>
-              <h2>It's not the tools. It's never the tools.</h2>
+              <span class="eyebrow">The Opportunity</span>
+              <h2>The window is open. It won't stay that way.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>You bought the tools. You tested the prompts. You sat through demos and maybe ran a pilot. For a moment it looked like it was going to work.</p>
-                <p><strong>Then it stopped.</strong> The owner is still the bottleneck. Workflows are still messy. The AI just sits there, another subscription you're not fully using.</p>
-                <p class="mt-3" style="font-size:1.05rem; line-height:1.75;">The frustration is not that AI failed. The frustration is that you believed it would work — and you can't figure out what you did wrong.</p>
-                <p class="mt-3 lead">You didn't do anything wrong. The constraint was upstream from where you deployed the tool. That's a diagnosable problem. It has a specific fix.</p>
+                <p>We're living through a moment that doesn't come around twice. The tools finally work well enough to take real work off your desk — and the businesses that move first are building a lead the slow movers won't be able to close.</p>
+                <p><strong>That's the upside.</strong> Here's the part almost nobody says out loud: everyone feels the pressure to "do something with AI." Almost nobody knows where to actually start.</p>
+                <p class="mt-3" style="font-size:1.05rem; line-height:1.75;">So owners either freeze — overwhelmed by the options — or chase the flashiest tool and burn months solving the wrong problem.</p>
+                <p class="mt-3 lead">The advantage isn't using AI. It's using it on the right problem, in the right order, before everyone else figures that out too.</p>
               </div>
             </div>
             <div class="split-img-container">

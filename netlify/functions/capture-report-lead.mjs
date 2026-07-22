@@ -1,5 +1,10 @@
 const GHL_API_KEY = process.env.GHL_API_KEY;
 const LOCATION_ID = "9I2E3anKdouWToVMoJly";
+// GHL custom field "Industry Slug" (contact.industry_slug) — created 2026-07-22 so
+// nurture email templates that are shared across industries (e.g. "Universal Nurture")
+// can merge-tag {{contact.industry_slug}} into the download link instead of relying
+// on a hardcoded slug or the (non-mergeable) industry tag.
+const INDUSTRY_SLUG_FIELD_ID = "R0exQQ1UM4825tjK4WWi";
 
 const INDUSTRY_SLUG_MAP = {
   "Accounting": "accounting",
@@ -71,7 +76,8 @@ export default async (req) => {
         phone: phone || undefined,
         locationId: LOCATION_ID,
         source: "AI Industry Report",
-        tags: ["ai-industry-report", industryTag]
+        tags: ["ai-industry-report", industryTag],
+        customField: [{ id: INDUSTRY_SLUG_FIELD_ID, value: industrySlug }]
       };
 
       await fetch("https://rest.gohighlevel.com/v1/contacts/", {

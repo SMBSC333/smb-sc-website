@@ -277,6 +277,80 @@ home.get('/', (c) => {
         </div>
       </section>
 
+      {/* ── WHERE WE STAND ── */}
+      <section class="section bg-soft">
+        <div class="container">
+          <div class="split-section">
+            <div class="split-content">
+              <span class="eyebrow">Free Market Intelligence</span>
+              <h2>Where We Stand: what the data says about the next five years.</h2>
+              <div class="gold-line mb-4"></div>
+              <div class="body-v2">
+                <p>Market valuations. Housing costs. Real wages. The generational wealth shift. The AI displacement timeline. Most owners are getting these one headline at a time — usually the scariest one, with no context.</p>
+                <p><strong>Where We Stand puts the five data sets in one place</strong> and updates them as new numbers come in, so you're working from the actual picture instead of whatever crossed your feed this week.</p>
+                <p class="mt-3" style="font-size:1.05rem; line-height:1.75;">No predictions dressed up as certainty. Just the numbers, tracked over time, with what they mean for a business owner making real decisions.</p>
+              </div>
+            </div>
+
+            <div class="split-form-container">
+              <div class="report-form-card">
+                <h3 style="font-size:1.35rem; font-weight:800; color:var(--color-navy); margin-bottom:0.5rem;">Get the Where We Stand Report</h3>
+                <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:1.5rem; line-height:1.6;">
+                  Free. One email to send it, updated whenever the data moves.
+                </p>
+                <form id="wwsLeadForm" class="report-form">
+                  <div class="form-group">
+                    <label for="wwsFirstName">First Name <span style="color:#c0392b;">*</span></label>
+                    <input type="text" id="wwsFirstName" name="firstName" required placeholder="Your first name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="wwsLastName">Last Name <span style="color:var(--color-text-muted); font-weight:400;">(optional)</span></label>
+                    <input type="text" id="wwsLastName" name="lastName" placeholder="Your last name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="wwsEmail">Email <span style="color:#c0392b;">*</span></label>
+                    <input type="email" id="wwsEmail" name="email" required placeholder="your@email.com" />
+                  </div>
+                  <p id="wwsFormError" style="color:#c0392b; font-size:0.85rem; margin-bottom:0.75rem;"></p>
+                  <button type="submit" id="wwsSubmitBtn" class="btn btn-primary btn-lg" style="width:100%;">Send Me the Report &rarr;</button>
+                </form>
+                <p style="font-size:0.75rem; color:var(--color-text-muted); margin-top:1rem; margin-bottom:0; text-align:center;">No spam. Unsubscribe anytime.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+(function () {
+  'use strict';
+  var form = document.getElementById('wwsLeadForm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var firstName = document.getElementById('wwsFirstName').value.trim();
+    var lastName  = document.getElementById('wwsLastName').value.trim();
+    var email     = document.getElementById('wwsEmail').value.trim();
+    var errorEl   = document.getElementById('wwsFormError');
+    var submitBtn = document.getElementById('wwsSubmitBtn');
+    if (!firstName || !email) {
+      errorEl.textContent = 'First name and email are required.';
+      return;
+    }
+    errorEl.textContent = '';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    fetch('https://smbwherewestand.com/.netlify/functions/capture-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ firstName: firstName, lastName: lastName, email: email })
+    })
+    .then(function () { window.location.href = 'https://smbwherewestand.com/thank-you.html'; })
+    .catch(function () { window.location.href = 'https://smbwherewestand.com/thank-you.html'; });
+  });
+})();
+`}}></script>
+      </section>
+
       {/* ── SUCCESS VISION / FINAL CTA ── */}
       <section class="cta-band bg-navy section-lg">
         <div class="container text-center">

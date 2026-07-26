@@ -9,7 +9,7 @@ strategyCall.get('/', (c) => {
         <div class="container text-center">
           <span class="eyebrow" style="color:var(--color-gold);">Strategic Entry Point</span>
           <h1 class="mb-5">Book Your Free AI Leverage Call.</h1>
-          <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">In 30 minutes, we'll walk through your free AI Leverage Report together, map where that leverage plays out in your actual business, and determine if the AI Sequence Blueprint Session is the right next move.</p>
+          <p class="lead mb-5" style="max-width: 800px; margin: 0 auto;">In 30 minutes, we'll walk through your free AI Leverage Report together, map where that leverage plays out in your actual business, and determine if the AI Implementation Blueprint Session is the right next move.</p>
         </div>
       </section>
 

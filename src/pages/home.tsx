@@ -17,7 +17,7 @@ home.get('/', (c) => {
         <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">AI Implementation for Owner-Led Service Firms</span>
           <h1>The businesses winning right now aren't working harder.<br/>They're using AI to do more with less.</h1>
-          <p class="lead">Same team, more output, no added headcount — that's the leverage AI creates when it's aimed at the right problem. Book a free 30-minute call and we'll find the constraint slowing your business down, show you the numbers behind it, and tell you exactly what to fix first.</p>
+          <p class="lead">Same team, more output, no added headcount — that's the leverage AI creates when it's aimed at the right problem. Book a free 30-minute call and we'll walk through exactly how that leverage applies to a business like yours — real examples, real numbers, no pitch.</p>
           <div class="hero-actions">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
@@ -360,7 +360,7 @@ home.get('/', (c) => {
             You own a documented, running system. Your team runs it without you in the loop. You're no longer the single point of failure in your own business — and you know your numbers clearly enough to make decisions with confidence, not gut feel.
           </p>
           <p style="color:rgba(255,255,255,0.65); max-width:620px; margin:0 auto 2.5rem; font-size:1rem;">
-            It starts with one call. 30 minutes to find your constraint and map how the fix plays out in your actual business — no pitch deck, no pressure.
+            It starts with one call. 30 minutes to see exactly how AI leverage applies to a business like yours — no pitch deck, no pressure.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>

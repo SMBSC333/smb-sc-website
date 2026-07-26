@@ -101,10 +101,10 @@ howItWorks.get('/', (c) => {
             <div class="card card-accent p-5">
               <h4 class="mb-3">What we're looking for on the call</h4>
               <ul class="feature-list">
-                <li>How the constraint surfaced in your AI Leverage Report shows up specifically in your business — workflow gap, owner dependency, team readiness, or sequencing failure</li>
-                <li>Whether foundations exist for AI to connect to — or whether those need to be built first</li>
-                <li>The economic case — whether the friction cost justifies the implementation investment</li>
-                <li>Whether an AI Sequence Blueprint Session is the right next move</li>
+                <li>Where the leverage points in your AI Leverage Report actually apply to your business — not just your industry</li>
+                <li>What you've already tried with AI, and what happened</li>
+                <li>The ROI case — time back or revenue, in real numbers for your business</li>
+                <li>Whether an AI Implementation Blueprint Session is the right next move</li>
               </ul>
             </div>
           </div>
@@ -135,7 +135,7 @@ howItWorks.get('/', (c) => {
             <div>
               <div class="step-num" style="width:auto; height:auto; background:transparent; border-radius:0; font-size:3rem; color:var(--color-gold); font-family:var(--font-heading); font-weight:700; line-height:1; margin-bottom:1.5rem;">03</div>
               <span class="eyebrow">Step Three</span>
-              <h2 class="mt-2">The AI Sequence Blueprint Session</h2>
+              <h2 class="mt-2">The AI Implementation Blueprint Session</h2>
               <p style="font-size:1.05rem; line-height:1.8; margin-top:1.5rem; color:var(--color-text);">
                 A working session directly with Corbin. This is where the diagnosis becomes a plan — the specific sequence of what gets built, in what order, for your specific constraint.
               </p>
@@ -197,7 +197,7 @@ howItWorks.get('/', (c) => {
     </div>,
     {
       title: 'How It Works',
-      description: 'Four steps: get your free AI Leverage Report, book a free AI Leverage Call, map your AI Sequence Blueprint Session with Corbin, then implement your first 90-Day Sprint. You own the working system at the end.',
+      description: 'Four steps: get your free AI Leverage Report, book a free AI Leverage Call, map your AI Implementation Blueprint Session with Corbin, then implement your first 90-Day Sprint. You own the working system at the end.',
       activeNav: 'how'
     }
   )

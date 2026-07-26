@@ -3162,6 +3162,15 @@ strong { color: var(--color-heading); font-weight: 600; }
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+  /* The generic .split-content rule sets order:1 on mobile; without an
+     explicit order the form card (order:0 default) rendered ABOVE the
+     sales copy, so mobile visitors only ever saw the generic form title
+     with no headline/benefit copy above it. Force content first, form second. */
+  .split-form-container {
+    order: 2;
+  }
+}
 @media (max-width: 768px) {
   .split-form-container {
     margin-top: 2rem;

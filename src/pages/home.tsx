@@ -17,7 +17,7 @@ home.get('/', (c) => {
         <div class="container hero-content">
           <span class="eyebrow hero-eyebrow">AI Implementation for Owner-Led Service Firms</span>
           <h1>The businesses winning right now aren't working harder.<br/>They're using AI to do more with less.</h1>
-          <p class="lead">Same team, more output, no added headcount — that's the leverage. Get your free AI Leverage Report, then a 30-minute call to walk through how it plays out in your business — and build the system that gets you there. Then you own it.</p>
+          <p class="lead">Same team, more output, no added headcount — that's the leverage AI creates when it's aimed at the right problem. Book a free 30-minute call and we'll find the constraint slowing your business down, show you the numbers behind it, and tell you exactly what to fix first.</p>
           <div class="hero-actions">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
             <a href="/who-its-for" class="btn btn-ghost-light btn-lg">See If You're a Fit</a>
@@ -66,10 +66,10 @@ home.get('/', (c) => {
               <h2>The window is open. It won't stay that way.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p>We're living through a moment that doesn't come around twice. The tools finally work well enough to take real work off your desk — and the businesses that move first are building a lead the slow movers won't be able to close.</p>
-                <p><strong>That's the upside.</strong> Here's the part almost nobody says out loud: everyone feels the pressure to "do something with AI." Almost nobody knows where to actually start.</p>
-                <p class="mt-3" style="font-size:1.05rem; line-height:1.75;">So owners either freeze — overwhelmed by the options — or chase the flashiest tool and burn months solving the wrong problem.</p>
-                <p class="mt-3 lead">The advantage isn't using AI. It's using it on the right problem, in the right order, before everyone else figures that out too.</p>
+                <p>AI finally works well enough to take real work off your desk. The businesses moving first are building a lead the slow movers won't be able to close — lower overhead, faster response times, fewer people needed to run the same volume.</p>
+                <p><strong>Here's what nobody says out loud:</strong> every owner feels pressure to "do something with AI." Almost nobody knows where to actually start.</p>
+                <p class="mt-3" style="font-size:1.05rem; line-height:1.75;">So they freeze — overwhelmed by the options — or chase the flashiest tool and burn three months solving the wrong problem.</p>
+                <p class="mt-3 lead">The advantage was never "using AI." It's using it on the right problem, in the right order — before your competitors figure that out too.</p>
               </div>
             </div>
             <div class="split-img-container">
@@ -88,11 +88,11 @@ home.get('/', (c) => {
             </div>
             <div class="split-content">
               <span class="eyebrow">The AI Leverage Path</span>
-              <h2>Yes, most AI projects haven't been effective — usually for two reasons.</h2>
+              <h2>Most AI projects fail for two reasons — neither one is the technology.</h2>
               <div class="gold-line mb-4"></div>
               <div class="body-v2">
-                <p><strong>One: nobody diagnosed the actual constraint</strong> before picking a tool. <strong>Two: nobody owned the follow-through</strong> past week two, so it drifted back to the old way. Neither one is a technology problem — and both are fixable.</p>
-                <p>We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong> Every recommendation is filtered through margin, capacity, and operational return. If standard software can solve it, we tell you which one and how to sequence it. If the constraint requires a custom tool, we build it — larger builds run in 90-day sprints to a milestone, and you own it when it's done.</p>
+                <p><strong>One: nobody diagnosed the actual constraint</strong> before picking a tool. <strong>Two: nobody owned the follow-through</strong> past week two, so the team drifted back to the old way. Both are fixable. Neither gets fixed by buying more software.</p>
+                <p>We start with one question: <strong>what is the specific constraint blocking AI from creating value in your business?</strong> Every recommendation runs through margin, capacity, and operational return before we say it out loud. If standard software solves it, we tell you which one and how to sequence it. If the constraint needs a custom tool, we build it — larger builds run in 90-day sprints to a milestone, and you own the finished system, not a subscription.</p>
                 <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-sm mt-4">Book Your Free AI Leverage Call</a>
               </div>
             </div>
@@ -357,10 +357,10 @@ home.get('/', (c) => {
           <span class="eyebrow" style="color:var(--color-gold);">What's on the Other Side</span>
           <h2 style="color:#fff; max-width:780px; margin:0 auto 1.5rem;">Workflows that run without you. Decisions based on real numbers. AI that actually sticks.</h2>
           <p class="lead" style="color:rgba(255,255,255,0.85); max-width:720px; margin:0 auto 2.5rem;">
-            That's the outcome. You own a documented, running system. Your team handles it. You're no longer the single point of failure in your own business — and you know your numbers clearly enough to move with confidence.
+            You own a documented, running system. Your team runs it without you in the loop. You're no longer the single point of failure in your own business — and you know your numbers clearly enough to make decisions with confidence, not gut feel.
           </p>
           <p style="color:rgba(255,255,255,0.65); max-width:620px; margin:0 auto 2.5rem; font-size:1rem;">
-            It starts with one call. 30 minutes to review your AI Leverage Report and talk through how it plays out in your actual business.
+            It starts with one call. 30 minutes to find your constraint and map how the fix plays out in your actual business — no pitch deck, no pressure.
           </p>
           <div class="hero-actions" style="justify-content:center; margin-top:2.5rem;">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>

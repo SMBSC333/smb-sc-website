@@ -122,7 +122,7 @@ home.get('/', (c) => {
               </div>
               <div class="step-item" style="text-align:center;">
                 <div class="step-num">03</div>
-                <h5>AI Sequence Blueprint Session</h5>
+                <h5>AI Implementation Blueprint Session</h5>
                 <p>A working session with Corbin to map the exact sequence — what gets built first, and why, for your specific constraint.</p>
               </div>
               <div class="step-item" style="text-align:center;">

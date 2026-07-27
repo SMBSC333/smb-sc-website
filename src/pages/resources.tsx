@@ -51,18 +51,18 @@ resources.get('/', (c) => {
           </div>
 
           <div class="grid-3 mt-5">
-            {/* Quiz */}
+            {/* AI Leverage Report */}
             <div class="card card-white">
-              <h4 style="color: var(--color-navy);">Growth Constraint Quiz</h4>
-              <p class="text-sm">Identify which of the four core pillars (Team, Data, Process, or Owner) is holding your scalability hostage.</p>
-              <a href="/growth-constraint-quiz" class="btn btn-outline btn-sm mt-3">Take the Quiz</a>
+              <h4 style="color: var(--color-navy);">AI Leverage Report</h4>
+              <p class="text-sm">See exactly where AI is already creating ROI in your industry — instant, free, and specific to your business.</p>
+              <a href="/get-your-report" class="btn btn-outline btn-sm mt-3">Get the Report</a>
             </div>
 
-            {/* Checklist */}
+            {/* Readiness */}
             <div class="card card-white">
-              <h4 style="color: var(--color-navy);">AI Readiness Checklist</h4>
-              <p class="text-sm">A step-by-step technical audit of your current data cleanliness and tech stack before you deploy AI.</p>
-              <a href="/ai-readiness-assessment" class="btn btn-outline btn-sm mt-3">Take the Assessment</a>
+              <h4 style="color: var(--color-navy);">AI Readiness</h4>
+              <p class="text-sm">The five constraint areas that block AI adoption in owner-led service firms — and how to find out which one applies to you.</p>
+              <a href="/ai-readiness-assessment" class="btn btn-outline btn-sm mt-3">See the Framework</a>
             </div>
 
             {/* Case Studies */}

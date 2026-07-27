@@ -14,7 +14,6 @@
 
 ## Secondary resources
 Keep only as support materials:
-- Growth Constraint Quiz
 - Articles
 - Podcast
 - Guides

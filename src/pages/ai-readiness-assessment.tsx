@@ -9,13 +9,13 @@ aiReadinessAssessment.get('/', (c) => {
       <section class="page-hero-v2 bg-navy-deep">
         <div class="container">
           <div class="hero-content-v2">
-            <span class="eyebrow" style="color: var(--color-gold);">Free Assessment</span>
-            <h1 style="color: #fff;">AI Readiness Assessment for Owner-Led Service Firms</h1>
+            <span class="eyebrow" style="color: var(--color-gold);">AI Readiness</span>
+            <h1 style="color: #fff;">Is your business actually ready for AI leverage?</h1>
             <p class="hero-lead">
-              Before you buy another AI tool, find out if your business is actually ready for AI Leverage. This assessment identifies the specific constraint blocking adoption in your firm &mdash; in under 10 minutes.
+              Most AI implementations fail for the same handful of reasons — long before the tool itself is the problem. Here's what actually blocks adoption in owner-led service firms, and how to find out which one applies to you.
             </p>
             <div class="hero-cta-group">
-              <a href="/growth-constraint-quiz" class="btn btn-primary btn-lg">Take the Assessment &rarr;</a>
+              <a href="/get-your-report" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
             </div>
           </div>
         </div>
@@ -26,18 +26,18 @@ aiReadinessAssessment.get('/', (c) => {
         <div class="container">
           <div class="grid-2" style="align-items: center; gap: 4rem;">
             <div>
-              <span class="eyebrow">What You Get</span>
-              <h2>Not a generic quiz. A constraint diagnosis.</h2>
+              <span class="eyebrow">The Real Question</span>
+              <h2>It's rarely the tool. It's the constraint underneath it.</h2>
               <p class="mt-4" style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.7;">
-                Most AI readiness frameworks ask whether you have the right tools. This assessment asks a different question: what is the specific operational constraint that would cause AI to fail in your business right now?
+                Most AI readiness advice asks whether you have the right tools. That's the wrong question. The real question is: what is the specific operational constraint that would cause AI to fail in your business right now?
               </p>
               <p style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.7;">
-                You leave with a named constraint, a plain-English explanation of why it blocks adoption, and a recommended first step based on your specific situation.
+                We find that out on the call — not through a form. Get your free AI Leverage Report first, then book the free 30-minute call and we'll name your constraint together, in the context of your actual business.
               </p>
             </div>
             <div>
               <div class="card card-white p-5" style="border: 1px solid var(--color-bg-border);">
-                <h4 style="color: var(--color-navy);">The assessment covers:</h4>
+                <h4 style="color: var(--color-navy);">On the call, we look at:</h4>
                 <ul class="feature-list mt-4">
                   <li>Workflow documentation and consistency</li>
                   <li>Owner dependency level and delegation readiness</li>
@@ -59,7 +59,7 @@ aiReadinessAssessment.get('/', (c) => {
             <span class="eyebrow">The Framework</span>
             <h2>Five constraint areas. One is likely blocking you.</h2>
             <div class="gold-line gold-line-center"></div>
-            <p>AI implementation fails in predictable ways. The assessment maps your business to the most likely constraint, so you know what to fix before you build.</p>
+            <p>AI implementation fails in predictable ways. On the call, we map your business to the most likely constraint, so you know what to fix before you build.</p>
           </div>
 
           <div class="grid-3" style="gap: 1.5rem;">
@@ -89,8 +89,8 @@ aiReadinessAssessment.get('/', (c) => {
               <p style="color: var(--color-text-muted); font-size: 0.95rem;">The ROI math was never validated before purchase. Costs don&rsquo;t trace to outcomes. The tool gets cut at the next budget review.</p>
             </div>
             <div class="card card-navy p-4" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-              <p style="color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6;">Most businesses have one primary constraint. The assessment finds yours.</p>
-              <a href="/growth-constraint-quiz" class="btn btn-primary btn-sm mt-4">Take the Assessment</a>
+              <p style="color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.6;">Most businesses have one primary constraint. We find yours on the call.</p>
+              <a href="/strategy-call" class="btn btn-primary btn-sm mt-4">Book Your Free AI Leverage Call</a>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ aiReadinessAssessment.get('/', (c) => {
         <div class="container">
           <div class="section-header center mb-5">
             <span class="eyebrow">Is This For You</span>
-            <h2>Take this assessment if&hellip;</h2>
+            <h2>This applies to you if&hellip;</h2>
             <div class="gold-line gold-line-center"></div>
           </div>
 
@@ -125,31 +125,31 @@ aiReadinessAssessment.get('/', (c) => {
           </div>
 
           <div class="text-center mt-5">
-            <a href="/growth-constraint-quiz" class="btn btn-primary btn-lg">Take the Free Assessment &rarr;</a>
-            <p style="color: var(--color-text-muted); margin-top: 1rem; font-size: 0.9rem;">Takes about 8 minutes. No email required to see your results.</p>
+            <a href="/get-your-report" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
+            <p style="color: var(--color-text-muted); margin-top: 1rem; font-size: 0.9rem;">Instant, industry-specific, and free.</p>
           </div>
         </div>
       </section>
 
-      {/* ── AFTER THE ASSESSMENT ── */}
+      {/* ── HOW IT WORKS ── */}
       <section class="section bg-soft">
         <div class="container">
           <div class="section-header center mb-5">
-            <span class="eyebrow">What Comes Next</span>
-            <h2>The assessment is step one.</h2>
+            <span class="eyebrow">How This Works</span>
+            <h2>Two steps to a named constraint.</h2>
             <div class="gold-line gold-line-center"></div>
-            <p>Once you know your constraint, the next step is understanding what it would take to remove it. That&rsquo;s what the free fit call is for.</p>
+            <p>No quiz to fill out. We diagnose your constraint together, in the context of your actual business.</p>
           </div>
           <div class="grid-3" style="gap: 1.5rem;">
             <div class="card card-white p-4 text-center">
               <div class="card-number" style="margin: 0 auto 1rem;">01</div>
-              <h4 style="color: var(--color-navy);">Take the Assessment</h4>
-              <p style="color: var(--color-text-muted); font-size: 0.95rem;">8 minutes. Get a named constraint and a plain-English explanation.</p>
+              <h4 style="color: var(--color-navy);">Get Your Free AI Leverage Report</h4>
+              <p style="color: var(--color-text-muted); font-size: 0.95rem;">Instant, industry-specific breakdown of where AI is already creating ROI in businesses like yours.</p>
             </div>
             <div class="card card-white p-4 text-center">
               <div class="card-number" style="margin: 0 auto 1rem;">02</div>
-              <h4 style="color: var(--color-navy);">Book the Fit Call</h4>
-              <p style="color: var(--color-text-muted); font-size: 0.95rem;">20 minutes. We review your results and tell you whether the engagement is a fit.</p>
+              <h4 style="color: var(--color-navy);">Book Your Free AI Leverage Call</h4>
+              <p style="color: var(--color-text-muted); font-size: 0.95rem;">30 minutes. We name your constraint and map how the fix plays out in your actual business.</p>
             </div>
             <div class="card card-white p-4 text-center">
               <div class="card-number" style="margin: 0 auto 1rem;">03</div>
@@ -164,14 +164,14 @@ aiReadinessAssessment.get('/', (c) => {
       <section class="section bg-navy-deep">
         <div class="container text-center">
           <h2 style="color: #fff; max-width: 680px; margin: 0 auto;">Find out what&rsquo;s actually blocking your AI implementation.</h2>
-          <p style="color: rgba(255,255,255,0.75); max-width: 580px; margin: 1.5rem auto; font-size: 1.1rem;">Free. 8 minutes. No email required to see results.</p>
-          <a href="/growth-constraint-quiz" class="btn btn-primary btn-lg mt-2">Take the Free Assessment &rarr;</a>
+          <p style="color: rgba(255,255,255,0.75); max-width: 580px; margin: 1.5rem auto; font-size: 1.1rem;">Free report. Free 30-minute call. No quiz to fill out.</p>
+          <a href="/get-your-report" class="btn btn-primary btn-lg mt-2">Get Your Free AI Leverage Report &rarr;</a>
         </div>
       </section>
     </div>,
     {
-      title: 'Free AI Readiness Assessment',
-      description: 'Is your business actually ready for AI? This free assessment identifies the specific constraint blocking adoption in your firm. Takes under 10 minutes.',
+      title: 'AI Readiness: What Actually Blocks AI Adoption',
+      description: 'Is your business actually ready for AI? Here are the five constraints that block AI adoption in owner-led service firms — and how to find out which one applies to you.',
       activeNav: 'resources'
     }
   )

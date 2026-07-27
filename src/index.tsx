@@ -5,7 +5,6 @@ import howItWorks from './pages/how-it-works'
 import about from './pages/about'
 import resources from './pages/resources'
 import contact from './pages/contact'
-import landingPages from './pages/landing-pages'
 import privacy from './pages/privacy-policy'
 import terms from './pages/terms-conditions'
 import whoItsFor from './pages/who-its-for'
@@ -68,7 +67,8 @@ app.route('/get-your-report', getYourReport)
 app.route('/ai-report/thank-you', aiReportThankYou)
 
 // Landing pages
-app.route('/', landingPages)
+// Growth Constraint Quiz retired 2026-07-26 — redirect old traffic into the funnel
+app.get('/growth-constraint-quiz', (c) => c.redirect('/get-your-report', 301))
 
 // Legal pages
 app.route('/privacy-policy', privacy)

@@ -154,7 +154,7 @@ aiForServiceBusinesses.get('/', (c) => {
           </p>
           <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-primary btn-lg">Book Your Free AI Leverage Call &rarr;</a>
-            <a href="/growth-constraint-quiz" class="btn btn-ghost-light btn-lg">Take the Assessment First</a>
+            <a href="/get-your-report" class="btn btn-ghost-light btn-lg">Get Your Free Report First</a>
           </div>
         </div>
       </section>

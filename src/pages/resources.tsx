@@ -55,7 +55,7 @@ resources.get('/', (c) => {
             <div class="card card-white">
               <h4 style="color: var(--color-navy);">AI Leverage Report</h4>
               <p class="text-sm">See exactly where AI is already creating ROI in your industry — instant, free, and specific to your business.</p>
-              <a href="/get-your-report" class="btn btn-outline btn-sm mt-3">Get the Report</a>
+              <a href="/ai-leverage-now" class="btn btn-outline btn-sm mt-3">Get the Report</a>
             </div>
 
             {/* Readiness */}

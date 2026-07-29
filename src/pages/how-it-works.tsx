@@ -53,7 +53,7 @@ howItWorks.get('/', (c) => {
                 This is where you start to imagine your business with AI Leverage: what competitors are deploying, where the efficiency gains actually are, and where it's worth your attention.
               </p>
               <div class="mt-4">
-                <a href="/get-your-report" class="btn btn-primary">Get Your Free AI Leverage Report</a>
+                <a href="/ai-leverage-now" class="btn btn-primary">Get Your Free AI Leverage Report</a>
               </div>
             </div>
             <div class="card card-navy p-5">
@@ -188,7 +188,7 @@ howItWorks.get('/', (c) => {
             No pitch, no proposal, no obligation. See where AI Leverage exists in your business first — then decide if the call is worth your 30 minutes.
           </p>
           <div class="hero-actions" style="justify-content:center;">
-            <a href="/get-your-report" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
+            <a href="/ai-leverage-now" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
             <a href="https://app.usemotion.com/meet/corbin/AIPlanFitCall" class="btn btn-ghost-light btn-lg">Book Your Free AI Leverage Call &rarr;</a>
           </div>
         </div>

@@ -23,7 +23,7 @@ import implementationStories from './pages/implementation-stories'
 import aiImplementationChecklist from './pages/ai-implementation-checklist'
 import aiConsultantAtlanta from './pages/ai-consultant-atlanta'
 import aiForServiceBusinesses from './pages/ai-implementation-for-service-businesses'
-import getYourReport from './pages/get-your-report'
+import aiLeverageNow from './pages/ai-leverage-now'
 import aiReportThankYou from './pages/ai-report-thankyou'
 import prebuiltAiTools from './pages/prebuilt-ai-tools'
 
@@ -63,12 +63,13 @@ app.route('/owner-dependency-intensive', ownerDependency)
 app.route('/ai-operations-intensive', aiOperations)
 
 // AI Industry Report funnel
-app.route('/get-your-report', getYourReport)
+app.route('/ai-leverage-now', aiLeverageNow)
+app.get('/get-your-report', (c) => c.redirect('/ai-leverage-now', 301))
 app.route('/ai-report/thank-you', aiReportThankYou)
 
 // Landing pages
 // Growth Constraint Quiz retired 2026-07-26 — redirect old traffic into the funnel
-app.get('/growth-constraint-quiz', (c) => c.redirect('/get-your-report', 301))
+app.get('/growth-constraint-quiz', (c) => c.redirect('/ai-leverage-now', 301))
 
 // Legal pages
 app.route('/privacy-policy', privacy)

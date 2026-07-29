@@ -15,7 +15,7 @@ aiReadinessAssessment.get('/', (c) => {
               Most AI implementations fail for the same handful of reasons — long before the tool itself is the problem. Here's what actually blocks adoption in owner-led service firms, and how to find out which one applies to you.
             </p>
             <div class="hero-cta-group">
-              <a href="/get-your-report" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
+              <a href="/ai-leverage-now" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ aiReadinessAssessment.get('/', (c) => {
           </div>
 
           <div class="text-center mt-5">
-            <a href="/get-your-report" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
+            <a href="/ai-leverage-now" class="btn btn-primary btn-lg">Get Your Free AI Leverage Report &rarr;</a>
             <p style="color: var(--color-text-muted); margin-top: 1rem; font-size: 0.9rem;">Instant, industry-specific, and free.</p>
           </div>
         </div>
@@ -165,7 +165,7 @@ aiReadinessAssessment.get('/', (c) => {
         <div class="container text-center">
           <h2 style="color: #fff; max-width: 680px; margin: 0 auto;">Find out what&rsquo;s actually blocking your AI implementation.</h2>
           <p style="color: rgba(255,255,255,0.75); max-width: 580px; margin: 1.5rem auto; font-size: 1.1rem;">Free report. Free 30-minute call. No quiz to fill out.</p>
-          <a href="/get-your-report" class="btn btn-primary btn-lg mt-2">Get Your Free AI Leverage Report &rarr;</a>
+          <a href="/ai-leverage-now" class="btn btn-primary btn-lg mt-2">Get Your Free AI Leverage Report &rarr;</a>
         </div>
       </section>
     </div>,

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="noindex" />
+  <title>Apex GP — 3D F1 Racing</title>
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root { --accent: #e10600; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #05070c; color: #fff;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-user-select: none; user-select: none;
+      -webkit-tap-highlight-color: transparent; touch-action: none; }
+    #app { position: fixed; inset: 0; }
+    canvas { display: block; width: 100%; height: 100%; }
+
+    /* ---------- Loading ---------- */
+    #loader { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: radial-gradient(circle at 50% 40%, #16202e, #05070c 70%); z-index: 50; transition: opacity .6s ease; }
+    #loader.hidden { opacity: 0; pointer-events: none; }
+    #loader h1 { font-size: clamp(28px, 7vw, 64px); letter-spacing: .18em; font-weight: 800; }
+    #loader h1 span { color: var(--accent); }
+    #loader .sub { margin-top: 8px; opacity: .6; letter-spacing: .3em; font-size: 12px; text-transform: uppercase; }
+    #bar { margin-top: 28px; width: min(340px, 70vw); height: 4px; background: #ffffff22; border-radius: 4px; overflow: hidden; }
+    #bar > i { display: block; height: 100%; width: 0%; background: var(--accent); transition: width .2s ease; }
+    #loadmsg { margin-top: 12px; font-size: 12px; opacity: .5; height: 16px; }
+
+    /* ---------- Start screen ---------- */
+    #start { position: fixed; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+      background: rgba(5,7,12,.55); backdrop-filter: blur(4px); z-index: 40; text-align: center; padding: 24px; }
+    #start.show { display: flex; }
+    #start h2 { font-size: clamp(22px, 5vw, 40px); letter-spacing: .05em; margin-bottom: 10px; }
+    #start p { max-width: 520px; opacity: .8; line-height: 1.5; font-size: 15px; margin-bottom: 26px; }
+    .btn { appearance: none; border: none; cursor: pointer; font: inherit; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: #fff; background: var(--accent); padding: 16px 40px; border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(225,6,0,.4); transition: transform .12s ease, box-shadow .12s ease; }
+    .btn:active { transform: scale(.96); }
+    .hint { margin-top: 22px; font-size: 12px; opacity: .55; letter-spacing: .12em; }
+
+    /* ---------- HUD ---------- */
+    #hud { position: fixed; inset: 0; z-index: 20; pointer-events: none; display: none; }
+    #hud.show { display: block; }
+    .panel { position: absolute; background: rgba(10,14,22,.55); border: 1px solid #ffffff1a; border-radius: 14px;
+      padding: 10px 16px; backdrop-filter: blur(6px); }
+    #speedo { right: 18px; bottom: 18px; text-align: right; min-width: 120px; }
+    #speedo .val { font-size: clamp(34px, 9vw, 56px); font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+    #speedo .unit { font-size: 12px; opacity: .6; letter-spacing: .2em; }
+    #speedo .gear { color: var(--accent); font-weight: 700; margin-top: 4px; letter-spacing: .1em; }
+    #topleft { left: 18px; top: calc(18px + env(safe-area-inset-top)); display: flex; gap: 26px; }
+    #topleft .k { font-size: 11px; opacity: .55; letter-spacing: .18em; text-transform: uppercase; }
+    #topleft .v { font-size: clamp(20px, 5vw, 30px); font-weight: 800; font-variant-numeric: tabular-nums; }
+    #topleft .v small { font-size: 14px; opacity: .6; }
+    #laptime { right: 18px; top: calc(18px + env(safe-area-inset-top)); text-align: right; }
+    #laptime .k { font-size: 11px; opacity: .55; letter-spacing: .18em; text-transform: uppercase; }
+    #laptime .v { font-size: clamp(18px, 4.5vw, 26px); font-weight: 700; font-variant-numeric: tabular-nums; }
+    #laptime .best { color: #7CFFB2; font-size: 13px; margin-top: 2px; font-variant-numeric: tabular-nums; }
+    #countdown { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      font-size: clamp(80px, 24vw, 220px); font-weight: 900; color: #fff; text-shadow: 0 6px 40px rgba(0,0,0,.6);
+      opacity: 0; }
+    #finish { position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+      background: rgba(5,7,12,.7); backdrop-filter: blur(6px); pointer-events: auto; }
+    #finish.show { display: flex; }
+    #finish h2 { font-size: clamp(30px, 8vw, 72px); font-weight: 900; letter-spacing: .04em; }
+    #finish .place { color: var(--accent); }
+    #finish p { opacity: .8; margin: 12px 0 26px; }
+
+    /* ---------- Mobile controls ---------- */
+    #touch { position: fixed; inset: 0; z-index: 30; display: none; pointer-events: none; }
+    #touch.show { display: block; }
+    .tbtn { position: absolute; bottom: calc(26px + env(safe-area-inset-bottom)); width: 92px; height: 92px; border-radius: 50%;
+      background: rgba(255,255,255,.08); border: 2px solid #ffffff33; display: flex; align-items: center; justify-content: center;
+      font-size: 34px; pointer-events: auto; backdrop-filter: blur(4px); transition: background .08s, transform .08s; }
+    .tbtn.active { background: rgba(225,6,0,.55); transform: scale(.94); }
+    #steerL { left: calc(22px + env(safe-area-inset-left)); }
+    #steerR { left: calc(132px + env(safe-area-inset-left)); }
+    #pedalBrake { right: calc(132px + env(safe-area-inset-right)); background: rgba(255,255,255,.06); }
+    #pedalGas { right: calc(22px + env(safe-area-inset-right)); width: 104px; height: 104px; bottom: calc(20px + env(safe-area-inset-bottom));
+      background: rgba(225,6,0,.28); border-color: rgba(225,6,0,.6); }
+    #btnReset { top: calc(66px + env(safe-area-inset-top)); left: 50%; transform: translateX(-50%); width: auto; height: auto;
+      padding: 8px 16px; border-radius: 999px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; bottom: auto; }
+
+    .credit { position: fixed; left: 50%; bottom: 6px; transform: translateX(-50%); font-size: 10px; opacity: .3;
+      z-index: 21; letter-spacing: .1em; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <div id="loader">
+    <h1>APEX <span>GP</span></h1>
+    <div class="sub">3D Grand Prix</div>
+    <div id="bar"><i></i></div>
+    <div id="loadmsg">Loading engine…</div>
+  </div>
+
+  <div id="start">
+    <h2>Ready to race?</h2>
+    <p>You start P11 on a freshly generated circuit. Chase down 10 rivals over 3 laps.
+       Steer with <b>A/D</b> or <b>←/→</b>, accelerate with <b>W/↑</b>, brake with <b>S/↓</b>. On mobile, use the on-screen pedals.</p>
+    <button class="btn" id="startBtn">Start Race</button>
+    <div class="hint">R to respawn if you spin out · P to pause</div>
+  </div>
+
+  <div id="hud">
+    <div class="panel" id="topleft">
+      <div><div class="k">Pos</div><div class="v" id="pos">11<small>/11</small></div></div>
+      <div><div class="k">Lap</div><div class="v" id="lap">1<small>/3</small></div></div>
+    </div>
+    <div class="panel" id="laptime">
+      <div class="k">Lap Time</div>
+      <div class="v" id="curtime">0:00.00</div>
+      <div class="best" id="besttime">Best —</div>
+    </div>
+    <div class="panel" id="speedo">
+      <div><span class="val" id="kmh">0</span></div>
+      <div class="unit">KM/H</div>
+      <div class="gear" id="gear">N</div>
+    </div>
+    <div id="countdown"></div>
+    <div id="finish">
+      <h2>Finished <span class="place" id="finishPlace">P1</span></h2>
+      <p id="finishSub">Great drive.</p>
+      <button class="btn" id="raceAgain">New Circuit</button>
+    </div>
+  </div>
+
+  <div id="touch">
+    <div class="tbtn" id="steerL">‹</div>
+    <div class="tbtn" id="steerR">›</div>
+    <div class="tbtn" id="pedalBrake">⊘</div>
+    <div class="tbtn" id="pedalGas">▲</div>
+    <div class="tbtn" id="btnReset">Respawn</div>
+  </div>
+
+  <div class="credit">Textures: Poly Haven (CC0) · Built with Three.js</div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
